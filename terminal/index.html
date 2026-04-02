@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icalia Labs | Senior Developers, Ready When You Are</title>
+  <meta name="description" content="Scale your engineering team with nearshore talent that feels like your own. Same timezone. Product-minded engineers who integrate fast and stay long.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          mono: ['"JetBrains Mono"', 'monospace'],
+        },
+        extend: {
+          colors: {
+            red: '#EE3A43',
+            cream: '#FAF8F6',
+            dark: '#1A1A22',
+            warm2: '#F3F0EC',
+            sand: '#E8E4DF',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    * { font-family: 'JetBrains Mono', monospace; }
+
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+
+    .cursor-blink {
+      animation: blink 1s step-end infinite;
+    }
+
+    .terminal-box {
+      border: 1px solid #1A1A22;
+      position: relative;
+    }
+
+    .terminal-box-dark {
+      border: 1px solid #FAF8F6;
+    }
+
+    .terminal-box::before,
+    .terminal-box-dark::before {
+      content: '';
+      position: absolute;
+      top: -1px;
+      left: 8px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+    }
+
+    .terminal-tab {
+      border: 1px solid #1A1A22;
+      border-bottom: none;
+      position: relative;
+    }
+
+    .terminal-tab.active {
+      background: #FAF8F6;
+    }
+
+    .terminal-tab.active::after {
+      content: '';
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+      right: 0;
+      height: 1px;
+      background: #FAF8F6;
+    }
+
+    .fade-section {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .key-btn {
+      border: 2px solid #1A1A22;
+      box-shadow: 2px 3px 0 #1A1A22;
+      transition: all 0.1s ease;
+    }
+
+    .key-btn:hover {
+      box-shadow: 1px 1px 0 #1A1A22;
+      transform: translate(1px, 2px);
+    }
+
+    .key-btn:active {
+      box-shadow: 0 0 0 #1A1A22;
+      transform: translate(2px, 3px);
+    }
+
+    .key-btn-red {
+      border: 2px solid #EE3A43;
+      box-shadow: 2px 3px 0 #EE3A43;
+    }
+
+    .key-btn-red:hover {
+      box-shadow: 1px 1px 0 #EE3A43;
+      transform: translate(1px, 2px);
+    }
+
+    .key-btn-light {
+      border: 2px solid #FAF8F6;
+      box-shadow: 2px 3px 0 #FAF8F6;
+    }
+
+    .key-btn-light:hover {
+      box-shadow: 1px 1px 0 #FAF8F6;
+      transform: translate(1px, 2px);
+    }
+
+    .stdout-line {
+      opacity: 0;
+      transform: translateX(-8px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .stdout-line.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    ::selection {
+      background: #EE3A43;
+      color: #FAF8F6;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="bg-cream text-dark font-mono">
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-cream border-b border-dark">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="flex items-center justify-between h-14">
+        <a href="#" class="text-sm sm:text-base font-bold text-red whitespace-nowrap">icalia@labs:~$</a>
+        <div class="hidden md:flex items-center gap-1">
+          <a href="#why" class="terminal-tab px-3 py-1 text-xs hover:bg-warm2 transition-colors">Why&nbsp;Icalia</a>
+          <a href="#work" class="terminal-tab px-3 py-1 text-xs hover:bg-warm2 transition-colors">Work</a>
+          <a href="#about" class="terminal-tab px-3 py-1 text-xs hover:bg-warm2 transition-colors">About</a>
+          <a href="#contact" class="terminal-tab px-3 py-1 text-xs hover:bg-warm2 transition-colors">Contact</a>
+          <a href="#cta" class="key-btn bg-red text-cream px-3 py-1 text-xs ml-2 inline-block key-btn-red">Book&nbsp;a&nbsp;Call&nbsp;[ENTER]</a>
+        </div>
+        <button id="mobile-menu-btn" class="md:hidden text-dark text-lg">&#9776;</button>
+      </div>
+      <div id="mobile-menu" class="hidden md:hidden pb-4 border-t border-dark pt-3 flex flex-col gap-2">
+        <a href="#why" class="text-xs py-1 hover:text-red">~/why-icalia</a>
+        <a href="#work" class="text-xs py-1 hover:text-red">~/work</a>
+        <a href="#about" class="text-xs py-1 hover:text-red">~/about</a>
+        <a href="#contact" class="text-xs py-1 hover:text-red">~/contact</a>
+        <a href="#cta" class="key-btn bg-red text-cream px-3 py-1 text-xs inline-block key-btn-red w-fit mt-1">Book a Call [ENTER]</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center bg-dark text-cream pt-14">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 w-full">
+      <div class="terminal-box terminal-box-dark p-6 sm:p-10">
+        <div class="flex items-center gap-2 mb-6 text-xs opacity-50">
+          <span class="w-3 h-3 rounded-full bg-red inline-block"></span>
+          <span class="w-3 h-3 rounded-full bg-sand inline-block opacity-40"></span>
+          <span class="w-3 h-3 rounded-full bg-cream inline-block opacity-20"></span>
+          <span class="ml-2">icalia@labs:~/hero</span>
+        </div>
+        <div class="mb-8">
+          <span class="text-red text-lg sm:text-xl">$&nbsp;</span>
+          <span id="typed-text" class="text-2xl sm:text-4xl md:text-5xl font-bold leading-tight"></span>
+          <span id="cursor" class="cursor-blink text-red text-2xl sm:text-4xl md:text-5xl font-bold">&#9608;</span>
+        </div>
+        <div id="hero-sub" class="opacity-0 transition-opacity duration-1000 max-w-2xl">
+          <p class="text-base sm:text-lg text-sand leading-relaxed mb-8">
+            Scale your engineering team with nearshore talent that feels like your own. Same timezone. Product-minded engineers who integrate fast and stay long.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-3">
+            <a href="#cta" class="key-btn key-btn-red bg-red text-cream px-6 py-3 text-sm font-semibold text-center">Book a Discovery Call [ENTER]</a>
+            <a href="#about" class="key-btn key-btn-light bg-transparent text-cream px-6 py-3 text-sm font-semibold text-center">See How It Works [TAB]</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="bg-cream py-20 fade-section">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="terminal-box p-6 sm:p-8">
+        <div class="flex items-center gap-2 mb-4 text-xs opacity-40">
+          <span class="w-2 h-2 rounded-full bg-red inline-block"></span>
+          <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-40"></span>
+          <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-20"></span>
+          <span class="ml-2">icalia@labs:~/stats</span>
+        </div>
+        <p class="text-xs text-dark opacity-50 mb-4">$ cat metrics.log</p>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+          <div class="stdout-line">
+            <span class="text-red">&gt;</span> clutch_rating:<br>
+            <span class="text-3xl font-bold ml-4">4.6/5</span>
+          </div>
+          <div class="stdout-line">
+            <span class="text-red">&gt;</span> nps_score:<br>
+            <span class="text-3xl font-bold ml-4">&gt;90</span>
+          </div>
+          <div class="stdout-line">
+            <span class="text-red">&gt;</span> years_active:<br>
+            <span class="text-3xl font-bold ml-4">15+</span>
+          </div>
+          <div class="stdout-line">
+            <span class="text-red">&gt;</span> platforms_shipped:<br>
+            <span class="text-3xl font-bold ml-4">210+</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY -->
+  <section class="bg-warm2 py-16 fade-section">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <p class="text-xs text-dark opacity-50 mb-2">$ echo $TRUSTED_BY</p>
+      <div class="flex flex-wrap gap-x-6 gap-y-2 text-sm sm:text-base font-semibold">
+        <span class="opacity-70 hover:opacity-100 transition-opacity">Toyota</span>
+        <span class="text-red">|</span>
+        <span class="opacity-70 hover:opacity-100 transition-opacity">GBM</span>
+        <span class="text-red">|</span>
+        <span class="opacity-70 hover:opacity-100 transition-opacity">Banregio</span>
+        <span class="text-red">|</span>
+        <span class="opacity-70 hover:opacity-100 transition-opacity">Point B</span>
+        <span class="text-red">|</span>
+        <span class="opacity-70 hover:opacity-100 transition-opacity">Wafra</span>
+        <span class="text-red">|</span>
+        <span class="opacity-70 hover:opacity-100 transition-opacity">Valmex</span>
+        <span class="text-red">|</span>
+        <span class="opacity-70 hover:opacity-100 transition-opacity">RTS</span>
+        <span class="text-red">|</span>
+        <span class="opacity-70 hover:opacity-100 transition-opacity">Credi</span>
+      </div>
+      <p class="text-xs text-dark opacity-30 mt-2">// stdout: 8 partners loaded</p>
+    </div>
+  </section>
+
+  <!-- WHY ICALIA -->
+  <section id="why" class="bg-cream py-20 fade-section">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <p class="text-xs text-dark opacity-50 mb-8">icalia@labs:~/why-icalia</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="terminal-box p-6">
+          <div class="flex items-center gap-2 mb-3 text-xs opacity-40">
+            <span class="w-2 h-2 rounded-full bg-red inline-block"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-40"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-20"></span>
+          </div>
+          <p class="text-xs text-red mb-3">$ cat timezone.txt</p>
+          <h3 class="text-lg font-bold mb-3">Same Timezone,<br>Same Team</h3>
+          <p class="text-sm leading-relaxed opacity-70">
+            Based in Monterrey, MX. We work US hours with strong English communication. Real-time collaboration, no async lag.
+          </p>
+          <p class="text-xs text-dark opacity-30 mt-4">EOF</p>
+        </div>
+
+        <div class="terminal-box p-6">
+          <div class="flex items-center gap-2 mb-3 text-xs opacity-40">
+            <span class="w-2 h-2 rounded-full bg-red inline-block"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-40"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-20"></span>
+          </div>
+          <p class="text-xs text-red mb-3">$ cat speed.txt</p>
+          <h3 class="text-lg font-bold mb-3">Start in Days,<br>Not Months</h3>
+          <p class="text-sm leading-relaxed opacity-70">
+            Our engineers are vetted senior developers ready to ship. Skip the 3-month hiring cycle. Get building this week.
+          </p>
+          <p class="text-xs text-dark opacity-30 mt-4">EOF</p>
+        </div>
+
+        <div class="terminal-box p-6">
+          <div class="flex items-center gap-2 mb-3 text-xs opacity-40">
+            <span class="w-2 h-2 rounded-full bg-red inline-block"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-40"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-20"></span>
+          </div>
+          <p class="text-xs text-red mb-3">$ cat retention.txt</p>
+          <h3 class="text-lg font-bold mb-3">Engineers<br>Who Stay</h3>
+          <p class="text-sm leading-relaxed opacity-70">
+            Long-term partnerships, not revolving doors. NPS &gt;90 because our engineers care about your product as much as you do.
+          </p>
+          <p class="text-xs text-dark opacity-30 mt-4">EOF</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW IT WORKS -->
+  <section id="about" class="bg-dark text-cream py-20 fade-section">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <p class="text-xs opacity-50 mb-2">icalia@labs:~/how-it-works</p>
+      <p class="text-xs text-red mb-10">$ ./start.sh</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="terminal-box terminal-box-dark p-6">
+          <span class="text-red text-3xl font-bold">[1]</span>
+          <h3 class="text-lg font-bold mt-4 mb-3">Tell Us What You Need</h3>
+          <p class="text-sm leading-relaxed opacity-60">
+            Share your tech stack, team size, and goals. We'll scope the right engineers for your project.
+          </p>
+          <p class="text-xs opacity-30 mt-4">// input received</p>
+        </div>
+
+        <div class="terminal-box terminal-box-dark p-6">
+          <span class="text-red text-3xl font-bold">[2]</span>
+          <h3 class="text-lg font-bold mt-4 mb-3">Meet Your Engineers</h3>
+          <p class="text-sm leading-relaxed opacity-60">
+            Interview hand-picked senior developers. They're ready to integrate with your workflows and tools.
+          </p>
+          <p class="text-xs opacity-30 mt-4">// matching complete</p>
+        </div>
+
+        <div class="terminal-box terminal-box-dark p-6">
+          <span class="text-red text-3xl font-bold">[3]</span>
+          <h3 class="text-lg font-bold mt-4 mb-3">Start Building</h3>
+          <p class="text-sm leading-relaxed opacity-60">
+            Your new team members hit the ground running. Ship features, squash bugs, and scale your product.
+          </p>
+          <p class="text-xs opacity-30 mt-4">// process started [PID 2024]</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CASE STUDIES -->
+  <section id="work" class="bg-cream py-20 fade-section">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <p class="text-xs text-dark opacity-50 mb-2">icalia@labs:~/case-studies</p>
+      <p class="text-xs text-red mb-10">$ ls -la projects/</p>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="terminal-box p-6">
+          <div class="flex items-center gap-2 mb-3 text-xs opacity-40">
+            <span class="w-2 h-2 rounded-full bg-red inline-block"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-40"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-20"></span>
+          </div>
+          <p class="text-xs text-red mb-4">$ cat vamonos.txt</p>
+          <span class="text-xs bg-red text-cream px-2 py-0.5 inline-block mb-3">FINTECH</span>
+          <h3 class="text-lg font-bold mb-2">Vamonos</h3>
+          <p class="text-sm leading-relaxed opacity-70 mb-4">
+            Built a cross-border payments platform from zero to launch. Mobile-first, regulatory-compliant, and designed for scale across Latin America.
+          </p>
+          <p class="text-xs opacity-30">// status: shipped</p>
+        </div>
+
+        <div class="terminal-box p-6">
+          <div class="flex items-center gap-2 mb-3 text-xs opacity-40">
+            <span class="w-2 h-2 rounded-full bg-red inline-block"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-40"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-20"></span>
+          </div>
+          <p class="text-xs text-red mb-4">$ cat potentia.txt</p>
+          <span class="text-xs bg-red text-cream px-2 py-0.5 inline-block mb-3">AI / ENTERPRISE</span>
+          <h3 class="text-lg font-bold mb-2">Potentia / Point B</h3>
+          <p class="text-sm leading-relaxed opacity-70 mb-4">
+            AI-powered enterprise platform for workforce analytics. Integrated machine learning models with existing enterprise systems at scale.
+          </p>
+          <p class="text-xs opacity-30">// status: shipped</p>
+        </div>
+
+        <div class="terminal-box p-6">
+          <div class="flex items-center gap-2 mb-3 text-xs opacity-40">
+            <span class="w-2 h-2 rounded-full bg-red inline-block"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-40"></span>
+            <span class="w-2 h-2 rounded-full bg-dark inline-block opacity-20"></span>
+          </div>
+          <p class="text-xs text-red mb-4">$ cat okufarma.txt</p>
+          <span class="text-xs bg-red text-cream px-2 py-0.5 inline-block mb-3">HEALTHTECH</span>
+          <h3 class="text-lg font-bold mb-2">OkuFarma</h3>
+          <p class="text-sm leading-relaxed opacity-70 mb-4">
+            Digital pharmacy platform connecting patients with medications. Streamlined prescription management and delivery logistics.
+          </p>
+          <p class="text-xs opacity-30">// status: shipped</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="bg-dark text-cream py-24 fade-section">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      <div class="terminal-box terminal-box-dark p-8 sm:p-12">
+        <div class="flex items-center justify-center gap-2 mb-6 text-xs opacity-40">
+          <span class="w-2 h-2 rounded-full bg-red inline-block"></span>
+          <span class="w-2 h-2 rounded-full bg-cream inline-block opacity-40"></span>
+          <span class="w-2 h-2 rounded-full bg-cream inline-block opacity-20"></span>
+        </div>
+        <p class="text-xs opacity-50 mb-6">$ ./scale-your-team.sh</p>
+        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold mb-4">Ready to scale<br>your team?</h2>
+        <p class="text-sm sm:text-base text-sand opacity-70 mb-8 max-w-lg mx-auto">
+          Get senior engineers embedded in your team within days. Same timezone, same standup, same mission.
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 justify-center">
+          <a href="mailto:sales@icalialabs.com" class="key-btn key-btn-red bg-red text-cream px-8 py-3 text-sm font-semibold inline-block">Book a Discovery Call [ENTER]</a>
+          <a href="tel:+15124814113" class="key-btn key-btn-light bg-transparent text-cream px-8 py-3 text-sm font-semibold inline-block">Call Us [SPACE]</a>
+        </div>
+        <p class="text-xs opacity-30 mt-6">// no commitment required</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="contact" class="bg-dark text-cream border-t border-cream border-opacity-10 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+        <div>
+          <p class="text-red font-bold mb-3">icalia@labs:~$</p>
+          <p class="text-xs opacity-50 leading-relaxed">
+            Software product studio helping companies<br>
+            scale their engineering teams with senior<br>
+            nearshore developers since 2011.
+          </p>
+        </div>
+        <div>
+          <p class="text-xs text-red mb-3">$ cat locations.txt</p>
+          <p class="text-xs opacity-50 leading-loose">
+            <span class="text-sand">&gt;</span> Austin, TX<br>
+            <span class="text-sand">&gt;</span> Monterrey, MX
+          </p>
+        </div>
+        <div>
+          <p class="text-xs text-red mb-3">$ cat contact.txt</p>
+          <p class="text-xs opacity-50 leading-loose">
+            <span class="text-sand">&gt;</span> <a href="mailto:sales@icalialabs.com" class="hover:text-red transition-colors">sales@icalialabs.com</a><br>
+            <span class="text-sand">&gt;</span> <a href="tel:+15124814113" class="hover:text-red transition-colors">+1 512 481 4113</a>
+          </p>
+        </div>
+      </div>
+      <div class="border-t border-cream border-opacity-10 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs opacity-30">&copy; 2026 Icalia Labs. All rights reserved.</p>
+        <p class="text-xs opacity-30">
+          <span class="text-red">$</span> exit 0
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+    });
+
+    // Typing animation
+    const text = 'Senior developers, ready when you are.';
+    const typedEl = document.getElementById('typed-text');
+    const cursorEl = document.getElementById('cursor');
+    const heroSub = document.getElementById('hero-sub');
+    let i = 0;
+
+    function typeChar() {
+      if (i < text.length) {
+        typedEl.textContent += text.charAt(i);
+        i++;
+        setTimeout(typeChar, 50 + Math.random() * 30);
+      } else {
+        // Show subtext after typing completes
+        heroSub.style.opacity = '1';
+      }
+    }
+
+    // Start typing after a short delay
+    setTimeout(typeChar, 600);
+
+    // Intersection Observer for fade-in sections
+    const fadeSections = document.querySelectorAll('.fade-section');
+    const fadeObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+
+          // Animate stdout lines within the section
+          const lines = entry.target.querySelectorAll('.stdout-line');
+          lines.forEach((line, idx) => {
+            setTimeout(() => {
+              line.classList.add('visible');
+            }, idx * 150);
+          });
+
+          fadeObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    fadeSections.forEach(section => fadeObserver.observe(section));
+  </script>
+
+</body>
+</html>

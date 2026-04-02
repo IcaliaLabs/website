@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icalia Labs | Nearshore Senior Developers</title>
+  <meta name="description" content="Scale your engineering team with nearshore senior developers from Icalia Labs. Same timezone, product-minded engineers who integrate fast.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        fontFamily: {
+          mono: ['"Space Mono"', 'monospace'],
+        },
+        extend: {
+          colors: {
+            red: '#EE3A43',
+            cream: '#FAF8F6',
+            dark: '#1A1A22',
+            warm2: '#F3F0EC',
+            sand: '#E8E4DF',
+            cyan: '#00F0FF',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; }
+    body { font-family: 'Space Mono', monospace; background: #1A1A22; color: #FAF8F6; }
+
+    /* Noise overlay */
+    .noise-overlay::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      pointer-events: none;
+      opacity: 0.035;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      background-repeat: repeat;
+      background-size: 128px 128px;
+    }
+
+    /* Scan lines for dark sections */
+    .scan-lines::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background: repeating-linear-gradient(
+        0deg,
+        transparent,
+        transparent 2px,
+        rgba(250,248,246,0.015) 2px,
+        rgba(250,248,246,0.015) 4px
+      );
+      animation: scanMove 8s linear infinite;
+    }
+
+    @keyframes scanMove {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(4px); }
+    }
+
+    /* Clipped containers */
+    .clip-card {
+      clip-path: polygon(0 0, calc(100% - 16px) 0, 100% 16px, 100% 100%, 16px 100%, 0 calc(100% - 16px));
+    }
+    .clip-card-alt {
+      clip-path: polygon(16px 0, 100% 0, 100% calc(100% - 16px), calc(100% - 16px) 100%, 0 100%, 0 16px);
+    }
+    .clip-btn {
+      clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
+    }
+
+    /* Glitch headline */
+    .glitch {
+      position: relative;
+      display: inline-block;
+    }
+    .glitch::before,
+    .glitch::after {
+      content: attr(data-text);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+    }
+    .glitch::before {
+      color: #EE3A43;
+      z-index: -1;
+      animation: glitch-1 4s infinite linear alternate-reverse;
+    }
+    .glitch::after {
+      color: #00F0FF;
+      z-index: -1;
+      animation: glitch-2 4s infinite linear alternate-reverse;
+    }
+
+    @keyframes glitch-1 {
+      0%, 88% { clip-path: inset(0 0 100% 0); transform: translate(0); }
+      89% { clip-path: inset(20% 0 40% 0); transform: translate(-3px, 1px); }
+      90% { clip-path: inset(60% 0 10% 0); transform: translate(3px, -1px); }
+      91% { clip-path: inset(40% 0 30% 0); transform: translate(-2px, 0); }
+      92%, 100% { clip-path: inset(0 0 100% 0); transform: translate(0); }
+    }
+
+    @keyframes glitch-2 {
+      0%, 92% { clip-path: inset(0 0 100% 0); transform: translate(0); }
+      93% { clip-path: inset(50% 0 20% 0); transform: translate(3px, 1px); }
+      94% { clip-path: inset(10% 0 60% 0); transform: translate(-3px, -1px); }
+      95% { clip-path: inset(70% 0 5% 0); transform: translate(2px, 0); }
+      96%, 100% { clip-path: inset(0 0 100% 0); transform: translate(0); }
+    }
+
+    /* Button glitch hover */
+    .btn-glitch {
+      position: relative;
+      transition: all 0.15s;
+    }
+    .btn-glitch:hover {
+      animation: btnGlitch 0.3s ease;
+    }
+    @keyframes btnGlitch {
+      0% { transform: translate(0) skewX(0); }
+      20% { transform: translate(-2px, 1px) skewX(-2deg); filter: hue-rotate(30deg); }
+      40% { transform: translate(2px, -1px) skewX(1deg); filter: hue-rotate(-30deg); }
+      60% { transform: translate(-1px, 0) skewX(2deg); }
+      80% { transform: translate(1px, 1px) skewX(-1deg); }
+      100% { transform: translate(0) skewX(0); filter: hue-rotate(0); }
+    }
+
+    /* Card hover glitch */
+    .card-glitch {
+      transition: all 0.2s;
+    }
+    .card-glitch:hover {
+      animation: cardFlicker 0.4s ease;
+    }
+    @keyframes cardFlicker {
+      0%, 100% { opacity: 1; transform: translate(0); }
+      10% { opacity: 0.8; transform: translate(2px, -1px); }
+      20% { opacity: 1; transform: translate(-1px, 1px); }
+      30% { opacity: 0.9; transform: translate(0); }
+    }
+
+    /* Logo glitch on hover */
+    .logo-glitch:hover {
+      animation: logoGlitch 0.5s ease;
+    }
+    @keyframes logoGlitch {
+      0%, 100% { text-shadow: none; }
+      15% { text-shadow: -2px 0 #EE3A43, 2px 0 #00F0FF; }
+      30% { text-shadow: 2px 0 #EE3A43, -2px 0 #00F0FF; }
+      45% { text-shadow: -1px 1px #EE3A43, 1px -1px #00F0FF; }
+      60% { text-shadow: none; }
+    }
+
+    /* Scroll marquee */
+    .marquee-track {
+      display: flex;
+      width: max-content;
+      animation: marquee 25s linear infinite;
+    }
+    @keyframes marquee {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    /* Fade in on scroll */
+    .fade-section {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Progress bar fill animation */
+    .bar-fill {
+      width: 0;
+      transition: width 1.2s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+    }
+    .bar-fill.filled {
+      width: var(--fill);
+    }
+
+    /* Data flow connector */
+    .flow-line {
+      position: relative;
+    }
+    .flow-line::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -32px;
+      width: 32px;
+      height: 2px;
+      background: linear-gradient(90deg, #EE3A43, transparent);
+    }
+    @media (max-width: 768px) {
+      .flow-line::after {
+        display: none;
+      }
+    }
+
+    /* Nav active indicator */
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #EE3A43;
+      transition: width 0.3s;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Mobile menu */
+    .mobile-menu {
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+    }
+    .mobile-menu.open {
+      transform: translateX(0);
+    }
+  </style>
+</head>
+<body class="noise-overlay">
+
+  <!-- Nav -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-dark/90 backdrop-blur border-b border-cream/10">
+    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
+      <a href="#" class="logo-glitch text-xl font-bold tracking-tight text-cream">
+        ICALIA<span class="text-red">_</span>LABS
+      </a>
+      <div class="hidden md:flex items-center gap-8 text-sm">
+        <a href="#why" class="nav-link text-cream/70 hover:text-cream transition-colors">Why Icalia</a>
+        <a href="#work" class="nav-link text-cream/70 hover:text-cream transition-colors">Work</a>
+        <a href="#about" class="nav-link text-cream/70 hover:text-cream transition-colors">About</a>
+        <a href="#contact" class="nav-link text-cream/70 hover:text-cream transition-colors">Contact</a>
+        <a href="#cta" class="btn-glitch clip-btn bg-red text-cream px-5 py-2 text-sm font-bold tracking-wide hover:bg-red/90 inline-block">Book a Call</a>
+      </div>
+      <button id="menuBtn" class="md:hidden text-cream" aria-label="Menu">
+        <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobileMenu" class="mobile-menu fixed top-16 right-0 bottom-0 w-64 bg-dark border-l border-cream/10 p-8 flex flex-col gap-6 md:hidden">
+      <a href="#why" class="text-cream/70 hover:text-cream text-sm">Why Icalia</a>
+      <a href="#work" class="text-cream/70 hover:text-cream text-sm">Work</a>
+      <a href="#about" class="text-cream/70 hover:text-cream text-sm">About</a>
+      <a href="#contact" class="text-cream/70 hover:text-cream text-sm">Contact</a>
+      <a href="#cta" class="btn-glitch clip-btn bg-red text-cream px-5 py-2 text-sm font-bold tracking-wide text-center">Book a Call</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="relative min-h-screen flex items-center pt-16 scan-lines overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 py-24 md:py-32">
+      <div class="max-w-3xl">
+        <p class="text-red text-sm font-bold tracking-widest uppercase mb-6">// Nearshore Engineering</p>
+        <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8">
+          <span class="glitch" data-text="Senior developers, ready when you are.">Senior developers, ready when you are.</span>
+        </h1>
+        <p class="text-cream/60 text-lg md:text-xl leading-relaxed max-w-2xl mb-10">
+          Scale your engineering team with nearshore talent that feels like your own. Same timezone. Product-minded engineers who integrate fast and stay long.
+        </p>
+        <div class="flex flex-wrap gap-4">
+          <a href="#cta" class="btn-glitch clip-btn bg-red text-cream px-8 py-3 font-bold tracking-wide hover:bg-red/90 inline-block text-sm">Book a Discovery Call</a>
+          <a href="#how" class="btn-glitch clip-btn border border-cream/30 text-cream px-8 py-3 font-bold tracking-wide hover:border-cream/60 inline-block text-sm">See How It Works</a>
+        </div>
+      </div>
+    </div>
+    <!-- Decorative corner element -->
+    <div class="absolute top-24 right-8 hidden lg:block text-cream/10 text-xs leading-relaxed select-none" aria-hidden="true">
+      <pre>sys.init_______
+loc: MTY / ATX
+status: ONLINE
+ping: 12ms____</pre>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="fade-section relative py-20 border-t border-cream/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <!-- Stat 1 -->
+        <div class="clip-card bg-cream/5 p-6 border-l-2 border-red">
+          <div class="text-3xl font-bold text-cream mb-1">4.6<span class="text-red">/5</span></div>
+          <div class="text-cream/40 text-xs uppercase tracking-widest mb-3">Clutch Rating</div>
+          <div class="h-1.5 bg-cream/10 relative">
+            <div class="bar-fill h-full bg-red absolute left-0 top-0" style="--fill: 92%"></div>
+          </div>
+        </div>
+        <!-- Stat 2 -->
+        <div class="clip-card bg-cream/5 p-6 border-l-2 border-red">
+          <div class="text-3xl font-bold text-cream mb-1">&gt;90</div>
+          <div class="text-cream/40 text-xs uppercase tracking-widest mb-3">NPS Score</div>
+          <div class="h-1.5 bg-cream/10 relative">
+            <div class="bar-fill h-full bg-red absolute left-0 top-0" style="--fill: 90%"></div>
+          </div>
+        </div>
+        <!-- Stat 3 -->
+        <div class="clip-card bg-cream/5 p-6 border-l-2 border-red">
+          <div class="text-3xl font-bold text-cream mb-1">15<span class="text-red">+</span></div>
+          <div class="text-cream/40 text-xs uppercase tracking-widest mb-3">Years</div>
+          <div class="h-1.5 bg-cream/10 relative">
+            <div class="bar-fill h-full bg-red absolute left-0 top-0" style="--fill: 75%"></div>
+          </div>
+        </div>
+        <!-- Stat 4 -->
+        <div class="clip-card bg-cream/5 p-6 border-l-2 border-red">
+          <div class="text-3xl font-bold text-cream mb-1">210<span class="text-red">+</span></div>
+          <div class="text-cream/40 text-xs uppercase tracking-widest mb-3">Platforms Built</div>
+          <div class="h-1.5 bg-cream/10 relative">
+            <div class="bar-fill h-full bg-red absolute left-0 top-0" style="--fill: 85%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted By -->
+  <section class="fade-section relative py-16 border-t border-cream/10 overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6 mb-6">
+      <p class="text-cream/30 text-xs uppercase tracking-widest">// Trusted by</p>
+    </div>
+    <div class="relative overflow-hidden">
+      <div class="marquee-track">
+        <div class="flex items-center gap-12 px-6">
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">TOYOTA</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">GBM</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">BANREGIO</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">POINT B</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">WAFRA</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">VALMEX</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">RTS</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">CREDI</span>
+        </div>
+        <!-- Duplicate for seamless scroll -->
+        <div class="flex items-center gap-12 px-6">
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">TOYOTA</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">GBM</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">BANREGIO</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">POINT B</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">WAFRA</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">VALMEX</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">RTS</span>
+          <span class="text-red/30">|</span>
+          <span class="text-cream/25 text-sm font-bold tracking-widest whitespace-nowrap">CREDI</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Icalia -->
+  <section id="why" class="fade-section relative py-24 border-t border-cream/10 scan-lines overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-red text-xs font-bold tracking-widest uppercase mb-3">// Why Icalia</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-cream mb-12">Built for speed<span class="text-red">.</span> Wired for quality<span class="text-red">.</span></h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Feature 1 -->
+        <div class="clip-card bg-cream/5 p-8 border-l-2 border-red relative card-glitch">
+          <div class="text-red text-xs font-bold tracking-widest uppercase mb-4">01 // Timezone</div>
+          <h3 class="text-xl font-bold text-cream mb-3">Same timezone, same team</h3>
+          <p class="text-cream/50 text-sm leading-relaxed">Based in Monterrey, MX. We work US hours, speak strong English, and integrate with your daily standups and workflows.</p>
+        </div>
+        <!-- Feature 2 -->
+        <div class="clip-card bg-cream/5 p-8 border-l-2 border-red relative card-glitch">
+          <div class="text-red text-xs font-bold tracking-widest uppercase mb-4">02 // Speed</div>
+          <h3 class="text-xl font-bold text-cream mb-3">Start in days, not months</h3>
+          <p class="text-cream/50 text-sm leading-relaxed">Pre-vetted senior developers ready to go. No lengthy recruitment cycles. Your team scales when you need it.</p>
+        </div>
+        <!-- Feature 3 -->
+        <div class="clip-card bg-cream/5 p-8 border-l-2 border-red relative card-glitch">
+          <div class="text-red text-xs font-bold tracking-widest uppercase mb-4">03 // Retention</div>
+          <h3 class="text-xl font-bold text-cream mb-3">Engineers who stay</h3>
+          <p class="text-cream/50 text-sm leading-relaxed">Long-term engagements, not revolving doors. Our NPS of &gt;90 reflects engineers and clients who are in it together.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how" class="fade-section relative py-24 border-t border-cream/10">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-red text-xs font-bold tracking-widest uppercase mb-3">// Process</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-cream mb-16">How it works<span class="text-red">.</span></h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-0">
+        <!-- Step 1 -->
+        <div class="flow-line flex flex-col items-start md:pr-8">
+          <div class="text-5xl md:text-6xl font-bold text-red/20 mb-4 leading-none">01</div>
+          <h3 class="text-lg font-bold text-cream mb-2">Tell us what you need</h3>
+          <p class="text-cream/50 text-sm leading-relaxed">Share your tech stack, team size, and timeline. We map the right engineers to your requirements.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="flow-line flex flex-col items-start md:px-8">
+          <div class="text-5xl md:text-6xl font-bold text-red/20 mb-4 leading-none">02</div>
+          <h3 class="text-lg font-bold text-cream mb-2">Meet your engineers</h3>
+          <p class="text-cream/50 text-sm leading-relaxed">Interview pre-vetted senior developers. You choose who joins your team. No compromises.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="flex flex-col items-start md:pl-8">
+          <div class="text-5xl md:text-6xl font-bold text-red/20 mb-4 leading-none">03</div>
+          <h3 class="text-lg font-bold text-cream mb-2">Start building</h3>
+          <p class="text-cream/50 text-sm leading-relaxed">Your new engineers integrate into your workflows from day one. Same tools, same rituals, same goals.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section id="work" class="fade-section relative py-24 border-t border-cream/10 scan-lines overflow-hidden">
+    <div class="max-w-6xl mx-auto px-6">
+      <p class="text-red text-xs font-bold tracking-widest uppercase mb-3">// Selected Work</p>
+      <h2 class="text-3xl md:text-4xl font-bold text-cream mb-12">Case studies<span class="text-red">.</span></h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <!-- Case 1 -->
+        <div class="card-glitch clip-card-alt bg-cream/5 border-t-2 border-red overflow-hidden group">
+          <div class="p-8">
+            <div class="text-red text-xs font-bold tracking-widest uppercase mb-2">Fintech</div>
+            <h3 class="text-xl font-bold text-cream mb-3">Vamonos</h3>
+            <p class="text-cream/50 text-sm leading-relaxed mb-4">Cross-border payments platform built with a lean team of senior engineers. Launched on time, scaled on demand.</p>
+            <span class="text-red text-xs font-bold tracking-widest group-hover:tracking-[0.2em] transition-all">VIEW CASE &rarr;</span>
+          </div>
+        </div>
+        <!-- Case 2 -->
+        <div class="card-glitch clip-card-alt bg-cream/5 border-t-2 border-red overflow-hidden group">
+          <div class="p-8">
+            <div class="text-red text-xs font-bold tracking-widest uppercase mb-2">AI / Enterprise</div>
+            <h3 class="text-xl font-bold text-cream mb-3">Potentia / Point B</h3>
+            <p class="text-cream/50 text-sm leading-relaxed mb-4">Enterprise AI platform development. Complex integrations, delivered by engineers who understood the domain from week one.</p>
+            <span class="text-red text-xs font-bold tracking-widest group-hover:tracking-[0.2em] transition-all">VIEW CASE &rarr;</span>
+          </div>
+        </div>
+        <!-- Case 3 -->
+        <div class="card-glitch clip-card-alt bg-cream/5 border-t-2 border-red overflow-hidden group">
+          <div class="p-8">
+            <div class="text-red text-xs font-bold tracking-widest uppercase mb-2">Healthtech</div>
+            <h3 class="text-xl font-bold text-cream mb-3">OkuFarma</h3>
+            <p class="text-cream/50 text-sm leading-relaxed mb-4">Digital pharmacy platform handling sensitive health data with compliance-first engineering and rapid iteration.</p>
+            <span class="text-red text-xs font-bold tracking-widest group-hover:tracking-[0.2em] transition-all">VIEW CASE &rarr;</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="fade-section relative py-24 border-t border-cream/10">
+    <div class="max-w-6xl mx-auto px-6 text-center">
+      <p class="text-red text-xs font-bold tracking-widest uppercase mb-4">// Let's Build</p>
+      <h2 class="text-3xl md:text-5xl font-bold text-cream mb-6">Ready to scale your team<span class="text-red">?</span></h2>
+      <p class="text-cream/50 text-lg mb-10 max-w-xl mx-auto">Get matched with senior engineers in days. Same timezone, no fluff, just great developers.</p>
+      <a href="mailto:sales@icalialabs.com" class="btn-glitch clip-btn bg-red text-cream px-10 py-4 font-bold tracking-wide hover:bg-red/90 inline-block text-sm">Book a Discovery Call</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact" class="border-t border-cream/10 py-16">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+        <div>
+          <div class="text-xl font-bold text-cream mb-4">ICALIA<span class="text-red">_</span>LABS</div>
+          <p class="text-cream/40 text-sm leading-relaxed">Nearshore engineering<br>that feels in-house.</p>
+        </div>
+        <div>
+          <div class="text-red text-xs font-bold tracking-widest uppercase mb-4">Locations</div>
+          <p class="text-cream/50 text-sm leading-relaxed">Austin, TX<br>Monterrey, MX</p>
+        </div>
+        <div>
+          <div class="text-red text-xs font-bold tracking-widest uppercase mb-4">Contact</div>
+          <p class="text-cream/50 text-sm leading-relaxed">
+            <a href="mailto:sales@icalialabs.com" class="hover:text-cream transition-colors">sales@icalialabs.com</a><br>
+            <a href="tel:+15124814113" class="hover:text-cream transition-colors">+1 512 481 4113</a>
+          </p>
+        </div>
+      </div>
+      <div class="mt-12 pt-8 border-t border-cream/10 flex flex-col md:flex-row justify-between items-center gap-4">
+        <p class="text-cream/20 text-xs">&copy; 2026 Icalia Labs. All rights reserved.</p>
+        <p class="text-cream/10 text-xs font-mono">sys.version // cyberpunk_0.1</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileMenu = document.getElementById('mobileMenu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('open');
+    });
+    // Close mobile menu on link click
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => mobileMenu.classList.remove('open'));
+    });
+
+    // Intersection Observer for fade-in sections
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          // Trigger bar fills within this section
+          entry.target.querySelectorAll('.bar-fill').forEach(bar => {
+            bar.classList.add('filled');
+          });
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-section').forEach(section => {
+      observer.observe(section);
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
