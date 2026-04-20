@@ -1,0 +1,30 @@
+# Icalia Labs
+
+> Nearshore staff augmentation firm with offices in Austin, TX and Monterrey, MX. Since 2010, we've helped US companies scale their engineering teams with senior, product-minded developers who integrate seamlessly and stay long-term.
+
+We embed senior engineers — not contractors — who work in your timezone, your codebase, your rituals. Same bar, different industries.
+
+## Core pages
+
+- [Home](https://www.icalialabs.com/): Company overview, services, client logos, approach to nearshore staff augmentation
+- [Case Studies](https://www.icalialabs.com/case-studies.html): Selected engagements — RTS (energy, acquired, 3x ROE), Point B, and other long-running squads
+- [Manifesto](https://www.icalialabs.com/manifesto.html): What we believe — Letter + Code architecture. Published principles for how we build.
+- [Contact](https://www.icalialabs.com/contact.html): Book a call, email sales@icalialabs.com, or phone +1 512 481 4113
+
+## Industries
+
+- [Fintech](https://www.icalialabs.com/industries/fintech.html): Engineers who speak flow of funds, sponsor banks, ledgers. Fluent in ACH/NACHA, FedNow, RTP, SPEI/PIX, Treasury Prime, Marqeta, Stripe Issuing, Bridge, stablecoins, SOC 2, PCI DSS.
+- [Healthtech](https://www.icalialabs.com/industries/healthtech.html): PHI-aware engineers who keep the sprint moving. HIPAA, BAA, HITRUST, 42 CFR Part 2, HL7 v2, FHIR R4, CCDA, SMART on FHIR, Epic, Cerner, Athenahealth, Redox, 837/835, ICD-10, prior auth.
+- [eCommerce & Retail](https://www.icalialabs.com/industries/retail.html): Engineers who've survived Black Friday and shipped on Monday. High-volume commerce, POS, payments, third-party integrations.
+- [Logistics & Supply Chain](https://www.icalialabs.com/industries/logistics.html): Engineers who ship for uptime, not for demos. Real-time tracking, routing, dispatch, Motive, Samsara, load boards, marketplaces, agentic ops, cross-border.
+
+## Legal
+
+- [Privacy Policy](https://www.icalialabs.com/privacy.html)
+- [Terms & Conditions](https://www.icalialabs.com/terms.html)
+
+## Elsewhere
+
+- GitHub: https://github.com/IcaliaLabs/ (5K+ cumulative stars across public OSS)
+- LinkedIn: https://linkedin.com/company/icalia-labs
+- Clutch: https://clutch.co/profile/icalia-labs
