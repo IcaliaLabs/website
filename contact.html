@@ -38,6 +38,9 @@
     .reveal-delay-1 { transition-delay: 0.1s; }
     .reveal-delay-2 { transition-delay: 0.2s; }
     input:focus, textarea:focus { box-shadow: 0 0 0 3px rgba(238, 58, 67, 0.08); }
+    @media (min-width: 768px) {
+      .industries-dropdown:hover .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    }
   </style>
 </head>
 <body class="font-body text-icalia-dark antialiased bg-icalia-warm">
@@ -49,9 +52,34 @@
         <span class="text-2xl font-display text-icalia-dark">Icalia<span class="text-icalia-red italic">Labs</span></span>
       </a>
       <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
-        <a href="/#why" class="hover:text-icalia-dark transition-colors">Why Icalia</a>
         <a href="case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
-        <a href="about.html" class="hover:text-icalia-dark transition-colors">About</a>
+        <div class="industries-dropdown relative">
+          <button class="text-icalia-dark flex items-center gap-1.5 py-5 -my-5">
+            Industries
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
+              <a href="industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Fintech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Compliance, transaction flows, cost of a bug at scale.</div>
+              </a>
+              <a href="industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Healthtech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, patient data, stakes of building in healthcare.</div>
+              </a>
+              <a href="industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
+              </a>
+              <a href="industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Real-time data, route optimization, systems that can't afford downtime.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="manifesto.html" class="hover:text-icalia-dark transition-colors">Manifesto</a>
         <a href="contact.html" class="text-icalia-dark">Contact</a>
         <a href="#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
       </div>
@@ -61,9 +89,20 @@
     </div>
     <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand/50 bg-icalia-warm">
       <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
-        <a href="/#why">Why Icalia</a>
         <a href="case-studies.html">Work</a>
-        <a href="about.html">About</a>
+        <div>
+          <button id="mobile-industries-toggle" class="flex items-center justify-between w-full text-icalia-dark">
+            <span>Industries</span>
+            <svg id="mobile-industries-chevron" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="mobile-industries" class="hidden mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="industries/fintech.html" class="block py-2">Fintech</a>
+            <a href="industries/healthtech.html" class="block py-2">Healthtech</a>
+            <a href="industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
+            <a href="industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+          </div>
+        </div>
+        <a href="manifesto.html">Manifesto</a>
         <a href="contact.html" class="text-icalia-dark">Contact</a>
         <a href="#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
       </div>
@@ -177,9 +216,8 @@
         <div class="md:col-span-2">
           <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Navigate</h4>
           <div class="flex flex-col gap-3">
-            <a href="/#why" class="text-sm text-white/40 hover:text-white transition-colors">Why Icalia</a>
             <a href="case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
-            <a href="about.html" class="text-sm text-white/40 hover:text-white transition-colors">About</a>
+            <a href="manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
             <a href="contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
           </div>
         </div>
@@ -222,6 +260,13 @@
     document.getElementById('mobile-menu-btn').addEventListener('click', function() {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });

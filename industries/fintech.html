@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fintech — Icalia Labs</title>
+  <meta name="description" content="Engineers who speak flow of funds, sponsor banks, and ledgers. Nearshore staff augmentation for fintech teams.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { 'icalia-red': '#E8453C', 'icalia-red-dark': '#C53B33', 'icalia-dark': '#1A1A22', 'icalia-navy': '#2D2F40', 'icalia-warm': '#FAF8F6', 'icalia-warm-2': '#F3F0EC', 'icalia-blush': '#FDECED', 'icalia-sand': '#E8E4DF' },
+      fontFamily: { 'display': ['"Instrument Serif"', 'Georgia', 'serif'], 'body': ['"DM Sans"', 'system-ui', 'sans-serif'] }
+    }}}
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    @media (min-width: 768px) {
+      .industries-dropdown:hover .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="font-body text-icalia-dark antialiased bg-icalia-warm">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+      <a href="../" class="flex items-center gap-1">
+        <span class="text-2xl font-display text-icalia-dark">Icalia<span class="text-icalia-red italic">Labs</span></span>
+      </a>
+      <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
+        <a href="../case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
+        <div class="industries-dropdown relative">
+          <button class="text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-expanded="false">
+            Industries
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
+              <a href="fintech.html" class="block p-3 rounded-lg bg-icalia-warm-2">
+                <div class="font-semibold text-icalia-dark">Fintech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Compliance, transaction flows, cost of a bug at scale.</div>
+              </a>
+              <a href="healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Healthtech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, patient data, stakes of building in healthcare.</div>
+              </a>
+              <a href="retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
+              </a>
+              <a href="logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Real-time data, route optimization, systems that can't afford downtime.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="../manifesto.html" class="hover:text-icalia-dark transition-colors">Manifesto</a>
+        <a href="../contact.html" class="hover:text-icalia-dark transition-colors">Contact</a>
+        <a href="../contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand/50 bg-icalia-warm">
+      <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
+        <a href="../case-studies.html">Work</a>
+        <div>
+          <button id="mobile-industries-toggle" class="flex items-center justify-between w-full text-icalia-dark" aria-expanded="false">
+            <span>Industries</span>
+            <svg id="mobile-industries-chevron" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="mobile-industries" class="hidden mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="fintech.html" class="block py-2 text-icalia-dark">Fintech</a>
+            <a href="healthtech.html" class="block py-2">Healthtech</a>
+            <a href="retail.html" class="block py-2">eCommerce &amp; Retail</a>
+            <a href="logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+          </div>
+        </div>
+        <a href="../manifesto.html">Manifesto</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="pt-36 pb-16 md:pt-52 md:pb-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto reveal">
+      <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-6">Industries / Fintech</p>
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight max-w-5xl">
+        Built for money<br>
+        movement,<br>
+        not just <span class="italic text-icalia-red">code.</span>
+      </h1>
+      <p class="mt-10 text-lg md:text-xl text-icalia-navy/60 max-w-3xl leading-relaxed">
+        Engineers who understand flow of funds, compliance, and the real cost of getting it wrong.
+      </p>
+      <div class="mt-12 flex flex-col sm:flex-row gap-4">
+        <a href="../contact.html#book" class="bg-icalia-dark text-icalia-warm px-8 py-4 rounded-full font-semibold hover:bg-icalia-navy transition-colors inline-flex items-center gap-2">
+          Find engineers for your team <span>→</span>
+        </a>
+        <a href="../contact.html" class="px-8 py-4 rounded-full font-semibold text-icalia-navy hover:text-icalia-dark transition-colors inline-flex items-center gap-2">
+          See how we onboard
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reality on the ground -->
+  <section class="py-16 md:py-24 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12 md:gap-16">
+        <div class="md:col-span-4 reveal">
+          <p class="text-xs font-semibold text-icalia-navy/40 tracking-widest uppercase">The reality on the ground</p>
+          <h2 class="mt-5 font-display text-4xl md:text-5xl leading-tight">What fintech teams are actually dealing with.</h2>
+        </div>
+        <div class="md:col-span-8 grid md:grid-cols-3 gap-6 reveal reveal-delay-1">
+          <div class="bg-icalia-warm-2 p-6 rounded-2xl">
+            <p class="font-semibold text-icalia-dark">Compliance velocity vs. product velocity.</p>
+            <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">Every feature touches audit scope. You need engineers who ship without forcing a SOC 2 rewrite.</p>
+          </div>
+          <div class="bg-icalia-warm-2 p-6 rounded-2xl">
+            <p class="font-semibold text-icalia-dark">Sponsor bank timelines.</p>
+            <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">BaaS contracts don't care about your sprint. Integration quality shows up in month-end reconciliation.</p>
+          </div>
+          <div class="bg-icalia-warm-2 p-6 rounded-2xl">
+            <p class="font-semibold text-icalia-dark">Ledger integrity at scale.</p>
+            <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">One off-by-one in reconciliation and finance spends the week in spreadsheets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where we plug in -->
+  <section class="py-16 md:py-24 px-6 lg:px-10 bg-icalia-warm-2 border-t border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12 md:gap-16 items-start">
+        <div class="md:col-span-5 reveal">
+          <p class="text-xs font-semibold text-icalia-navy/40 tracking-widest uppercase">Where we plug in</p>
+          <h2 class="mt-5 font-display text-4xl md:text-5xl leading-tight">Payments, ledgers, cards, rails.</h2>
+          <p class="mt-6 text-lg text-icalia-navy/70 leading-relaxed">Our engineers have shipped production code against sponsor banks, processors, card programs, and crypto rails. They understand double-entry, idempotency, and why a retry queue matters more than a feature flag.</p>
+        </div>
+        <div class="md:col-span-7 grid sm:grid-cols-2 gap-4 reveal reveal-delay-1">
+          <div class="bg-white p-6 rounded-2xl border border-icalia-sand/60">
+            <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">Payments &amp; rails</p>
+            <p class="mt-3 text-sm text-icalia-navy/70 leading-relaxed">ACH, wires, RTP, FedNow, local rails. Integrations with processors, not just webhooks.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-icalia-sand/60">
+            <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">Ledger &amp; reconciliation</p>
+            <p class="mt-3 text-sm text-icalia-navy/70 leading-relaxed">Double-entry accounting systems, journal engines, flow-of-funds modeling.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-icalia-sand/60">
+            <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">BaaS &amp; card programs</p>
+            <p class="mt-3 text-sm text-icalia-navy/70 leading-relaxed">Treasury Prime, Direct-to-bank, Lithic, Marqueta. Issuing, authorization flows, settlement.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-icalia-sand/60">
+            <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">Stablecoin rails</p>
+            <p class="mt-3 text-sm text-icalia-navy/70 leading-relaxed">USDC/USDT on/off-ramps, cross-border, custody, wallets. Treasury flows across on-chain and fiat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Industry fluency -->
+  <section class="py-16 md:py-24 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="reveal max-w-3xl">
+        <p class="text-xs font-semibold text-icalia-navy/40 tracking-widest uppercase">Industry fluency</p>
+        <h2 class="mt-5 font-display text-4xl md:text-5xl leading-tight">The language we've shipped against.</h2>
+        <p class="mt-5 text-lg text-icalia-navy/60 leading-relaxed">Not keywords on a résumé — systems, standards, and vendors our engineers have worked inside of in production.</p>
+      </div>
+      <div class="mt-12 grid md:grid-cols-2 lg:grid-cols-4 gap-10 reveal reveal-delay-1">
+        <div>
+          <p class="text-xs font-semibold text-icalia-dark uppercase tracking-widest mb-4">Rails &amp; programs</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-icalia-blush text-icalia-red-dark text-xs font-medium rounded-full">ACH / NACHA</span>
+            <span class="px-3 py-1.5 bg-icalia-blush text-icalia-red-dark text-xs font-medium rounded-full">FedNow</span>
+            <span class="px-3 py-1.5 bg-icalia-blush text-icalia-red-dark text-xs font-medium rounded-full">RTP</span>
+            <span class="px-3 py-1.5 bg-icalia-blush text-icalia-red-dark text-xs font-medium rounded-full">Wires</span>
+            <span class="px-3 py-1.5 bg-icalia-blush text-icalia-red-dark text-xs font-medium rounded-full">Visa / Mastercard</span>
+            <span class="px-3 py-1.5 bg-icalia-blush text-icalia-red-dark text-xs font-medium rounded-full">SPEI / PIX / LatAm</span>
+          </div>
+        </div>
+        <div>
+          <p class="text-xs font-semibold text-icalia-dark uppercase tracking-widest mb-4">Processors &amp; cores</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">Treasury Prime</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">Direct-to-bank</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">Spidr</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">Marqeta</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">Lithic</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">Bridge</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">Stripe Issuing</span>
+          </div>
+        </div>
+        <div>
+          <p class="text-xs font-semibold text-icalia-dark uppercase tracking-widest mb-4">Compliance</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">SOC 2</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">PCI-DSS</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">KYC / KYB</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">AML</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">Reg E / Reg CC</span>
+          </div>
+        </div>
+        <div>
+          <p class="text-xs font-semibold text-icalia-dark uppercase tracking-widest mb-4">Crypto &amp; stablecoins</p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">USDC / USDT</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">On/off-ramps</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">Cross-border</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">Custody</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">MPC wallets</span>
+            <span class="px-3 py-1.5 bg-icalia-sand/60 text-icalia-dark text-xs font-medium rounded-full">Sponsor banks</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What we've shipped -->
+  <section class="py-16 md:py-24 px-6 lg:px-10 border-t border-icalia-sand/50 bg-icalia-warm-2">
+    <div class="max-w-7xl mx-auto">
+      <div class="reveal max-w-3xl">
+        <p class="text-xs font-semibold text-icalia-navy/40 tracking-widest uppercase">What we've shipped</p>
+        <h2 class="mt-5 font-display text-4xl md:text-5xl leading-tight">Real work. Real stakes.</h2>
+      </div>
+      <div class="mt-12 grid md:grid-cols-3 gap-6 reveal reveal-delay-1">
+        <div class="bg-white p-8 rounded-2xl border border-icalia-sand/60">
+          <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">Payments platform</p>
+          <p class="mt-4 font-display text-2xl leading-tight">Cut settlement time by 60% across three sponsor banks.</p>
+          <p class="mt-4 text-sm text-icalia-navy/50 italic">Case study in progress</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-icalia-sand/60">
+          <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">Card program</p>
+          <p class="mt-4 font-display text-2xl leading-tight">Launched a consumer debit program on Marqeta in 14 weeks.</p>
+          <p class="mt-4 text-sm text-icalia-navy/50 italic">Case study in progress</p>
+        </div>
+        <div class="bg-white p-8 rounded-2xl border border-icalia-sand/60">
+          <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">Ledger modernization</p>
+          <p class="mt-4 font-display text-2xl leading-tight">Rebuilt a legacy journal engine to handle 10× volume.</p>
+          <p class="mt-4 text-sm text-icalia-navy/50 italic">Case study in progress</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Roles we staff most -->
+  <section class="py-16 md:py-24 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12 md:gap-16">
+        <div class="md:col-span-4 reveal">
+          <p class="text-xs font-semibold text-icalia-navy/40 tracking-widest uppercase">Roles we staff most</p>
+          <h2 class="mt-5 font-display text-4xl md:text-5xl leading-tight">The profiles fintech teams ask us for.</h2>
+        </div>
+        <div class="md:col-span-8 grid sm:grid-cols-2 gap-4 reveal reveal-delay-1">
+          <div class="p-6 border border-icalia-sand rounded-2xl">
+            <p class="font-semibold text-icalia-dark">Ledger &amp; backend engineers</p>
+            <p class="mt-2 text-sm text-icalia-navy/60">Double-entry, idempotency, reconciliation at scale.</p>
+          </div>
+          <div class="p-6 border border-icalia-sand rounded-2xl">
+            <p class="font-semibold text-icalia-dark">Payments integration devs</p>
+            <p class="mt-2 text-sm text-icalia-navy/60">Processor APIs, webhooks, retry queues, sandbox-to-prod parity.</p>
+          </div>
+          <div class="p-6 border border-icalia-sand rounded-2xl">
+            <p class="font-semibold text-icalia-dark">Fraud &amp; risk engineers</p>
+            <p class="mt-2 text-sm text-icalia-navy/60">Rules engines, signal ingestion, decisioning pipelines.</p>
+          </div>
+          <div class="p-6 border border-icalia-sand rounded-2xl">
+            <p class="font-semibold text-icalia-dark">Core banking integration leads</p>
+            <p class="mt-2 text-sm text-icalia-navy/60">FIS / Fiserv, file-based workflows, ISO 20022 migrations.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The bar we hold -->
+  <section class="py-16 md:py-24 px-6 lg:px-10 bg-icalia-dark">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4 reveal">
+          <p class="text-xs font-semibold text-icalia-red tracking-widest uppercase">The bar we hold</p>
+          <h2 class="mt-5 font-display text-4xl md:text-5xl leading-tight text-white">Fintech-grade defaults.</h2>
+        </div>
+        <div class="md:col-span-8 reveal reveal-delay-1 space-y-6">
+          <div class="flex gap-5 items-start">
+            <span class="text-icalia-red font-display text-3xl leading-none principle-num">01</span>
+            <div>
+              <p class="font-semibold text-white">SOC 2–aware from day one.</p>
+              <p class="mt-1.5 text-white/60 text-sm leading-relaxed">Audit-trail logging, least-privilege access, evidence-ready change management.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-start">
+            <span class="text-icalia-red font-display text-3xl leading-none principle-num">02</span>
+            <div>
+              <p class="font-semibold text-white">PCI scope-limitation by default.</p>
+              <p class="mt-1.5 text-white/60 text-sm leading-relaxed">Cardholder data never touches systems that don't need it. Tokenization-first thinking.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-start">
+            <span class="text-icalia-red font-display text-3xl leading-none principle-num">03</span>
+            <div>
+              <p class="font-semibold text-white">Ledger-safe defaults.</p>
+              <p class="mt-1.5 text-white/60 text-sm leading-relaxed">Idempotency keys, retry semantics, and immutable journals are our starting point.</p>
+            </div>
+          </div>
+          <div class="flex gap-5 items-start">
+            <span class="text-icalia-red font-display text-3xl leading-none principle-num">04</span>
+            <div>
+              <p class="font-semibold text-white">BAA/NDA-ready onboarding.</p>
+              <p class="mt-1.5 text-white/60 text-sm leading-relaxed">Legal, compliance, and background-check processes move in parallel with engineering matching.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA band -->
+  <section class="py-20 md:py-28 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-5xl mx-auto text-center reveal">
+      <h2 class="font-display text-4xl md:text-6xl leading-tight">Need engineers who <span class="italic text-icalia-red">already speak fintech?</span></h2>
+      <p class="mt-8 text-lg text-icalia-navy/60 max-w-2xl mx-auto">Embed senior engineers into your team — people who understand your stack, your regulators, and your sponsor bank.</p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="../contact.html#book" class="bg-icalia-dark text-icalia-warm px-8 py-4 rounded-full font-semibold hover:bg-icalia-navy transition-colors inline-flex items-center justify-center gap-2">
+          Find engineers for your team <span>→</span>
+        </a>
+        <a href="../contact.html" class="px-8 py-4 rounded-full font-semibold text-icalia-navy hover:text-icalia-dark transition-colors inline-flex items-center justify-center gap-2">
+          See how we onboard
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-icalia-dark py-16 px-6 lg:px-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <span class="text-2xl font-display text-white">Icalia<span class="text-icalia-red italic">Labs</span></span>
+          <p class="mt-4 text-sm text-white/30 leading-relaxed max-w-xs">Nearshore staff augmentation for companies that care about quality. Monterrey, MX + Austin, TX. Since 2011.</p>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Navigate</h4>
+          <div class="flex flex-col gap-3">
+            <a href="../case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
+            <a href="fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Industries</a>
+            <a href="../manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
+            <a href="../contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div class="md:col-span-3">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Offices</h4>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-sm text-white/50 font-medium">Austin, Texas</p>
+              <p class="text-sm text-white/30">801 Barton Springs Rd, 78704</p>
+            </div>
+            <div>
+              <p class="text-sm text-white/50 font-medium">Monterrey, Mexico</p>
+              <p class="text-sm text-white/30">Eugenio Garza Sada #3820</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-3">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Get in Touch</h4>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:sales@icalialabs.com" class="text-sm text-white/40 hover:text-white transition-colors">sales@icalialabs.com</a>
+            <a href="tel:+15124814113" class="text-sm text-white/40 hover:text-white transition-colors">+1 512 481 4113</a>
+          </div>
+          <div class="flex gap-4 mt-6">
+            <a href="https://linkedin.com/company/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-white/5">
+        <p class="text-xs text-white/20">&copy; 2025 Icalia Labs. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>
