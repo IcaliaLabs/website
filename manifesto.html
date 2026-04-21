@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manifesto — Icalia Labs</title>
+  <meta name="description" content="A manifesto for builders. Since 2011, Icalia Labs has closed the gap between idea and impact — empowering engineers, designers, and founders with AI-augmented craft.">
+  <link rel="canonical" href="https://icalialabs.com/manifesto.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://icalialabs.com/manifesto.html">
+  <meta property="og:title" content="Manifesto — Icalia Labs">
+  <meta property="og:description" content="A manifesto for builders. Since 2011, Icalia Labs has closed the gap between idea and impact.">
+  <meta property="og:image" content="https://icalialabs.com/assets/logo-white.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Manifesto — Icalia Labs">
+  <meta name="twitter:description" content="A manifesto for builders. Since 2011, Icalia Labs has closed the gap between idea and impact.">
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Manifesto — Icalia Labs",
+    "description": "A manifesto for builders. Since 2011, Icalia Labs has closed the gap between idea and impact — empowering engineers, designers, and founders with AI-augmented craft.",
+    "url": "https://icalialabs.com/manifesto.html",
+    "author": {
+      "@type": "Organization",
+      "name": "Icalia Labs",
+      "url": "https://icalialabs.com"
+    },
+    "datePublished": "2010-01-01",
+    "image": "https://icalialabs.com/assets/logo.svg"
+  }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'icalia-red': '#E8453C',
+            'icalia-red-dark': '#C53B33',
+            'icalia-dark': '#1A1A22',
+            'icalia-navy': '#2D2F40',
+            'icalia-warm': '#FAF8F6',
+            'icalia-warm-2': '#F3F0EC',
+            'icalia-blush': '#FDECED',
+            'icalia-sand': '#E8E4DF',
+          },
+          fontFamily: {
+            'display': ['"Instrument Serif"', 'Georgia', 'serif'],
+            'body': ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .principle-num { font-feature-settings: "tnum"; }
+    @media (min-width: 768px) {
+      .industries-dropdown:hover .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="font-body text-icalia-dark antialiased bg-icalia-warm">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-1">
+        <img src="assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
+      </a>
+      <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
+        <a href="case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
+        <div class="industries-dropdown relative">
+          <button class="text-icalia-dark flex items-center gap-1.5 py-5 -my-5">
+            Industries
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
+              <a href="industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Fintech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Compliance, transaction flows, cost of a bug at scale.</div>
+              </a>
+              <a href="industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Healthtech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, patient data, stakes of building in healthcare.</div>
+              </a>
+              <a href="industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
+              </a>
+              <a href="industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Real-time data, route optimization, systems that can't afford downtime.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="manifesto.html" class="text-icalia-dark">Manifesto</a>
+        <a href="contact.html" class="hover:text-icalia-dark transition-colors">Contact</a>
+        <a href="contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand/50 bg-icalia-warm">
+      <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
+        <a href="case-studies.html">Work</a>
+        <div>
+          <button id="mobile-industries-toggle" class="flex items-center justify-between w-full text-icalia-dark">
+            <span>Industries</span>
+            <svg id="mobile-industries-chevron" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="mobile-industries" class="hidden mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="industries/fintech.html" class="block py-2">Fintech</a>
+            <a href="industries/healthtech.html" class="block py-2">Healthtech</a>
+            <a href="industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
+            <a href="industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+          </div>
+        </div>
+        <a href="manifesto.html" class="text-icalia-dark">Manifesto</a>
+        <a href="contact.html">Contact</a>
+        <a href="contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero — The Opening Statement -->
+  <section class="pt-36 pb-16 md:pt-52 md:pb-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto reveal">
+      <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-6">Manifesto</p>
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight max-w-5xl">
+        There is a gap between<br>
+        idea and <span class="italic text-icalia-red">impact.</span><br>
+        We exist to close it.
+      </h1>
+      <p class="mt-10 text-lg md:text-xl text-icalia-navy/50 max-w-2xl leading-relaxed">
+        A manifesto for builders — from Icalia Labs. Since 2011.
+      </p>
+    </div>
+  </section>
+
+  <!-- The Letter -->
+  <section class="py-16 md:py-28 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12 md:gap-16">
+        <div class="md:col-span-3 reveal">
+          <p class="text-xs font-semibold text-icalia-navy/40 tracking-widest uppercase">The Letter</p>
+          <p class="mt-4 text-sm text-icalia-navy/40 font-medium">Monterrey, Mexico</p>
+          <p class="text-sm text-icalia-navy/40 font-medium">2011 →</p>
+          <div class="mt-8 h-px w-12 bg-icalia-red"></div>
+        </div>
+        <div class="md:col-span-9 reveal reveal-delay-1">
+          <div class="space-y-7 text-lg md:text-xl text-icalia-navy/70 leading-relaxed max-w-3xl">
+            <p class="text-icalia-dark font-medium">
+              There is a gap between idea and impact — not of ambition, but of clarity. Too many products fail because the path from vision to delivery was never properly defined. We exist to close that gap. We are hackers, designers, strategists, and builders, and we believe anyone with a vision deserves a real shot at turning it into something the world can use. Technology is the vehicle; the craft is what makes it land.
+            </p>
+            <p>
+              We empower the people doing the work. We trust the agent and delegate the process — AI augments the builder, it doesn't replace them. Humans own judgment, taste, and strategy; machines carry the weight of execution. We don't review code line by line; we extend testing based on outcomes, not behaviors. The goal is always bigger, better output from the people who know what they're building and why.
+            </p>
+            <p>
+              We believe in a world where every product achieves the impact it was meant to have — where knowledge is shared, not gatekept, and where the next generation of builders stands on what we leave behind. That world is productive, abundant, and ready for what comes next. We are Icalia Labs.
+            </p>
+          </div>
+          <div class="mt-12 flex items-center gap-4">
+            <div class="h-px w-12 bg-icalia-navy/20"></div>
+            <p class="font-display italic text-xl text-icalia-dark">Co-founders, Icalia Labs</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Still Here — longevity band -->
+  <section class="py-20 md:py-28 px-6 lg:px-10 bg-icalia-dark text-white">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12 items-center">
+        <div class="md:col-span-7 reveal">
+          <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-5">Still Here</p>
+          <h2 class="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.02] tracking-tight">
+            Founded 2011. <span class="italic">Still shipping.</span>
+          </h2>
+          <p class="mt-6 text-white/50 text-lg leading-relaxed max-w-xl">
+            There's never been a better time in history to build software and technology — and we've spent more than a decade earning the right to keep building it.
+          </p>
+        </div>
+        <div class="md:col-span-5 reveal reveal-delay-1">
+          <div class="grid grid-cols-3 gap-6 border-t border-white/10 pt-10">
+            <div>
+              <div class="font-display text-4xl md:text-5xl text-white">14<span class="text-icalia-red">+</span></div>
+              <p class="text-xs text-white/40 mt-2 font-medium leading-snug">Years<br>in operation</p>
+            </div>
+            <div>
+              <div class="font-display text-4xl md:text-5xl text-white">5<span class="text-icalia-red">+</span></div>
+              <p class="text-xs text-white/40 mt-2 font-medium leading-snug">Yr avg<br>engineer tenure</p>
+            </div>
+            <div>
+              <div class="font-display text-4xl md:text-5xl text-white">100<span class="text-icalia-red">+</span></div>
+              <p class="text-xs text-white/40 mt-2 font-medium leading-snug">Hackers<br>engaged</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Code — 10 Principles -->
+  <section class="py-24 md:py-36 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mb-16 md:mb-24 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-5">The Code</p>
+        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.02] tracking-tight">
+          Ten principles we <span class="italic">live by.</span>
+        </h2>
+        <p class="mt-6 text-icalia-navy/50 text-lg leading-relaxed">
+          Not aspirational posters. Operating code — used in hiring, delivery, and the conversations we accept or decline.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-x-16 gap-y-12 md:gap-y-16">
+
+        <div class="reveal">
+          <div class="flex items-start gap-6">
+            <span class="principle-num font-display text-4xl md:text-5xl text-icalia-red/25 leading-none select-none shrink-0">01</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl text-icalia-dark leading-tight mb-3">There is a gap between idea and impact.</h3>
+              <p class="text-icalia-navy/55 leading-relaxed">Too many products fail not because the vision was wrong, but because the path from concept to execution was never clear. We exist to close that gap.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <div class="flex items-start gap-6">
+            <span class="principle-num font-display text-4xl md:text-5xl text-icalia-red/25 leading-none select-none shrink-0">02</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl text-icalia-dark leading-tight mb-3">Anyone with a vision deserves a real shot at building it.</h3>
+              <p class="text-icalia-navy/55 leading-relaxed">Technology is how ideas reach the world. It shouldn't be gated by complexity or luck.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="flex items-start gap-6">
+            <span class="principle-num font-display text-4xl md:text-5xl text-icalia-red/25 leading-none select-none shrink-0">03</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl text-icalia-dark leading-tight mb-3">We are hackers and designers, strategists and builders.</h3>
+              <p class="text-icalia-navy/55 leading-relaxed">We don't separate thinking from doing. We convert visions into living products.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <div class="flex items-start gap-6">
+            <span class="principle-num font-display text-4xl md:text-5xl text-icalia-red/25 leading-none select-none shrink-0">04</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl text-icalia-dark leading-tight mb-3">The people behind the craft matter most.</h3>
+              <p class="text-icalia-navy/55 leading-relaxed">Engineers, designers, founders, problem solvers — we empower them with better tools, sharper processes, and relentless support.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="flex items-start gap-6">
+            <span class="principle-num font-display text-4xl md:text-5xl text-icalia-red/25 leading-none select-none shrink-0">05</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl text-icalia-dark leading-tight mb-3">We trust the agent. We delegate the process.</h3>
+              <p class="text-icalia-navy/55 leading-relaxed">AI is not a replacement; it is an augmentation of the builder. The best among us wield super intelligence as a natural extension of their craft.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <div class="flex items-start gap-6">
+            <span class="principle-num font-display text-4xl md:text-5xl text-icalia-red/25 leading-none select-none shrink-0">06</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl text-icalia-dark leading-tight mb-3">Humans own judgment, taste, and strategy.</h3>
+              <p class="text-icalia-navy/55 leading-relaxed">Machines accelerate execution. Humans decide what matters, what's right, and where to go next.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="flex items-start gap-6">
+            <span class="principle-num font-display text-4xl md:text-5xl text-icalia-red/25 leading-none select-none shrink-0">07</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl text-icalia-dark leading-tight mb-3">We extend testing based on outcomes, not behaviors.</h3>
+              <p class="text-icalia-navy/55 leading-relaxed">We don't review code line by line. The goal is bigger output, not tighter surveillance. We measure what ships, not what was typed.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <div class="flex items-start gap-6">
+            <span class="principle-num font-display text-4xl md:text-5xl text-icalia-red/25 leading-none select-none shrink-0">08</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl text-icalia-dark leading-tight mb-3">We build software in a modern, cohesive, collaborative way.</h3>
+              <p class="text-icalia-navy/55 leading-relaxed">Old models don't care about outcomes, processes, or people. We do.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal">
+          <div class="flex items-start gap-6">
+            <span class="principle-num font-display text-4xl md:text-5xl text-icalia-red/25 leading-none select-none shrink-0">09</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl text-icalia-dark leading-tight mb-3">Knowledge is a legacy.</h3>
+              <p class="text-icalia-navy/55 leading-relaxed">We teach the complexities of the intangible so that more people can imagine — and build — at the right scale.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <div class="flex items-start gap-6">
+            <span class="principle-num font-display text-4xl md:text-5xl text-icalia-red/25 leading-none select-none shrink-0">10</span>
+            <div>
+              <h3 class="font-display text-2xl md:text-3xl text-icalia-dark leading-tight mb-3">A world where every product achieves its intended impact is a productive world.</h3>
+              <p class="text-icalia-navy/55 leading-relaxed">That's the world we're building toward. We are Icalia Labs.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- What We Refuse + Language stance -->
+  <section class="py-24 md:py-32 px-6 lg:px-10 bg-icalia-blush/40 border-y border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12 md:gap-16">
+        <div class="md:col-span-6 reveal">
+          <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-5">What We Refuse</p>
+          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] tracking-tight text-icalia-dark">
+            We are not a body shop.
+          </h2>
+          <div class="mt-8 space-y-4 text-lg text-icalia-navy/65 leading-relaxed">
+            <p>We don't rent bodies. We don't chase the cheapest labor on the map. We refuse to be called outsourcing, and we refuse to speak about people as though they were interchangeable parts.</p>
+            <p>Third-world labor arbitrage isn't our pitch. It never was.</p>
+          </div>
+        </div>
+        <div class="md:col-span-6 reveal reveal-delay-1">
+          <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-5">Our Language</p>
+          <h2 class="font-display text-3xl md:text-4xl lg:text-5xl leading-[1.05] tracking-tight text-icalia-dark">
+            Not <span class="italic line-through decoration-icalia-red/60 decoration-2">resources.</span>
+          </h2>
+          <p class="mt-8 text-icalia-navy/65 text-lg leading-relaxed">
+            Talent. Engineers. Builders. Problem-solvers. Hackers. Designers. Teammates. The words we choose shape the relationship — and ours are chosen on purpose.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-2">
+            <span class="text-sm font-medium text-icalia-dark bg-white border border-icalia-sand px-4 py-2 rounded-full">Talent</span>
+            <span class="text-sm font-medium text-icalia-dark bg-white border border-icalia-sand px-4 py-2 rounded-full">Engineers</span>
+            <span class="text-sm font-medium text-icalia-dark bg-white border border-icalia-sand px-4 py-2 rounded-full">Builders</span>
+            <span class="text-sm font-medium text-icalia-dark bg-white border border-icalia-sand px-4 py-2 rounded-full">Problem-solvers</span>
+            <span class="text-sm font-medium text-icalia-dark bg-white border border-icalia-sand px-4 py-2 rounded-full">Hackers</span>
+            <span class="text-sm font-medium text-icalia-dark bg-white border border-icalia-sand px-4 py-2 rounded-full">Designers</span>
+            <span class="text-sm font-medium text-icalia-dark bg-white border border-icalia-sand px-4 py-2 rounded-full">Teammates</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Makes a 10x Engineer — At Icalia -->
+  <section class="py-24 md:py-36 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-3xl mb-16 md:mb-20 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-5">The 10x Engineer</p>
+        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.02] tracking-tight">
+          Not the Silicon Valley<br>myth. <span class="italic">Our definition.</span>
+        </h2>
+      </div>
+
+      <div class="reveal reveal-delay-1">
+        <div class="bg-icalia-warm-2 border border-icalia-sand/50 rounded-3xl p-10 md:p-16 max-w-5xl">
+          <p class="font-display italic text-2xl md:text-3xl lg:text-4xl text-icalia-dark leading-[1.15]">
+            "A 10x Engineer is someone who helps others produce more — and takes the time to support them. In the age of agents and generalists, the multiplier isn't individual output. It's what you build in conjunction with others. That's how impact compounds. That's how legacies get made."
+          </p>
+        </div>
+      </div>
+
+      <!--div class="grid md:grid-cols-3 gap-8 md:gap-10 mt-16 md:mt-20">
+
+        <div class="reveal">
+          <p class="text-xs font-bold text-icalia-red tracking-widest uppercase mb-5">Who we hire for</p>
+          <h3 class="font-display text-2xl md:text-3xl mb-5 leading-tight">The traits we select on.</h3>
+          <ul class="space-y-3 text-icalia-navy/60">
+            <li class="flex items-start gap-3"><span class="text-icalia-red mt-1 shrink-0">→</span>Agency</li>
+            <li class="flex items-start gap-3"><span class="text-icalia-red mt-1 shrink-0">→</span>Ownership</li>
+            <li class="flex items-start gap-3"><span class="text-icalia-red mt-1 shrink-0">→</span>Contribution over compliance</li>
+            <li class="flex items-start gap-3"><span class="text-icalia-red mt-1 shrink-0">→</span>Judgment and taste</li>
+            <li class="flex items-start gap-3"><span class="text-icalia-red mt-1 shrink-0">→</span>Experience that shows up in decisions</li>
+            <li class="flex items-start gap-3"><span class="text-icalia-red mt-1 shrink-0">→</span>Building instinct</li>
+          </ul>
+          <div class="mt-8 pt-8 border-t border-icalia-sand">
+            <p class="text-xs font-bold text-icalia-navy/30 tracking-widest uppercase mb-3">Who we pass on</p>
+            <p class="text-sm text-icalia-navy/55 leading-relaxed italic">Passive ticket-takers. Hero-mode loners. Anyone who thinks "done" means "merged."</p>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-1">
+          <p class="text-xs font-bold text-icalia-red tracking-widest uppercase mb-5">The bar</p>
+          <h3 class="font-display text-2xl md:text-3xl mb-5 leading-tight">Hard numbers. No averages.</h3>
+          <div class="space-y-8">
+            <div>
+              <div class="font-display text-5xl md:text-6xl text-icalia-dark">&lt;0.4<span class="text-icalia-red">%</span></div>
+              <p class="text-sm text-icalia-navy/50 mt-2 leading-relaxed">Applicant acceptance rate</p>
+            </div>
+            <div>
+              <div class="font-display text-5xl md:text-6xl text-icalia-dark">5<span class="text-icalia-red">+</span> yrs</div>
+              <p class="text-sm text-icalia-navy/50 mt-2 leading-relaxed">Minimum experience level</p>
+            </div>
+            <div>
+              <div class="font-display text-5xl md:text-6xl text-icalia-dark">3–5 yrs</div>
+              <p class="text-sm text-icalia-navy/50 mt-2 leading-relaxed">Expected tenure at Icalia</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal reveal-delay-2">
+          <p class="text-xs font-bold text-icalia-red tracking-widest uppercase mb-5">How we build them</p>
+          <h3 class="font-display text-2xl md:text-3xl mb-5 leading-tight">We select. Then we empower.</h3>
+          <div class="space-y-5 text-icalia-navy/60 leading-relaxed">
+            <p>We don't train seniors. We have the criteria and the taste to recognize them — and the discipline to say no when they don't meet it.</p>
+            <p>Once in, we give them the tools, the clients, and the air to operate at their ceiling. AI-augmented workflows. Real ownership over outcomes. Room to wield super intelligence as a natural extension of their craft.</p>
+            <p class="text-icalia-dark font-medium">The multiplier isn't us. It's what happens when we get out of their way.</p>
+          </div>
+        </div>
+
+      </!--div-->
+    </div>
+  </section>
+
+  <!-- How We Work -->
+  <section class="py-24 md:py-32 px-6 lg:px-10 bg-icalia-warm-2 border-y border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mb-14 md:mb-20 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-5">How We Work</p>
+        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.02] tracking-tight">
+          Operating beliefs, <span class="italic">in practice.</span>
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 md:gap-10">
+        <div class="reveal bg-icalia-warm border border-icalia-sand/50 rounded-2xl p-10">
+          <p class="text-xs font-bold text-icalia-red tracking-widest uppercase mb-5">01 — Geography</p>
+          <h3 class="font-display text-2xl md:text-3xl mb-4 leading-tight">Same timezone, same energy.</h3>
+          <p class="text-icalia-navy/60 leading-relaxed">The unfair advantage of looking south of the border. Cultural affinity, US business hours, real-time collaboration — not overnight handoffs across ten time zones.</p>
+        </div>
+        <div class="reveal reveal-delay-1 bg-icalia-warm border border-icalia-sand/50 rounded-2xl p-10">
+          <p class="text-xs font-bold text-icalia-red tracking-widest uppercase mb-5">02 — Relationship</p>
+          <h3 class="font-display text-2xl md:text-3xl mb-4 leading-tight">Clients are partners.</h3>
+          <p class="text-icalia-navy/60 leading-relaxed">Our clients own a good part of the relationship with the engineers we place. We support both sides along the way — not as a middleman, but as an invested partner in the work.</p>
+        </div>
+        <div class="reveal bg-icalia-warm border border-icalia-sand/50 rounded-2xl p-10">
+          <p class="text-xs font-bold text-icalia-red tracking-widest uppercase mb-5">03 — Communication</p>
+          <h3 class="font-display text-2xl md:text-3xl mb-4 leading-tight">Written-first. Direct. Async by default.</h3>
+          <p class="text-icalia-navy/60 leading-relaxed">We write things down. We say what we mean. We frame conversations around outcomes, not activity. Every meeting earns its spot on the calendar.</p>
+        </div>
+        <div class="reveal reveal-delay-1 bg-icalia-warm border border-icalia-sand/50 rounded-2xl p-10">
+          <p class="text-xs font-bold text-icalia-red tracking-widest uppercase mb-5">04 — Horizon</p>
+          <h3 class="font-display text-2xl md:text-3xl mb-4 leading-tight">Built for years, not gigs.</h3>
+          <p class="text-icalia-navy/60 leading-relaxed">Every engagement is designed for compounding value — not just billable hours. Engineers stay for years because the work is worth staying for. Clients stay because the engineers do.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The People -->
+  <section class="py-24 md:py-36 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mb-14 md:mb-20 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-5">The People</p>
+        <h2 class="font-display text-4xl md:text-5xl lg:text-6xl leading-[1.02] tracking-tight">
+          The team behind <span class="italic">the manifesto.</span>
+        </h2>
+        <p class="mt-6 text-icalia-navy/50 text-lg leading-relaxed">
+          Each role owns a clear domain. Prospects see a team of leaders, each accountable for a function. Our titles reveal capability — not company size.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+
+        <!-- Co-Founder & CEO -->
+        <div class="reveal">
+          <!-- TODO: photo — Co-Founder & CEO -->
+          <div class="aspect-[4/5] bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl flex items-center justify-center overflow-hidden">
+            <svg class="w-10 h-10 text-icalia-navy/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <p class="mt-4 text-xs text-icalia-navy/30 font-medium tracking-wider uppercase">Eduardo Lopez De Leon</p>
+          <h3 class="text-base font-bold text-icalia-dark mt-1">Co-Founder &amp; CEO</h3>
+          <p class="text-sm text-icalia-navy/50 mt-2 leading-relaxed">Strategy, brand presence, and partnership development. Startup and Corp experience. YC Founder. </p>
+        </div>
+
+        <!-- Co-Founder & CTO -->
+        <div class="reveal reveal-delay-1">
+          <!-- TODO: photo — Co-Founder & CTO -->
+          <div class="aspect-[4/5] bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl flex items-center justify-center overflow-hidden">
+            <svg class="w-10 h-10 text-icalia-navy/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <p class="mt-4 text-xs text-icalia-navy/30 font-medium tracking-wider uppercase">Abraham Kuri</p>
+          <h3 class="text-base font-bold text-icalia-dark mt-1">Co-Founder &amp; CTO</h3>
+          <p class="text-sm text-icalia-navy/50 mt-2 leading-relaxed">Head of AI &amp; Technology. Owns the agentic methodology and engineering capability. YC Founder.</p>
+        </div>
+
+        <!-- Board Member -->
+        <div class="reveal reveal-delay-2">
+          <!-- TODO: photo — Board Member -->
+          <div class="aspect-[4/5] bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl flex items-center justify-center overflow-hidden">
+            <svg class="w-10 h-10 text-icalia-navy/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <p class="mt-4 text-xs text-icalia-navy/30 font-medium tracking-wider uppercase">Carlos Medellin</p>
+          <h3 class="text-base font-bold text-icalia-dark mt-1">Board Member</h3>
+          <p class="text-sm text-icalia-navy/50 mt-2 leading-relaxed">Governance, outside perspective, and long-term financial sustainability. Fintech & YC Founder.</p>
+        </div>
+
+        <!-- Head of Engineering & Infrastructure -->
+        <div class="reveal">
+          <!-- TODO: photo — Head of Engineering & Infrastructure -->
+          <div class="aspect-[4/5] bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl flex items-center justify-center overflow-hidden">
+            <svg class="w-10 h-10 text-icalia-navy/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <p class="mt-4 text-xs text-icalia-navy/30 font-medium tracking-wider uppercase">Senyi Bojorquez</p>
+          <h3 class="text-base font-bold text-icalia-dark mt-1">Head of Delivery &amp; Infrastructure</h3>
+          <p class="text-sm text-icalia-navy/50 mt-2 leading-relaxed">Delivery quality across every engagement. One standard, universally applied. Trained by Thoughtbot.</p>
+        </div>
+
+        <!-- Head of Partnerships -->
+        <div class="reveal reveal-delay-1">
+          <!-- TODO: photo — Head of Partnerships -->
+          <div class="aspect-[4/5] bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl flex items-center justify-center overflow-hidden">
+            <svg class="w-10 h-10 text-icalia-navy/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <p class="mt-4 text-xs text-icalia-navy/30 font-medium tracking-wider uppercase">Name TBD</p>
+          <h3 class="text-base font-bold text-icalia-dark mt-1">Head of Partnerships</h3>
+          <p class="text-sm text-icalia-navy/50 mt-2 leading-relaxed">New-business pipeline, qualified conversations, and signed agreements.</p>
+        </div>
+
+        <!-- Head of Client Operations -->
+        <div class="reveal reveal-delay-2">
+          <!-- TODO: photo — Head of Client Operations -->
+          <div class="aspect-[4/5] bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl flex items-center justify-center overflow-hidden">
+            <svg class="w-10 h-10 text-icalia-navy/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <p class="mt-4 text-xs text-icalia-navy/30 font-medium tracking-wider uppercase">Name TBD</p>
+          <h3 class="text-base font-bold text-icalia-dark mt-1">Head of Client Operations</h3>
+          <p class="text-sm text-icalia-navy/50 mt-2 leading-relaxed">Retention, expansion, and the voice of the client inside the company.</p>
+        </div>
+
+        <!-- Head of Talent Acquisition -->
+        <div class="reveal">
+          <!-- TODO: photo — Head of Talent Acquisition -->
+          <div class="aspect-[4/5] bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl flex items-center justify-center overflow-hidden">
+            <svg class="w-10 h-10 text-icalia-navy/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <p class="mt-4 text-xs text-icalia-navy/30 font-medium tracking-wider uppercase">Name TBD</p>
+          <h3 class="text-base font-bold text-icalia-dark mt-1">Head of Talent Acquisition</h3>
+          <p class="text-sm text-icalia-navy/50 mt-2 leading-relaxed">The warm pool, the screening bar, and the speed that makes placements feel instant.</p>
+        </div>
+
+        <!-- Head of Finance -->
+        <div class="reveal reveal-delay-1">
+          <!-- TODO: photo — Head of Finance -->
+          <div class="aspect-[4/5] bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl flex items-center justify-center overflow-hidden">
+            <svg class="w-10 h-10 text-icalia-navy/15" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"/></svg>
+          </div>
+          <p class="mt-4 text-xs text-icalia-navy/30 font-medium tracking-wider uppercase">Name TBD</p>
+          <h3 class="text-base font-bold text-icalia-dark mt-1">Head of Finance</h3>
+          <p class="text-sm text-icalia-navy/50 mt-2 leading-relaxed">Financial health, legal &amp; compliance, and the paperwork that never slows a deal.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Proof Strip — credentials, compact -->
+  <section class="py-16 md:py-20 px-6 lg:px-10 bg-icalia-dark text-white">
+    <div class="max-w-7xl mx-auto">
+      <p class="text-xs font-semibold text-white/30 tracking-widest uppercase mb-10 reveal">Recognized for the work</p>
+      <div class="grid md:grid-cols-3 gap-10 md:gap-16">
+        <div class="reveal">
+          <p class="font-display text-2xl md:text-3xl text-white leading-tight">Leading AI in LatAm</p>
+          <p class="mt-3 text-sm text-white/40 leading-relaxed">Clutch recognition — recognized alongside the region's top AI development firms.</p>
+        </div>
+        <div class="reveal reveal-delay-1">
+          <p class="font-display text-2xl md:text-3xl text-white leading-tight">Started by YC founders</p>
+          <p class="mt-3 text-sm text-white/40 leading-relaxed">Supporting technical teams with the Silicon Valley mindset — from founders who've been there.</p>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <p class="font-display text-2xl md:text-3xl text-white leading-tight">> 5,000<span class="text-icalia-red">+</span> Github stars</p>
+          <p class="mt-3 text-sm text-white/40 leading-relaxed">Open Source contributions, real code in the wild, engineers who ship where everyone can see.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Closing Invitation -->
+  <section class="py-32 md:py-44 px-6 lg:px-10">
+    <div class="max-w-4xl mx-auto text-center reveal">
+      <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-8">An Invitation</p>
+      <h2 class="font-display text-4xl md:text-6xl lg:text-7xl leading-[1.02] tracking-tight text-icalia-dark">
+        This isn't <span class="italic">for everyone.</span>
+      </h2>
+      <p class="mt-10 text-xl md:text-2xl text-icalia-navy/65 leading-relaxed max-w-2xl mx-auto">
+        If you're a technical founder, a senior engineer, or a leader who believes the craft still matters — write to us.
+      </p>
+      <div class="mt-12">
+        <a href="contact.html" class="inline-flex items-center gap-3 text-icalia-dark font-display italic text-2xl md:text-3xl border-b-2 border-icalia-red pb-2 hover:gap-5 transition-all">
+          Start the conversation
+          <span class="text-icalia-red">→</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-icalia-dark py-16 px-6 lg:px-10 border-t border-white/5">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <img src="assets/logo-white.svg" alt="Icalia Labs" class="h-7 w-auto">
+          <p class="mt-4 text-sm text-white/30 leading-relaxed max-w-xs">Nearshore staff augmentation for companies that care about quality. Monterrey, MX + Austin, TX. Since 2011.</p>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Navigate</h4>
+          <div class="flex flex-col gap-3">
+            <a href="case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
+            <a href="manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
+            <a href="contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Industries</h4>
+          <div class="flex flex-col gap-3">
+            <a href="industries/fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Fintech</a>
+            <a href="industries/healthtech.html" class="text-sm text-white/40 hover:text-white transition-colors">Healthtech</a>
+            <a href="industries/retail.html" class="text-sm text-white/40 hover:text-white transition-colors">eCommerce</a>
+            <a href="industries/logistics.html" class="text-sm text-white/40 hover:text-white transition-colors">Logistics</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Offices</h4>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-sm text-white/50 font-medium">Austin, Texas</p>
+              <p class="text-sm text-white/30">801 Barton Springs Rd, 78704</p>
+            </div>
+            <div>
+              <p class="text-sm text-white/50 font-medium">Monterrey, Mexico</p>
+              <p class="text-sm text-white/30">Eugenio Garza Sada #3820</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Get in Touch</h4>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:sales@icalialabs.com" class="text-sm text-white/40 hover:text-white transition-colors">sales@icalialabs.com</a>
+            <a href="tel:+15124814113" class="text-sm text-white/40 hover:text-white transition-colors">+1 512 481 4113</a>
+          </div>
+          <div class="flex gap-4 mt-6">
+            <a href="https://linkedin.com/company/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://clutch.co/profile/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="Clutch">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
+            </a>
+            <a href="https://github.com/IcaliaLabs/" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <p class="text-xs text-white/20">&copy; 2025 Icalia Labs. All rights reserved.</p>
+        <div class="flex gap-6 text-xs text-white/30">
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

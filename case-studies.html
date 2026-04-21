@@ -5,6 +5,30 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Case Studies — Icalia Labs</title>
   <meta name="description" content="See how Icalia Labs has helped companies in healthtech, fintech, and enterprise build great software products.">
+  <link rel="canonical" href="https://icalialabs.com/case-studies.html">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://icalialabs.com/case-studies.html">
+  <meta property="og:title" content="Case Studies — Icalia Labs">
+  <meta property="og:description" content="See how Icalia Labs has helped companies in healthtech, fintech, and enterprise build great software products.">
+  <meta property="og:image" content="https://icalialabs.com/assets/logo-white.svg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Case Studies — Icalia Labs">
+  <meta name="twitter:description" content="See how Icalia Labs has helped companies in healthtech, fintech, and enterprise build great software products.">
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Case Studies — Icalia Labs",
+    "description": "Real-world examples of how Icalia Labs engineers have delivered solutions for fintech, healthtech, eCommerce, and logistics companies.",
+    "url": "https://icalialabs.com/case-studies.html",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "Icalia Labs",
+      "url": "https://icalialabs.com"
+    }
+  }
+  </script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
@@ -14,8 +38,8 @@
       theme: {
         extend: {
           colors: {
-            'icalia-red': '#EE3A43',
-            'icalia-red-dark': '#C7232C',
+            'icalia-red': '#E8453C',
+            'icalia-red-dark': '#C53B33',
             'icalia-dark': '#1A1A22',
             'icalia-navy': '#2D2F40',
             'icalia-warm': '#FAF8F6',
@@ -37,6 +61,9 @@
     .reveal.visible { opacity: 1; transform: translateY(0); }
     .reveal-delay-1 { transition-delay: 0.1s; }
     .reveal-delay-2 { transition-delay: 0.2s; }
+    @media (min-width: 768px) {
+      .industries-dropdown:hover .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    }
   </style>
 </head>
 <body class="font-body text-icalia-dark antialiased bg-icalia-warm">
@@ -45,12 +72,37 @@
   <nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50">
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
       <a href="/" class="flex items-center gap-1">
-        <span class="text-2xl font-display text-icalia-dark">Icalia<span class="text-icalia-red italic">Labs</span></span>
+        <img src="assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
       </a>
       <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
-        <a href="/#why" class="hover:text-icalia-dark transition-colors">Why Icalia</a>
         <a href="case-studies.html" class="text-icalia-dark">Work</a>
-        <a href="about.html" class="hover:text-icalia-dark transition-colors">About</a>
+        <div class="industries-dropdown relative">
+          <button class="text-icalia-dark flex items-center gap-1.5 py-5 -my-5">
+            Industries
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
+              <a href="industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Fintech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Compliance, transaction flows, cost of a bug at scale.</div>
+              </a>
+              <a href="industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Healthtech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, patient data, stakes of building in healthcare.</div>
+              </a>
+              <a href="industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
+              </a>
+              <a href="industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Real-time data, route optimization, systems that can't afford downtime.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="manifesto.html" class="hover:text-icalia-dark transition-colors">Manifesto</a>
         <a href="contact.html" class="hover:text-icalia-dark transition-colors">Contact</a>
         <a href="contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
       </div>
@@ -60,9 +112,20 @@
     </div>
     <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand/50 bg-icalia-warm">
       <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
-        <a href="/#why">Why Icalia</a>
         <a href="case-studies.html" class="text-icalia-dark">Work</a>
-        <a href="about.html">About</a>
+        <div>
+          <button id="mobile-industries-toggle" class="flex items-center justify-between w-full text-icalia-dark">
+            <span>Industries</span>
+            <svg id="mobile-industries-chevron" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="mobile-industries" class="hidden mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="industries/fintech.html" class="block py-2">Fintech</a>
+            <a href="industries/healthtech.html" class="block py-2">Healthtech</a>
+            <a href="industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
+            <a href="industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+          </div>
+        </div>
+        <a href="manifesto.html">Manifesto</a>
         <a href="contact.html">Contact</a>
         <a href="contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
       </div>
@@ -74,11 +137,11 @@
     <div class="max-w-7xl mx-auto reveal">
       <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">Selected Work</p>
       <h1 class="font-display text-5xl md:text-7xl leading-[0.95] tracking-tight max-w-3xl">
-        Work that speaks<br>
-        <span class="italic text-icalia-red">for itself.</span>
+        Teams we&rsquo;ve built.<br>
+        <span class="italic text-icalia-red">Outcomes they shipped.</span>
       </h1>
-      <p class="mt-6 text-lg text-icalia-navy/50 max-w-lg">
-        From healthtech to fintech, here's how our engineers have helped teams ship products that matter.
+      <p class="mt-6 text-lg text-icalia-navy/50 max-w-xl">
+        Each engagement below is a squad we embedded, scaled, or operated alongside a US client. Different industries, different stacks — same standard.
       </p>
     </div>
   </section>
@@ -87,111 +150,128 @@
   <section class="pb-24 md:pb-36 px-6 lg:px-10">
     <div class="max-w-7xl mx-auto space-y-8">
 
-      <!-- Row 1: Large featured -->
+      <!-- Row 1: RTS (featured dark) + Point B (light) — both with quotes -->
       <div class="grid md:grid-cols-12 gap-8">
+        <!-- RTS -->
         <div class="md:col-span-7 group reveal">
-          <div class="bg-icalia-dark rounded-2xl p-10 md:p-14 min-h-[400px] flex flex-col justify-between relative overflow-hidden">
+          <div class="bg-icalia-dark rounded-2xl p-10 md:p-14 min-h-[460px] flex flex-col justify-between relative overflow-hidden">
             <div class="absolute top-0 right-0 w-72 h-72 bg-icalia-red/5 rounded-full -translate-y-1/3 translate-x-1/3"></div>
-            <div>
-              <span class="text-xs font-semibold text-icalia-red bg-icalia-red/10 px-3 py-1.5 rounded-full">Fintech</span>
+            <div class="flex items-start justify-between gap-4 relative">
+              <span class="text-xs font-semibold text-icalia-red bg-icalia-red/10 px-3 py-1.5 rounded-full">Energy &middot; Staff Augmentation</span>
+              <span class="text-xs text-white/30 font-medium">5+ years &middot; 6 engineers + design</span>
             </div>
-            <div>
-              <h2 class="font-display text-4xl md:text-5xl text-white mb-3 group-hover:text-icalia-red transition-colors italic">Vamonos</h2>
-              <p class="text-white/40 max-w-md leading-relaxed">Digitizing the Hispanic mortgage market with a strategic development solution that bridges traditional lending and an underserved community.</p>
-              <div class="flex flex-wrap gap-2 mt-5">
-                <span class="text-xs text-white/25 border border-white/10 px-3 py-1 rounded-full">React</span>
-                <span class="text-xs text-white/25 border border-white/10 px-3 py-1 rounded-full">Node.js</span>
-                <span class="text-xs text-white/25 border border-white/10 px-3 py-1 rounded-full">Fintech</span>
+            <div class="relative">
+              <h2 class="font-display text-4xl md:text-5xl text-white mb-4 group-hover:text-icalia-red transition-colors italic">RTS <span class="text-white/30 text-2xl not-italic font-body font-normal">(acquired)</span></h2>
+              <p class="text-white/60 max-w-lg leading-relaxed">A six-person senior squad and design bench based in Monterrey — one flight from the client&rsquo;s Central Texas plants and leadership. Five years partnered to modernize operations for an oil-and-gas operator. Acquired with a 3x ROE on technology investment and a 5/5 NPS.</p>
+              <blockquote class="mt-6 border-l-2 border-icalia-red/60 pl-4 max-w-lg">
+                <p class="italic text-white/70 text-sm leading-relaxed">&ldquo;They&rsquo;re very passionate about&hellip; continuously improving the way their developers work.&rdquo;</p>
+                <footer class="mt-2 text-xs text-white/40 font-medium">Joseph Saliba &middot; former COO, RTS</footer>
+              </blockquote>
+              <div class="flex flex-wrap gap-2 mt-6">
+                <span class="text-xs font-semibold text-icalia-red bg-icalia-red/10 px-3 py-1 rounded-full">3x ROE</span>
+                <span class="text-xs font-semibold text-icalia-red bg-icalia-red/10 px-3 py-1 rounded-full">NPS 5/5</span>
+                <span class="text-xs text-white/30 border border-white/10 px-3 py-1 rounded-full">Ruby on Rails</span>
+                <span class="text-xs text-white/30 border border-white/10 px-3 py-1 rounded-full">JavaScript</span>
+                <span class="text-xs text-white/30 border border-white/10 px-3 py-1 rounded-full">Docker</span>
               </div>
             </div>
           </div>
         </div>
+        <!-- Point B -->
         <div class="md:col-span-5 group reveal reveal-delay-1">
-          <div class="bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl p-10 md:p-14 min-h-[400px] flex flex-col justify-between relative overflow-hidden">
+          <div class="bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl p-10 md:p-12 min-h-[460px] flex flex-col justify-between relative overflow-hidden">
             <div class="absolute top-0 right-0 w-48 h-48 bg-icalia-red/3 rounded-full -translate-y-1/3 translate-x-1/3"></div>
-            <div>
-              <span class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full">AI / Enterprise</span>
+            <div class="flex items-start justify-between gap-4 relative flex-wrap">
+              <span class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full">Professional Services &middot; Staff Aug</span>
+              <span class="text-xs text-icalia-navy/40 font-medium">5+ years &middot; 8 engineers</span>
             </div>
-            <div>
-              <h2 class="font-display text-4xl text-icalia-dark mb-3 group-hover:text-icalia-red transition-colors italic">Potentia</h2>
-              <p class="text-icalia-navy/40 max-w-sm leading-relaxed">Making the AI revolution accessible and visual for any business line at Point B.</p>
+            <div class="relative">
+              <h2 class="font-display text-4xl text-icalia-dark mb-3 group-hover:text-icalia-red transition-colors italic">Point B</h2>
+              <p class="text-icalia-navy/50 leading-relaxed text-sm">Six senior engineers plus two front-end specialists, organized as product squads across multiple consultancy tracks. Enabled Point B to launch software services on top of existing client engagements — generating <span class="font-semibold text-icalia-dark">40%+ value-add revenue</span>.</p>
+              <blockquote class="mt-5 border-l-2 border-icalia-red pl-4">
+                <p class="italic text-icalia-navy/70 text-sm leading-relaxed">&ldquo;They&rsquo;re world-class software engineers. Icalia Labs&rsquo; rituals and processes are incredible to me.&rdquo;</p>
+                <footer class="mt-2 text-xs text-icalia-navy/40 font-medium">Ray Castro &middot; Managing Principal, Point B</footer>
+              </blockquote>
               <div class="flex flex-wrap gap-2 mt-5">
-                <span class="text-xs text-icalia-navy/30 border border-icalia-sand px-3 py-1 rounded-full">AI/ML</span>
-                <span class="text-xs text-icalia-navy/30 border border-icalia-sand px-3 py-1 rounded-full">Python</span>
-                <span class="text-xs text-icalia-navy/30 border border-icalia-sand px-3 py-1 rounded-full">Enterprise</span>
+                <span class="text-xs text-icalia-navy/40 border border-icalia-sand px-3 py-1 rounded-full">Ruby on Rails</span>
+                <span class="text-xs text-icalia-navy/40 border border-icalia-sand px-3 py-1 rounded-full">JavaScript</span>
+                <span class="text-xs text-icalia-navy/40 border border-icalia-sand px-3 py-1 rounded-full">Docker</span>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Row 2: Two equal -->
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="group reveal">
-          <div class="bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl p-10 md:p-12 min-h-[320px] flex flex-col justify-between relative overflow-hidden">
-            <div class="absolute bottom-0 left-0 w-48 h-48 bg-icalia-red/3 rounded-full translate-y-1/3 -translate-x-1/3"></div>
-            <div>
-              <span class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full">Healthtech</span>
-            </div>
-            <div>
-              <h2 class="font-display text-3xl text-icalia-dark mb-3 group-hover:text-icalia-red transition-colors italic">OkuFarma</h2>
-              <p class="text-icalia-navy/40 max-w-sm leading-relaxed">Expanding pharmaceutical access through a custom platform connecting pharmacies with patients across Mexico.</p>
-              <div class="flex flex-wrap gap-2 mt-5">
-                <span class="text-xs text-icalia-navy/30 border border-icalia-sand px-3 py-1 rounded-full">Ruby on Rails</span>
-                <span class="text-xs text-icalia-navy/30 border border-icalia-sand px-3 py-1 rounded-full">Healthcare</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="group reveal reveal-delay-1">
-          <div class="bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl p-10 md:p-12 min-h-[320px] flex flex-col justify-between relative overflow-hidden">
-            <div class="absolute top-0 right-0 w-40 h-40 bg-icalia-red/3 rounded-full -translate-y-1/3 translate-x-1/3"></div>
-            <div>
-              <span class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full">Edtech</span>
-            </div>
-            <div>
-              <h2 class="font-display text-3xl text-icalia-dark mb-3 group-hover:text-icalia-red transition-colors italic">Yourney</h2>
-              <p class="text-icalia-navy/40 max-w-sm leading-relaxed">Creative software design for personalized education management. Adapting to individual learning paths with data-driven insights.</p>
-              <div class="flex flex-wrap gap-2 mt-5">
-                <span class="text-xs text-icalia-navy/30 border border-icalia-sand px-3 py-1 rounded-full">React</span>
-                <span class="text-xs text-icalia-navy/30 border border-icalia-sand px-3 py-1 rounded-full">Education</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Row 3: Reversed large -->
+      <!-- Row 2: Apply Digital (light) + Everlance (dark) — scale & acquisition stories -->
       <div class="grid md:grid-cols-12 gap-8">
+        <!-- Apply Digital -->
         <div class="md:col-span-5 group reveal">
-          <div class="bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl p-10 md:p-14 min-h-[360px] flex flex-col justify-between relative overflow-hidden">
-            <div class="absolute bottom-0 right-0 w-40 h-40 bg-icalia-red/3 rounded-full translate-y-1/3 translate-x-1/3"></div>
-            <div>
-              <span class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full">SaaS</span>
+          <div class="bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl p-10 md:p-12 min-h-[400px] flex flex-col justify-between relative overflow-hidden">
+            <div class="absolute bottom-0 left-0 w-48 h-48 bg-icalia-red/3 rounded-full translate-y-1/3 -translate-x-1/3"></div>
+            <div class="flex items-start justify-between gap-4 relative flex-wrap">
+              <span class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full">Professional Services &middot; BOT</span>
+              <span class="text-xs text-icalia-navy/40 font-medium">2+ years &middot; 15 people</span>
             </div>
-            <div>
-              <h2 class="font-display text-3xl text-icalia-dark mb-3 group-hover:text-icalia-red transition-colors italic">GolfIn</h2>
-              <p class="text-icalia-navy/40 max-w-sm leading-relaxed">A management system for golf courses that drives customer retention through smart booking and engagement.</p>
+            <div class="relative">
+              <h2 class="font-display text-3xl md:text-4xl text-icalia-dark mb-3 group-hover:text-icalia-red transition-colors italic">Apply Digital</h2>
+              <p class="text-icalia-navy/50 leading-relaxed text-sm">Canadian consultancy&rsquo;s first technical footprint in Latin America. Built a 15-person cross-functional team — engineering, DevOps, and design — across Mexico and Colombia. A Build / Operate / Transfer engagement that soft-landed Apply Digital into LatAm at US quality.</p>
+              <div class="mt-5 inline-flex items-baseline gap-2 bg-white/60 border border-icalia-sand rounded-xl px-4 py-2.5">
+                <span class="font-display text-2xl text-icalia-red">6&ndash;12 mo</span>
+                <span class="text-xs text-icalia-navy/50 font-medium">to stand up the entire team</span>
+              </div>
               <div class="flex flex-wrap gap-2 mt-5">
-                <span class="text-xs text-icalia-navy/30 border border-icalia-sand px-3 py-1 rounded-full">Full Stack</span>
-                <span class="text-xs text-icalia-navy/30 border border-icalia-sand px-3 py-1 rounded-full">CRM</span>
+                <span class="text-xs text-icalia-navy/40 border border-icalia-sand px-3 py-1 rounded-full">Full-stack</span>
+                <span class="text-xs text-icalia-navy/40 border border-icalia-sand px-3 py-1 rounded-full">Mobile</span>
+                <span class="text-xs text-icalia-navy/40 border border-icalia-sand px-3 py-1 rounded-full">DevOps</span>
+                <span class="text-xs text-icalia-navy/40 border border-icalia-sand px-3 py-1 rounded-full">Design</span>
               </div>
             </div>
           </div>
         </div>
+        <!-- Everlance -->
         <div class="md:col-span-7 group reveal reveal-delay-1">
-          <div class="bg-icalia-dark rounded-2xl p-10 md:p-14 min-h-[360px] flex flex-col justify-between relative overflow-hidden">
+          <div class="bg-icalia-dark rounded-2xl p-10 md:p-14 min-h-[400px] flex flex-col justify-between relative overflow-hidden">
             <div class="absolute bottom-0 left-0 w-64 h-64 bg-icalia-red/5 rounded-full translate-y-1/3 -translate-x-1/3"></div>
-            <div>
-              <span class="text-xs font-semibold text-icalia-red bg-icalia-red/10 px-3 py-1.5 rounded-full">Fintech</span>
+            <div class="flex items-start justify-between gap-4 relative flex-wrap">
+              <span class="text-xs font-semibold text-icalia-red bg-icalia-red/10 px-3 py-1.5 rounded-full">Consumer &middot; Placements</span>
+              <span class="text-xs text-white/30 font-medium">5+ years &middot; 8 engineers</span>
             </div>
-            <div>
-              <h2 class="font-display text-4xl md:text-5xl text-white mb-3 group-hover:text-icalia-red transition-colors italic">VC Platform</h2>
-              <p class="text-white/40 max-w-md leading-relaxed">An efficient venture capital portfolio management platform. Streamlined reporting, analytics, and deal tracking for investment professionals.</p>
-              <div class="flex flex-wrap gap-2 mt-5">
-                <span class="text-xs text-white/25 border border-white/10 px-3 py-1 rounded-full">React</span>
-                <span class="text-xs text-white/25 border border-white/10 px-3 py-1 rounded-full">Analytics</span>
-                <span class="text-xs text-white/25 border border-white/10 px-3 py-1 rounded-full">Finance</span>
+            <div class="relative">
+              <h2 class="font-display text-4xl md:text-5xl text-white mb-3 group-hover:text-icalia-red transition-colors italic">Everlance <span class="text-white/30 text-2xl not-italic font-body font-normal">(acquired)</span></h2>
+              <p class="text-white/60 max-w-lg leading-relaxed">A San Francisco-based consumer startup needed senior engineering capacity outside the world&rsquo;s most competitive tech hub. We placed eight senior engineers across backend and native-mobile roles — diversifying the talent strategy and delivering same-quality hires at <span class="font-semibold text-white">60% cost savings</span>. Every engineer stayed through the acquisition.</p>
+              <div class="flex flex-wrap gap-2 mt-6">
+                <span class="text-xs font-semibold text-icalia-red bg-icalia-red/10 px-3 py-1 rounded-full">60% savings</span>
+                <span class="text-xs font-semibold text-icalia-red bg-icalia-red/10 px-3 py-1 rounded-full">100% retention thru acq.</span>
+                <span class="text-xs text-white/30 border border-white/10 px-3 py-1 rounded-full">Ruby on Rails</span>
+                <span class="text-xs text-white/30 border border-white/10 px-3 py-1 rounded-full">Native Mobile</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 3: EMR Bear (centered single card) — healthcare compliance story -->
+      <div class="grid md:grid-cols-12 gap-8">
+        <div class="md:col-span-8 md:col-start-3 group reveal">
+          <div class="bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl p-10 md:p-14 min-h-[340px] flex flex-col justify-between relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-56 h-56 bg-icalia-red/3 rounded-full -translate-y-1/3 translate-x-1/3"></div>
+            <div class="flex items-start justify-between gap-4 relative flex-wrap">
+              <span class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full">Healthcare &middot; Placements</span>
+              <span class="text-xs text-icalia-navy/40 font-medium">4+ years &middot; 4 specialized engineers</span>
+            </div>
+            <div class="relative">
+              <h2 class="font-display text-3xl md:text-4xl text-icalia-dark mb-3 group-hover:text-icalia-red transition-colors italic">EMR Bear <span class="text-icalia-navy/30 text-xl not-italic font-body font-normal">(acquired)</span></h2>
+              <p class="text-icalia-navy/50 leading-relaxed text-sm max-w-2xl">A New Mexico healthcare company in a highly regulated space needed senior engineers who understood both the stack and the industry. We placed four specialized Ruby on Rails engineers directly into their team. Company kept shipping through the acquisition &mdash; with first critical features in production within four weeks.</p>
+              <div class="flex flex-wrap items-center gap-4 mt-6">
+                <div class="inline-flex items-baseline gap-2 bg-white/60 border border-icalia-sand rounded-xl px-4 py-2.5">
+                  <span class="font-display text-2xl text-icalia-red">4 weeks</span>
+                  <span class="text-xs text-icalia-navy/50 font-medium">to ship critical features</span>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                  <span class="text-xs text-icalia-navy/40 border border-icalia-sand px-3 py-1 rounded-full">Ruby on Rails</span>
+                  <span class="text-xs text-icalia-navy/40 border border-icalia-sand px-3 py-1 rounded-full">TypeScript</span>
+                  <span class="text-xs text-icalia-navy/40 border border-icalia-sand px-3 py-1 rounded-full">Healthcare</span>
+                </div>
               </div>
             </div>
           </div>
@@ -221,19 +301,27 @@
     <div class="max-w-7xl mx-auto">
       <div class="grid md:grid-cols-12 gap-12">
         <div class="md:col-span-4">
-          <span class="text-2xl font-display text-white">Icalia<span class="text-icalia-red italic">Labs</span></span>
+          <img src="assets/logo-white.svg" alt="Icalia Labs" class="h-7 w-auto">
           <p class="mt-4 text-sm text-white/30 leading-relaxed max-w-xs">Nearshore staff augmentation for companies that care about quality. Monterrey, MX + Austin, TX. Since 2010.</p>
         </div>
         <div class="md:col-span-2">
           <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Navigate</h4>
           <div class="flex flex-col gap-3">
-            <a href="/#why" class="text-sm text-white/40 hover:text-white transition-colors">Why Icalia</a>
             <a href="case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
-            <a href="about.html" class="text-sm text-white/40 hover:text-white transition-colors">About</a>
+            <a href="manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
             <a href="contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
           </div>
         </div>
-        <div class="md:col-span-3">
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Industries</h4>
+          <div class="flex flex-col gap-3">
+            <a href="industries/fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Fintech</a>
+            <a href="industries/healthtech.html" class="text-sm text-white/40 hover:text-white transition-colors">Healthtech</a>
+            <a href="industries/retail.html" class="text-sm text-white/40 hover:text-white transition-colors">eCommerce</a>
+            <a href="industries/logistics.html" class="text-sm text-white/40 hover:text-white transition-colors">Logistics</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
           <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Offices</h4>
           <div class="flex flex-col gap-4">
             <div>
@@ -246,7 +334,7 @@
             </div>
           </div>
         </div>
-        <div class="md:col-span-3">
+        <div class="md:col-span-2">
           <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Get in Touch</h4>
           <div class="flex flex-col gap-3">
             <a href="mailto:sales@icalialabs.com" class="text-sm text-white/40 hover:text-white transition-colors">sales@icalialabs.com</a>
@@ -259,11 +347,18 @@
             <a href="https://clutch.co/profile/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="Clutch">
               <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
             </a>
+            <a href="https://github.com/IcaliaLabs/" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
           </div>
         </div>
       </div>
-      <div class="mt-16 pt-8 border-t border-white/5">
+      <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <p class="text-xs text-white/20">&copy; 2025 Icalia Labs. All rights reserved.</p>
+        <div class="flex gap-6 text-xs text-white/30">
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+        </div>
       </div>
     </div>
   </footer>
@@ -272,6 +367,13 @@
     document.getElementById('mobile-menu-btn').addEventListener('click', function() {
       document.getElementById('mobile-menu').classList.toggle('hidden');
     });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
     }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
