@@ -14,7 +14,43 @@
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Icalia Labs — Nearshore Staff Augmentation">
   <meta name="twitter:description" content="Scale your engineering team with senior nearshore developers. Same timezone, product-minded engineers who stay.">
-  <!-- JSON-LD Structured Data -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'icalia-red': '#E8453C',
+            'icalia-red-dark': '#C53B33',
+            'icalia-dark': '#1A1A22',
+            'icalia-navy': '#2D2F40',
+            'icalia-warm': '#FAF8F6',
+            'icalia-warm-2': '#F3F0EC',
+            'icalia-blush': '#FDECED',
+            'icalia-sand': '#E8E4DF',
+          },
+          fontFamily: {
+            'display': ['"Instrument Serif"', 'Georgia', 'serif'],
+            'body': ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    @media (min-width: 768px) {
+      .industries-dropdown:hover .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -50,38 +86,7 @@
     "areaServed": ["US", "MX", "CA"]
   }
   </script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-  <script src="https://cdn.tailwindcss.com"></script>
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            'icalia-red': '#E8453C',
-            'icalia-red-dark': '#C53B33',
-            'icalia-dark': '#1A1A22',
-            'icalia-navy': '#2D2F40',
-            'icalia-warm': '#FAF8F6',
-            'icalia-warm-2': '#F3F0EC',
-            'icalia-blush': '#FDECED',
-            'icalia-sand': '#E8E4DF',
-          },
-          fontFamily: {
-            'display': ['"Instrument Serif"', 'Georgia', 'serif'],
-            'body': ['"DM Sans"', 'system-ui', 'sans-serif'],
-          },
-        }
-      }
-    }
-  </script>
   <style>
-    html { scroll-behavior: smooth; }
-    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-    .reveal-delay-1 { transition-delay: 0.1s; }
-    .reveal-delay-2 { transition-delay: 0.2s; }
     .reveal-delay-3 { transition-delay: 0.3s; }
     .stat-number { font-variant-numeric: tabular-nums; }
     @keyframes float-subtle {
@@ -90,9 +95,6 @@
     }
     .float-anim { animation: float-subtle 6s ease-in-out infinite; }
     .float-anim-delay { animation: float-subtle 6s ease-in-out 2s infinite; }
-    @media (min-width: 768px) {
-      .industries-dropdown:hover .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
-    }
   </style>
 </head>
 <body class="font-body text-icalia-dark antialiased bg-icalia-warm">
@@ -104,7 +106,7 @@
         <img src="assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
       </a>
       <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
-        <a href="case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
+        <a href="/case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
         <div class="industries-dropdown relative">
           <button class="text-icalia-dark flex items-center gap-1.5 py-5 -my-5">
             Industries
@@ -112,28 +114,28 @@
           </button>
           <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
             <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
-              <a href="industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+              <a href="/industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
                 <div class="font-semibold text-icalia-dark">Fintech</div>
                 <div class="text-xs text-icalia-navy/60 mt-0.5">Compliance, transaction flows, cost of a bug at scale.</div>
               </a>
-              <a href="industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+              <a href="/industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
                 <div class="font-semibold text-icalia-dark">Healthtech</div>
                 <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, patient data, stakes of building in healthcare.</div>
               </a>
-              <a href="industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+              <a href="/industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
                 <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
                 <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
               </a>
-              <a href="industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+              <a href="/industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
                 <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
                 <div class="text-xs text-icalia-navy/60 mt-0.5">Real-time data, route optimization, systems that can't afford downtime.</div>
               </a>
             </div>
           </div>
         </div>
-        <a href="manifesto.html" class="hover:text-icalia-dark transition-colors">Manifesto</a>
-        <a href="contact.html" class="hover:text-icalia-dark transition-colors">Contact</a>
-        <a href="contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
+        <a href="/manifesto.html" class="hover:text-icalia-dark transition-colors">Manifesto</a>
+        <a href="/contact.html" class="hover:text-icalia-dark transition-colors">Contact</a>
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
       </div>
       <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Open menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -143,25 +145,26 @@
     </div>
     <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand/50 bg-icalia-warm">
       <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
-        <a href="case-studies.html">Work</a>
+        <a href="/case-studies.html">Work</a>
         <div>
           <button id="mobile-industries-toggle" class="flex items-center justify-between w-full text-icalia-dark">
             <span>Industries</span>
             <svg id="mobile-industries-chevron" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div id="mobile-industries" class="hidden mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
-            <a href="industries/fintech.html" class="block py-2">Fintech</a>
-            <a href="industries/healthtech.html" class="block py-2">Healthtech</a>
-            <a href="industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
-            <a href="industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+            <a href="/industries/fintech.html" class="block py-2">Fintech</a>
+            <a href="/industries/healthtech.html" class="block py-2">Healthtech</a>
+            <a href="/industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
+            <a href="/industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
           </div>
         </div>
-        <a href="manifesto.html">Manifesto</a>
-        <a href="contact.html">Contact</a>
-        <a href="contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
+        <a href="/manifesto.html">Manifesto</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
       </div>
     </div>
   </nav>
+
 
   <!-- Hero -->
   <section class="pt-36 pb-12 md:pt-48 md:pb-20 px-6 lg:px-10 overflow-hidden">
@@ -732,7 +735,7 @@
     </div>
   </section>
 
-  <!-- Footer -->
+    <!-- Footer -->
   <footer class="bg-icalia-dark py-16 px-6 lg:px-10">
     <div class="max-w-7xl mx-auto">
       <div class="grid md:grid-cols-12 gap-12">
@@ -813,6 +816,7 @@
       </div>
     </div>
   </footer>
+
 
   <script>
     // Mobile menu
