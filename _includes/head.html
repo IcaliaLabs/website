@@ -3,14 +3,17 @@
   <title>{{ title }}</title>
   <meta name="description" content="{{ description }}">
   <link rel="canonical" href="https://icalialabs.com{{ canonicalPath }}">
+  <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://icalialabs.com{{ canonicalPath }}">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ ogDescription or description }}">
-  <meta property="og:image" content="https://icalialabs.com{{ ogImage or '/assets/logo-white.svg' }}">
+  <meta property="og:image" content="https://icalialabs.com{{ ogImage or '/assets/og-image.png' }}">
   <meta name="twitter:card" content="{{ twitterCard or 'summary' }}">
   <meta name="twitter:title" content="{{ title }}">
   <meta name="twitter:description" content="{{ twitterDescription or ogDescription or description }}">
+  <meta name="twitter:image" content="https://icalialabs.com{{ ogImage or '/assets/og-image.png' }}">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
