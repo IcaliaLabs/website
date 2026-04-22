@@ -70,68 +70,7 @@ canonicalPath: "/contact.html"
 <body class="font-body text-icalia-dark antialiased bg-icalia-warm">
 
   <!-- Navigation -->
-  <nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50">
-    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
-      <a href="/" class="flex items-center gap-1">
-        <img src="assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
-      </a>
-      <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
-        <a href="case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
-        <div class="industries-dropdown relative">
-          <button class="text-icalia-dark flex items-center gap-1.5 py-5 -my-5">
-            Industries
-            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
-            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
-              <a href="industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
-                <div class="font-semibold text-icalia-dark">Fintech</div>
-                <div class="text-xs text-icalia-navy/60 mt-0.5">Compliance, transaction flows, cost of a bug at scale.</div>
-              </a>
-              <a href="industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
-                <div class="font-semibold text-icalia-dark">Healthtech</div>
-                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, patient data, stakes of building in healthcare.</div>
-              </a>
-              <a href="industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
-                <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
-                <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
-              </a>
-              <a href="industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
-                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
-                <div class="text-xs text-icalia-navy/60 mt-0.5">Real-time data, route optimization, systems that can't afford downtime.</div>
-              </a>
-            </div>
-          </div>
-        </div>
-        <a href="manifesto.html" class="hover:text-icalia-dark transition-colors">Manifesto</a>
-        <a href="contact.html" class="text-icalia-dark">Contact</a>
-        <a href="#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
-      </div>
-      <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Open menu">
-        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
-      </button>
-    </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand/50 bg-icalia-warm">
-      <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
-        <a href="case-studies.html">Work</a>
-        <div>
-          <button id="mobile-industries-toggle" class="flex items-center justify-between w-full text-icalia-dark">
-            <span>Industries</span>
-            <svg id="mobile-industries-chevron" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div id="mobile-industries" class="hidden mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
-            <a href="industries/fintech.html" class="block py-2">Fintech</a>
-            <a href="industries/healthtech.html" class="block py-2">Healthtech</a>
-            <a href="industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
-            <a href="industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
-          </div>
-        </div>
-        <a href="manifesto.html">Manifesto</a>
-        <a href="contact.html" class="text-icalia-dark">Contact</a>
-        <a href="#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
-      </div>
-    </div>
-  </nav>
+{% include "nav.html" %}
 
   <!-- Hero -->
   <section class="pt-36 pb-8 md:pt-48 md:pb-12 px-6 lg:px-10">
