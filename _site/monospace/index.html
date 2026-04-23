@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icalia Labs — Nearshore Staff Augmentation</title>
+  <meta name="description" content="Scale your engineering team with senior nearshore developers. Same timezone, product-minded engineers who integrate in days and stay for years.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'icalia-red': '#EE3A43',
+            'icalia-cream': '#FAF8F6',
+            'icalia-dark': '#1A1A22',
+            'icalia-warm': '#F3F0EC',
+            'icalia-sand': '#E8E4DF',
+          },
+          fontFamily: {
+            mono: ['"IBM Plex Mono"', 'monospace'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    * { font-family: 'IBM Plex Mono', monospace; }
+    html { scroll-behavior: smooth; }
+
+    .fade-in {
+      opacity: 0;
+      transform: translateY(12px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-icalia-cream text-icalia-dark antialiased">
+
+  <!-- Nav -->
+  <nav class="border-b border-icalia-sand">
+    <div class="max-w-5xl mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="text-sm font-semibold tracking-widest uppercase">ICALIA LABS</a>
+      <div class="hidden md:flex items-center text-xs tracking-wide">
+        <a href="#why" class="hover:text-icalia-red transition-colors">Why Icalia</a>
+        <span class="mx-2 text-icalia-sand">/</span>
+        <a href="#work" class="hover:text-icalia-red transition-colors">Work</a>
+        <span class="mx-2 text-icalia-sand">/</span>
+        <a href="#about" class="hover:text-icalia-red transition-colors">About</a>
+        <span class="mx-2 text-icalia-sand">/</span>
+        <a href="#contact" class="hover:text-icalia-red transition-colors">Contact</a>
+        <span class="mx-3 text-icalia-sand">/</span>
+        <a href="#cta" class="hover:text-icalia-red transition-colors">[Book a Call]</a>
+      </div>
+      <!-- Mobile menu toggle -->
+      <button id="mobile-toggle" class="md:hidden text-xs tracking-wide">[menu]</button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand px-6 py-4 text-xs tracking-wide space-y-3">
+      <a href="#why" class="block hover:text-icalia-red">Why Icalia</a>
+      <a href="#work" class="block hover:text-icalia-red">Work</a>
+      <a href="#about" class="block hover:text-icalia-red">About</a>
+      <a href="#contact" class="block hover:text-icalia-red">Contact</a>
+      <a href="#cta" class="block hover:text-icalia-red">[Book a Call]</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="border-b border-icalia-sand">
+    <div class="max-w-5xl mx-auto px-6 py-20 md:py-28">
+      <div class="fade-in">
+        <p class="text-xs text-icalia-red tracking-wide mb-6">// nearshore staff augmentation</p>
+        <h1 class="text-2xl md:text-4xl font-semibold leading-tight max-w-2xl mb-6">
+          Senior developers,<br>ready when you are.
+        </h1>
+        <p class="text-sm md:text-base leading-relaxed max-w-xl text-icalia-dark/70 mb-10">
+          Scale your engineering team with nearshore talent that feels like your own. Same timezone. Product-minded engineers who integrate in days and stay for years.
+        </p>
+        <div class="flex flex-wrap gap-x-6 gap-y-3 text-sm">
+          <a href="#cta" class="underline underline-offset-4 decoration-icalia-red hover:text-icalia-red transition-colors font-medium">Book a Discovery Call</a>
+          <a href="#how" class="underline underline-offset-4 decoration-icalia-sand hover:text-icalia-red transition-colors">See How It Works</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section class="border-b border-icalia-sand">
+    <div class="max-w-5xl mx-auto px-6 py-5">
+      <p class="text-xs tracking-wide text-icalia-dark/50 flex flex-wrap gap-x-4 gap-y-1">
+        <span>4.6/5 clutch</span>
+        <span class="text-icalia-sand">·</span>
+        <span>&gt;90 nps</span>
+        <span class="text-icalia-sand">·</span>
+        <span>15+ years</span>
+        <span class="text-icalia-sand">·</span>
+        <span>210+ platforms</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- Trusted By -->
+  <section class="border-b border-icalia-sand">
+    <div class="max-w-5xl mx-auto px-6 py-5">
+      <p class="text-xs tracking-wide text-icalia-dark/50">
+        <span class="text-icalia-red">//</span> trusted by: Toyota, GBM, Banregio, Point B, Wafra, Valmex, RTS, Credi
+      </p>
+    </div>
+  </section>
+
+  <!-- Why Icalia -->
+  <section id="why" class="border-b border-icalia-sand">
+    <div class="max-w-5xl mx-auto px-6 py-16 md:py-24">
+      <p class="text-xs text-icalia-red tracking-wide mb-10 fade-in">// why icalia</p>
+
+      <div class="fade-in">
+        <div class="border-t border-icalia-sand pt-8 pb-10">
+          <p class="text-xs text-icalia-dark/40 mb-3">01.</p>
+          <h3 class="text-base md:text-lg font-semibold mb-3">Same timezone, same team</h3>
+          <p class="text-sm leading-relaxed text-icalia-dark/70 max-w-xl">
+            Our engineers work from Monterrey, MX — fully aligned with US hours. Strong English, deep technical skills, and the cultural fit that makes collaboration seamless. No overnight handoffs. No communication lag.
+          </p>
+        </div>
+      </div>
+
+      <div class="fade-in">
+        <div class="border-t border-icalia-sand pt-8 pb-10">
+          <p class="text-xs text-icalia-dark/40 mb-3">02.</p>
+          <h3 class="text-base md:text-lg font-semibold mb-3">Start in days, not months</h3>
+          <p class="text-sm leading-relaxed text-icalia-dark/70 max-w-xl">
+            We maintain a bench of vetted senior developers ready to deploy. Skip the 90-day hiring cycle. Get experienced engineers who can read your codebase and ship within the first week.
+          </p>
+        </div>
+      </div>
+
+      <div class="fade-in">
+        <div class="border-t border-icalia-sand pt-8 pb-0">
+          <p class="text-xs text-icalia-dark/40 mb-3">03.</p>
+          <h3 class="text-base md:text-lg font-semibold mb-3">Engineers who stay</h3>
+          <p class="text-sm leading-relaxed text-icalia-dark/70 max-w-xl">
+            We don't do revolving doors. Our developers build long-term relationships with clients. With an NPS above 90, our engineers become true extensions of your team — invested in your product and your success. Clients don't leave because engineers don't leave.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how" class="border-b border-icalia-sand">
+    <div class="max-w-5xl mx-auto px-6 py-16 md:py-24">
+      <p class="text-xs text-icalia-red tracking-wide mb-10 fade-in">// how it works</p>
+
+      <div class="space-y-8 fade-in">
+        <div class="flex items-start gap-4">
+          <span class="text-xs text-icalia-dark/40 pt-0.5 shrink-0">01.</span>
+          <div>
+            <h3 class="text-sm font-semibold mb-1">Tell us what you need</h3>
+            <p class="text-sm text-icalia-dark/60 leading-relaxed">Share your tech stack, team structure, and timeline. We'll map your requirements and culture to find the right match in a 30-minute call.</p>
+          </div>
+        </div>
+
+        <p class="text-icalia-dark/30 text-sm pl-6">→</p>
+
+        <div class="flex items-start gap-4">
+          <span class="text-xs text-icalia-dark/40 pt-0.5 shrink-0">02.</span>
+          <div>
+            <h3 class="text-sm font-semibold mb-1">Meet your engineers</h3>
+            <p class="text-sm text-icalia-dark/60 leading-relaxed">Within days, interview pre-vetted senior developers who match your needs. Your standards decide who joins.</p>
+          </div>
+        </div>
+
+        <p class="text-icalia-dark/30 text-sm pl-6">→</p>
+
+        <div class="flex items-start gap-4">
+          <span class="text-xs text-icalia-dark/40 pt-0.5 shrink-0">03.</span>
+          <div>
+            <h3 class="text-sm font-semibold mb-1">Start building</h3>
+            <p class="text-sm text-icalia-dark/60 leading-relaxed">Your new engineers onboard fast, join your standups, use your tools, and start shipping code. No ramp-up theater — they ship.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section id="work" class="border-b border-icalia-sand">
+    <div class="max-w-5xl mx-auto px-6 py-16 md:py-24">
+      <p class="text-xs text-icalia-red tracking-wide mb-10 fade-in">// selected work</p>
+
+      <div class="space-y-0 fade-in">
+        <div class="border-t border-icalia-sand py-6">
+          <p class="text-sm font-semibold mb-1">→ Vamonos — <span class="font-normal text-icalia-dark/50">Fintech</span></p>
+          <p class="text-sm text-icalia-dark/60 leading-relaxed pl-4">Digitizing the Hispanic mortgage market. We built the platform that makes homeownership accessible, from application to closing — fast, bilingual, and compliant.</p>
+        </div>
+
+        <div class="border-t border-icalia-sand py-6">
+          <p class="text-sm font-semibold mb-1">→ Potentia / Point B — <span class="font-normal text-icalia-dark/50">AI / Enterprise</span></p>
+          <p class="text-sm text-icalia-dark/60 leading-relaxed pl-4">Making AI accessible for enterprise consulting. We helped Point B launch Potentia, an AI-powered platform that transforms how consultants deliver insights to clients.</p>
+        </div>
+
+        <div class="border-t border-icalia-sand py-6">
+          <p class="text-sm font-semibold mb-1">→ OkuFarma — <span class="font-normal text-icalia-dark/50">Healthtech</span></p>
+          <p class="text-sm text-icalia-dark/60 leading-relaxed pl-4">Streamlining pharmaceutical distribution across Latin America. A modern platform connecting pharmacies with suppliers, reducing costs and improving access to medication.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About (brief) -->
+  <section id="about" class="border-b border-icalia-sand">
+    <div class="max-w-5xl mx-auto px-6 py-16 md:py-24">
+      <p class="text-xs text-icalia-red tracking-wide mb-6 fade-in">// about</p>
+      <div class="fade-in">
+        <p class="text-sm leading-relaxed text-icalia-dark/70 max-w-xl">
+          Icalia Labs is a nearshore software development firm with offices in Austin, TX and Monterrey, MX. For over 15 years, we've helped companies scale their engineering teams with senior, product-minded developers who integrate seamlessly and stay long-term.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="cta" class="border-b border-icalia-sand">
+    <div class="max-w-5xl mx-auto px-6 py-20 md:py-28">
+      <div class="fade-in">
+        <p class="text-xs text-icalia-red tracking-wide mb-6">// let's talk</p>
+        <h2 class="text-xl md:text-2xl font-semibold mb-4">Ready to scale your team?</h2>
+        <p class="text-sm text-icalia-dark/60 mb-6">Tell us what you're building. We'll show you who can help.</p>
+        <a href="mailto:sales@icalialabs.com" class="text-sm underline underline-offset-4 decoration-icalia-red hover:text-icalia-red transition-colors font-medium">Book a Discovery Call</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer id="contact">
+    <div class="max-w-5xl mx-auto px-6 py-6">
+      <p class="text-xs text-icalia-dark/40 leading-relaxed">
+        &copy;2025 Icalia Labs · Austin, TX · Monterrey, MX · <a href="mailto:sales@icalialabs.com" class="hover:text-icalia-red transition-colors">sales@icalialabs.com</a> · <a href="tel:+15124814113" class="hover:text-icalia-red transition-colors">+1 512 481 4113</a>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    document.getElementById('mobile-toggle').addEventListener('click', function() {
+      const menu = document.getElementById('mobile-menu');
+      menu.classList.toggle('hidden');
+      this.textContent = menu.classList.contains('hidden') ? '[menu]' : '[close]';
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('#mobile-menu a').forEach(link => {
+      link.addEventListener('click', () => {
+        document.getElementById('mobile-menu').classList.add('hidden');
+        document.getElementById('mobile-toggle').textContent = '[menu]';
+      });
+    });
+
+    // Fade-in on scroll
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+  </script>
+
+</body>
+</html>

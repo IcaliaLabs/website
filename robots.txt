@@ -1,0 +1,10 @@
+User-agent: *
+Allow: /
+Allow: /assets/
+Allow: /industries/
+
+Disallow: /admin/
+Disallow: /.git/
+Disallow: /.claude/
+
+Sitemap: https://icalialabs.com/sitemap.xml

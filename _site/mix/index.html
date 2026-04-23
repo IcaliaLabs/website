@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Icalia Labs — Senior Developers, Ready When You Are</title>
+  <meta name="description" content="Scale your engineering team with nearshore talent that feels like your own. Same timezone. Product-minded engineers who integrate in days and stay for years.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=JetBrains+Mono:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            red: '#EE3A43',
+            cream: '#FAF8F6',
+            dark: '#1A1A22',
+            warm2: '#F3F0EC',
+            sand: '#E8E4DF',
+          },
+          fontFamily: {
+            mono: ['JetBrains Mono', 'monospace'],
+            sans: ['DM Sans', 'sans-serif'],
+          },
+        },
+      },
+    }
+  </script>
+  <style>
+    body {
+      font-family: 'DM Sans', sans-serif;
+      background: #FAF8F6;
+      color: #1A1A22;
+    }
+
+    /* Blinking cursor */
+    @keyframes blink {
+      0%, 49% { opacity: 1; }
+      50%, 100% { opacity: 0; }
+    }
+    .cursor-blink {
+      animation: blink 0.8s infinite;
+      color: #EE3A43;
+    }
+
+    /* Scroll reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.7s cubic-bezier(0.22, 1, 0.36, 1), transform 0.7s cubic-bezier(0.22, 1, 0.36, 1);
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Subtext fade in */
+    .hero-sub {
+      opacity: 0;
+      transition: opacity 0.8s ease;
+    }
+    .hero-sub.show {
+      opacity: 1;
+    }
+
+    /* CTA hover cursor effect */
+    .cta-btn .cta-cursor {
+      display: none;
+      animation: blink 0.5s infinite;
+      color: inherit;
+    }
+    .cta-btn:hover .cta-cursor {
+      display: inline;
+    }
+
+    /* Smooth scrolling */
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Card hover */
+    .card-hover {
+      transition: border-color 0.3s ease, transform 0.3s ease;
+    }
+    .card-hover:hover {
+      border-color: #EE3A43;
+      transform: translateY(-2px);
+    }
+
+    /* Code pill */
+    .code-pill {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.8rem;
+      background: #F3F0EC;
+      border: 1px solid #E8E4DF;
+      border-radius: 9999px;
+      padding: 0.3rem 0.9rem;
+      display: inline-block;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .code-pill:hover {
+      background: #E8E4DF;
+      border-color: #1A1A22;
+    }
+
+    /* Nav link underline */
+    .nav-link {
+      position: relative;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 0;
+      height: 1px;
+      background: #1A1A22;
+      transition: width 0.3s ease;
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+  </style>
+</head>
+<body class="antialiased">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-cream/90 backdrop-blur-md border-b border-sand/60">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-16">
+      <a href="#" class="font-mono font-bold text-dark tracking-tight text-lg">ICALIA_LABS</a>
+      <div class="hidden md:flex items-center gap-8">
+        <a href="#why" class="nav-link text-sm text-dark/70 hover:text-dark transition-colors">Why Icalia</a>
+        <a href="#work" class="nav-link text-sm text-dark/70 hover:text-dark transition-colors">Work</a>
+        <a href="#about" class="nav-link text-sm text-dark/70 hover:text-dark transition-colors">About</a>
+        <a href="#contact" class="nav-link text-sm text-dark/70 hover:text-dark transition-colors">Contact</a>
+        <a href="#contact" class="cta-btn inline-flex items-center font-mono text-sm bg-dark text-cream px-5 py-2 rounded-full hover:bg-dark/85 transition-colors">
+          Book a Call<span class="cta-cursor ml-0.5">&#x2588;</span>
+        </a>
+      </div>
+      <!-- Mobile menu button -->
+      <button id="mobile-toggle" class="md:hidden text-dark">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/></svg>
+      </button>
+    </div>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-cream border-t border-sand px-6 pb-4">
+      <a href="#why" class="block py-2 text-sm text-dark/70">Why Icalia</a>
+      <a href="#work" class="block py-2 text-sm text-dark/70">Work</a>
+      <a href="#about" class="block py-2 text-sm text-dark/70">About</a>
+      <a href="#contact" class="block py-2 text-sm text-dark/70">Contact</a>
+      <a href="#contact" class="inline-flex items-center font-mono text-sm bg-dark text-cream px-5 py-2 rounded-full mt-2">Book a Call</a>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section class="min-h-screen flex items-center pt-16">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full">
+      <div class="grid lg:grid-cols-5 gap-12 lg:gap-16 items-center">
+        <!-- Left: Headline -->
+        <div class="lg:col-span-3">
+          <div class="border border-sand rounded-lg p-8 lg:p-12">
+            <div class="flex items-start gap-3 mb-6">
+              <span class="font-mono text-red text-xl mt-1 shrink-0">$</span>
+              <h1 class="font-mono font-bold text-3xl sm:text-4xl lg:text-5xl leading-tight text-dark">
+                <span id="typed-text"></span><span class="cursor-blink text-3xl sm:text-4xl lg:text-5xl">&#x2588;</span>
+              </h1>
+            </div>
+            <div class="hero-sub ml-8 lg:ml-9" id="hero-sub">
+              <p class="text-lg lg:text-xl text-dark/60 max-w-xl leading-relaxed">
+                Scale your engineering team with nearshore talent that feels like your own. Same timezone. Product-minded engineers who integrate in days and stay for years.
+              </p>
+              <div class="flex flex-wrap gap-3 mt-8">
+                <a href="#contact" class="cta-btn inline-flex items-center font-mono text-sm bg-red text-white px-6 py-3 rounded-full hover:bg-red/90 transition-colors font-medium">
+                  Book a Discovery Call<span class="cta-cursor ml-1">&#x2588;</span>
+                </a>
+                <a href="#how" class="cta-btn inline-flex items-center font-mono text-sm border border-dark text-dark px-6 py-3 rounded-full hover:bg-dark hover:text-cream transition-colors font-medium">
+                  See How It Works &darr;<span class="cta-cursor ml-1">&#x2588;</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Right: Stats block -->
+        <div class="lg:col-span-2">
+          <div class="border border-sand rounded-lg p-6 lg:p-8">
+            <div class="font-mono text-xs text-dark/40 mb-4">$ stats --summary</div>
+            <div class="space-y-4">
+              <div class="flex items-baseline justify-between border-b border-sand pb-3">
+                <span class="font-mono text-sm text-dark/50">clutch_rating</span>
+                <span class="font-mono text-2xl font-bold text-dark">4.6<span class="text-dark/40 text-base">/5</span></span>
+              </div>
+              <div class="flex items-baseline justify-between border-b border-sand pb-3">
+                <span class="font-mono text-sm text-dark/50">nps_score</span>
+                <span class="font-mono text-2xl font-bold text-red">&gt;90</span>
+              </div>
+              <div class="flex items-baseline justify-between border-b border-sand pb-3">
+                <span class="font-mono text-sm text-dark/50">years_active</span>
+                <span class="font-mono text-2xl font-bold text-dark">15+</span>
+              </div>
+              <div class="flex items-baseline justify-between">
+                <span class="font-mono text-sm text-dark/50">platforms</span>
+                <span class="font-mono text-2xl font-bold text-dark">210+</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats (terminal output) -->
+  <section class="py-20 lg:py-28">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="reveal max-w-2xl mx-auto">
+        <div class="bg-warm2 border border-sand rounded-lg p-8 lg:p-10">
+          <div class="font-mono text-xs text-dark/40 mb-6">$ stats --all</div>
+          <div class="font-mono text-sm space-y-2 text-dark/80">
+            <div class="flex gap-4"><span class="text-dark/40 w-40 shrink-0">clutch_rating</span><span class="text-dark font-semibold">4.6/5</span></div>
+            <div class="flex gap-4"><span class="text-dark/40 w-40 shrink-0">nps_score</span><span class="text-red font-semibold">&gt;90</span></div>
+            <div class="flex gap-4"><span class="text-dark/40 w-40 shrink-0">years_active</span><span class="text-dark font-semibold">15+</span></div>
+            <div class="flex gap-4"><span class="text-dark/40 w-40 shrink-0">platforms_built</span><span class="text-dark font-semibold">210+</span></div>
+            <div class="flex gap-4"><span class="text-dark/40 w-40 shrink-0">timezone</span><span class="text-dark font-semibold">US Central (CT)</span></div>
+            <div class="flex gap-4"><span class="text-dark/40 w-40 shrink-0">locations</span><span class="text-dark font-semibold">Austin TX, Monterrey MX</span></div>
+          </div>
+          <div class="font-mono text-xs text-dark/30 mt-6">// Real numbers. Real partnerships.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trusted By -->
+  <section class="py-16 lg:py-20 border-y border-sand">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="reveal">
+        <p class="font-mono text-xs text-dark/40 mb-6 text-center">// trusted_by</p>
+        <div class="flex flex-wrap justify-center gap-3">
+          <span class="code-pill">Toyota</span>
+          <span class="code-pill">GBM</span>
+          <span class="code-pill">Banregio</span>
+          <span class="code-pill">Point B</span>
+          <span class="code-pill">Wafra</span>
+          <span class="code-pill">Valmex</span>
+          <span class="code-pill">RTS</span>
+          <span class="code-pill">Credi</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Icalia -->
+  <section id="why" class="py-24 lg:py-32">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid lg:grid-cols-5 gap-12 lg:gap-20">
+        <!-- Left heading -->
+        <div class="lg:col-span-2 reveal">
+          <p class="font-mono text-xs text-red mb-3">// why_icalia</p>
+          <h2 class="font-mono font-bold text-3xl lg:text-4xl leading-tight text-dark">
+            Not another<br>dev shop.
+          </h2>
+          <p class="text-dark/50 mt-4 text-lg leading-relaxed">
+            We are your engineering team extension, built for the long haul.
+          </p>
+        </div>
+        <!-- Right features -->
+        <div class="lg:col-span-3 space-y-10 reveal" style="transition-delay: 0.15s;">
+          <!-- Feature 1 -->
+          <div class="border-b border-sand pb-8">
+            <div class="flex items-start gap-4">
+              <span class="font-mono text-red text-sm font-semibold mt-1 shrink-0">01.</span>
+              <div>
+                <h3 class="font-mono font-semibold text-lg text-dark mb-2">Same timezone, same team</h3>
+                <p class="text-dark/55 leading-relaxed">Based in Monterrey, Mexico. We work US hours, communicate in fluent English, and overlap completely with your team. No midnight standups. No translation layers.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 2 -->
+          <div class="border-b border-sand pb-8">
+            <div class="flex items-start gap-4">
+              <span class="font-mono text-red text-sm font-semibold mt-1 shrink-0">02.</span>
+              <div>
+                <h3 class="font-mono font-semibold text-lg text-dark mb-2">Start in days, not months</h3>
+                <p class="text-dark/55 leading-relaxed">Our developers are vetted, senior, and ready. Skip the 90-day hiring cycle. We match you with the right engineers who can read your codebase and ship within the first week.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Feature 3 -->
+          <div class="border-b border-sand pb-8 lg:border-b-0 lg:pb-0">
+            <div class="flex items-start gap-4">
+              <span class="font-mono text-red text-sm font-semibold mt-1 shrink-0">03.</span>
+              <div>
+                <h3 class="font-mono font-semibold text-lg text-dark mb-2">Engineers who stay</h3>
+                <p class="text-dark/55 leading-relaxed">We don't do revolving doors. Our engineers integrate with your culture and stick around for the long term. That's why our NPS is above 90. Clients don't leave because engineers don't leave.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section id="how" class="py-24 lg:py-32 bg-dark text-cream">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="reveal text-center mb-16">
+        <p class="font-mono text-xs text-red mb-3">// how_it_works</p>
+        <h2 class="font-mono font-bold text-3xl lg:text-4xl">Three steps. That's it.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 divide-y md:divide-y-0 md:divide-x divide-cream/10 reveal" style="transition-delay: 0.15s;">
+        <!-- Step 1 -->
+        <div class="px-6 lg:px-10 py-8 md:py-0 text-center md:text-left">
+          <span class="inline-block font-mono text-xs bg-red text-white px-3 py-1 rounded-full mb-5 font-medium">step_01</span>
+          <h3 class="font-mono font-semibold text-xl mb-3 text-cream">Tell us what you need</h3>
+          <p class="text-cream/50 leading-relaxed">Share your tech stack, team size, and timeline. We'll map the right fit in a 30-minute discovery call.</p>
+        </div>
+        <!-- Step 2 -->
+        <div class="px-6 lg:px-10 py-8 md:py-0 text-center md:text-left">
+          <span class="inline-block font-mono text-xs bg-red text-white px-3 py-1 rounded-full mb-5 font-medium">step_02</span>
+          <h3 class="font-mono font-semibold text-xl mb-3 text-cream">Meet your engineers</h3>
+          <p class="text-cream/50 leading-relaxed">Within days, we present hand-picked senior developers. You interview them. Your standards decide who joins.</p>
+        </div>
+        <!-- Step 3 -->
+        <div class="px-6 lg:px-10 py-8 md:py-0 text-center md:text-left">
+          <span class="inline-block font-mono text-xs bg-red text-white px-3 py-1 rounded-full mb-5 font-medium">step_03</span>
+          <h3 class="font-mono font-semibold text-xl mb-3 text-cream">Start building</h3>
+          <p class="text-cream/50 leading-relaxed">Your new team members plug into your workflow, tools, and rituals. They're your team now. No ramp-up theater — they ship.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies -->
+  <section id="work" class="py-24 lg:py-32" id="about">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="reveal mb-12">
+        <p class="font-mono text-xs text-red mb-3">// case_studies</p>
+        <h2 class="font-mono font-bold text-3xl lg:text-4xl text-dark">Selected work.</h2>
+      </div>
+      <div class="grid lg:grid-cols-2 gap-6 reveal" style="transition-delay: 0.15s;">
+        <!-- Large card -->
+        <div class="card-hover border border-sand rounded-lg p-8 lg:p-10 lg:row-span-2 flex flex-col justify-between bg-warm2 cursor-pointer">
+          <div>
+            <span class="code-pill text-xs mb-4 inline-block">Fintech</span>
+            <h3 class="font-mono font-semibold italic text-2xl lg:text-3xl text-dark mt-4 mb-4">Vamonos</h3>
+            <p class="text-dark/55 leading-relaxed max-w-md">
+              Built the core banking platform from the ground up. Our team of 6 engineers delivered the MVP in 4 months, enabling financial access for underserved communities across Mexico.
+            </p>
+          </div>
+          <div class="mt-8 font-mono text-xs text-dark/40">
+            React Native &middot; Ruby on Rails &middot; AWS
+          </div>
+        </div>
+        <!-- Small card 1 -->
+        <div class="card-hover border border-sand rounded-lg p-8 flex flex-col justify-between cursor-pointer">
+          <div>
+            <div class="flex gap-2 mb-4">
+              <span class="code-pill text-xs">AI</span>
+              <span class="code-pill text-xs">Enterprise</span>
+            </div>
+            <h3 class="font-mono font-semibold italic text-xl text-dark mt-2 mb-3">Potentia / Point B</h3>
+            <p class="text-dark/55 leading-relaxed">Engineered an AI-powered analytics platform that processes millions of data points to help enterprise clients make smarter strategic decisions.</p>
+          </div>
+          <div class="mt-6 font-mono text-xs text-dark/40">
+            Python &middot; React &middot; GCP
+          </div>
+        </div>
+        <!-- Small card 2 -->
+        <div class="card-hover border border-sand rounded-lg p-8 flex flex-col justify-between cursor-pointer">
+          <div>
+            <span class="code-pill text-xs mb-4 inline-block">Healthtech</span>
+            <h3 class="font-mono font-semibold italic text-xl text-dark mt-2 mb-3">OkuFarma</h3>
+            <p class="text-dark/55 leading-relaxed">Delivered the end-to-end digital pharmacy experience, from prescription management to same-day delivery logistics across major Mexican cities.</p>
+          </div>
+          <div class="mt-6 font-mono text-xs text-dark/40">
+            React &middot; Node.js &middot; PostgreSQL
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-24 lg:py-32 border-t border-sand" id="contact">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="reveal max-w-3xl mx-auto text-center">
+        <p class="font-mono text-xs text-red mb-4">// next_step</p>
+        <h2 class="font-mono font-bold text-3xl lg:text-5xl text-dark mb-6 leading-tight">
+          Ready to scale<br>your team?
+        </h2>
+        <p class="text-dark/50 text-lg mb-10 max-w-xl mx-auto leading-relaxed">
+          Tell us what you're building. We'll show you who can help.
+        </p>
+        <div class="flex flex-wrap gap-4 justify-center">
+          <a href="mailto:sales@icalialabs.com" class="cta-btn inline-flex items-center font-mono text-sm bg-red text-white px-8 py-4 rounded-full hover:bg-red/90 transition-colors font-medium text-base">
+            Book a Discovery Call<span class="cta-cursor ml-1">&#x2588;</span>
+          </a>
+          <a href="mailto:sales@icalialabs.com" class="cta-btn inline-flex items-center font-mono text-sm border border-dark text-dark px-8 py-4 rounded-full hover:bg-dark hover:text-cream transition-colors font-medium text-base">
+            sales@icalialabs.com<span class="cta-cursor ml-1">&#x2588;</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-dark text-cream py-16 lg:py-20">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="grid md:grid-cols-4 gap-10">
+        <!-- Logo & tagline -->
+        <div class="md:col-span-2">
+          <a href="#" class="font-mono font-bold text-xl tracking-tight">ICALIA_LABS</a>
+          <p class="text-cream/40 mt-3 max-w-sm leading-relaxed">Senior developers, ready when you are. Nearshore engineering teams from Monterrey, Mexico.</p>
+        </div>
+        <!-- Links -->
+        <div>
+          <p class="font-mono text-xs text-cream/30 mb-4">// links</p>
+          <ul class="space-y-2">
+            <li><a href="#why" class="text-cream/50 hover:text-cream transition-colors text-sm">Why Icalia</a></li>
+            <li><a href="#work" class="text-cream/50 hover:text-cream transition-colors text-sm">Work</a></li>
+            <li><a href="#how" class="text-cream/50 hover:text-cream transition-colors text-sm">How It Works</a></li>
+            <li><a href="#contact" class="text-cream/50 hover:text-cream transition-colors text-sm">Contact</a></li>
+          </ul>
+        </div>
+        <!-- Contact -->
+        <div>
+          <p class="font-mono text-xs text-cream/30 mb-4">// contact</p>
+          <ul class="space-y-2 text-sm">
+            <li class="text-cream/50">Austin, TX</li>
+            <li class="text-cream/50">Monterrey, MX</li>
+            <li><a href="mailto:sales@icalialabs.com" class="text-cream/50 hover:text-cream transition-colors">sales@icalialabs.com</a></li>
+            <li><a href="tel:+15124814113" class="text-cream/50 hover:text-cream transition-colors">+1 512 481 4113</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-cream/10 mt-12 pt-8 flex flex-col sm:flex-row justify-between items-center gap-4">
+        <p class="font-mono text-xs text-cream/25">&copy; 2026 Icalia Labs. All rights reserved.</p>
+        <p class="font-mono text-xs text-cream/25">Built with care in Monterrey, MX</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // --- Typing Effect ---
+    const headline = "Senior developers, ready when you are.";
+    const typedEl = document.getElementById('typed-text');
+    const heroSub = document.getElementById('hero-sub');
+    let charIndex = 0;
+
+    function typeChar() {
+      if (charIndex < headline.length) {
+        typedEl.textContent += headline[charIndex];
+        charIndex++;
+        const delay = 35 + Math.random() * 30;
+        setTimeout(typeChar, delay);
+      } else {
+        // Typing done, fade in subtext
+        heroSub.classList.add('show');
+      }
+    }
+
+    // Start typing after a short delay
+    setTimeout(typeChar, 600);
+
+    // --- Scroll Reveal (IntersectionObserver) ---
+    const reveals = document.querySelectorAll('.reveal');
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      threshold: 0.12,
+      rootMargin: '0px 0px -40px 0px'
+    });
+
+    reveals.forEach(el => observer.observe(el));
+
+    // --- Mobile Menu Toggle ---
+    const toggle = document.getElementById('mobile-toggle');
+    const menu = document.getElementById('mobile-menu');
+    toggle.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+
+    // Close mobile menu on link click
+    menu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        menu.classList.add('hidden');
+      });
+    });
+  </script>
+</body>
+</html>

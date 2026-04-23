@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Icalia Labs</title>
+  <meta name="description" content="Get in touch with Icalia Labs. Book a call to discuss your staff augmentation needs or email us at sales@icalialabs.com.">
+  <link rel="canonical" href="https://icalialabs.com/contact.html">
+  <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSFD00QMYY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MSFD00QMYY', {
+      'page_path': '/contact.html',
+      'anonymize_ip': true,
+      'cookie_expires': 63072000
+    });
+  </script>
+  <script src="/js/ga-events.js" defer></script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://icalialabs.com/contact.html">
+  <meta property="og:title" content="Contact — Icalia Labs">
+  <meta property="og:description" content="Get in touch with Icalia Labs. Book a call to discuss your staff augmentation needs or email us at sales@icalialabs.com.">
+  <meta property="og:image" content="https://icalialabs.com/assets/og-image.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Contact — Icalia Labs">
+  <meta name="twitter:description" content="Get in touch with Icalia Labs. Book a call to discuss your staff augmentation needs.">
+  <meta name="twitter:image" content="https://icalialabs.com/assets/og-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'icalia-red': '#E8453C',
+            'icalia-red-dark': '#C53B33',
+            'icalia-dark': '#1A1A22',
+            'icalia-navy': '#2D2F40',
+            'icalia-warm': '#FAF8F6',
+            'icalia-warm-2': '#F3F0EC',
+            'icalia-blush': '#FDECED',
+            'icalia-sand': '#E8E4DF',
+          },
+          fontFamily: {
+            'display': ['"Instrument Serif"', 'Georgia', 'serif'],
+            'body': ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    @media (min-width: 768px) {
+      .industries-dropdown:hover .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What services does Icalia Labs offer?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Icalia Labs provides nearshore staff augmentation and software development services. We specialize in fintech, healthtech, eCommerce & retail, and logistics & supply chain solutions. Our senior engineers work within your team to deliver high-quality software."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does nearshore staffing augmentation work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We match you with senior product-minded engineers who work in your timezone. They integrate directly into your team, participate in standups and planning, and contribute as if they were in-house. We handle all HR, payroll, and management overhead."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What industries do you specialize in?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We specialize in four key industries: Fintech (compliance, transaction flows, ledgers), Healthtech (HIPAA, patient data, EHR integration), eCommerce & Retail (peak traffic, conversion, integrations), and Logistics & Supply Chain (real-time data, route optimization, uptime-critical systems)."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How can I get started with Icalia Labs?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Book a call with our team to discuss your staffing needs. We'll assess your requirements, match you with the right engineers, and get them integrated into your team. You can book a call or email us at sales@icalialabs.com."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What makes Icalia Labs different from other staff augmentation companies?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We focus on product-minded engineers who stay. We've been trusted by Fortune 500 companies and startups since 2011. Our engineers are senior, committed to long-term partnerships, and integrated into your team culture."
+        }
+      }
+    ]
+  }
+  </script>
+  <style>
+    input:focus, textarea:focus { box-shadow: 0 0 0 3px rgba(238, 58, 67, 0.08); }
+    .btn-loading { opacity: 0.7; cursor: not-allowed !important; }
+    .btn-loading::after { content: ''; display: inline-block; width: 14px; height: 14px; margin-left: 8px; border: 2px solid rgba(255, 255, 255, 0.3); border-top-color: white; border-radius: 50%; animation: spin 0.8s linear infinite; vertical-align: middle; }
+    .btn-success { background-color: #E8453C !important; cursor: default; }
+    .btn-success:hover { background-color: #C53B33 !important; }
+    .success-message { animation: slideDown 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    @keyframes slideDown { from { opacity: 0; transform: translateY(-12px); } to { opacity: 1; transform: translateY(0); } }
+  </style>
+</head>
+<body class="font-body text-icalia-dark antialiased bg-icalia-warm">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-1">
+        <img src="assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
+      </a>
+      <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
+        <a href="/" class="hover:text-icalia-dark transition-colors">Home</a>
+        <a href="/case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
+        <div class="industries-dropdown relative">
+          <button class="text-icalia-dark flex items-center gap-1.5 py-5 -my-5">
+            Industries
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
+              <a href="/industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Fintech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Compliance, transaction flows, cost of a bug at scale.</div>
+              </a>
+              <a href="/industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Healthtech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, patient data, stakes of building in healthcare.</div>
+              </a>
+              <a href="/industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
+              </a>
+              <a href="/industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Real-time data, route optimization, systems that can't afford downtime.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="/manifesto.html" class="hover:text-icalia-dark transition-colors">Manifesto</a>
+        <a href="/contact.html" class="hover:text-icalia-dark transition-colors">Contact</a>
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand/50 bg-icalia-warm">
+      <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
+        <a href="/">Home</a>
+        <a href="/case-studies.html">Work</a>
+        <div>
+          <button id="mobile-industries-toggle" class="flex items-center justify-between w-full text-icalia-dark">
+            <span>Industries</span>
+            <svg id="mobile-industries-chevron" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="mobile-industries" class="hidden mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="/industries/fintech.html" class="block py-2">Fintech</a>
+            <a href="/industries/healthtech.html" class="block py-2">Healthtech</a>
+            <a href="/industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
+            <a href="/industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+          </div>
+        </div>
+        <a href="/manifesto.html">Manifesto</a>
+        <a href="/contact.html">Contact</a>
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- Hero -->
+  <section class="pt-36 pb-8 md:pt-48 md:pb-12 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto reveal">
+      <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">Contact</p>
+      <h1 class="font-display text-5xl md:text-7xl leading-[0.95] tracking-tight max-w-3xl">
+        Let's talk about<br>
+        <span class="italic text-icalia-red">your team.</span>
+      </h1>
+      <p class="mt-6 text-lg text-icalia-navy/50 max-w-lg">
+        Whether you need one senior developer or an entire squad, we're here to help you scale.
+      </p>
+    </div>
+  </section>
+
+  <!-- Contact Content -->
+  <section id="book" class="py-16 md:py-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-16">
+
+        <!-- Left: Book a call -->
+        <div class="md:col-span-5 reveal">
+          <h2 class="font-display text-3xl italic mb-6">Book a discovery call</h2>
+          <p class="text-icalia-navy/50 leading-relaxed mb-8">
+            The fastest way to get started. We'll discuss your tech stack, team needs, and timeline. No commitment, no pitch deck — just a conversation.
+          </p>
+          <div class="space-y-5 mb-10">
+            <div class="flex items-start gap-4">
+              <span class="w-6 h-6 bg-icalia-red/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-icalia-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-icalia-navy/60 text-sm">30-minute call with a solutions lead</span>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="w-6 h-6 bg-icalia-red/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-icalia-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-icalia-navy/60 text-sm">Understand your needs and team dynamics</span>
+            </div>
+            <div class="flex items-start gap-4">
+              <span class="w-6 h-6 bg-icalia-red/10 rounded-full flex items-center justify-center shrink-0 mt-0.5">
+                <svg class="w-3.5 h-3.5 text-icalia-red" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M5 13l4 4L19 7"/></svg>
+              </span>
+              <span class="text-icalia-navy/60 text-sm">Get matched with candidate profiles within days</span>
+            </div>
+          </div>
+          <a href="https://calendly.com/charlie-icalialabs/30min" class="inline-block bg-icalia-red text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-icalia-red-dark transition-all hover:shadow-lg hover:shadow-icalia-red/20">
+            Schedule a Call
+          </a>
+
+          <!-- Direct contact -->
+          <div class="mt-14 pt-10 border-t border-icalia-sand/50">
+            <h3 class="text-sm font-semibold text-icalia-navy/30 uppercase tracking-widest mb-5">Or reach us directly</h3>
+            <div class="space-y-3">
+              <a href="mailto:sales@icalialabs.com" class="block text-icalia-red hover:text-icalia-red-dark transition-colors font-medium">sales@icalialabs.com</a>
+              <div class="flex gap-6">
+                <a href="tel:+15124814113" class="text-sm text-icalia-navy/40 hover:text-icalia-dark transition-colors">US: +1 512 481 4113</a>
+                <a href="tel:+528120898857" class="text-sm text-icalia-navy/40 hover:text-icalia-dark transition-colors">MX: +52 81 2089 8857</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right: Form -->
+        <div class="md:col-span-7 reveal reveal-delay-1">
+          <div class="bg-icalia-warm-2 border border-icalia-sand/50 rounded-2xl p-8 md:p-12">
+            <h2 class="font-display text-2xl italic mb-8">Send us a message</h2>
+            <form id="contact-form" class="space-y-6" action="https://formspree.io/f/xnjlbelp" method="POST">
+              <div class="grid md:grid-cols-2 gap-6">
+                <div>
+                  <label for="name" class="block text-xs font-semibold text-icalia-navy/40 uppercase tracking-wider mb-2">Name</label>
+                  <input type="text" id="name" name="name" required class="w-full px-4 py-3.5 rounded-xl border border-icalia-sand bg-icalia-warm text-icalia-dark focus:outline-none focus:border-icalia-red transition-colors text-sm" placeholder="Your name">
+                </div>
+                <div>
+                  <label for="email" class="block text-xs font-semibold text-icalia-navy/40 uppercase tracking-wider mb-2">Email</label>
+                  <input type="email" id="email" name="email" required class="w-full px-4 py-3.5 rounded-xl border border-icalia-sand bg-icalia-warm text-icalia-dark focus:outline-none focus:border-icalia-red transition-colors text-sm" placeholder="you@company.com">
+                </div>
+              </div>
+              <div>
+                <label for="company" class="block text-xs font-semibold text-icalia-navy/40 uppercase tracking-wider mb-2">Company</label>
+                <input type="text" id="company" name="company" class="w-full px-4 py-3.5 rounded-xl border border-icalia-sand bg-icalia-warm text-icalia-dark focus:outline-none focus:border-icalia-red transition-colors text-sm" placeholder="Your company">
+              </div>
+              <div>
+                <label for="message" class="block text-xs font-semibold text-icalia-navy/40 uppercase tracking-wider mb-2">How can we help?</label>
+                <textarea id="message" name="message" rows="5" required class="w-full px-4 py-3.5 rounded-xl border border-icalia-sand bg-icalia-warm text-icalia-dark focus:outline-none focus:border-icalia-red transition-colors resize-none text-sm" placeholder="Tell us about your project and what you are exploring."></textarea>
+              </div>
+              <button id="contact-submit-btn" type="submit" class="bg-icalia-dark text-icalia-warm px-8 py-3.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors" data-original-text="Send Message">
+                Send Message
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <!-- Footer -->
+  <footer class="bg-icalia-dark py-16 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <img src="assets/logo-white.svg" alt="Icalia Labs" class="h-7 w-auto">
+          <p class="mt-4 text-sm text-white/30 leading-relaxed max-w-xs">Nearshore staff augmentation for companies that care about quality. Monterrey, MX + Austin, TX. Since 2011.</p>
+          <a href="https://clutch.co/mx/developers/artificial-intelligence" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-icalia-red/40 rounded-xl px-4 py-3 transition-all group max-w-xs">
+            <svg class="shrink-0 w-10 h-12" viewBox="0 0 80 96" xmlns="http://www.w3.org/2000/svg" aria-label="Clutch Top AI Companies Mexico 2024 badge">
+              <polygon points="40,2 74,22 74,74 40,94 6,74 6,22" fill="#FAF8F6" stroke="#1C2333" stroke-width="2"/>
+              <text x="40" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">TOP</text>
+              <text x="40" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">AI COMPANIES</text>
+              <rect x="12" y="40" width="56" height="16" fill="#1C2333"/>
+              <text x="40" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="700" fill="#FAF8F6" font-style="italic">Clutch</text>
+              <text x="40" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" font-weight="600" fill="#1C2333">MEXICO</text>
+              <text x="40" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#1C2333">2024</text>
+            </svg>
+            <div>
+              <p class="text-xs font-semibold text-white leading-tight">Leading <span class="text-icalia-red">AI</span> in LatAm</p>
+              <p class="text-[10px] text-white/40 mt-0.5 group-hover:text-icalia-red transition-colors">Top AI Companies · Mexico 2024</p>
+            </div>
+          </a>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Navigate</h4>
+          <div class="flex flex-col gap-3">
+            <a href="/" class="text-sm text-white/40 hover:text-white transition-colors">Home</a>
+            <a href="case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
+            <a href="manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
+            <a href="contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Industries</h4>
+          <div class="flex flex-col gap-3">
+            <a href="industries/fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Fintech</a>
+            <a href="industries/healthtech.html" class="text-sm text-white/40 hover:text-white transition-colors">Healthtech</a>
+            <a href="industries/retail.html" class="text-sm text-white/40 hover:text-white transition-colors">eCommerce</a>
+            <a href="industries/logistics.html" class="text-sm text-white/40 hover:text-white transition-colors">Logistics</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Offices</h4>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-sm text-white/50 font-medium">Austin, Texas</p>
+              <p class="text-sm text-white/30">801 Barton Springs Rd, 78704</p>
+            </div>
+            <div>
+              <p class="text-sm text-white/50 font-medium">Monterrey, Mexico</p>
+              <p class="text-sm text-white/30">Eugenio Garza Sada #3820</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Get in Touch</h4>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:sales@icalialabs.com" class="text-sm text-white/40 hover:text-white transition-colors">sales@icalialabs.com</a>
+            <a href="tel:+15124814113" class="text-sm text-white/40 hover:text-white transition-colors">+1 512 481 4113</a>
+          </div>
+          <div class="flex gap-4 mt-6">
+            <a href="https://linkedin.com/company/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://clutch.co/profile/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="Clutch">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
+            </a>
+            <a href="https://github.com/IcaliaLabs/" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <p class="text-xs text-white/20">&copy; 2026 Icalia Labs. All rights reserved.</p>
+        <div class="flex gap-6 text-xs text-white/30">
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    // Contact form submission handler
+    const contactForm = document.getElementById('contact-form');
+    const submitBtn = document.getElementById('contact-submit-btn');
+
+    if (contactForm && submitBtn) {
+      contactForm.addEventListener('submit', async (e) => {
+        e.preventDefault();
+
+        // Get form data
+        const formData = new FormData(contactForm);
+        const submitBtnOriginalText = submitBtn.getAttribute('data-original-text');
+
+        // Update button to loading state
+        submitBtn.textContent = 'Sending...';
+        submitBtn.classList.add('btn-loading');
+        submitBtn.disabled = true;
+
+        // Disable form inputs during submission
+        const inputs = contactForm.querySelectorAll('input, textarea');
+        inputs.forEach(input => input.disabled = true);
+
+        try {
+          // Submit to Formspree
+          const response = await fetch(contactForm.action, {
+            method: 'POST',
+            body: formData,
+            headers: { 'Accept': 'application/json' }
+          });
+
+          if (response.ok) {
+            // Success state
+            submitBtn.classList.remove('btn-loading');
+            submitBtn.classList.add('btn-success');
+            submitBtn.textContent = 'Message Sent ✓';
+
+            // Reset form after 3 seconds
+            setTimeout(() => {
+              contactForm.reset();
+              submitBtn.textContent = submitBtnOriginalText;
+              submitBtn.classList.remove('btn-success');
+              submitBtn.disabled = false;
+              inputs.forEach(input => input.disabled = false);
+            }, 3000);
+          } else {
+            // Error state
+            throw new Error('Form submission failed');
+          }
+        } catch (error) {
+          // Error handling
+          submitBtn.classList.remove('btn-loading');
+          submitBtn.textContent = 'Error - Try Again';
+          submitBtn.style.backgroundColor = '#C53B33';
+          submitBtn.disabled = false;
+          inputs.forEach(input => input.disabled = false);
+
+          // Reset error state after 4 seconds
+          setTimeout(() => {
+            submitBtn.textContent = submitBtnOriginalText;
+            submitBtn.style.backgroundColor = '';
+            submitBtn.classList.remove('btn-success');
+          }, 4000);
+        }
+      });
+    }
+  </script>
+</body>
+</html>
