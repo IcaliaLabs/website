@@ -4,6 +4,7 @@
         <img src="{{ navRoot or '' }}assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
       </a>
       <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
+        <a href="{{ navRoot or '/' }}" class="hover:text-icalia-dark transition-colors">Home</a>
         <a href="{{ navRoot or '/' }}case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
         <div class="industries-dropdown relative">
           <button class="text-icalia-dark flex items-center gap-1.5 py-5 -my-5">
@@ -43,6 +44,7 @@
     </div>
     <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand/50 bg-icalia-warm">
       <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
+        <a href="{{ navRoot or '/' }}">Home</a>
         <a href="{{ navRoot or '/' }}case-studies.html">Work</a>
         <div>
           <button id="mobile-industries-toggle" class="flex items-center justify-between w-full text-icalia-dark">
