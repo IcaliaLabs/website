@@ -1,0 +1,130 @@
+[
+  {
+    "slug": "integration-engineer",
+    "title": "Integration Engineer",
+    "active": true,
+    "department": "Engineering",
+    "type": "Full-time",
+    "level": "Senior",
+    "location": "Remote-friendly (LatAm)",
+    "postedDate": "2026-06-01",
+    "summary": "Design secure REST APIs and event-driven services, and build reusable connector frameworks that integrate with major enterprise platforms on AWS.",
+    "applyUrl": "https://forms.gle/uiDtWnmFx93765FM6",
+    "overview": "We are looking for a backend engineer to join a team focused on building enterprise-grade integrations and API infrastructure. You will design secure REST APIs, implement event-driven services for asynchronous communication, and deliver reusable connector frameworks that integrate with major enterprise platforms. The work emphasizes microservices architecture, AWS cloud-native services, and engineering rigor around idempotency, observability, and security.",
+    "responsibilities": [
+      "Design, build, and maintain backend microservices in Java and Spring Boot to expose secure, well-versioned REST APIs.",
+      "Build and operate event-driven services for asynchronous communication with third-party systems — applying idempotency, retry handling, and back pressure under at-least-once delivery guarantees.",
+      "Implement and validate JWT-based authentication flows, including signature validation and identity provider integration.",
+      "Deploy services on AWS using ECS Fargate, ALB, RDS, S3, EventBridge, CloudWatch, and IAM for scalability, security, and operational visibility.",
+      "Write unit and integration tests as part of every feature; contribute to the team's automated test coverage standards.",
+      "Participate in architecture discussions and evolve the integration layer so one connector can serve multiple use cases instead of bespoke implementations."
+    ],
+    "requirements": [
+      "Java 17 or Java 21 with 5+ years of professional experience",
+      "Spring Boot 3.x with hands-on production experience",
+      "Spring Security configured from scratch (filter chains, JWT validation)",
+      "JPA / Hibernate",
+      "RESTful API design, versioning, validation, and error handling",
+      "Microservices architecture in production",
+      "JWT-based authentication end-to-end, including signature validation (HMAC or RSA) and HTTP-only cookie storage",
+      "Dependency Injection in Spring with a practical understanding of testability (mock injection)",
+      "Event-driven architecture: idempotency, at-least-once delivery, message ordering, back pressure handling",
+      "AWS production experience: ECS Fargate, RDS, ALB, EventBridge, S3, CloudWatch, IAM",
+      "AWS Cognito or equivalent identity provider integration",
+      "MySQL: schema design, indexing, query optimization",
+      "Unit testing with JUnit and Mockito",
+      "Docker and Git workflow proficiency"
+    ],
+    "niceToHave": [
+      "Kafka (transferable conceptual foundation for EventBridge)",
+      "Terraform for Infrastructure as Code",
+      "Spring Batch for high-throughput data processing",
+      "API integrations with enterprise systems (NetSuite, Salesforce, Business Central)"
+    ],
+    "stack": ["Java 17/21", "Spring Boot 3", "AWS", "MySQL", "Docker", "EventBridge"]
+  },
+  {
+    "slug": "frontend-modernization-engineer",
+    "title": "Frontend Modernization Engineer",
+    "active": true,
+    "department": "Engineering",
+    "type": "Full-time",
+    "level": "Senior",
+    "location": "Remote-friendly (LatAm)",
+    "postedDate": "2026-06-01",
+    "summary": "Lead a strategic AngularJS-to-modern-Angular migration — build reusable component libraries and ship migrations that are well-tested and invisible to end users.",
+    "applyUrl": "https://forms.gle/Q1WoT5i2z6cZuD5D9",
+    "overview": "We are looking for a full-stack engineer with deep Angular expertise to contribute to a strategic frontend modernization effort. You will migrate legacy AngularJS features to modern Angular, build reusable component libraries, evolve state management patterns using RxJS and services, and modify backend Java/Spring Boot endpoints opportunistically as part of the migration. The role demands strong engineering discipline to deliver migrations that are well-tested and invisible to end users.",
+    "responsibilities": [
+      "Migrate features and screens from AngularJS to modern Angular, ensuring zero visual or behavioral regressions from the end user's perspective.",
+      "Build and maintain reusable Angular component libraries aligned with the application's design system, reducing duplication across features.",
+      "Implement state management using services + RxJS (BehaviorSubjects, async pipe), and apply additional state management patterns where they add value.",
+      "Modify, optimize, and extend Spring Boot REST endpoints, DTOs, and database queries as needed when migrating a screen requires backend adjustments.",
+      "Build hybrid app scaffolding that allows AngularJS and modern Angular to coexist during the transition period.",
+      "Migrate routing, route guards, layout, and navigation from AngularJS to modern Angular.",
+      "Write unit tests with Jasmine/Karma or Jest for frontend code, and JUnit/Mockito for any backend changes.",
+      "Participate in code reviews, mentor teammates on Angular best practices, and contribute to documented engineering patterns."
+    ],
+    "requirements": [
+      "Angular 16+ with hands-on production experience in 2024 or later",
+      "AngularJS (1.x) legacy with real maintenance or migration experience",
+      "TypeScript proficiency",
+      "RxJS: Observables, Subjects, BehaviorSubjects, and the distinction between Subject and BehaviorSubject",
+      "State management with services + BehaviorSubjects (singleton pattern)",
+      "Strong understanding of RxJS subscription lifecycle and memory leak prevention in Angular",
+      "Angular routing, route guards, and HTTP interceptors",
+      "Reusable component libraries",
+      "JWT consumption from the client side, including HTTP-only cookie storage",
+      "REST API integration from Angular",
+      "Java 17+ and Spring Boot 3.x: read existing code, modify REST endpoints, adjust DTOs, and optimize queries when each screen is touched",
+      "MySQL: basic schema understanding and query reading",
+      "Unit testing (Jasmine/Karma or Jest for frontend; JUnit/Mockito for backend) and Git workflow proficiency"
+    ],
+    "niceToHave": [
+      "Documented experience migrating AngularJS to modern Angular",
+      "Documented experience migrating between major Angular versions",
+      "Standalone components and Signals (Angular 17+)",
+      "NgRx (the team is evaluating its adoption)",
+      "Hybrid app architecture (AngularJS + modern Angular bundled together)",
+      "E2E testing with Cypress or Playwright"
+    ],
+    "stack": ["Angular 16+", "AngularJS", "TypeScript", "RxJS", "Spring Boot", "MySQL"]
+  },
+  {
+    "slug": "backend-engineer-api-integrations",
+    "title": "Backend Engineer — API Integrations",
+    "active": true,
+    "department": "Engineering",
+    "type": "Full-time",
+    "level": "Mid-level",
+    "location": "Remote (LatAm) · In-person onboarding",
+    "postedDate": "2026-06-01",
+    "summary": "Build reliable, secure, usage-aware integrations with third-party APIs that expand an AI agent platform — ~3 new integrations a week, with high autonomy.",
+    "applyUrl": "https://forms.gle/Jr47RtPVarBRejUc8",
+    "overview": "We're hiring a backend engineer to build integrations with third-party APIs that expand the capabilities of an AI agent platform. The role focuses on reliable, secure, usage-aware integrations with external vendors. The pace is high — the target is approximately 3 new integrations per week — and the engineer is expected to operate with significant autonomy, translating vendor documentation into production-grade integrations with minimal supervision.",
+    "responsibilities": [
+      "Build end-to-end integrations with third-party APIs (authentication, request proxying, error handling, retries, rate limiting).",
+      "Capture and propagate cost data across the request lifecycle to support usage-based billing for end users.",
+      "Read vendor documentation independently and translate it into reliable, production-ready integrations.",
+      "Collaborate on architectural decisions and explain the reasoning behind your technical choices."
+    ],
+    "requirements": [
+      "Strong production experience with TypeScript and Node.js",
+      "Hands-on experience integrating third-party APIs, including OAuth 2 and API key–based authentication flows",
+      "Deep understanding of HTTP — request/response lifecycle, headers, status codes, and authentication patterns",
+      "Ability to handle errors, retries, and rate limiting in real-world integrations",
+      "Strong product sense and solid coding ability — pragmatic problem-solving and clean, working code",
+      "Autonomy and strong reading comprehension of vendor SDKs and documentation",
+      "Prior experience working at or with startups — comfortable with shifting priorities, fast iteration, and ambiguity",
+      "Conversational English for interviews and daily collaboration"
+    ],
+    "niceToHave": [
+      "Experience implementing WebSockets when vendor APIs require them",
+      "Experience designing usage-based billing or cost-metering systems at the request level",
+      "AWS experience (Lambda, API Gateway)",
+      "Integrations with AI or developer platform APIs (OpenAI, Anthropic, ElevenLabs, etc.)",
+      "Greenfield or R&D experience with shifting scope and minimal initial context"
+    ],
+    "stack": ["TypeScript", "Node.js", "OAuth 2", "REST", "WebSockets", "AWS Lambda"]
+  }
+]

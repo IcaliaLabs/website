@@ -49,6 +49,30 @@
     <priority>0.85</priority>
   </url>
   <url>
+    <loc>https://icalialabs.com/careers.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/careers/integration-engineer.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/careers/frontend-modernization-engineer.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/careers/backend-engineer-api-integrations.html</loc>
+    <lastmod>2026-06-04</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://icalialabs.com/privacy.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>yearly</changefreq>
