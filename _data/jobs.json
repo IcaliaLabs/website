@@ -93,7 +93,7 @@
   {
     "slug": "backend-engineer-api-integrations",
     "title": "Backend Engineer — API Integrations",
-    "active": true,
+    "active": false,
     "department": "Engineering",
     "type": "Full-time",
     "level": "Mid-level",
@@ -126,5 +126,37 @@
       "Greenfield or R&D experience with shifting scope and minimal initial context"
     ],
     "stack": ["TypeScript", "Node.js", "OAuth 2", "REST", "WebSockets", "AWS Lambda"]
+  },
+  {
+    "slug": "senior-ruby-on-rails-engineer",
+    "title": "Senior Ruby on Rails Engineer",
+    "active": true,
+    "department": "Engineering",
+    "type": "Contractor",
+    "level": "Senior",
+    "location": "Remote · LatAm / CST time zone",
+    "postedDate": "2026-06-16",
+    "summary": "Design and build high-performance Rails APIs, optimize PostgreSQL at scale, and own backend architecture on production systems that need to last.",
+    "applyUrl": "https://forms.gle/7Aq9PpEMmgGNxbmu8",
+    "overview": "Icalia Labs is hiring a Senior Ruby on Rails Engineer with deep expertise in building scalable, production-grade APIs and a strong foundation in modern backend engineering. We're looking for engineers who go beyond implementation — professionals who understand how systems behave under load, how databases perform at scale, and how to design APIs that last. This is a remote contractor engagement working CST hours.",
+    "responsibilities": [
+      "Design and build high-performance APIs using Ruby on Rails.",
+      "Write optimized PostgreSQL queries and deeply understand how data flows and scales under production load.",
+      "Implement and maintain asynchronous and background processing systems (Sidekiq, Resque, or equivalent).",
+      "Ensure code quality through robust RSpec testing strategies and solid automated testing practices.",
+      "Apply best practices for API design, scalability, and long-term maintainability.",
+      "Collaborate on architecture decisions and continuously improve system performance."
+    ],
+    "requirements": [
+      "8+ years of software engineering experience or equivalent practical background",
+      "Strong expertise in Ruby and Rails APIs in production environments",
+      "Clear understanding of how databases work and how to write efficient PostgreSQL queries (indexing, query optimization, performance tuning)",
+      "Hands-on experience with background job processing systems (Sidekiq, Resque, or similar)",
+      "Solid knowledge of AWS and Docker for cloud infrastructure and containerized environments",
+      "Strong grasp of API best practices and backend architecture"
+    ],
+    "niceToHave": [],
+    "stack": ["Ruby on Rails", "PostgreSQL", "Sidekiq", "RSpec", "AWS", "Docker"]
   }
+  
 ]
