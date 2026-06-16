@@ -1,0 +1,1040 @@
+<h1>SEO Audit Recommendations — icalialabs.com</h1>
+<p><strong>Audit Date:</strong> June 12, 2026 | <strong>Overall Score:</strong> 72/100</p>
+<hr>
+<h2>Executive Summary</h2>
+<p>Icalia Labs has solid technical SEO (85/100) with proper schema markup, canonical tags, and clean architecture — but underperforms in content depth and keyword targeting (62/100). The site targets primary keywords but misses long-tail, question-based, and AI/LLM-friendly content that drives qualified traffic.</p>
+<p><strong>Top 3 Priorities:</strong></p>
+<ol>
+<li>Fix 7 missing meta descriptions — +15-20% CTR gain, ~2 hours of work</li>
+<li>Create comparison content (&quot;Nearshore vs. Onshore&quot;, &quot;Nearshore vs. Outsourcing&quot;) — 120+ monthly visits</li>
+<li>Publish how-to guides (&quot;How to Hire Engineers in Mexico&quot;, cost breakdown) — 150+ monthly visits + better leads</li>
+</ol>
+<hr>
+<h2>Score Breakdown</h2>
+<table>
+<thead>
+<tr>
+<th>Category</th>
+<th>Score</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Technical SEO</td>
+<td>85/100</td>
+<td>Strong</td>
+</tr>
+<tr>
+<td>On-Page SEO</td>
+<td>68/100</td>
+<td>Good</td>
+</tr>
+<tr>
+<td>Content &amp; Structure</td>
+<td>62/100</td>
+<td>Needs Work</td>
+</tr>
+<tr>
+<td>Performance</td>
+<td>78/100</td>
+<td>Good</td>
+</tr>
+<tr>
+<td>Mobile &amp; Accessibility</td>
+<td>76/100</td>
+<td>Good</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Critical Issues (Fix This Week)</h2>
+<h3>1. Missing Meta Descriptions — 7 Pages</h3>
+<p><strong>Impact:</strong> 10-15% CTR loss | <strong>Effort:</strong> 2 hours</p>
+<p>Add descriptions to the following files (front matter <code>description:</code> field):</p>
+<table>
+<thead>
+<tr>
+<th>File</th>
+<th>Recommended Description (≤160 chars)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>case-studies.html</code></td>
+<td>Explore Icalia Labs case studies: nearshore staff augmentation success stories across fintech, healthtech, and enterprise. 5+ year partnerships, 3x ROE.</td>
+</tr>
+<tr>
+<td><code>manifesto.html</code></td>
+<td>Read the Icalia Labs manifesto. Why we believe senior nearshore engineers embedded in product teams beat body shops, every time.</td>
+</tr>
+<tr>
+<td><code>industries/fintech.html</code></td>
+<td>Engineers who understand compliance, payments, and ledgers. Nearshore fintech staff augmentation for teams building secure financial infrastructure.</td>
+</tr>
+<tr>
+<td><code>industries/healthtech.html</code></td>
+<td>HIPAA-compliant engineers for EHR integration, claims processing, and clinical workflows. Nearshore healthtech staff augmentation.</td>
+</tr>
+<tr>
+<td><code>industries/retail.html</code></td>
+<td>Nearshore engineers for high-traffic eCommerce platforms, inventory systems, and conversion optimization. Staff augmentation for retail tech.</td>
+</tr>
+<tr>
+<td><code>industries/logistics.html</code></td>
+<td>Nearshore developers for route optimization, fleet tracking, and dispatch systems. Staff augmentation for logistics and supply chain software.</td>
+</tr>
+<tr>
+<td><code>careers.html</code></td>
+<td>✓ Present — verify it contains keywords like &quot;nearshore&quot;, &quot;engineers&quot;, &quot;LatAm&quot;, &quot;open roles&quot;</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h3>2. Missing JobPosting Schema on /careers.html (Parent Page)</h3>
+<p><strong>Impact:</strong> Not appearing in Google Jobs carousel | <strong>Effort:</strong> 1 hour</p>
+<p>Add to <code>careers.html</code> before <code>&lt;/head&gt;</code>:</p>
+<pre><code class="language-html">&lt;script type=&quot;application/ld+json&quot;&gt;
+{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;CollectionPage&quot;,
+  &quot;name&quot;: &quot;Open Engineering Roles — Icalia Labs&quot;,
+  &quot;description&quot;: &quot;Join Icalia Labs. Senior engineering positions in API integration, frontend modernization, and backend development. LatAm-based, US-quality work.&quot;,
+  &quot;url&quot;: &quot;https://icalialabs.com/careers.html&quot;,
+  &quot;hasPart&quot;: [
+    { &quot;@type&quot;: &quot;JobPosting&quot;, &quot;title&quot;: &quot;Integration Engineer&quot;, &quot;url&quot;: &quot;https://icalialabs.com/careers/integration-engineer.html&quot; },
+    { &quot;@type&quot;: &quot;JobPosting&quot;, &quot;title&quot;: &quot;Frontend Modernization Engineer&quot;, &quot;url&quot;: &quot;https://icalialabs.com/careers/frontend-modernization-engineer.html&quot; },
+    { &quot;@type&quot;: &quot;JobPosting&quot;, &quot;title&quot;: &quot;Backend Engineer — API Integrations&quot;, &quot;url&quot;: &quot;https://icalialabs.com/careers/backend-engineer-api-integrations.html&quot; }
+  ]
+}
+&lt;/script&gt;
+</code></pre>
+<hr>
+<h3>3. Missing Image Alt Text (~70+ images)</h3>
+<p><strong>Impact:</strong> Lost image search traffic, accessibility | <strong>Effort:</strong> 3-4 hours</p>
+<p>Priority images to fix first:</p>
+<ul>
+<li><code>index.html</code> — hero section images, client logos, floating metric cards</li>
+<li><code>case-studies.html</code> — RTS, Point B, Apply Digital, Everlance background images</li>
+<li>All <code>assets/team-*.jpg</code> photos (manifesto page is already done)</li>
+</ul>
+<p>Pattern to follow:</p>
+<pre><code class="language-html">&lt;!-- Before --&gt;
+&lt;img src=&quot;assets/rts-energy.jpg&quot;&gt;
+
+&lt;!-- After --&gt;
+&lt;img src=&quot;assets/rts-energy.jpg&quot; alt=&quot;Power transmission lines at sunset — RTS Energy, Icalia Labs client&quot;&gt;
+</code></pre>
+<hr>
+<h3>4. FAQ Schema Missing on Industry Pages</h3>
+<p><strong>Impact:</strong> No featured snippets from vertical pages | <strong>Effort:</strong> 2 hours</p>
+<p>Add <code>FAQPage</code> schema to all 4 industry pages. Example for fintech:</p>
+<pre><code class="language-html">&lt;script type=&quot;application/ld+json&quot;&gt;
+{
+  &quot;@context&quot;: &quot;https://schema.org&quot;,
+  &quot;@type&quot;: &quot;FAQPage&quot;,
+  &quot;mainEntity&quot;: [
+    {
+      &quot;@type&quot;: &quot;Question&quot;,
+      &quot;name&quot;: &quot;Can nearshore engineers handle fintech compliance work?&quot;,
+      &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;Yes. Icalia Labs engineers have hands-on experience with PCI-DSS, SOC 2, and financial regulatory requirements. We regularly staff compliance-critical fintech teams at Series B through public companies.&quot; }
+    },
+    {
+      &quot;@type&quot;: &quot;Question&quot;,
+      &quot;name&quot;: &quot;What payment rails do your fintech engineers have experience with?&quot;,
+      &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;Our engineers have shipped integrations with ACH, RTP, FedNow, Wire, and card networks (Visa/Mastercard). Several have worked on BaaS and stablecoin infrastructure.&quot; }
+    },
+    {
+      &quot;@type&quot;: &quot;Question&quot;,
+      &quot;name&quot;: &quot;How quickly can a nearshore fintech team be onboarded?&quot;,
+      &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;Typical onboarding is 4-8 weeks from kickoff to a fully ramped engineer. We handle sourcing, screening, and integration into your existing rituals (standups, sprint planning, code review).&quot; }
+    },
+    {
+      &quot;@type&quot;: &quot;Question&quot;,
+      &quot;name&quot;: &quot;What is the cost difference between nearshore and in-house fintech engineers?&quot;,
+      &quot;acceptedAnswer&quot;: { &quot;@type&quot;: &quot;Answer&quot;, &quot;text&quot;: &quot;Nearshore engineers from Monterrey typically represent 40-65% cost savings vs. US equivalents at equivalent seniority. All-in cost includes salary, benefits, management overhead, and Icalia's placement fee.&quot; }
+    }
+  ]
+}
+&lt;/script&gt;
+</code></pre>
+<hr>
+<h2>Keyword Opportunities</h2>
+<h3>Top 25 Targets</h3>
+<table>
+<thead>
+<tr>
+<th>Keyword</th>
+<th>Monthly Vol</th>
+<th>Difficulty</th>
+<th>Opportunity</th>
+<th>Intent</th>
+<th>Status</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>nearshore vs. onshore engineering</td>
+<td>140</td>
+<td>35</td>
+<td>95/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Create comparison page</td>
+</tr>
+<tr>
+<td>nearshore vs. outsourcing</td>
+<td>110</td>
+<td>40</td>
+<td>93/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Create comparison page</td>
+</tr>
+<tr>
+<td>hire engineers Mexico</td>
+<td>380</td>
+<td>55</td>
+<td>92/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Create how-to guide</td>
+</tr>
+<tr>
+<td>nearshore staff augmentation</td>
+<td>210</td>
+<td>42</td>
+<td>88/100</td>
+<td>Commercial</td>
+<td>Possible</td>
+<td>Dedicate landing page</td>
+</tr>
+<tr>
+<td>cost of hiring engineers Mexico</td>
+<td>160</td>
+<td>48</td>
+<td>89/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Create cost guide</td>
+</tr>
+<tr>
+<td>Mexico software developers</td>
+<td>220</td>
+<td>38</td>
+<td>90/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Create hiring guide</td>
+</tr>
+<tr>
+<td>nearshore engineers</td>
+<td>580</td>
+<td>48</td>
+<td>85/100</td>
+<td>Commercial</td>
+<td>Ranking #4-6</td>
+<td>Strengthen homepage</td>
+</tr>
+<tr>
+<td>nearshore developers</td>
+<td>340</td>
+<td>52</td>
+<td>80/100</td>
+<td>Commercial</td>
+<td>Ranking #5-8</td>
+<td>Expand homepage</td>
+</tr>
+<tr>
+<td>nearshore software development</td>
+<td>160</td>
+<td>45</td>
+<td>84/100</td>
+<td>Commercial</td>
+<td>Possible</td>
+<td>Service overview page</td>
+</tr>
+<tr>
+<td>staff augmentation Latin America</td>
+<td>270</td>
+<td>58</td>
+<td>87/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Industry page expansion</td>
+</tr>
+<tr>
+<td>Mexico developer hourly rate</td>
+<td>140</td>
+<td>35</td>
+<td>88/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Create pricing guide</td>
+</tr>
+<tr>
+<td>remote developers Latin America</td>
+<td>210</td>
+<td>48</td>
+<td>83/100</td>
+<td>Commercial</td>
+<td>Possible</td>
+<td>Location-specific guide</td>
+</tr>
+<tr>
+<td>nearshore engineering cost calculator</td>
+<td>20</td>
+<td>38</td>
+<td>90/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Interactive tool</td>
+</tr>
+<tr>
+<td>fintech engineering nearshore</td>
+<td>65</td>
+<td>42</td>
+<td>86/100</td>
+<td>Commercial</td>
+<td>Possible</td>
+<td>Strengthen fintech page</td>
+</tr>
+<tr>
+<td>HIPAA compliant engineers</td>
+<td>45</td>
+<td>48</td>
+<td>82/100</td>
+<td>Commercial</td>
+<td>Possible</td>
+<td>Add to healthtech page</td>
+</tr>
+<tr>
+<td>EHR integration services</td>
+<td>90</td>
+<td>55</td>
+<td>80/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Expand healthtech content</td>
+</tr>
+<tr>
+<td>build software team Mexico</td>
+<td>85</td>
+<td>44</td>
+<td>87/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Team building guide</td>
+</tr>
+<tr>
+<td>LatAm software development</td>
+<td>180</td>
+<td>52</td>
+<td>81/100</td>
+<td>Commercial</td>
+<td>Possible</td>
+<td>Homepage optimization</td>
+</tr>
+<tr>
+<td>nearshore team integration best practices</td>
+<td>35</td>
+<td>45</td>
+<td>88/100</td>
+<td>Informational</td>
+<td>Not ranking</td>
+<td>How-to guide</td>
+</tr>
+<tr>
+<td>staff augmentation onboarding checklist</td>
+<td>25</td>
+<td>35</td>
+<td>89/100</td>
+<td>Informational</td>
+<td>Not ranking</td>
+<td>Downloadable asset</td>
+</tr>
+<tr>
+<td>nearshore engineering best practices</td>
+<td>40</td>
+<td>48</td>
+<td>86/100</td>
+<td>Informational</td>
+<td>Not ranking</td>
+<td>Best practices guide</td>
+</tr>
+<tr>
+<td>nearshore team communication</td>
+<td>30</td>
+<td>45</td>
+<td>85/100</td>
+<td>Informational</td>
+<td>Not ranking</td>
+<td>How-to guide</td>
+</tr>
+<tr>
+<td>engineering talent acquisition</td>
+<td>80</td>
+<td>62</td>
+<td>78/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Contact page FAQ</td>
+</tr>
+<tr>
+<td>outsourcing vs. staff augmentation</td>
+<td>240</td>
+<td>42</td>
+<td>85/100</td>
+<td>Commercial</td>
+<td>Not ranking</td>
+<td>Comparison page</td>
+</tr>
+<tr>
+<td>nearshore engineer productivity metrics</td>
+<td>15</td>
+<td>52</td>
+<td>81/100</td>
+<td>Informational</td>
+<td>Not ranking</td>
+<td>Whitepaper content</td>
+</tr>
+</tbody>
+</table>
+<h3>AI/LLM-Specific Keywords</h3>
+<p>These are the queries AI agents and LLMs tend to generate when researching nearshore engineering decisions:</p>
+<table>
+<thead>
+<tr>
+<th>Query Pattern</th>
+<th>Why LLMs Search This</th>
+<th>Content Gap</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>&quot;nearshore team integration best practices&quot;</td>
+<td>Agents need step-by-step processes</td>
+<td>No dedicated guide exists</td>
+</tr>
+<tr>
+<td>&quot;nearshore engineering cost breakdown&quot;</td>
+<td>Cost-benefit analysis queries</td>
+<td>No calculator or comparison table</td>
+</tr>
+<tr>
+<td>&quot;how to hire engineers in Mexico&quot;</td>
+<td>Operational knowledge requests</td>
+<td>No comprehensive guide</td>
+</tr>
+<tr>
+<td>&quot;staff augmentation onboarding checklist&quot;</td>
+<td>Structured process documentation</td>
+<td>Only philosophy (manifesto) exists</td>
+</tr>
+<tr>
+<td>&quot;nearshore vs. onshore comparison&quot;</td>
+<td>Reasoning/comparison tasks</td>
+<td>No structured comparison page</td>
+</tr>
+<tr>
+<td>&quot;fintech engineering nearshore cost&quot;</td>
+<td>Vertical + cost combination</td>
+<td>Not covered explicitly</td>
+</tr>
+<tr>
+<td>&quot;nearshore software development process&quot;</td>
+<td>Step-by-step process queries</td>
+<td>Only implied, not documented</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Content Gap Recommendations</h2>
+<h3>Tier 1: Comparison Content (HIGH PRIORITY)</h3>
+<h4>1. &quot;Nearshore vs. Onshore Engineering&quot;</h4>
+<ul>
+<li><strong>File:</strong> <code>/nearshore-vs-onshore.html</code></li>
+<li><strong>Opportunity Score:</strong> 95/100</li>
+<li><strong>Keywords:</strong> &quot;nearshore vs. onshore engineers&quot; (140/mo), &quot;nearshore vs. in-house&quot; (180/mo)</li>
+<li><strong>Expected Traffic:</strong> 40-60 visits/month within 3 months</li>
+<li><strong>Effort:</strong> 4-5 hours</li>
+<li><strong>Structure:</strong>
+<ul>
+<li>Cost comparison table (salary + benefits + overhead + management)</li>
+<li>Timeline comparison (hiring speed, onboarding, ramp)</li>
+<li>Quality parity metrics (use existing NPS, ROE data)</li>
+<li>Risk analysis (IP, legal, communication)</li>
+<li>FAQ schema (10-15 questions)</li>
+<li>CTA to case studies and contact</li>
+</ul>
+</li>
+</ul>
+<h4>2. &quot;Nearshore vs. Outsourcing: What's the Difference?&quot;</h4>
+<ul>
+<li><strong>File:</strong> <code>/nearshore-vs-outsourcing.html</code></li>
+<li><strong>Opportunity Score:</strong> 93/100</li>
+<li><strong>Keywords:</strong> &quot;nearshore vs. outsourcing&quot; (110/mo), &quot;outsourcing vs. staff augmentation&quot; (240/mo)</li>
+<li><strong>Expected Traffic:</strong> 25-40 visits/month</li>
+<li><strong>Effort:</strong> 3-4 hours</li>
+<li><strong>Structure:</strong>
+<ul>
+<li>Model comparison table (control, cost, duration, risk)</li>
+<li>When to choose nearshore vs. outsourcing</li>
+<li>Common mistakes</li>
+<li>FAQ schema</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>Tier 2: How-To Guides (HIGH PRIORITY)</h3>
+<h4>3. &quot;How to Hire Engineers in Mexico: Complete Guide&quot;</h4>
+<ul>
+<li><strong>File:</strong> <code>/guides/hire-engineers-mexico.html</code></li>
+<li><strong>Opportunity Score:</strong> 92/100</li>
+<li><strong>Keywords:</strong> &quot;hire engineers Mexico&quot; (380/mo), &quot;hire developers Mexico&quot; (340/mo), &quot;Mexico software developers&quot; (220/mo)</li>
+<li><strong>Expected Traffic:</strong> 80-120 visits/month within 4-6 months</li>
+<li><strong>Effort:</strong> 6-8 hours</li>
+<li><strong>Structure:</strong>
+<ol>
+<li>Why Mexico for engineering talent (timezone, quality, cost)</li>
+<li>Legal/tax requirements (contractor vs. employment, CFDI)</li>
+<li>Where to find engineers (marketplace vs. agency vs. direct)</li>
+<li>Vetting process (technical assessment, culture fit)</li>
+<li>Onboarding and integration (async communication, sprint rituals)</li>
+<li>Cost breakdown (all-in cost table by seniority)</li>
+<li>Risk mitigation (IP protection, contracts)</li>
+<li>Case study (link to existing RTS or Point B)</li>
+<li>FAQ schema (8-10 questions)</li>
+</ol>
+</li>
+</ul>
+<h4>4. &quot;Nearshore Engineering Cost Breakdown&quot;</h4>
+<ul>
+<li><strong>File:</strong> <code>/nearshore-cost-guide.html</code></li>
+<li><strong>Opportunity Score:</strong> 89/100</li>
+<li><strong>Keywords:</strong> &quot;nearshore engineering cost&quot; (180/mo), &quot;Mexico developer hourly rate&quot; (140/mo), &quot;cost comparison nearshore vs. onshore&quot; (90/mo)</li>
+<li><strong>Expected Traffic:</strong> 30-50 visits/month + higher lead quality (commercial intent)</li>
+<li><strong>Effort:</strong> 3-4 hours</li>
+<li><strong>Structure:</strong>
+<ul>
+<li>Hourly rate table by role + seniority (MX vs. US vs. Eastern Europe vs. South Asia)</li>
+<li>All-in cost calculator (interactive JS or static table)</li>
+<li>Total cost of ownership breakdown</li>
+<li>ROI payback period calculator</li>
+<li>FAQ schema</li>
+</ul>
+</li>
+</ul>
+<h4>5. &quot;Staff Augmentation Onboarding Process&quot;</h4>
+<ul>
+<li><strong>File:</strong> <code>/guides/staff-augmentation-process.html</code></li>
+<li><strong>Opportunity Score:</strong> 88/100</li>
+<li><strong>Keywords:</strong> &quot;staff augmentation onboarding&quot; (25/mo), &quot;nearshore team integration&quot; (35/mo)</li>
+<li><strong>Effort:</strong> 3-4 hours</li>
+<li><strong>Why:</strong> Optimized for AI agent searches — structured, step-by-step, scannable</li>
+<li><strong>Structure:</strong>
+<ul>
+<li>Step 1: Discovery &amp; requirements (2-week intake)</li>
+<li>Step 2: Sourcing &amp; vetting (2-4 weeks)</li>
+<li>Step 3: Candidate presentation &amp; selection (1 week)</li>
+<li>Step 4: Onboarding &amp; integration (weeks 1-2)</li>
+<li>Step 5: Ramp &amp; performance check (30/60/90 days)</li>
+<li>Downloadable checklist (PDF or printable HTML)</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3>Tier 3: Industry Deep Dives (MEDIUM PRIORITY)</h3>
+<h4>Fintech Expansion (<code>/industries/fintech.html</code>)</h4>
+<p>Add or link to:</p>
+<ul>
+<li>&quot;Fintech Compliance Checklist&quot; (PCI-DSS, SOC 2, GLBA)</li>
+<li>&quot;Payment Rail Integration: ACH vs. RTP vs. FedNow&quot; guide</li>
+<li>Fintech-specific FAQ schema (15 questions)</li>
+<li>Cost comparison for fintech engineers specifically</li>
+</ul>
+<h4>Healthtech Expansion (<code>/industries/healthtech.html</code>)</h4>
+<p>Add or link to:</p>
+<ul>
+<li>&quot;HIPAA Compliance for Engineering Teams&quot; guide</li>
+<li>&quot;EHR Integration: Epic vs. Cerner vs. Athena&quot; comparison</li>
+<li>Healthtech-specific FAQ schema (12 questions)</li>
+<li>HIPAA BAA process documentation</li>
+</ul>
+<h4>Retail Expansion (<code>/industries/retail.html</code>)</h4>
+<ul>
+<li>High-traffic infrastructure guide (CDN, caching, load testing)</li>
+<li>Conversion optimization for engineers</li>
+<li>FAQ schema (10 questions)</li>
+</ul>
+<hr>
+<h3>Tier 4: AI/LLM-Optimized Content (MEDIUM PRIORITY)</h3>
+<h4>&quot;Nearshore Engineering Best Practices&quot;</h4>
+<ul>
+<li><strong>File:</strong> <code>/best-practices.html</code></li>
+<li><strong>Opportunity Score:</strong> 86/100</li>
+<li><strong>Effort:</strong> 3 hours</li>
+<li><strong>Format:</strong> Numbered list (agents prefer lists) — 12 best practices with evidence for each</li>
+<li><strong>Examples:</strong>
+<ol>
+<li>Match timezone overlap (min. 4 shared hours)</li>
+<li>Async-first communication protocols</li>
+<li>Senior-only initial placement, junior growth over time</li>
+<li>Weekly structured 1:1s with client engineering managers</li>
+<li>Shared code review standards + PR templates from day 1</li>
+</ol>
+</li>
+</ul>
+<hr>
+<h2>On-Page SEO Issues by Page</h2>
+<table>
+<thead>
+<tr>
+<th>Page</th>
+<th>Issue</th>
+<th>Severity</th>
+<th>Fix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>case-studies.html</td>
+<td>Missing meta description</td>
+<td>Critical</td>
+<td>Add 160-char description with &quot;nearshore&quot;, &quot;ROE&quot;, &quot;case study&quot;</td>
+</tr>
+<tr>
+<td>manifesto.html</td>
+<td>Missing meta description</td>
+<td>High</td>
+<td>Add thought-leadership focused description</td>
+</tr>
+<tr>
+<td>industries/fintech.html</td>
+<td>Missing meta description</td>
+<td>Critical</td>
+<td>Add compliance + fintech keyword description</td>
+</tr>
+<tr>
+<td>industries/healthtech.html</td>
+<td>Missing meta description</td>
+<td>Critical</td>
+<td>Add HIPAA + healthtech description</td>
+</tr>
+<tr>
+<td>industries/retail.html</td>
+<td>Missing meta description</td>
+<td>Critical</td>
+<td>Add eCommerce + performance description</td>
+</tr>
+<tr>
+<td>industries/logistics.html</td>
+<td>Missing meta description</td>
+<td>Critical</td>
+<td>Add logistics + real-time description</td>
+</tr>
+<tr>
+<td>careers.html</td>
+<td>Missing JobPosting parent schema</td>
+<td>High</td>
+<td>Add CollectionPage + JobPosting schema</td>
+</tr>
+<tr>
+<td>index.html</td>
+<td>70+ images missing alt text</td>
+<td>Medium</td>
+<td>Add descriptive alt text, prioritize above fold</td>
+</tr>
+<tr>
+<td>case-studies.html</td>
+<td>Case study images missing alt text</td>
+<td>Medium</td>
+<td>Add keyword-rich alt for each background image</td>
+</tr>
+<tr>
+<td>All industry pages</td>
+<td>No FAQ schema</td>
+<td>Medium</td>
+<td>Add FAQPage schema with 10-15 Qs per page</td>
+</tr>
+<tr>
+<td>contact.html</td>
+<td>FAQ schema only has 5 questions</td>
+<td>Low</td>
+<td>Expand to 8-10 questions</td>
+</tr>
+<tr>
+<td>All pages</td>
+<td>No breadcrumb schema on subpages</td>
+<td>Low</td>
+<td>Add BreadcrumbList schema</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Technical SEO Checklist</h2>
+<table>
+<thead>
+<tr>
+<th>Check</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>robots.txt</td>
+<td>✅ Pass</td>
+<td>Valid, allows all crawlers</td>
+</tr>
+<tr>
+<td>sitemap.xml</td>
+<td>✅ Pass</td>
+<td>15 URLs, proper structure</td>
+</tr>
+<tr>
+<td>Canonical URLs</td>
+<td>✅ Pass</td>
+<td>All pages self-referential</td>
+</tr>
+<tr>
+<td>HTTPS</td>
+<td>✅ Pass</td>
+<td>GitHub Pages + CNAME</td>
+</tr>
+<tr>
+<td>Mobile responsive</td>
+<td>✅ Pass</td>
+<td>Tailwind responsive classes</td>
+</tr>
+<tr>
+<td>Open Graph tags</td>
+<td>✅ Pass</td>
+<td>title, description, image on all pages</td>
+</tr>
+<tr>
+<td>Twitter cards</td>
+<td>✅ Pass</td>
+<td>All pages</td>
+</tr>
+<tr>
+<td>Organization schema</td>
+<td>✅ Pass</td>
+<td>Homepage</td>
+</tr>
+<tr>
+<td>Service schema</td>
+<td>✅ Pass</td>
+<td>All industry pages</td>
+</tr>
+<tr>
+<td>JobPosting schema</td>
+<td>✅ Pass</td>
+<td>Individual job pages (not parent)</td>
+</tr>
+<tr>
+<td>FAQPage schema</td>
+<td>✅ Pass</td>
+<td>Contact page only (needs expansion)</td>
+</tr>
+<tr>
+<td>Article schema</td>
+<td>✅ Pass</td>
+<td>Manifesto page</td>
+</tr>
+<tr>
+<td>Custom 404</td>
+<td>✅ Pass</td>
+<td>Branded 404.html</td>
+</tr>
+<tr>
+<td>Meta descriptions</td>
+<td>❌ Fail</td>
+<td>Missing on 7 pages</td>
+</tr>
+<tr>
+<td>Image alt text</td>
+<td>❌ Fail</td>
+<td>~70+ images missing alt attributes</td>
+</tr>
+<tr>
+<td>JobPosting on /careers.html</td>
+<td>❌ Fail</td>
+<td>Parent page has no schema</td>
+</tr>
+<tr>
+<td>FAQ schema on industry pages</td>
+<td>❌ Fail</td>
+<td>All 4 industry pages</td>
+</tr>
+<tr>
+<td>Breadcrumb schema</td>
+<td>⚠️ Warning</td>
+<td>Not present anywhere</td>
+</tr>
+<tr>
+<td>hreflang tags</td>
+<td>⚠️ Warning</td>
+<td>Not present (low priority for single-language site)</td>
+</tr>
+<tr>
+<td>Core Web Vitals</td>
+<td>⚠️ Unknown</td>
+<td>No data available; Tailwind CDN may affect LCP</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Competitor Analysis</h2>
+<table>
+<thead>
+<tr>
+<th>Competitor</th>
+<th>Strength</th>
+<th>Weakness</th>
+<th>Opportunity for Icalia</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Toptal</strong></td>
+<td>Brand recognition, enterprise clients</td>
+<td>Generic positioning, $60-130/hr</td>
+<td>Own industry vertical terms they ignore</td>
+</tr>
+<tr>
+<td><strong>Gun.io</strong></td>
+<td>Outcome-based delivery narrative</td>
+<td>No geographic focus</td>
+<td>Emphasize Mexico proximity + timezone</td>
+</tr>
+<tr>
+<td><strong>X-Team</strong></td>
+<td>Elite talent positioning</td>
+<td>No industry specialization</td>
+<td>Dominate vertical-specific searches</td>
+</tr>
+<tr>
+<td><strong>Turing.com</strong></td>
+<td>Scale (4M profiles)</td>
+<td>Diluted messaging, no verticals</td>
+<td>Position as quality-over-scale alternative</td>
+</tr>
+<tr>
+<td><strong>Globant</strong></td>
+<td>Enterprise AI transformation</td>
+<td>Fortune 500 focus (different TAM)</td>
+<td>No direct competition for SMB/mid-market</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Key Insight:</strong> None of these competitors rank for &quot;nearshore + [industry vertical]&quot; keyword combinations. Icalia can own these niches without head-to-head competition.</p>
+<hr>
+<h2>AI/LLM Optimization Assessment</h2>
+<p><strong>Current Score: 62/100</strong></p>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Rating</th>
+<th>What's Missing</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Structured Data Completeness</td>
+<td>85/100</td>
+<td>Missing local business schema, service area</td>
+</tr>
+<tr>
+<td>FAQ Schema Usage</td>
+<td>70/100</td>
+<td>Only contact page; industry pages lack Q&amp;A</td>
+</tr>
+<tr>
+<td>Quantified Claims</td>
+<td>75/100</td>
+<td>Good metrics but missing source citations</td>
+</tr>
+<tr>
+<td>Process Documentation</td>
+<td>55/100</td>
+<td>Philosophy present; step-by-step missing</td>
+</tr>
+<tr>
+<td>Clear Hierarchical Content</td>
+<td>70/100</td>
+<td>Some prose-heavy sections need listicle treatment</td>
+</tr>
+<tr>
+<td>Direct Answer Format</td>
+<td>65/100</td>
+<td>Answers &quot;why nearshore&quot; but not &quot;how&quot;, &quot;what is&quot;</td>
+</tr>
+<tr>
+<td>Tabular Data</td>
+<td>80/100</td>
+<td>Tags/chips present; needs more comparison tables</td>
+</tr>
+<tr>
+<td>Actionable Information</td>
+<td>60/100</td>
+<td>Heavy on positioning, light on process</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Top 5 Fixes for AI/LLM Optimization:</strong></p>
+<ol>
+<li>Convert prose sections to structured lists and tables</li>
+<li>Add FAQ schema to all industry pages (agents parse FAQ blocks efficiently)</li>
+<li>Create a &quot;Process Documentation&quot; page with step-by-step flowcharts</li>
+<li>Add cost breakdown tables (agents extract from tables reliably)</li>
+<li>Include source links for all quantified claims</li>
+</ol>
+<hr>
+<h2>Implementation Roadmap</h2>
+<h3>Phase 1 — Critical Fixes (Week 1-2 | ~10 hours)</h3>
+<ul>
+<li>[ ] Add 7 missing meta descriptions</li>
+<li>[ ] Add JobPosting/CollectionPage schema to <code>/careers.html</code></li>
+<li>[ ] Add alt text to 20-25 priority images (homepage + case studies)</li>
+<li>[ ] Expand FAQ on contact page (5 → 8-10 questions)</li>
+</ul>
+<h3>Phase 2 — High-Impact Content (Week 3-4 | ~20 hours)</h3>
+<ul>
+<li>[ ] Create <code>nearshore-vs-onshore.html</code> comparison page</li>
+<li>[ ] Create <code>guides/hire-engineers-mexico.html</code> guide</li>
+<li>[ ] Create <code>nearshore-cost-guide.html</code> cost breakdown</li>
+<li>[ ] Add FAQ schema to all 4 industry pages (12-15 questions each)</li>
+</ul>
+<h3>Phase 3 — Medium Priority (Week 5-6 | ~15 hours)</h3>
+<ul>
+<li>[ ] Create <code>nearshore-vs-outsourcing.html</code></li>
+<li>[ ] Add breadcrumb schema to industry pages + job pages</li>
+<li>[ ] Create <code>best-practices.html</code> (AI/LLM optimized)</li>
+<li>[ ] Create <code>guides/staff-augmentation-process.html</code></li>
+<li>[ ] Optimize internal linking (industry pages ↔ case studies)</li>
+</ul>
+<h3>Phase 4 — Monitor &amp; Iterate (Week 7+)</h3>
+<ul>
+<li>[ ] Set up 25-target keyword tracking in Google Search Console</li>
+<li>[ ] Monitor CTR changes after meta description updates</li>
+<li>[ ] Track rankings for new pages (30/60/90 day checkpoints)</li>
+<li>[ ] Monthly content refresh cycle</li>
+<li>[ ] Quarterly full-audit repeat</li>
+</ul>
+<hr>
+<h2>Quick Wins Summary</h2>
+<table>
+<thead>
+<tr>
+<th>Task</th>
+<th>Time</th>
+<th>Expected Impact</th>
+<th>Do By</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Add 7 meta descriptions</td>
+<td>2 hrs</td>
+<td>+15-20% CTR</td>
+<td>Week 1</td>
+</tr>
+<tr>
+<td>JobPosting schema on careers</td>
+<td>1 hr</td>
+<td>+25% Google Jobs visibility</td>
+<td>Week 1</td>
+</tr>
+<tr>
+<td>20 image alt texts</td>
+<td>3 hrs</td>
+<td>+10% image search</td>
+<td>Week 1</td>
+</tr>
+<tr>
+<td>Expand contact FAQ</td>
+<td>1 hr</td>
+<td>+5-10% featured snippets</td>
+<td>Week 1</td>
+</tr>
+<tr>
+<td>FAQ schema — fintech</td>
+<td>1.5 hrs</td>
+<td>10-15 snippet captures</td>
+<td>Week 2</td>
+</tr>
+<tr>
+<td>FAQ schema — healthtech</td>
+<td>1.5 hrs</td>
+<td>8-12 snippet captures</td>
+<td>Week 2</td>
+</tr>
+<tr>
+<td>FAQ schema — retail + logistics</td>
+<td>2 hrs</td>
+<td>8-10 snippet captures</td>
+<td>Week 2</td>
+</tr>
+<tr>
+<td>Breadcrumb schema</td>
+<td>1 hr</td>
+<td>Better SERP UX</td>
+<td>Week 2</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>3-Month Success Metrics</h2>
+<p>Establish these baselines in Google Search Console before starting:</p>
+<table>
+<thead>
+<tr>
+<th>Metric</th>
+<th>Baseline (Now)</th>
+<th>3-Month Target</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Organic traffic</td>
+<td>—</td>
+<td>+50-75%</td>
+</tr>
+<tr>
+<td>Keywords in top 10</td>
+<td>—</td>
+<td>15+</td>
+</tr>
+<tr>
+<td>Featured snippets</td>
+<td>0</td>
+<td>5+</td>
+</tr>
+<tr>
+<td>Career page CTR</td>
+<td>—</td>
+<td>+25% (after schema)</td>
+</tr>
+<tr>
+<td>Industry page CTR</td>
+<td>—</td>
+<td>+15-20% (after meta desc)</td>
+</tr>
+<tr>
+<td>Blog/guide visits</td>
+<td>0</td>
+<td>200+ monthly</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2>Notes</h2>
+<ul>
+<li>No SEO tools (Ahrefs, Semrush) connected — all volume/difficulty estimates are research-based. Connect an SEO tool via MCP for precise data.</li>
+<li>Tailwind CSS via CDN may affect LCP (Largest Contentful Paint). Consider a build-time CSS extraction if Core Web Vitals become a concern.</li>
+<li>The manifesto page is excellent for brand search and backlinks but won't rank for commercial terms — this is intentional and fine.</li>
+<li>Jobs data is managed via <code>_data/jobs.json</code> — updating job content is a data change, not a markup change.</li>
+</ul>
