@@ -1,3 +1,7 @@
+---
+permalink: /llms.txt
+eleventyExcludeFromCollections: true
+---
 # Icalia Labs (https://icalialabs.com)
 
 > Icalia Labs is a nearshore staff augmentation firm that embeds elite, AI-augmented engineers directly into product teams across Logistics & Transportation, Fintech, Healthcare, and E-commerce. We close the gap between idea and impact through clarity, execution, and a hacker ethos that treats AI as a force multiplier — not a replacement for human judgment.
@@ -75,6 +79,14 @@ EHR integrations, telehealth platforms, clinical decision tools, and patient por
 
 ### E-commerce / Retail
 High-traffic storefronts, headless commerce builds, recommendation engines, and inventory platforms need engineers who think about conversion, performance, and scale simultaneously. We've built across the stack — from checkout to warehouse.
+
+## Blog
+
+- [Icalia Labs Blog](https://icalialabs.com/blog/): Practical guides on nearshore hiring, engineering costs, AI-augmented and agentic engineering, and forward-deployed engineering.
+- [Atom feed](https://icalialabs.com/blog/feed.xml): Every published article, newest first.
+{%- for post in collections.posts | newestFirst %}
+- [{{ post.data.title | safe }}](https://icalialabs.com{{ post.url }}): {{ post.data.description | safe }}
+{%- endfor %}
 
 ## Key Resources & Content
 

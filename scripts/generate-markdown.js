@@ -22,10 +22,10 @@ const fs = require("fs");
 const path = require("path");
 const TurndownService = require("turndown");
 
-const SITE_DIR = path.join(__dirname, "..", "_site");
+const SITE_DIR = path.resolve(__dirname, "..", process.env.SITE_DIR || "_site");
 
-// Novelty/theme sub-sites, not primary content — skip them.
-const SKIP_DIR_PREFIXES = ["cyberpunk", "monospace", "terminal", "mix"];
+// Novelty/theme sub-sites and the CMS app are not content — skip them.
+const SKIP_DIR_PREFIXES = ["cyberpunk", "monospace", "terminal", "mix", "admin"];
 
 const turndown = new TurndownService({
   headingStyle: "atx",

@@ -32,6 +32,9 @@
           </div>
         </div>
         <a href="{{ navRoot or '/' }}manifesto.html" class="hover:text-icalia-dark transition-colors">Manifesto</a>
+{% if collections.posts and collections.posts.length %}
+        <a href="{{ navRoot or '/' }}blog/" class="hover:text-icalia-dark transition-colors">Blog</a>
+{% endif %}
         <a href="{{ navRoot or '/' }}careers.html" class="hover:text-icalia-dark transition-colors">Careers</a>
         <a href="{{ navRoot or '/' }}contact.html" class="hover:text-icalia-dark transition-colors">Contact</a>
         <a href="{{ navRoot or '/' }}contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
@@ -59,6 +62,9 @@
           </div>
         </div>
         <a href="{{ navRoot or '/' }}manifesto.html">Manifesto</a>
+{% if collections.posts and collections.posts.length %}
+        <a href="{{ navRoot or '/' }}blog/">Blog</a>
+{% endif %}
         <a href="{{ navRoot or '/' }}careers.html">Careers</a>
         <a href="{{ navRoot or '/' }}contact.html">Contact</a>
         <a href="{{ navRoot or '/' }}contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>

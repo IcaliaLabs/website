@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include "head.html" %}
+  <meta property="article:published_time" content="{{ page.date | isoDate }}">
+{% if updated %}
+  <meta property="article:modified_time" content="{{ updated | isoDate }}">
+{% endif %}
+{% for s in schema %}
+  <script type="application/ld+json">{{ s | jsonLd | safe }}</script>
+{% endfor %}
+  <style>
+    .post-prose { color: rgba(45, 47, 64, 0.8); font-size: 1.0625rem; line-height: 1.8; }
+    .post-prose > * + * { margin-top: 1.25rem; }
+    .post-prose h2 { font-family: "Instrument Serif", Georgia, serif; font-size: 2.125rem; line-height: 1.15; color: #1A1A22; margin-top: 3rem; scroll-margin-top: 7rem; }
+    .post-prose h3 { font-weight: 600; font-size: 1.25rem; color: #1A1A22; margin-top: 2.25rem; scroll-margin-top: 7rem; }
+    .post-prose a { color: #E8453C; text-decoration: underline; text-underline-offset: 3px; }
+    .post-prose a:hover { color: #C53B33; }
+    .post-prose strong { color: #1A1A22; font-weight: 600; }
+    .post-prose ul { list-style: disc; padding-left: 1.25rem; }
+    .post-prose ol { list-style: decimal; padding-left: 1.25rem; }
+    .post-prose li + li { margin-top: 0.5rem; }
+    .post-prose blockquote { border-left: 2px solid #E8453C; padding-left: 1.25rem; font-style: italic; color: rgba(45, 47, 64, 0.7); }
+    .post-prose code { font-size: 0.9em; background: #F3F0EC; padding: 0.15rem 0.35rem; border-radius: 0.35rem; }
+    .post-prose pre { background: #1A1A22; color: #FAF8F6; padding: 1.25rem; border-radius: 1rem; overflow-x: auto; font-size: 0.875rem; }
+    .post-prose pre code { background: none; padding: 0; }
+    .post-prose img { max-width: 100%; height: auto; border-radius: 1rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+    .post-prose table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; display: block; overflow-x: auto; }
+    .post-prose th, .post-prose td { border-bottom: 1px solid #E8E4DF; padding: 0.65rem 0.75rem; text-align: left; vertical-align: top; }
+    .post-prose th { color: #1A1A22; font-weight: 600; background: #F3F0EC; }
+    .post-prose hr { border: 0; border-top: 1px solid #E8E4DF; margin: 2.5rem 0; }
+  </style>
+</head>
+<body class="font-body text-icalia-dark antialiased bg-icalia-warm">
+
+  <!-- Navigation -->
+{% include "nav.html" %}
+
+<main>
+{% set authorInfo = authors[author] %}
+{% set primaryTopic = false %}
+{% if topics and topics.length %}{% set primaryTopic = topics[0] | topic %}{% endif %}
+
+  <article>
+    <!-- Header -->
+    <header class="pt-36 pb-10 md:pt-44 md:pb-14 px-6 lg:px-10">
+      <div class="max-w-3xl mx-auto">
+{% if draft %}
+        <p class="mb-6 inline-block text-xs font-semibold uppercase tracking-widest text-white bg-icalia-red px-3 py-1.5 rounded-full">Draft preview — not published</p>
+{% endif %}
+{% if page.date | isPreAi %}
+        <p class="mb-6 text-sm text-icalia-navy/70 bg-icalia-warm-2 border border-dashed border-icalia-sand rounded-2xl px-5 py-4" role="note">
+          <span class="font-semibold text-icalia-dark">{{ blog.preAiEraLabel }} &middot; {{ page.date | year }}.</span>
+          Written before AI was part of how we build. The fundamentals still hold; tooling and workflow advice may be dated.
+        </p>
+{% endif %}
+        <nav aria-label="Breadcrumb" class="text-xs font-medium text-icalia-navy/50 mb-8">
+          <ol class="flex flex-wrap items-center gap-2">
+            <li><a href="/" class="hover:text-icalia-red transition-colors">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li><a href="/blog/" class="hover:text-icalia-red transition-colors">Blog</a></li>
+{% if primaryTopic %}
+            <li aria-hidden="true">/</li>
+            <li><a href="{{ primaryTopic.slug | topicUrl }}" class="hover:text-icalia-red transition-colors">{{ primaryTopic.label }}</a></li>
+{% endif %}
+          </ol>
+        </nav>
+
+        <div class="flex flex-wrap gap-2 mb-6">
+{% for t in topics %}{% set topicInfo = t | topic %}{% if topicInfo %}
+          <a href="{{ t | topicUrl }}" class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full hover:bg-icalia-red hover:text-white transition-colors">{{ topicInfo.label }}</a>
+{% endif %}{% endfor %}
+        </div>
+
+        <h1 class="font-display text-4xl md:text-6xl leading-[1.05] tracking-tight">{{ title }}</h1>
+        <p class="mt-6 text-lg md:text-xl text-icalia-navy/60 leading-relaxed">{{ description }}</p>
+
+        <div class="mt-8 flex items-center gap-4">
+{% if authorInfo %}
+          <img src="{{ authorInfo.photo }}" alt="{{ authorInfo.name }}" class="w-11 h-11 rounded-full object-cover" width="44" height="44">
+{% endif %}
+          <div class="text-sm">
+            <p class="font-semibold text-icalia-dark">{% if authorInfo %}{{ authorInfo.name }} <span class="font-normal text-icalia-navy/50">&middot; {{ authorInfo.role }}</span>{% else %}Icalia Labs{% endif %}</p>
+            <p class="text-icalia-navy/50">
+              <time datetime="{{ page.date | isoDate }}">{{ page.date | readableDate }}</time>
+{% if updated %}
+              &middot; Updated <time datetime="{{ updated | isoDate }}">{{ updated | readableDate }}</time>
+{% endif %}
+              &middot; {{ content | readingTime }} min read
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+{% if image %}
+    <figure class="px-6 lg:px-10">
+      <div class="max-w-5xl mx-auto">
+        <img src="{{ image }}" alt="{{ imageAlt or title }}" width="1920" height="1080" fetchpriority="high" decoding="async" class="w-full aspect-[16/9] rounded-2xl object-cover bg-icalia-warm-2">
+      </div>
+    </figure>
+{% endif %}
+
+    <div class="px-6 lg:px-10 pb-16">
+      <div class="max-w-3xl mx-auto">
+{% if takeaways and takeaways.length %}
+        <aside class="mt-10 bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-8" aria-labelledby="key-takeaways">
+          <h2 id="key-takeaways" class="text-xs font-semibold text-icalia-red uppercase tracking-widest mb-4">Key takeaways</h2>
+          <ul class="space-y-3">
+{% for item in takeaways %}
+            <li class="flex gap-3 text-icalia-navy/80 leading-relaxed">
+              <span class="shrink-0 mt-2.5 w-1.5 h-1.5 rounded-full bg-icalia-red"></span>
+              <span>{{ item }}</span>
+            </li>
+{% endfor %}
+          </ul>
+        </aside>
+{% endif %}
+
+        <div class="post-prose mt-12">
+{{ content | safe }}
+        </div>
+
+{% if faq and faq.length %}
+        <section class="mt-16 pt-12 border-t border-icalia-sand" aria-labelledby="faq">
+          <h2 id="faq" class="font-display text-3xl md:text-4xl leading-tight mb-8">Frequently asked questions</h2>
+          <div class="space-y-6">
+{% for f in faq %}
+            <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6">
+              <h3 class="font-semibold text-icalia-dark">{{ f.q }}</h3>
+              <p class="mt-3 text-icalia-navy/70 leading-relaxed">{{ f.a }}</p>
+            </div>
+{% endfor %}
+          </div>
+        </section>
+{% endif %}
+
+{% if authorInfo %}
+        <section class="mt-16 flex gap-5 items-start bg-white border border-icalia-sand/60 rounded-2xl p-6" aria-label="About the author">
+          <img src="{{ authorInfo.photo }}" alt="{{ authorInfo.name }}" class="w-16 h-16 rounded-full object-cover shrink-0" width="64" height="64">
+          <div>
+            <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">Written by</p>
+            <p class="mt-1 font-semibold text-icalia-dark">{{ authorInfo.name }} <span class="font-normal text-icalia-navy/50">&middot; {{ authorInfo.role }}</span></p>
+            <p class="mt-2 text-sm text-icalia-navy/60 leading-relaxed">{{ authorInfo.bio }}</p>
+{% if authorInfo.sameAs and authorInfo.sameAs.length %}
+            <p class="mt-3 flex flex-wrap gap-4 text-sm">
+{% for link in authorInfo.sameAs %}
+              <a href="{{ link }}" target="_blank" rel="noopener me" class="text-icalia-red font-semibold hover:underline">{% if "linkedin" in link %}LinkedIn{% elif "github" in link %}GitHub{% elif "x.com" in link or "twitter" in link %}X{% else %}Profile{% endif %}</a>
+{% endfor %}
+            </p>
+{% endif %}
+          </div>
+        </section>
+{% endif %}
+      </div>
+    </div>
+  </article>
+
+{% set related = collections.posts | relatedPosts(page.url, topics, 3) %}
+{% if related.length %}
+  <section class="py-16 md:py-20 px-6 lg:px-10 bg-icalia-warm-2 border-t border-icalia-sand/50" aria-labelledby="related-reading">
+    <div class="max-w-7xl mx-auto">
+      <h2 id="related-reading" class="font-display text-3xl md:text-4xl leading-tight mb-10">Related reading</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+{% for card in related %}
+{% set cardHeading = "h3" %}{% set cardFeatured = false %}
+{% include "post-card.html" %}
+{% endfor %}
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+  <!-- CTA band -->
+  <section class="py-20 md:py-28 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="font-display text-4xl md:text-6xl leading-tight">Need engineers who <span class="italic text-icalia-red">already ship like this?</span></h2>
+      <p class="mt-8 text-lg text-icalia-navy/60 max-w-2xl mx-auto">We embed senior nearshore engineers directly into your team — same time zone, same standards, no ramp-up theater.</p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-8 py-4 rounded-full font-semibold hover:bg-icalia-navy transition-colors inline-flex items-center justify-center gap-2">
+          Book a discovery call <span>→</span>
+        </a>
+{% if primaryTopic and primaryTopic.relatedUrl %}
+        <a href="{{ primaryTopic.relatedUrl }}" class="px-8 py-4 rounded-full font-semibold text-icalia-navy hover:text-icalia-dark transition-colors inline-flex items-center justify-center gap-2">
+          {{ primaryTopic.relatedLabel }}
+        </a>
+{% endif %}
+      </div>
+    </div>
+  </section>
+
+</main>
+
+  {% include "footer.html" %}
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
+  </script>
+</body>
+</html>

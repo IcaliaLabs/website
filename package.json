@@ -6,12 +6,18 @@
   "scripts": {
     "build": "eleventy && node scripts/generate-markdown.js",
     "dev": "eleventy --serve --port=8080",
-    "clean": "rm -rf _site",
+    "clean": "rm -rf _site _site-preview",
     "test": "node scripts/verify-site.js",
-    "build:verify": "npm run build && npm test"
+    "build:verify": "npm run build && npm test",
+    "build:preview": "INCLUDE_DRAFTS=1 eleventy --output=_site-preview && SITE_DIR=_site-preview node scripts/generate-markdown.js",
+    "test:preview": "INCLUDE_DRAFTS=1 SITE_DIR=_site-preview node scripts/verify-site.js",
+    "verify:all": "npm run build:verify && npm run build:preview && npm run test:preview"
   },
   "devDependencies": {
     "@11ty/eleventy": "^3.1.6",
+    "@11ty/eleventy-plugin-rss": "^3.0.0",
+    "gray-matter": "^4.0.3",
+    "markdown-it-anchor": "^10.0.0",
     "turndown": "^7.2.4"
   }
 }

@@ -1,0 +1,87 @@
+[
+  {
+    "slug": "nearshore-hiring",
+    "label": "Nearshore Hiring",
+    "description": "How US product teams find, vet, and embed senior engineers from Mexico and Latin America.",
+    "relatedUrl": "/case-studies.html",
+    "relatedLabel": "See our case studies"
+  },
+  {
+    "slug": "engineering-costs",
+    "label": "Engineering Costs",
+    "description": "What engineering capacity really costs — onshore, nearshore, and offshore — once you count ramp-up, retention, and management overhead.",
+    "relatedUrl": "/contact.html",
+    "relatedLabel": "Talk to us about your budget"
+  },
+  {
+    "slug": "software-development",
+    "label": "Software Development",
+    "description": "Practical engineering: architecture, delivery, code quality, and shipping production software with embedded teams.",
+    "relatedUrl": "/developers.html",
+    "relatedLabel": "Explore our open source"
+  },
+  {
+    "slug": "software-maker",
+    "label": "Software Makers",
+    "description": "Notes for builders and founders who make software products — from first version to scale.",
+    "relatedUrl": "/manifesto.html",
+    "relatedLabel": "Read our manifesto"
+  },
+  {
+    "slug": "ai-engineering",
+    "label": "AI Engineering",
+    "description": "How AI-augmented engineers ship faster without giving up human judgment on architecture, security, and quality.",
+    "relatedUrl": "/manifesto.html",
+    "relatedLabel": "Read our manifesto"
+  },
+  {
+    "slug": "agentic-engineering",
+    "label": "Agentic Engineering",
+    "description": "Building with and for AI agents: agent workflows, MCP servers, agent skills, and human-accountable automation.",
+    "relatedUrl": "/developers.html",
+    "relatedLabel": "See our MCP server and agent skills"
+  },
+  {
+    "slug": "forward-deployed-engineer",
+    "label": "Forward-Deployed Engineering (FDE)",
+    "description": "Forward-deployed engineers: senior engineers who work inside the customer's team and ship against real production problems.",
+    "relatedUrl": "/contact.html#book",
+    "relatedLabel": "Embed an engineer in your team"
+  },
+  {
+    "slug": "fde",
+    "label": "FDE",
+    "description": "Forward-deployed engineers: senior engineers who work inside the customer's team and ship against real production problems.",
+    "canonicalSlug": "forward-deployed-engineer",
+    "relatedUrl": "/contact.html#book",
+    "relatedLabel": "Embed an engineer in your team"
+  },
+  {
+    "slug": "fintech",
+    "label": "Fintech",
+    "description": "Engineering for payments, ledgers, compliance, and money movement.",
+    "relatedUrl": "/industries/fintech.html",
+    "relatedLabel": "Fintech engineering at Icalia Labs"
+  },
+  {
+    "slug": "healthtech",
+    "label": "Healthtech",
+    "description": "HIPAA-aware engineering for EHR integrations, clinical workflows, and patient-facing products.",
+    "relatedUrl": "/industries/healthtech.html",
+    "relatedLabel": "Healthtech engineering at Icalia Labs"
+  },
+  {
+    "slug": "logistics",
+    "label": "Logistics",
+    "description": "Engineering for freight, fleet, dispatch, and real-time supply chain systems.",
+    "relatedUrl": "/industries/logistics.html",
+    "relatedLabel": "Logistics engineering at Icalia Labs"
+  },
+  {
+    "slug": "retail",
+    "label": "eCommerce & Retail",
+    "description": "Engineering for high-traffic storefronts, inventory, and conversion.",
+    "relatedUrl": "/industries/retail.html",
+    "relatedLabel": "eCommerce engineering at Icalia Labs"
+  }
+]

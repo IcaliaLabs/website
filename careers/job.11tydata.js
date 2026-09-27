@@ -4,6 +4,7 @@ module.exports = {
     size: 1,
     alias: "job",
     before: (data) => data.filter((j) => j.active),
+    addAllPagesToCollections: true,
   },
   permalink: "/careers/{{ job.slug }}.html",
   navRoot: "../",
