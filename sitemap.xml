@@ -25,6 +25,18 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://icalialabs.com/about.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/developers.html</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://icalialabs.com/industries/fintech.html</loc>
     <lastmod>2026-04-20</lastmod>
     <changefreq>monthly</changefreq>
@@ -67,8 +79,8 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://icalialabs.com/careers/backend-engineer-api-integrations.html</loc>
-    <lastmod>2026-06-04</lastmod>
+    <loc>https://icalialabs.com/careers/senior-ruby-on-rails-engineer.html</loc>
+    <lastmod>2026-09-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
