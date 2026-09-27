@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Terms and Conditions — Icalia Labs</title>
-  <meta name="description" content="Icalia Labs Terms and Conditions governing use of the website.">
-  <link rel="canonical" href="https://icalialabs.com/terms.html">
+  <title>Icalia Labs Developer Resources — Open Source, SDKs &amp; MCP Servers</title>
+  <meta name="description" content="Icalia Labs developer resources: Sepomex (open REST + MCP API), the official Ruby SDK, our engineering guides, and open-source Claude agent skills.">
+  <link rel="canonical" href="https://icalialabs.com/developers.html">
   <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
 
-  <link rel="alternate" type="text/markdown" href="https://icalialabs.com/terms.md">
+  <link rel="alternate" type="text/markdown" href="https://icalialabs.com/developers.md">
 
 
   <!-- Google Analytics -->
@@ -19,7 +19,7 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-MSFD00QMYY', {
-      'page_path': '/terms.html',
+      'page_path': '/developers.html',
       'anonymize_ip': true,
       'cookie_expires': 63072000
     });
@@ -27,13 +27,13 @@
   <script src="/js/ga-events.js" defer></script>
 
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://icalialabs.com/terms.html">
-  <meta property="og:title" content="Terms and Conditions — Icalia Labs">
-  <meta property="og:description" content="Icalia Labs Terms and Conditions governing use of the website.">
+  <meta property="og:url" content="https://icalialabs.com/developers.html">
+  <meta property="og:title" content="Icalia Labs Developer Resources — Open Source, SDKs &amp; MCP Servers">
+  <meta property="og:description" content="Icalia Labs developer resources: Sepomex (open REST + MCP API), the official Ruby SDK, our engineering guides, and open-source Claude agent skills.">
   <meta property="og:image" content="https://icalialabs.com/assets/og-image.png">
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="Terms and Conditions — Icalia Labs">
-  <meta name="twitter:description" content="Icalia Labs Terms and Conditions governing use of the website.">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Icalia Labs Developer Resources — Open Source, SDKs &amp; MCP Servers">
+  <meta name="twitter:description" content="Icalia Labs developer resources: Sepomex (open REST + MCP API), the official Ruby SDK, our engineering guides, and open-source Claude agent skills.">
   <meta name="twitter:image" content="https://icalialabs.com/assets/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -75,31 +75,47 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Terms and Conditions — Icalia Labs",
-    "description": "Icalia Labs Terms and Conditions governing use of the website.",
-    "url": "https://icalialabs.com/terms.html",
+    "@type": "CollectionPage",
+    "name": "Icalia Labs Developer Resources",
+    "description": "Open source repositories, SDKs, MCP servers, and engineering guides published by Icalia Labs.",
+    "url": "https://icalialabs.com/developers.html",
     "isPartOf": {
       "@type": "Organization",
       "name": "Icalia Labs",
       "url": "https://icalialabs.com"
     },
-    "datePublished": "2025-01-23",
-    "lastReviewed": "2025-01-23"
+    "hasPart": [
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "Sepomex",
+        "description": "Open REST and MCP API for Mexico's postal codes — every zip code, state, municipality, city, and settlement. No API key, no rate limit.",
+        "codeRepository": "https://github.com/IcaliaLabs/sepomex",
+        "programmingLanguage": "Ruby"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "icalia-sdk-ruby",
+        "description": "The official Icalia SDK for Ruby, with event and webhook primitives.",
+        "codeRepository": "https://github.com/IcaliaLabs/icalia-sdk-ruby",
+        "programmingLanguage": "Ruby"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "identity-verification-skill",
+        "description": "Open-source, Claude-powered identity verification skill for remote hiring across the US and Latin America.",
+        "codeRepository": "https://github.com/IcaliaLabs/identity-verification-skill",
+        "programmingLanguage": "Markdown"
+      },
+      {
+        "@type": "SoftwareSourceCode",
+        "name": "guides",
+        "description": "The set of engineering rules and conventions Icalia Labs uses internally to build better software.",
+        "codeRepository": "https://github.com/IcaliaLabs/guides",
+        "programmingLanguage": "Ruby"
+      }
+    ]
   }
   </script>
-  <style>
-    .reveal { transform: translateY(16px); transition: opacity 0.8s ease, transform 0.8s ease; }
-    .legal-prose h2 { font-family: '"Instrument Serif"', serif; font-size: 1.875rem; line-height: 1.2; margin-top: 3rem; margin-bottom: 1rem; color: #1A1A22; }
-    .legal-prose h3 { font-weight: 600; font-size: 1.125rem; margin-top: 2rem; margin-bottom: 0.75rem; color: #1A1A22; }
-    .legal-prose h4 { font-weight: 600; font-size: 0.95rem; margin-top: 1.5rem; margin-bottom: 0.5rem; color: #1A1A22; }
-    .legal-prose p { color: rgba(45, 47, 64, 0.75); line-height: 1.7; margin-bottom: 1rem; }
-    .legal-prose ul { color: rgba(45, 47, 64, 0.75); line-height: 1.7; margin-bottom: 1rem; padding-left: 1.25rem; list-style: disc; }
-    .legal-prose li { margin-bottom: 0.25rem; }
-    .legal-prose strong { color: #1A1A22; font-weight: 600; }
-    .legal-prose a { color: #E8453C; text-decoration: underline; text-underline-offset: 2px; }
-    .legal-prose a:hover { color: #C53B33; }
-  </style>
 </head>
 <body class="font-body text-icalia-dark antialiased bg-icalia-warm">
 
@@ -175,62 +191,139 @@
 
 <main>
 
-  <!-- Header -->
-  <section class="pt-36 pb-12 md:pt-44 md:pb-16 px-6 lg:px-10">
-    <div class="max-w-3xl mx-auto">
-      <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4 reveal">Legal</p>
-      <h1 class="font-display text-5xl md:text-6xl leading-[1.05] tracking-tight reveal reveal-delay-1">
-        Terms &amp; <span class="italic text-icalia-red">Conditions</span>
+  <!-- Hero -->
+  <section class="pt-36 pb-16 md:pt-52 md:pb-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto reveal">
+      <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-6">Icalia Labs Developer Resources</p>
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight max-w-5xl">
+        We ship code.<br>
+        Some of it is<br>
+        <span class="italic text-icalia-red">public.</span>
       </h1>
+      <p class="mt-10 text-lg md:text-xl text-icalia-navy/60 max-w-3xl leading-relaxed">
+        Icalia Labs engineers maintain open-source APIs, SDKs, agent skills, and the engineering guides we use internally. Everything below is real, versioned, and linked to its source.
+      </p>
+      <div class="mt-12 flex flex-col sm:flex-row gap-4">
+        <a href="https://github.com/IcaliaLabs" target="_blank" rel="noopener" class="bg-icalia-dark text-icalia-warm px-8 py-4 rounded-full font-semibold hover:bg-icalia-navy transition-colors inline-flex items-center gap-2">
+          View github.com/IcaliaLabs <span>→</span>
+        </a>
+        <a href="/llms.txt" class="px-8 py-4 rounded-full font-semibold text-icalia-navy hover:text-icalia-dark transition-colors inline-flex items-center gap-2">
+          Read llms.txt
+        </a>
+      </div>
     </div>
   </section>
 
-  <!-- Content -->
-  <section class="pb-24 md:pb-36 px-6 lg:px-10">
-    <div class="max-w-3xl mx-auto legal-prose reveal">
-      <h2>Acceptance of Terms</h2>
-      <p>The user acknowledges that entering and using the site expresses their "express acceptance and adherence to the Terms and Conditions" at the time of access.</p>
+  <!-- Flagship: Sepomex -->
+  <section class="py-16 md:py-24 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12 md:gap-16 items-start">
+        <div class="md:col-span-5 reveal">
+          <p class="text-xs font-semibold text-icalia-navy/40 tracking-widest uppercase">Flagship &middot; REST + MCP API</p>
+          <h2 class="mt-5 font-display text-4xl md:text-5xl leading-tight">Sepomex</h2>
+          <p class="mt-6 text-lg text-icalia-navy/70 leading-relaxed">The open REST and MCP API for Mexico's postal codes. Every zip code, state, municipality, city, and settlement — one bundled SQLite database, no API key, no rate limit.</p>
+          <p class="mt-4 text-sm text-icalia-navy/50 leading-relaxed">As of v1.0.0, Sepomex also exposes its data to AI agents directly through the <strong class="text-icalia-dark">Model Context Protocol</strong> — over Streamable HTTP (<code class="text-icalia-red">/mcp</code>) and stdio (<code class="text-icalia-red">bin/mcp</code>).</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="https://github.com/IcaliaLabs/sepomex" target="_blank" rel="noopener" class="text-sm font-semibold text-icalia-red hover:underline">Source on GitHub &rarr;</a>
+          </div>
+        </div>
+        <div class="md:col-span-7 grid sm:grid-cols-2 gap-4 reveal reveal-delay-1">
+          <div class="bg-icalia-warm-2 p-6 rounded-2xl border border-icalia-sand/60">
+            <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">REST endpoint</p>
+            <p class="mt-3 text-sm text-icalia-navy/70 leading-relaxed font-mono">GET /api/v1/zip_codes?zip_code=64000</p>
+          </div>
+          <div class="bg-icalia-warm-2 p-6 rounded-2xl border border-icalia-sand/60">
+            <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">MCP server</p>
+            <p class="mt-3 text-sm text-icalia-navy/70 leading-relaxed">Streamable HTTP at <code>/mcp</code>, or stdio via <code>bin/mcp</code>.</p>
+          </div>
+          <div class="bg-icalia-warm-2 p-6 rounded-2xl border border-icalia-sand/60">
+            <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">Hosted instance</p>
+            <p class="mt-3 text-sm text-icalia-navy/70 leading-relaxed font-mono">sepomex.kurenn.dev</p>
+          </div>
+          <div class="bg-icalia-warm-2 p-6 rounded-2xl border border-icalia-sand/60">
+            <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">License</p>
+            <p class="mt-3 text-sm text-icalia-navy/70 leading-relaxed">MIT &middot; ~154k settlements bundled, zero external dependencies.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <h2>Access and Use of the Site</h2>
-      <p>Access and use of the site is complimentary for users. Registration is not required. The services target any person with legal capacity under applicable legislation.</p>
+  <!-- Other resources -->
+  <section class="py-16 md:py-24 px-6 lg:px-10 bg-icalia-warm-2 border-t border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">More from Icalia Labs</p>
+        <h2 class="font-display text-3xl md:text-5xl leading-[1.05] tracking-tight">
+          SDKs, skills,<br><span class="italic">and how we build.</span>
+        </h2>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <a href="https://github.com/IcaliaLabs/icalia-sdk-ruby" target="_blank" rel="noopener" class="block bg-white border border-icalia-sand/50 rounded-2xl p-6 reveal hover:border-icalia-red/40 transition-colors">
+          <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest mb-2">Official SDK</p>
+          <h3 class="font-display text-2xl mb-2 text-icalia-dark">icalia-sdk-ruby</h3>
+          <p class="text-sm text-icalia-navy/50 leading-relaxed">The official Icalia SDK for Ruby, with event and webhook primitives. Apache-2.0.</p>
+        </a>
+        <a href="https://github.com/IcaliaLabs/identity-verification-skill" target="_blank" rel="noopener" class="block bg-white border border-icalia-sand/50 rounded-2xl p-6 reveal reveal-delay-1 hover:border-icalia-red/40 transition-colors">
+          <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest mb-2">Claude Agent Skill</p>
+          <h3 class="font-display text-2xl mb-2 text-icalia-dark">identity-verification-skill</h3>
+          <p class="text-sm text-icalia-navy/50 leading-relaxed">Open-source, Claude-powered identity verification for remote hiring across the US and LatAm. MIT licensed.</p>
+        </a>
+        <a href="https://github.com/IcaliaLabs/guides" target="_blank" rel="noopener" class="block bg-white border border-icalia-sand/50 rounded-2xl p-6 reveal reveal-delay-2 hover:border-icalia-red/40 transition-colors">
+          <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest mb-2">Engineering guides</p>
+          <h3 class="font-display text-2xl mb-2 text-icalia-dark">guides</h3>
+          <p class="text-sm text-icalia-navy/50 leading-relaxed">The set of rules we use internally at Icalia Labs to build better software.</p>
+        </a>
+      </div>
+      <p class="text-center text-sm text-icalia-navy/40 mt-10 reveal">
+        68+ repositories total, 5,000+ cumulative GitHub stars. See the full list at <a href="https://github.com/IcaliaLabs" target="_blank" rel="noopener" class="text-icalia-red font-semibold hover:underline">github.com/IcaliaLabs</a>.
+      </p>
+    </div>
+  </section>
 
-      <h2>Object</h2>
-      <p>ICALIA makes the site available to users, facilitating access to various information and content. The company "reserves the right to modify totally or partially, at any time and without prior notice" the site's presentation, configuration, and contents. Service descriptions are illustrative with standard market specifications unless detailed otherwise on the site.</p>
+  <!-- Machine-readable resources -->
+  <section class="py-16 md:py-24 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12 md:gap-16">
+        <div class="md:col-span-4 reveal">
+          <p class="text-xs font-semibold text-icalia-navy/40 tracking-widest uppercase">For agents &amp; crawlers</p>
+          <h2 class="mt-5 font-display text-4xl md:text-5xl leading-tight">Machine-readable resources.</h2>
+        </div>
+        <div class="md:col-span-8 grid sm:grid-cols-2 gap-4 reveal reveal-delay-1">
+          <a href="/llms.txt" class="bg-icalia-warm-2 p-6 rounded-2xl border border-icalia-sand/60 hover:border-icalia-red/40 transition-colors">
+            <p class="font-semibold text-icalia-dark font-mono text-sm">/llms.txt</p>
+            <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">Structured summary of Icalia Labs for AI agents, including when-to-use guidance.</p>
+          </a>
+          <a href="/sitemap.xml" class="bg-icalia-warm-2 p-6 rounded-2xl border border-icalia-sand/60 hover:border-icalia-red/40 transition-colors">
+            <p class="font-semibold text-icalia-dark font-mono text-sm">/sitemap.xml</p>
+            <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">Full index of every page on icalialabs.com.</p>
+          </a>
+          <a href="/robots.txt" class="bg-icalia-warm-2 p-6 rounded-2xl border border-icalia-sand/60 hover:border-icalia-red/40 transition-colors">
+            <p class="font-semibold text-icalia-dark font-mono text-sm">/robots.txt</p>
+            <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">Crawler rules and sitemap pointer.</p>
+          </a>
+          <a href="https://github.com/IcaliaLabs/sepomex" target="_blank" rel="noopener" class="bg-icalia-warm-2 p-6 rounded-2xl border border-icalia-sand/60 hover:border-icalia-red/40 transition-colors">
+            <p class="font-semibold text-icalia-dark font-mono text-sm">Sepomex /mcp</p>
+            <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">Live MCP server for Mexican postal-code data.</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-      <h2>Contents — Correct Use</h2>
-      <p>Users agree to:</p>
-      <ul>
-        <li>Use the site in accordance with applicable laws and public order</li>
-        <li>Refrain from acts that damage ICALIA's image, information, or third-party rights</li>
-        <li>Not copy, disseminate, modify, reproduce, or distribute contents without express written authorization</li>
-        <li>Not modify trademarks, logos, or distinctive signs without permission</li>
-        <li>Not suppress, evade, or modify technical protection devices</li>
-      </ul>
-      <p>Users may print and copy information generated for their personal use. ICALIA assumes no responsibility for damage to user hardware or software from site access.</p>
-
-      <h2>Sites and Content Outside the Site</h2>
-      <p>ICALIA may publish third-party materials and links but "disclaims any responsibility for the access and/or use that the User makes" of external information. Publication does not obligate third-party payment unless a contract exists.</p>
-
-      <h2>Denial and Withdrawal of Access</h2>
-      <p>ICALIA reserves the right to deny or withdraw access to users who breach terms or engage in harassment, impersonation, unauthorized data collection, transmit malicious code, damage servers, or attempt unauthorized system access.</p>
-
-      <h2>Indemnification</h2>
-      <p>Users agree to indemnify ICALIA and its officials, agents, employees, partners, and licensors from third-party claims arising from user-submitted content, including covering reasonable attorney fees.</p>
-
-      <h2>Responsibility Regarding Contents</h2>
-      <p>ICALIA assumes no responsibility for:</p>
-      <ul>
-        <li>User material use in violation of intellectual property rights</li>
-        <li>Damages from search tool operation or content access errors</li>
-        <li>Content from linked pages</li>
-        <li>Third-party acts or omissions</li>
-        <li>Minor access to site contents or personal information submission</li>
-        <li>Communications in forums, chats, or virtual communities</li>
-      </ul>
-      <p>ICALIA is not responsible for internet network errors, force majeure, communication failures, email address non-operability, or service misuse by users.</p>
-
-      <h2>Access and Stay on the Site</h2>
-      <p>Users are solely responsible for their conduct accessing and providing information to the site, including consequences from illicit use or use contrary to the terms that harms third-party interests or rights.</p>
+  <!-- CTA band -->
+  <section class="py-20 md:py-28 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-5xl mx-auto text-center reveal">
+      <h2 class="font-display text-4xl md:text-6xl leading-tight">Want engineers who ship <span class="italic text-icalia-red">code like this?</span></h2>
+      <p class="mt-8 text-lg text-icalia-navy/60 max-w-2xl mx-auto">The same engineers who maintain these repos are available to embed directly into your team.</p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="contact.html#book" class="bg-icalia-dark text-icalia-warm px-8 py-4 rounded-full font-semibold hover:bg-icalia-navy transition-colors inline-flex items-center justify-center gap-2">
+          Find engineers for your team <span>→</span>
+        </a>
+        <a href="careers.html" class="px-8 py-4 rounded-full font-semibold text-icalia-navy hover:text-icalia-dark transition-colors inline-flex items-center justify-center gap-2">
+          See open roles
+        </a>
+      </div>
     </div>
   </section>
 
