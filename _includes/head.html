@@ -5,6 +5,11 @@
   <link rel="canonical" href="https://icalialabs.com{{ canonicalPath }}">
   <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+{% if canonicalPath == "/" %}
+  <link rel="alternate" type="text/markdown" href="https://icalialabs.com/index.md">
+{% else %}
+  <link rel="alternate" type="text/markdown" href="https://icalialabs.com{{ canonicalPath | replace('.html', '.md') }}">
+{% endif %}
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSFD00QMYY"></script>

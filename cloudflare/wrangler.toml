@@ -1,0 +1,14 @@
+name = "icalialabs-markdown-negotiation"
+main = "markdown-negotiation-worker.js"
+compatibility_date = "2026-04-18"
+
+# Attach this Worker to a Route on the icalialabs.com zone, e.g.:
+#   pattern = "icalialabs.com/*"
+#   zone_name = "icalialabs.com"
+# Routes are configured per-account; add one in the dashboard
+# (Workers & Pages -> icalialabs-markdown-negotiation -> Triggers -> Routes)
+# or uncomment and adjust the block below before `wrangler deploy`.
+
+# [[routes]]
+# pattern = "icalialabs.com/*"
+# zone_name = "icalialabs.com"

@@ -4,11 +4,14 @@
   "version": "1.0.0",
   "description": "Icalia Labs marketing site — nearshore staff augmentation",
   "scripts": {
-    "build": "eleventy",
+    "build": "eleventy && node scripts/generate-markdown.js",
     "dev": "eleventy --serve --port=8080",
-    "clean": "rm -rf _site"
+    "clean": "rm -rf _site",
+    "test": "node scripts/verify-site.js",
+    "build:verify": "npm run build && npm test"
   },
   "devDependencies": {
-    "@11ty/eleventy": "^3.1.6"
+    "@11ty/eleventy": "^3.1.6",
+    "turndown": "^7.2.4"
   }
 }
