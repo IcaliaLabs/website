@@ -24,7 +24,7 @@
     .post-prose code { font-size: 0.9em; background: #F3F0EC; padding: 0.15rem 0.35rem; border-radius: 0.35rem; }
     .post-prose pre { background: #1A1A22; color: #FAF8F6; padding: 1.25rem; border-radius: 1rem; overflow-x: auto; font-size: 0.875rem; }
     .post-prose pre code { background: none; padding: 0; }
-    .post-prose img { max-width: 100%; border-radius: 1rem; }
+    .post-prose img { max-width: 100%; height: auto; border-radius: 1rem; margin-top: 2rem; margin-bottom: 0.5rem; }
     .post-prose table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; display: block; overflow-x: auto; }
     .post-prose th, .post-prose td { border-bottom: 1px solid #E8E4DF; padding: 0.65rem 0.75rem; text-align: left; vertical-align: top; }
     .post-prose th { color: #1A1A22; font-weight: 600; background: #F3F0EC; }
@@ -47,6 +47,12 @@
       <div class="max-w-3xl mx-auto">
 {% if draft %}
         <p class="mb-6 inline-block text-xs font-semibold uppercase tracking-widest text-white bg-icalia-red px-3 py-1.5 rounded-full">Draft preview — not published</p>
+{% endif %}
+{% if page.date | isPreAi %}
+        <p class="mb-6 text-sm text-icalia-navy/70 bg-icalia-warm-2 border border-dashed border-icalia-sand rounded-2xl px-5 py-4" role="note">
+          <span class="font-semibold text-icalia-dark">{{ blog.preAiEraLabel }} &middot; {{ page.date | year }}.</span>
+          Written before AI was part of how we build. The fundamentals still hold; tooling and workflow advice may be dated.
+        </p>
 {% endif %}
         <nav aria-label="Breadcrumb" class="text-xs font-medium text-icalia-navy/50 mb-8">
           <ol class="flex flex-wrap items-center gap-2">
@@ -88,11 +94,11 @@
     </header>
 
 {% if image %}
-    <div class="px-6 lg:px-10">
-      <div class="max-w-4xl mx-auto">
-        <img src="{{ image }}" alt="{{ imageAlt or title }}" class="w-full rounded-2xl object-cover">
+    <figure class="px-6 lg:px-10">
+      <div class="max-w-5xl mx-auto">
+        <img src="{{ image }}" alt="{{ imageAlt or title }}" width="1920" height="1080" fetchpriority="high" decoding="async" class="w-full aspect-[16/9] rounded-2xl object-cover bg-icalia-warm-2">
       </div>
-    </div>
+    </figure>
 {% endif %}
 
     <div class="px-6 lg:px-10 pb-16">
@@ -156,12 +162,9 @@
     <div class="max-w-7xl mx-auto">
       <h2 id="related-reading" class="font-display text-3xl md:text-4xl leading-tight mb-10">Related reading</h2>
       <div class="grid md:grid-cols-3 gap-6">
-{% for p in related %}
-        <a href="{{ p.url }}" class="group block bg-white border border-icalia-sand/50 rounded-2xl p-6 hover:border-icalia-red/40 transition-colors">
-          <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">{{ p.date | readableDate }}</p>
-          <h3 class="mt-3 font-display text-2xl leading-snug text-icalia-dark group-hover:text-icalia-red transition-colors">{{ p.data.title }}</h3>
-          <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">{{ p.data.description }}</p>
-        </a>
+{% for card in related %}
+{% set cardHeading = "h3" %}{% set cardFeatured = false %}
+{% include "post-card.html" %}
 {% endfor %}
       </div>
     </div>

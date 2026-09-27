@@ -1,41 +1,44 @@
 ---
-title: "How to Hire Software Engineers in Mexico: A US Guide"
-description: "A practical guide for US companies hiring software engineers in Mexico: hiring models, legal setup, vetting, onboarding, and the mistakes to avoid."
-draft: true
+title: 'How to Hire Software Engineers in Mexico: A US Guide'
+description: 'A practical guide for US companies hiring software engineers in Mexico: hiring models, legal setup, vetting, onboarding, and the mistakes to avoid.'
+draft: false
 date: 2026-09-26
+updated: 2026-09-27
 author: eduardo-lopez
 topics:
   - nearshore-hiring
   - software-development
+image: /assets/blog/monterrey-office-overhead.jpg
+imageAlt: Engineers working at shared desks in the Icalia Labs office in Monterrey, Mexico, seen from above
 takeaways:
-  - "US companies hire engineers in Mexico through four models: independent contractors, an Employer of Record, their own Mexican entity, or a staff augmentation partner."
-  - "Mexican employees have mandatory benefits — including an annual bonus, paid vacation, social security, and profit sharing — that must be priced in."
-  - "A 2021 reform restricts personnel subcontracting in Mexico, so check that any staffing partner is compliant."
-  - "Vet for seniority and communication, not just algorithms: the best signal is how a candidate reasons about your real codebase."
-  - "Engineers who join your standups and tools from day one ramp up fastest."
+  - 'US companies hire engineers in Mexico through four models: independent contractors, an Employer of Record, their own Mexican entity, or a staff augmentation partner.'
+  - Mexican employees have mandatory benefits — including an annual bonus, paid vacation, social security, and profit sharing — that must be priced in.
+  - A 2021 reform restricts personnel subcontracting in Mexico, so check that any staffing partner is compliant.
+  - 'Vet for seniority and communication, not just algorithms: the best signal is how a candidate reasons about your real codebase.'
+  - Engineers who join your standups and tools from day one ramp up fastest.
 faq:
-  - q: "Can a US company hire employees in Mexico without a Mexican entity?"
-    a: "Yes. The most common options are hiring through an Employer of Record, which employs the engineer on your behalf, or working with a staff augmentation partner that employs and manages the engineer while they work inside your team."
-  - q: "Is it legal to hire Mexican engineers as independent contractors?"
-    a: "It can be, but the relationship must genuinely be independent. If a contractor works full-time under your direction like an employee, there is a risk of misclassification under Mexican labor law. Get local legal advice before relying on contractors long-term."
-  - q: "How long does it take to hire a senior engineer in Mexico?"
-    a: "It depends on the model. Building your own pipeline can take months; a staffing partner with a vetted network can typically present matched senior candidates within days to weeks."
-  - q: "Do engineers in Mexico work in English?"
-    a: "Senior engineers who work with US product teams typically work in English every day — in standups, code review, documentation, and writing. Test for it during interviews the same way you would for any hire."
-  - q: "Which cities in Mexico have the most software engineers?"
-    a: "Monterrey, Guadalajara, and Mexico City are the largest tech hubs, with strong engineering universities and established communities of engineers who work with US companies."
+  - q: Can a US company hire employees in Mexico without a Mexican entity?
+    a: Yes. The most common options are hiring through an Employer of Record, which employs the engineer on your behalf, or working with a staff augmentation partner that employs and manages the engineer while they work inside your team.
+  - q: Is it legal to hire Mexican engineers as independent contractors?
+    a: It can be, but the relationship must genuinely be independent. If a contractor works full-time under your direction like an employee, there is a risk of misclassification under Mexican labor law. Get local legal advice before relying on contractors long-term.
+  - q: How long does it take to hire a senior engineer in Mexico?
+    a: It depends on the model. Building your own pipeline can take months; a staffing partner with a vetted network can typically present matched senior candidates within days to weeks.
+  - q: Do engineers in Mexico work in English?
+    a: Senior engineers who work with US product teams typically work in English every day — in standups, code review, documentation, and writing. Test for it during interviews the same way you would for any hire.
+  - q: Which cities in Mexico have the most software engineers?
+    a: Monterrey, Guadalajara, and Mexico City are the largest tech hubs, with strong engineering universities and established communities of engineers who work with US companies.
 ---
 
 Mexico has become one of the most common places for US companies to grow engineering teams: engineers work in or near US time zones, the senior talent pool is deep, and the major tech hubs are a short flight from Texas. This guide walks through how to actually do it — the hiring models, the legal basics, how to vet, and how to onboard so new engineers ship quickly.
 
-*This guide is general information, not legal or tax advice. Employment rules change; confirm the specifics with Mexican counsel.*
+_This guide is general information, not legal or tax advice. Employment rules change; confirm the specifics with Mexican counsel._
 
 ## Step 1: Pick a hiring model
 
 There are four common ways to hire engineers in Mexico. They differ in how much legal and administrative work you take on.
 
 | Model | What it is | Best for | Watch out for |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Independent contractor | You contract directly with the engineer, who invoices you | Short, clearly scoped work | Misclassification risk if they work like an employee |
 | Employer of Record (EOR) | A third party employs the engineer on your behalf | A few hires without an entity | You still source, vet, and manage them yourself |
 | Your own Mexican entity | You incorporate and employ directly | Large, long-term teams | Setup time, payroll, tax, and compliance overhead |
@@ -51,8 +54,7 @@ If engineers are employed in Mexico — by you, an EOR, or a partner — Mexican
 - **Paid vacation**, which starts at 12 days after the first year of service, plus a vacation premium.
 - **Social security and housing contributions** (IMSS and INFONAVIT).
 - **Profit sharing (PTU)**, where eligible employees share in a portion of company profits.
-
-[VERIFY: have Mexican counsel confirm the current figures above before publishing.]
+- **Termination cost**, when hiring under payroll, once an employer-employee relationship finishes you need to consider a 3-month salary to cover the local jurisdiction taxes and laws. 
 
 Mexico's 2021 subcontracting reform restricts the outsourcing of personnel. Specialized service providers must be registered, so ask any staffing partner how they comply.
 
@@ -65,6 +67,8 @@ The strongest engineers are rarely on job boards. They're employed, and they mov
 - **A staffing partner with a vetted network** — fastest route to senior people, if the vetting is real.
 
 Monterrey, Guadalajara, and Mexico City are the largest hubs. Monterrey in particular has deep ties to US manufacturing, logistics, and energy companies — it's where Icalia Labs has been placing engineers since 2011.
+
+![Icalia Labs engineers working late at the Monterrey office](/assets/blog/monterrey-office-night.jpg)
 
 ## Step 4: Vet for how engineers actually work
 
@@ -98,4 +102,4 @@ This is the model we use: engineers join your workflows directly, and we handle 
 
 ## The faster route
 
-If you'd rather skip building a pipeline and an entity, Icalia Labs embeds senior engineers from Mexico and Latin America directly into your team. You interview them and your standards decide who joins. See [how we've done it for other teams](/case-studies.html), read [how nearshore compares to onshore and offshore](/blog/nearshore-vs-onshore-vs-offshore.html), or [book a 30-minute call](/contact.html#book).
+If you'd rather skip building a pipeline and an entity, Icalia Labs embeds senior engineers from Mexico and Latin America directly into your team. You interview them and your standards decide who joins. See [how we've done it for other teams](/case-studies.html) or [book a 30-minute call](/contact.html#book).

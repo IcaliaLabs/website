@@ -1,6 +1,7 @@
 const { execFileSync } = require("child_process");
 const markdownItAnchor = require("markdown-it-anchor");
 const blogTopics = require("./_data/blogTopics.json");
+const blogSettings = require("./_data/blog.json");
 
 const SITE_URL = "https://icalialabs.com";
 const SITEMAP_EXCLUDE_PREFIXES = ["/cyberpunk/", "/monospace/", "/terminal/", "/mix/"];
@@ -65,9 +66,16 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addGlobalData("siteUrl", SITE_URL);
   eleventyConfig.addGlobalData("includeDrafts", includeDrafts());
 
-  eleventyConfig.amendLibrary("md", (md) =>
-    md.use(markdownItAnchor, { level: [2, 3], slugify: slugifyHeading, tabIndex: false })
-  );
+  eleventyConfig.amendLibrary("md", (md) => {
+    md.use(markdownItAnchor, { level: [2, 3], slugify: slugifyHeading, tabIndex: false });
+    // Images inside article bodies load lazily so the cover stays the LCP element.
+    const renderImage = md.renderer.rules.image;
+    md.renderer.rules.image = (tokens, idx, options, env, self) => {
+      tokens[idx].attrSet("loading", "lazy");
+      tokens[idx].attrSet("decoding", "async");
+      return renderImage(tokens, idx, options, env, self);
+    };
+  });
 
   eleventyConfig.addPassthroughCopy("assets");
   eleventyConfig.addPassthroughCopy("js");
@@ -169,6 +177,24 @@ module.exports = async function (eleventyConfig) {
       ? toDate(item.data.updated) || item.date
       : gitLastModified(item.inputPath) || item.date;
     return d.toISOString().slice(0, 10);
+  });
+
+  // --- Timeline ---
+  const yearOf = (value) => toDate(value).getUTCFullYear();
+  const isPreAi = (value) => yearOf(value) < blogSettings.aiEraStartYear;
+
+  eleventyConfig.addFilter("year", (value) => yearOf(value));
+  eleventyConfig.addFilter("isPreAi", (value) => isPreAi(value));
+
+  // Newest-first posts grouped by publish year: [{ year, preAi, posts }].
+  eleventyConfig.addFilter("groupByYear", (posts) => {
+    const groups = new Map();
+    for (const p of [...(posts || [])].sort((a, b) => b.date - a.date)) {
+      const y = yearOf(p.date);
+      if (!groups.has(y)) groups.set(y, { year: y, preAi: isPreAi(p.date), posts: [] });
+      groups.get(y).posts.push(p);
+    }
+    return [...groups.values()];
   });
 
   eleventyConfig.addFilter("limit", (arr, n) => (arr || []).slice(0, n));

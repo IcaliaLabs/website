@@ -264,12 +264,13 @@ for (const post of sourcePosts) {
 // Drafts must never reach the production build.
 if (!INCLUDE_DRAFTS) {
   for (const post of sourcePosts.filter((p) => p.data.draft)) {
-    const url = `/blog/${post.slug}.html`;
+    const url = `https://icalialabs.com/blog/${post.slug}.html`;
+    // Match listing entries only; a published post may legitimately mention the URL in its body.
     check(`draft ${post.slug}: not built, not listed anywhere`, () => {
       assert(!fs.existsSync(path.join(SITE_DIR, "blog", `${post.slug}.html`)), "HTML was built");
-      assert(!sitemapXml.includes(url), "listed in sitemap.xml");
-      assert(!feedXml.includes(url), "listed in feed.xml");
-      assert(!llmsTxt.includes(url), "listed in llms.txt");
+      assert(!sitemapXml.includes(`<loc>${url}</loc>`), "listed in sitemap.xml");
+      assert(!feedXml.includes(`<id>${url}</id>`), "listed in feed.xml");
+      assert(!llmsTxt.includes(`](${url})`), "listed in llms.txt");
     });
   }
 }
@@ -310,10 +311,53 @@ for (const post of renderedPosts) {
   });
   check(`${rel}: listed in sitemap.xml, feed.xml, and llms.txt`, () => {
     assert(sitemapXml.includes(`<loc>${url}</loc>`), "not in sitemap.xml");
-    assert(feedXml.includes(url), "not in feed.xml");
-    assert(llmsTxt.includes(url), "not in llms.txt");
+    assert(feedXml.includes(`<id>${url}</id>`), "not in feed.xml");
+    assert(llmsTxt.includes(`](${url})`), "not in llms.txt");
   });
 }
+
+// Published posts must not ship review placeholders.
+if (!INCLUDE_DRAFTS) {
+  for (const post of sourcePosts.filter((p) => !p.data.draft)) {
+    check(`blog/posts/${post.slug}.md: no [VERIFY] placeholders in a published post`, () => {
+      const hits = (post.content.match(/\[VERIFY[^\]]*\]/g) || []).length;
+      assert(hits === 0, `${hits} [VERIFY] marker(s) left — resolve them or set draft: true`);
+    });
+  }
+}
+
+// Cover images: file exists, used as cover, card image, and og:image.
+for (const post of renderedPosts.filter((p) => p.data.image)) {
+  const rel = `blog/${post.slug}.html`;
+  check(`${rel}: cover image exists and is used on the post, the /blog/ card, and og:image`, () => {
+    const img = post.data.image;
+    assert(fs.existsSync(path.join(SITE_DIR, img.replace(/^\//, ""))), `${img} not in build`);
+    assert(readSite(rel).includes(`<img src="${img}"`), "no cover <img> on post page");
+    assert(readSite(rel).includes(`og:image" content="https://icalialabs.com${img}"`), "og:image not the cover");
+    assert(readSite("blog/index.html").includes(`<img src="${img}"`), "no card image on /blog/");
+  });
+}
+
+// Timeline: one anchored section + nav link per publish year; pre-AI divider only when needed.
+check("blog index: timeline has a section and nav link for every publish year", () => {
+  const html = readSite("blog/index.html");
+  const years = [...new Set(renderedPosts.map((p) => new Date(p.data.date).getUTCFullYear()))];
+  for (const y of years) {
+    assert(html.includes(`id="y${y}"`), `no section for ${y}`);
+    assert(html.includes(`href="#y${y}"`), `no nav link for ${y}`);
+  }
+});
+check("blog index + posts: pre-AI era labels appear exactly for pre-AI posts", () => {
+  const settings = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, "_data", "blog.json"), "utf-8"));
+  const html = readSite("blog/index.html");
+  const preAi = renderedPosts.filter((p) => new Date(p.data.date).getUTCFullYear() < settings.aiEraStartYear);
+  assert(html.includes("Written before AI was part of how we build") === preAi.length > 0, "divider mismatch");
+  for (const p of renderedPosts) {
+    const isOld = preAi.includes(p);
+    const post = readSite(`blog/${p.slug}.html`);
+    assert(post.includes('role="note"') === isOld, `${p.slug}: pre-AI notice should be ${isOld}`);
+  }
+});
 
 // Topic pages: exactly the topics with rendered posts; aliases fold into their canonical page.
 check("blog topic pages match topics that have posts", () => {
@@ -406,6 +450,15 @@ for (const file of htmlFiles) {
       if (abs && !existsAsPage(abs)) broken.push(href);
     }
     assert(broken.length === 0, `broken: ${broken.join(", ")}`);
+  });
+  const srcs = [...html.matchAll(/<img\s[^>]*src="([^"]*)"/gi)].map((m) => m[1]);
+  check(`${rel}: all local images resolve`, () => {
+    const missing = [];
+    for (const src of new Set(srcs)) {
+      const abs = resolveHref(file, src);
+      if (abs && !fs.existsSync(abs)) missing.push(src);
+    }
+    assert(missing.length === 0, `missing: ${missing.join(", ")}`);
   });
 }
 

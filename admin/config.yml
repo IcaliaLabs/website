@@ -21,6 +21,22 @@ logo_url: /assets/logo.svg
 media_folder: assets/blog
 public_folder: /assets/blog
 
+# Uploads are optimized in the browser before they're committed, so raw
+# camera photos (often 5+ MB) never reach the repo or the page.
+media_libraries:
+  default:
+    config:
+      slugify_filename: true
+      max_file_size: 15000000
+      transformations:
+        raster_image:
+          format: webp
+          quality: 80
+          width: 1920
+          height: 1920
+        svg:
+          optimize: true
+
 collections:
   - name: posts
     label: Blog posts
