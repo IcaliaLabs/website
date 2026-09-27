@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+  
+  <title>Icalia Labs Blog</title>
+  <subtitle>Nearshore engineering, AI-augmented delivery, and building software teams that ship.</subtitle>
+  <link href="https://icalialabs.com/blog/feed.xml" rel="self" />
+  <link href="https://icalialabs.com/" />
+  <updated>2026-09-26T00:00:00Z</updated>
+  <id>https://icalialabs.com/</id>
+  <author>
+    <name>Icalia Labs</name>
+    <email>sales@icalialabs.com</email>
+  </author>
+  <entry>
+    <title>How to Hire Software Engineers in Mexico: A US Guide</title>
+    <link href="https://icalialabs.com/blog/how-to-hire-software-engineers-in-mexico.html" />
+    <updated>2026-09-26T00:00:00Z</updated>
+    <id>https://icalialabs.com/blog/how-to-hire-software-engineers-in-mexico.html</id>
+    <summary>A practical guide for US companies hiring software engineers in Mexico: hiring models, legal setup, vetting, onboarding, and the mistakes to avoid.</summary>
+    <content type="html">&lt;p&gt;Mexico has become one of the most common places for US companies to grow engineering teams: engineers work in or near US time zones, the senior talent pool is deep, and the major tech hubs are a short flight from Texas. This guide walks through how to actually do it — the hiring models, the legal basics, how to vet, and how to onboard so new engineers ship quickly.&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;This guide is general information, not legal or tax advice. Employment rules change; confirm the specifics with Mexican counsel.&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;step-1-pick-a-hiring-model&quot;&gt;Step 1: Pick a hiring model&lt;/h2&gt;
+&lt;p&gt;There are four common ways to hire engineers in Mexico. They differ in how much legal and administrative work you take on.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Model&lt;/th&gt;
+&lt;th&gt;What it is&lt;/th&gt;
+&lt;th&gt;Best for&lt;/th&gt;
+&lt;th&gt;Watch out for&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Independent contractor&lt;/td&gt;
+&lt;td&gt;You contract directly with the engineer, who invoices you&lt;/td&gt;
+&lt;td&gt;Short, clearly scoped work&lt;/td&gt;
+&lt;td&gt;Misclassification risk if they work like an employee&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Employer of Record (EOR)&lt;/td&gt;
+&lt;td&gt;A third party employs the engineer on your behalf&lt;/td&gt;
+&lt;td&gt;A few hires without an entity&lt;/td&gt;
+&lt;td&gt;You still source, vet, and manage them yourself&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Your own Mexican entity&lt;/td&gt;
+&lt;td&gt;You incorporate and employ directly&lt;/td&gt;
+&lt;td&gt;Large, long-term teams&lt;/td&gt;
+&lt;td&gt;Setup time, payroll, tax, and compliance overhead&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Staff augmentation partner&lt;/td&gt;
+&lt;td&gt;A partner sources, employs, and supports engineers who work inside your team&lt;/td&gt;
+&lt;td&gt;Adding senior capacity fast&lt;/td&gt;
+&lt;td&gt;Choose a partner that is compliant and actually senior&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;For most US product teams adding a handful of senior engineers, &lt;strong&gt;staff augmentation or an EOR&lt;/strong&gt; is the fastest path. A partner like Icalia Labs also handles sourcing and vetting, which is usually the slowest part.&lt;/p&gt;
+&lt;h2 id=&quot;step-2-understand-the-legal-basics&quot;&gt;Step 2: Understand the legal basics&lt;/h2&gt;
+&lt;p&gt;If engineers are employed in Mexico — by you, an EOR, or a partner — Mexican labor law applies. At a minimum, plan for:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Aguinaldo&lt;/strong&gt;, an annual year-end bonus of at least 15 days&#39; salary.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Paid vacation&lt;/strong&gt;, which starts at 12 days after the first year of service, plus a vacation premium.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Social security and housing contributions&lt;/strong&gt; (IMSS and INFONAVIT).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Profit sharing (PTU)&lt;/strong&gt;, where eligible employees share in a portion of company profits.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Termination cost&lt;/strong&gt;, when hiring under payroll, once an employer-employee relationship finishes you need to consider a 3-month salary to cover the local jurisdiction taxes and laws.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Mexico&#39;s 2021 subcontracting reform restricts the outsourcing of personnel. Specialized service providers must be registered, so ask any staffing partner how they comply.&lt;/p&gt;
+&lt;h2 id=&quot;step-3-source-senior-candidates&quot;&gt;Step 3: Source senior candidates&lt;/h2&gt;
+&lt;p&gt;The strongest engineers are rarely on job boards. They&#39;re employed, and they move through referrals, communities, and firms they trust. Your options:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Your own network and referrals&lt;/strong&gt; — high quality, slow to scale.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Job boards and LinkedIn&lt;/strong&gt; — broad reach, heavy screening load.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A staffing partner with a vetted network&lt;/strong&gt; — fastest route to senior people, if the vetting is real.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Monterrey, Guadalajara, and Mexico City are the largest hubs. Monterrey in particular has deep ties to US manufacturing, logistics, and energy companies — it&#39;s where Icalia Labs has been placing engineers since 2011.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/monterrey-office-night.jpg&quot; alt=&quot;Icalia Labs engineers working late at the Monterrey office&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;&lt;/p&gt;
+&lt;h2 id=&quot;step-4-vet-for-how-engineers-actually-work&quot;&gt;Step 4: Vet for how engineers actually work&lt;/h2&gt;
+&lt;p&gt;Algorithm puzzles tell you little about how someone will perform in your codebase. Better signals:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;A realistic technical exercise.&lt;/strong&gt; A small task in your stack, or a code review of a real (sanitized) pull request.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A system design conversation&lt;/strong&gt; about a problem your team has actually faced.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Communication.&lt;/strong&gt; Can they explain trade-offs clearly, in writing and out loud, in English?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ownership.&lt;/strong&gt; Ask about a production incident they handled, end to end.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;References&lt;/strong&gt; from engineering managers they reported to.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For context, fewer than 0.4% of applicants to Icalia Labs are accepted. Whoever does your vetting, ask what share of candidates make it through and what the bar is.&lt;/p&gt;
+&lt;h2 id=&quot;step-5-onboard-them-like-a-team-member&quot;&gt;Step 5: Onboard them like a team member&lt;/h2&gt;
+&lt;p&gt;The fastest-ramping engineers are the ones treated as part of the team from day one:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Give them access to your repos, tools, and communication channels on the first day.&lt;/li&gt;
+&lt;li&gt;Put them in your standups, sprint planning, and code review — not behind a project manager.&lt;/li&gt;
+&lt;li&gt;Pair them with an existing engineer for their first tickets.&lt;/li&gt;
+&lt;li&gt;Include them in on-call once they know the system.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This is the model we use: engineers join your workflows directly, and we handle the employment, support, and replacement pipeline behind the scenes.&lt;/p&gt;
+&lt;h2 id=&quot;common-mistakes-to-avoid&quot;&gt;Common mistakes to avoid&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Optimizing for the lowest rate.&lt;/strong&gt; Cheap engineers who churn cost more than senior engineers who stay.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Treating nearshore engineers as a separate team.&lt;/strong&gt; Integration is what makes the time-zone advantage pay off.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Skipping the legal review.&lt;/strong&gt; Misclassification and subcontracting rules are real.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Under-specifying seniority.&lt;/strong&gt; Be explicit about the experience level you need, and verify it.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;the-faster-route&quot;&gt;The faster route&lt;/h2&gt;
+&lt;p&gt;If you&#39;d rather skip building a pipeline and an entity, Icalia Labs embeds senior engineers from Mexico and Latin America directly into your team. You interview them and your standards decide who joins. See &lt;a href=&quot;https://icalialabs.com/case-studies.html&quot;&gt;how we&#39;ve done it for other teams&lt;/a&gt; or &lt;a href=&quot;https://icalialabs.com/contact.html#book&quot;&gt;book a 30-minute call&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
+</feed>

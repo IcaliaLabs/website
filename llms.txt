@@ -76,6 +76,12 @@ EHR integrations, telehealth platforms, clinical decision tools, and patient por
 ### E-commerce / Retail
 High-traffic storefronts, headless commerce builds, recommendation engines, and inventory platforms need engineers who think about conversion, performance, and scale simultaneously. We've built across the stack — from checkout to warehouse.
 
+## Blog
+
+- [Icalia Labs Blog](https://icalialabs.com/blog/): Practical guides on nearshore hiring, engineering costs, AI-augmented and agentic engineering, and forward-deployed engineering.
+- [Atom feed](https://icalialabs.com/blog/feed.xml): Every published article, newest first.
+- [How to Hire Software Engineers in Mexico: A US Guide](https://icalialabs.com/blog/how-to-hire-software-engineers-in-mexico.html): A practical guide for US companies hiring software engineers in Mexico: hiring models, legal setup, vetting, onboarding, and the mistakes to avoid.
+
 ## Key Resources & Content
 
 - [The Icalia Labs Manifesto](https://icalialabs.com/manifesto.html): Clarity, execution, and the human-as-strategist framing that defines how we work — including how AI-augmented engineers deliver at a different ceiling than traditional augmentation.

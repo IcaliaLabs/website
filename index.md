@@ -204,6 +204,26 @@ years building software
 
 Same bar, different industries → [Fintech](industries/fintech.html) · [Healthtech](industries/healthtech.html) · [eCommerce](industries/retail.html) · [Logistics](industries/logistics.html)
 
+From the blog
+
+## Latest from the changelog.
+
+[All articles →](/blog/)
+
+[
+
+![](/assets/blog/monterrey-office-overhead.jpg)
+
+September 26, 2026
+
+### How to Hire Software Engineers in Mexico: A US Guide
+
+A practical guide for US companies hiring software engineers in Mexico: hiring models, legal setup, vetting, onboarding, and the mistakes to avoid.
+
+Nearshore Hiring
+
+](/blog/how-to-hire-software-engineers-in-mexico.html)
+
 ## Ready to scale  
 your team?
 
