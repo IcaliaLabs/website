@@ -1,0 +1,144 @@
+# Sveltia CMS configuration — https://sveltiacms.app/en/docs
+# Editors sign in with a GitHub fine-grained token (see docs/blog-authoring.md).
+# Every save opens a pull request (editorial workflow); publishing merges it,
+# which triggers the normal GitHub Pages deploy.
+
+backend:
+  name: github
+  repo: IcaliaLabs/website
+  branch: main
+  # Token sign-in only: GitHub Pages has no server for an OAuth callback.
+  # To offer "Sign In with GitHub", deploy the free Sveltia CMS Authenticator
+  # (Cloudflare Worker), set base_url to it, and add `oauth` here.
+  auth_methods: [token]
+
+publish_mode: editorial_workflow
+
+site_url: https://icalialabs.com
+display_url: https://icalialabs.com
+logo_url: /assets/logo.svg
+
+media_folder: assets/blog
+public_folder: /assets/blog
+
+collections:
+  - name: posts
+    label: Blog posts
+    label_singular: Blog post
+    description: >-
+      Answer the reader's question in the first paragraph, one idea per H2,
+      and cite a source for every number. Posts stay hidden while "Draft" is on.
+    folder: blog/posts
+    extension: md
+    format: yaml-frontmatter
+    create: true
+    slug: "{{slug}}"
+    preview_path: "blog/{{slug}}.html"
+    summary: "{{title}}"
+    sortable_fields: [date, title]
+    fields:
+      - label: Title
+        name: title
+        widget: string
+        hint: The H1 and search result title. 30–60 characters; put the main search phrase near the start.
+        pattern: ['^.{30,60}$', 'Titles must be 30–60 characters so Google doesn’t truncate them.']
+      - label: Meta description
+        name: description
+        widget: string
+        hint: Shown under the title in Google and AI answers. 70–160 characters; say what the reader will learn.
+        pattern: ['^.{70,160}$', 'Descriptions must be 70–160 characters.']
+      - label: Draft
+        name: draft
+        widget: boolean
+        default: true
+        hint: While on, the post is hidden from the live site. Turn off when it's ready to publish.
+      - label: Publish date
+        name: date
+        widget: datetime
+        type: date
+        picker_utc: true
+        default: "{{now}}"
+      - label: Last updated
+        name: updated
+        widget: datetime
+        type: date
+        picker_utc: true
+        required: false
+        hint: Set when you materially revise a published post. Freshness helps rankings and AI citations.
+      - label: Author
+        name: author
+        widget: relation
+        collection: authors
+        search_fields: [name]
+        display_fields: [name]
+      - label: Topics
+        name: topics
+        widget: select
+        multiple: true
+        min: 1
+        max: 3
+        hint: 1–3 topics. The first one is the primary topic (breadcrumb and CTA).
+        options:
+          - { label: Nearshore Hiring, value: nearshore-hiring }
+          - { label: Engineering Costs, value: engineering-costs }
+          - { label: Software Development, value: software-development }
+          - { label: Software Makers, value: software-maker }
+          - { label: AI Engineering, value: ai-engineering }
+          - { label: Agentic Engineering, value: agentic-engineering }
+          - { label: Forward-Deployed Engineering (FDE), value: forward-deployed-engineer }
+          - { label: FDE, value: fde }
+          - { label: Fintech, value: fintech }
+          - { label: Healthtech, value: healthtech }
+          - { label: Logistics, value: logistics }
+          - { label: eCommerce & Retail, value: retail }
+      - label: Cover image
+        name: image
+        widget: image
+        required: false
+        hint: 1200×630 works best for link previews.
+      - label: Cover image alt text
+        name: imageAlt
+        widget: string
+        required: false
+        hint: Describe what's in the image for screen readers and search.
+      - label: Key takeaways
+        name: takeaways
+        widget: list
+        min: 3
+        max: 5
+        hint: 3–5 one-sentence answers shown at the top. AI answer engines quote these, so make each one stand on its own.
+        field: { label: Takeaway, name: takeaway, widget: string }
+      - label: FAQ
+        name: faq
+        widget: list
+        required: false
+        hint: Real questions buyers ask. Each becomes FAQ rich-result markup.
+        fields:
+          - { label: Question, name: q, widget: string }
+          - { label: Answer, name: a, widget: text }
+      - label: Body
+        name: body
+        widget: markdown
+        hint: Use H2 (##) for sections and H3 (###) for subsections. Don't add another H1.
+
+  - name: authors
+    label: Authors
+    label_singular: Author
+    description: People credited on blog posts. The file name is the author's ID.
+    folder: _data/authors
+    extension: json
+    format: json
+    create: true
+    identifier_field: name
+    slug: "{{slug}}"
+    fields:
+      - { label: Name, name: name, widget: string }
+      - { label: Role, name: role, widget: string }
+      - { label: Short bio, name: bio, widget: text, hint: "One or two sentences about their expertise." }
+      - { label: Photo, name: photo, widget: image }
+      - label: Profiles
+        name: sameAs
+        widget: list
+        required: false
+        hint: LinkedIn, GitHub, X — used to verify authorship in search.
+        field: { label: URL, name: url, widget: string }

@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - main
+  # CMS drafts arrive as pull requests; build and verify them before they can be published.
+  pull_request:
+    branches:
+      - main
   workflow_dispatch:
 
 permissions:
@@ -15,6 +19,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+        with:
+          # Full history so sitemap <lastmod> reflects each page's last commit.
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -31,7 +38,11 @@ jobs:
       - name: Verify site
         run: npm test
 
+      - name: Build and verify draft preview
+        run: npm run build:preview && npm run test:preview
+
       - name: Deploy to gh-pages
+        if: github.event_name != 'pull_request'
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}

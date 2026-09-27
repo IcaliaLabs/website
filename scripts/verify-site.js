@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 /**
- * Post-build verification for the "Is Agentic" readiness fixes.
+ * Post-build verification: agent-readiness, blog/SEO structure, CMS config, and links.
  *
  * Plain Node + assert — this repo has no existing test framework and is a
  * ~20-page static site, so a lightweight script that runs against the real
@@ -14,10 +14,13 @@
 
 const fs = require("fs");
 const path = require("path");
+const matter = require("gray-matter");
 
-const SITE_DIR = path.join(__dirname, "..", "_site");
 const ROOT_DIR = path.join(__dirname, "..");
-const SKIP_DIR_PREFIXES = ["cyberpunk", "monospace", "terminal", "mix"];
+const SITE_DIR = path.resolve(ROOT_DIR, process.env.SITE_DIR || "_site");
+// INCLUDE_DRAFTS=1 verifies the preview build, where drafts are rendered.
+const INCLUDE_DRAFTS = process.env.INCLUDE_DRAFTS === "1";
+const SKIP_DIR_PREFIXES = ["cyberpunk", "monospace", "terminal", "mix", "admin"];
 
 const failures = [];
 let checks = 0;
@@ -163,7 +166,8 @@ check("sitemap.xml: well-formed and every URL resolves to a built file", () => {
   assert(locs.length > 0, "no <loc> entries found");
   for (const loc of locs) {
     const url = new URL(loc);
-    let filePath = url.pathname === "/" ? "index.html" : url.pathname.replace(/^\//, "");
+    let filePath = url.pathname.replace(/^\//, "");
+    if (filePath === "" || filePath.endsWith("/")) filePath += "index.html";
     assert(
       fs.existsSync(path.join(SITE_DIR, filePath)),
       `${loc} has no matching file at _site/${filePath}`
@@ -199,6 +203,211 @@ check("build output excludes stray seo-audit-recommendations page", () => {
     "_site/seo-audit-recommendations/ should not exist"
   );
 });
+
+// --- Blog -------------------------------------------------------------------
+const POSTS_DIR = path.join(ROOT_DIR, "blog", "posts");
+const blogTopics = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, "_data", "blogTopics.json"), "utf-8"));
+const topicSlugs = new Set(blogTopics.map((t) => t.slug));
+const authorSlugs = new Set(
+  fs
+    .readdirSync(path.join(ROOT_DIR, "_data", "authors"))
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => f.replace(/\.json$/, ""))
+);
+const sourcePosts = fs
+  .readdirSync(POSTS_DIR)
+  .filter((f) => f.endsWith(".md"))
+  .map((f) => ({ slug: f.replace(/\.md$/, ""), ...matter.read(path.join(POSTS_DIR, f)) }));
+const renderedPosts = sourcePosts.filter((p) => INCLUDE_DRAFTS || !p.data.draft);
+
+const sitemapXml = readSite("sitemap.xml");
+const feedXml = readSite("blog/feed.xml");
+const llmsTxt = readSite("llms.txt");
+
+function jsonLdBlocks(html) {
+  return [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) =>
+    JSON.parse(m[1])
+  );
+}
+
+// Front matter contract (mirrors the limits enforced in admin/config.yml).
+for (const post of sourcePosts) {
+  const d = post.data;
+  const label = `blog/posts/${post.slug}.md`;
+  check(`${label}: title is 30–60 chars`, () => {
+    assert(typeof d.title === "string" && d.title.length >= 30 && d.title.length <= 60, `got ${d.title?.length}`);
+  });
+  check(`${label}: description is 70–160 chars`, () => {
+    assert(
+      typeof d.description === "string" && d.description.length >= 70 && d.description.length <= 160,
+      `got ${d.description?.length}`
+    );
+  });
+  check(`${label}: has a valid publish date`, () => {
+    assert(d.date && !Number.isNaN(new Date(d.date).getTime()), `invalid date ${d.date}`);
+  });
+  check(`${label}: author exists in _data/authors/`, () => {
+    assert(authorSlugs.has(d.author), `unknown author "${d.author}"`);
+  });
+  check(`${label}: 1–3 topics, all in blogTopics.json`, () => {
+    assert(Array.isArray(d.topics) && d.topics.length >= 1 && d.topics.length <= 3, "needs 1–3 topics");
+    for (const t of d.topics) assert(topicSlugs.has(t), `unknown topic "${t}"`);
+  });
+  check(`${label}: has 3–5 key takeaways`, () => {
+    assert(Array.isArray(d.takeaways) && d.takeaways.length >= 3 && d.takeaways.length <= 5, "needs 3–5");
+  });
+  check(`${label}: body has no H1 (the title is the H1)`, () => {
+    assert(!/^#\s/m.test(post.content), "found a '# ' heading in the body");
+  });
+}
+
+// Drafts must never reach the production build.
+if (!INCLUDE_DRAFTS) {
+  for (const post of sourcePosts.filter((p) => p.data.draft)) {
+    const url = `/blog/${post.slug}.html`;
+    check(`draft ${post.slug}: not built, not listed anywhere`, () => {
+      assert(!fs.existsSync(path.join(SITE_DIR, "blog", `${post.slug}.html`)), "HTML was built");
+      assert(!sitemapXml.includes(url), "listed in sitemap.xml");
+      assert(!feedXml.includes(url), "listed in feed.xml");
+      assert(!llmsTxt.includes(url), "listed in llms.txt");
+    });
+  }
+}
+
+for (const post of renderedPosts) {
+  const rel = `blog/${post.slug}.html`;
+  const url = `https://icalialabs.com/${rel}`;
+
+  check(`${rel}: built`, () => {
+    assert(fs.existsSync(path.join(SITE_DIR, rel)), "missing output");
+  });
+  if (!fs.existsSync(path.join(SITE_DIR, rel))) continue;
+  const html = readSite(rel);
+  const schemas = jsonLdBlocks(html);
+
+  check(`${rel}: BlogPosting JSON-LD with required fields`, () => {
+    const bp = schemas.find((s) => s["@type"] === "BlogPosting");
+    assert(bp, "no BlogPosting");
+    assert(bp.headline === post.data.title, "headline != title");
+    for (const k of ["description", "datePublished", "dateModified", "author", "publisher", "image", "mainEntityOfPage"]) {
+      assert(bp[k], `missing ${k}`);
+    }
+    assert(bp.mainEntityOfPage["@id"] === url, "mainEntityOfPage != canonical URL");
+  });
+  check(`${rel}: BreadcrumbList JSON-LD`, () => {
+    assert(schemas.some((s) => s["@type"] === "BreadcrumbList"), "no BreadcrumbList");
+  });
+  check(`${rel}: FAQPage JSON-LD matches front matter`, () => {
+    const faq = schemas.find((s) => s["@type"] === "FAQPage");
+    const expected = (post.data.faq || []).length;
+    if (expected === 0) assert(!faq, "FAQPage present without FAQs");
+    else assert(faq && faq.mainEntity.length === expected, `expected ${expected} questions`);
+  });
+  check(`${rel}: canonical, og:type=article, H2 anchors`, () => {
+    assert(html.includes(`<link rel="canonical" href="${url}">`), "wrong canonical");
+    assert(html.includes('og:type" content="article"'), "og:type not article");
+    assert(/<h2 id="[^"]+"/.test(html), "no anchored H2s");
+  });
+  check(`${rel}: listed in sitemap.xml, feed.xml, and llms.txt`, () => {
+    assert(sitemapXml.includes(`<loc>${url}</loc>`), "not in sitemap.xml");
+    assert(feedXml.includes(url), "not in feed.xml");
+    assert(llmsTxt.includes(url), "not in llms.txt");
+  });
+}
+
+// Topic pages: exactly the topics with rendered posts; aliases fold into their canonical page.
+check("blog topic pages match topics that have posts", () => {
+  const canonical = (slug) => blogTopics.find((t) => t.slug === slug)?.canonicalSlug || slug;
+  const expected = new Set(renderedPosts.flatMap((p) => p.data.topics || []).map(canonical));
+  const topicsDir = path.join(SITE_DIR, "blog", "topics");
+  const actual = new Set(
+    fs.existsSync(topicsDir)
+      ? fs.readdirSync(topicsDir).filter((f) => f.endsWith(".html")).map((f) => f.replace(/\.html$/, ""))
+      : []
+  );
+  for (const t of expected) assert(actual.has(t), `missing topic page ${t}`);
+  for (const t of actual) assert(expected.has(t), `topic page ${t} has no posts`);
+  for (const t of blogTopics.filter((t) => t.canonicalSlug)) {
+    assert(!actual.has(t.slug), `alias topic ${t.slug} should not get its own page`);
+  }
+});
+
+check("blog index: exists; noindex, unlisted, and out of nav while empty", () => {
+  const html = readSite("blog/index.html");
+  const home = readSite("index.html");
+  const isEmpty = renderedPosts.length === 0;
+  assert(html.includes('content="noindex') === isEmpty, `noindex should be ${isEmpty}`);
+  assert(sitemapXml.includes("<loc>https://icalialabs.com/blog/</loc>") === !isEmpty, "sitemap listing mismatch");
+  assert(/>\s*Blog\s*</.test(home) === !isEmpty, "nav Blog link mismatch");
+});
+
+check("sitemap.xml and feed.xml start with an XML declaration", () => {
+  assert(sitemapXml.startsWith("<?xml"), "sitemap.xml has leading content");
+  assert(feedXml.startsWith("<?xml") && feedXml.includes("<feed"), "feed.xml malformed");
+});
+
+// --- CMS --------------------------------------------------------------------
+check("admin/: Sveltia CMS app and config are published", () => {
+  const html = readSite("admin/index.html");
+  assert(/@sveltia\/cms@\d+\.\d+\.\d+\//.test(html), "CMS script not pinned to an exact version");
+  assert(/integrity="sha384-/.test(html), "CMS script missing SRI hash");
+  assert(fs.existsSync(path.join(SITE_DIR, "admin", "config.yml")), "config.yml not copied");
+});
+
+check("admin/config.yml topic options match blogTopics.json", () => {
+  const config = matter.engines.yaml.parse(fs.readFileSync(path.join(ROOT_DIR, "admin", "config.yml"), "utf-8"));
+  const posts = config.collections.find((c) => c.name === "posts");
+  const topicsField = posts.fields.find((f) => f.name === "topics");
+  const options = new Set(topicsField.options.map((o) => o.value));
+  for (const t of topicSlugs) assert(options.has(t), `CMS is missing topic ${t}`);
+  for (const t of options) assert(topicSlugs.has(t), `CMS offers unknown topic ${t}`);
+  assert(config.publish_mode === "editorial_workflow", "editorial workflow disabled");
+  const methods = config.backend.auth_methods || ["oauth", "token"];
+  assert(
+    !methods.includes("oauth") || config.backend.base_url,
+    "OAuth sign-in enabled without an OAuth client (backend.base_url) — the button would fail"
+  );
+  assert(posts.folder === "blog/posts", "posts folder mismatch");
+});
+
+// --- Internal links ---------------------------------------------------------
+// Every same-site <a href> on every page must resolve to a built file. This
+// catches navRoot/footerRoot mistakes on nested pages like /blog/topics/*.
+function resolveHref(fromFile, href) {
+  let target = href.split("#")[0].split("?")[0];
+  if (!target) return null; // pure fragment
+  if (/^https?:\/\/(www\.)?icalialabs\.com/i.test(target)) {
+    target = new URL(target).pathname;
+  } else if (/^[a-z][a-z0-9+.-]*:/i.test(target) || target.startsWith("//")) {
+    return null; // external, mailto:, tel:, javascript:
+  }
+  const abs = target.startsWith("/")
+    ? path.join(SITE_DIR, target)
+    : path.resolve(path.dirname(fromFile), target);
+  return decodeURIComponent(abs);
+}
+
+function existsAsPage(abs) {
+  if (abs.endsWith(path.sep) || (fs.existsSync(abs) && fs.statSync(abs).isDirectory())) {
+    return fs.existsSync(path.join(abs, "index.html"));
+  }
+  // GitHub Pages also serves /page as /page.html.
+  return fs.existsSync(abs) || fs.existsSync(`${abs}.html`);
+}
+
+for (const file of htmlFiles) {
+  const rel = path.relative(SITE_DIR, file);
+  const html = fs.readFileSync(file, "utf-8");
+  const hrefs = [...html.matchAll(/<a\s[^>]*href="([^"]*)"/gi)].map((m) => m[1]);
+  check(`${rel}: all internal links resolve`, () => {
+    const broken = [];
+    for (const href of new Set(hrefs)) {
+      const abs = resolveHref(file, href);
+      if (abs && !existsAsPage(abs)) broken.push(href);
+    }
+    assert(broken.length === 0, `broken: ${broken.join(", ")}`);
+  });
+}
 
 console.log(`\n${checks} checks run, ${failures.length} failed.\n`);
 if (failures.length > 0) {

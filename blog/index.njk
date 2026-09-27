@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include "head.html" %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Icalia Labs Blog",
+    "description": {{ description | dump | safe }},
+    "url": "https://icalialabs.com{{ canonicalPath }}",
+    "isPartOf": { "@type": "WebSite", "name": "Icalia Labs", "url": "https://icalialabs.com" },
+    "publisher": { "@type": "Organization", "name": "Icalia Labs", "url": "https://icalialabs.com" },
+    "mainEntity": {
+      "@type": "ItemList",
+      "itemListElement": [
+{%- for p in pagePosts %}
+        { "@type": "ListItem", "position": {{ loop.index }}, "url": "https://icalialabs.com{{ p.url }}", "name": {{ p.data.title | dump | safe }} }{% if not loop.last %},{% endif %}
+{%- endfor %}
+      ]
+    }
+  }
+  </script>
+</head>
+<body class="font-body text-icalia-dark antialiased bg-icalia-warm">
+
+  <!-- Navigation -->
+{% include "nav.html" %}
+
+<main>
+
+  <!-- Hero -->
+  <section class="pt-36 pb-12 md:pt-48 md:pb-16 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-6">Icalia Labs Blog</p>
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight max-w-5xl">
+        Notes from the<br>
+        <span class="italic text-icalia-red">engineers</span> who ship.
+      </h1>
+      <p class="mt-10 text-lg md:text-xl text-icalia-navy/60 max-w-3xl leading-relaxed">
+        Practical guides on nearshore hiring, engineering costs, AI-augmented and agentic engineering, and forward-deployed teams — from fifteen years of embedding senior engineers into product teams.
+      </p>
+{% if collections.topicPages.length %}
+      <div class="mt-10 flex flex-wrap gap-2" aria-label="Browse by topic">
+{% for t in collections.topicPages %}
+        <a href="/blog/topics/{{ t.slug }}.html" class="text-sm font-semibold text-icalia-navy bg-white border border-icalia-sand px-4 py-2 rounded-full hover:border-icalia-red hover:text-icalia-red transition-colors">{{ t.label }} <span class="text-icalia-navy/40 font-normal">{{ t.posts.length }}</span></a>
+{% endfor %}
+      </div>
+{% endif %}
+    </div>
+  </section>
+
+{% if pagePosts.length %}
+  <section class="pb-24 md:pb-32 px-6 lg:px-10" aria-label="Articles">
+    <div class="max-w-7xl mx-auto">
+{% set featured = pagePosts[0] %}
+{% if pagination.pageNumber == 0 %}
+      <a href="{{ featured.url }}" class="group block bg-icalia-dark text-white rounded-3xl p-8 md:p-14 mb-10 hover:shadow-xl transition-shadow">
+        <p class="text-xs font-semibold text-icalia-red uppercase tracking-widest">Latest &middot; {{ featured.date | readableDate }}</p>
+        <h2 class="mt-5 font-display text-4xl md:text-6xl leading-[1.05] max-w-4xl group-hover:text-icalia-red transition-colors">{{ featured.data.title }}</h2>
+        <p class="mt-6 text-white/60 text-lg leading-relaxed max-w-3xl">{{ featured.data.description }}</p>
+        <p class="mt-8 text-sm font-semibold">Read the article <span aria-hidden="true">→</span></p>
+      </a>
+{% endif %}
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+{% for p in pagePosts %}
+{% if not (pagination.pageNumber == 0 and loop.first) %}
+        <a href="{{ p.url }}" class="group flex flex-col bg-white border border-icalia-sand/50 rounded-2xl p-6 hover:border-icalia-red/40 transition-colors">
+          <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">{{ p.date | readableDate }}</p>
+          <h2 class="mt-3 font-display text-2xl leading-snug text-icalia-dark group-hover:text-icalia-red transition-colors">{{ p.data.title }}</h2>
+          <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">{{ p.data.description }}</p>
+{% if p.data.topics and p.data.topics.length %}{% set firstTopic = p.data.topics[0] | topic %}{% if firstTopic %}
+          <p class="mt-auto pt-6 text-xs font-semibold text-icalia-red">{{ firstTopic.label }}</p>
+{% endif %}{% endif %}
+        </a>
+{% endif %}
+{% endfor %}
+      </div>
+
+{% if pagination.hrefs.length > 1 %}
+      <nav class="mt-16 flex items-center justify-center gap-6 text-sm font-semibold" aria-label="Blog pagination">
+{% if pagination.href.previous %}
+        <a href="{{ pagination.href.previous }}" class="text-icalia-navy hover:text-icalia-red">← Newer</a>
+{% endif %}
+        <span class="text-icalia-navy/40">Page {{ pagination.pageNumber + 1 }} of {{ pagination.hrefs.length }}</span>
+{% if pagination.href.next %}
+        <a href="{{ pagination.href.next }}" class="text-icalia-navy hover:text-icalia-red">Older →</a>
+{% endif %}
+      </nav>
+{% endif %}
+    </div>
+  </section>
+{% else %}
+  <section class="pb-24 md:pb-32 px-6 lg:px-10">
+    <div class="max-w-3xl mx-auto bg-icalia-warm-2 border border-icalia-sand/60 rounded-3xl p-10 md:p-14 text-center">
+      <h2 class="font-display text-3xl md:text-4xl leading-tight">First articles are on the way.</h2>
+      <p class="mt-5 text-icalia-navy/60 leading-relaxed">In the meantime, see how we've delivered for other teams or read how we think about building software.</p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/case-studies.html" class="bg-icalia-dark text-icalia-warm px-8 py-4 rounded-full font-semibold hover:bg-icalia-navy transition-colors">See our case studies</a>
+        <a href="/manifesto.html" class="px-8 py-4 rounded-full font-semibold text-icalia-navy hover:text-icalia-dark transition-colors">Read our manifesto</a>
+      </div>
+    </div>
+  </section>
+{% endif %}
+
+</main>
+
+  {% include "footer.html" %}
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
+  </script>
+</body>
+</html>
