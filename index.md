@@ -212,9 +212,21 @@ From the blog
 
 [
 
+![](/assets/blog/img_4661.webp)
+
+September 29, 2026
+
+### Rails World 2026: From Software Writers to Makers
+
+Notes from Rails World 2026 in Austin: what DHH, Matz and Rails engineers said about AI, and why software writers are becoming software makers.
+
+AI Engineering
+
+](/blog/rails-world-2026-software-writers-to-makers.html)[
+
 ![](/assets/blog/monterrey-office-overhead.jpg)
 
-September 26, 2026
+September 22, 2026
 
 ### How to Hire Software Engineers in Mexico: A US Guide
 
@@ -222,7 +234,19 @@ A practical guide for US companies hiring software engineers in Mexico: hiring m
 
 Nearshore Hiring
 
-](/blog/how-to-hire-software-engineers-in-mexico.html)
+](/blog/how-to-hire-software-engineers-in-mexico.html)[
+
+![](/assets/blog/blur-1853305.webp)
+
+September 15, 2026
+
+### AI-Augmented Engineering Teams: What Buyers Pay For
+
+Every engineering partner says it uses AI. Three metrics, five questions and the review standard that separate delivery outcomes from AI hype.
+
+AI Engineering
+
+](/blog/ai-augmented-engineering-teams.html)
 
 ## Ready to scale  
 your team?

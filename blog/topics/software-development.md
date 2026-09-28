@@ -18,7 +18,7 @@ Practical engineering: architecture, delivery, code quality, and shipping produc
 
 ![](/assets/blog/monterrey-office-overhead.jpg)
 
-September 26, 2026
+September 22, 2026
 
 ## How to Hire Software Engineers in Mexico: A US Guide
 

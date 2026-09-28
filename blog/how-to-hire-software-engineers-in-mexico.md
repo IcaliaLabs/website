@@ -18,7 +18,7 @@ A practical guide for US companies hiring software engineers in Mexico: hiring m
 
 Eduardo Lopez De Leon · Co-Founder & CEO
 
-September 26, 2026 · Updated September 27, 2026 · 4 min read
+September 22, 2026 · Updated September 27, 2026 · 4 min read
 
 ![Engineers working at shared desks in the Icalia Labs office in Monterrey, Mexico, seen from above](/assets/blog/monterrey-office-overhead.jpg)
 

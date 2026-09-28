@@ -18,7 +18,7 @@ How US product teams find, vet, and embed senior engineers from Mexico and Latin
 
 ![](/assets/blog/monterrey-office-overhead.jpg)
 
-September 26, 2026
+September 22, 2026
 
 ## How to Hire Software Engineers in Mexico: A US Guide
 

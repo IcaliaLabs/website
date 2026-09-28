@@ -80,7 +80,9 @@ High-traffic storefronts, headless commerce builds, recommendation engines, and 
 
 - [Icalia Labs Blog](https://icalialabs.com/blog/): Practical guides on nearshore hiring, engineering costs, AI-augmented and agentic engineering, and forward-deployed engineering.
 - [Atom feed](https://icalialabs.com/blog/feed.xml): Every published article, newest first.
+- [Rails World 2026: From Software Writers to Makers](https://icalialabs.com/blog/rails-world-2026-software-writers-to-makers.html): Notes from Rails World 2026 in Austin: what DHH, Matz and Rails engineers said about AI, and why software writers are becoming software makers.
 - [How to Hire Software Engineers in Mexico: A US Guide](https://icalialabs.com/blog/how-to-hire-software-engineers-in-mexico.html): A practical guide for US companies hiring software engineers in Mexico: hiring models, legal setup, vetting, onboarding, and the mistakes to avoid.
+- [AI-Augmented Engineering Teams: What Buyers Pay For](https://icalialabs.com/blog/ai-augmented-engineering-teams.html): Every engineering partner says it uses AI. Three metrics, five questions and the review standard that separate delivery outcomes from AI hype.
 
 ## Key Resources & Content
 
