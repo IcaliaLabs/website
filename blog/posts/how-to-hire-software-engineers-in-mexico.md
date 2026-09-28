@@ -2,7 +2,7 @@
 title: 'How to Hire Software Engineers in Mexico: A US Guide'
 description: 'A practical guide for US companies hiring software engineers in Mexico: hiring models, legal setup, vetting, onboarding, and the mistakes to avoid.'
 draft: false
-date: 2026-09-26
+date: 2026-09-22
 updated: 2026-09-27
 author: eduardo-lopez
 topics:

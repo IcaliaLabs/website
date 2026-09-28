@@ -2,6 +2,8 @@
 
 The blog lives in this repository as Markdown files (`blog/posts/*.md`). You don't need to touch the files directly: the content manager at **https://icalialabs.com/admin/** gives you a visual editor. It's [Sveltia CMS](https://sveltiacms.app), which is free and open source. There's no subscription and no server.
 
+Drafting with an AI agent? Give it [`blog-post-agent-guide.md`](blog-post-agent-guide.md). It produces drafts in exactly the format below, ready to paste into the CMS.
+
 ## How publishing works
 
 1. You write or edit a post in `/admin/` and click **Save**.
