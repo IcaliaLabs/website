@@ -44,7 +44,7 @@
 &lt;ul&gt;
 &lt;li&gt;&lt;strong&gt;AI deals in probability, not prediction.&lt;/strong&gt; Treating its output as certain is how teams get hurt.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;The innovator&#39;s dilemma applies.&lt;/strong&gt; Established companies that dismiss this as toys or slop are repeating a familiar mistake.&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;More people will make software.&lt;/strong&gt; Fewer people may be needed to maintain older systems, but many more will be able to create new ones.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;More people will make software.&lt;/strong&gt; Fewer people may be needed to maintain older systems, but many more will be able and required to create new ones.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Generated code still needs owners.&lt;/strong&gt; Rails components carry years of maintenance behind them. Generated components will need the same ownership and care.&lt;/li&gt;
 &lt;li&gt;&lt;strong&gt;Ruby&#39;s values still apply:&lt;/strong&gt; joy, agency, motivation and freedom for the people who create.&lt;/li&gt;
 &lt;/ul&gt;
@@ -69,7 +69,7 @@
 &lt;p&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/img_4700.webp&quot; alt=&quot;DHH answering questions from the audience during Rails World 2026&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;what-this-means-for-engineering-leaders&quot;&gt;What this means for engineering leaders&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;The engineer&#39;s job is getting wider.&lt;/strong&gt; Building software now means being closer to the customer, the business and the experience, not only the code.&lt;/p&gt;
-&lt;p&gt;When Icalia Labs started in 2011, its founders imagined engineers sitting with a client, shaping the product alongside them. For years that was a luxury. AI is making it the normal shape of the work, and it is why Icalia Labs embeds senior engineers inside its clients&#39; teams. The Icalia Labs &lt;a href=&quot;https://icalialabs.com/manifesto.html&quot;&gt;manifesto&lt;/a&gt; puts the balance in one line: humans own judgment, taste and strategy; machines carry the weight of execution.&lt;/p&gt;
+&lt;p&gt;When Icalia Labs started in 2012, its founders imagined engineers sitting with a client, shaping the product alongside them. For years that was a luxury. AI is making it the normal shape of the work, and it is why Icalia Labs embeds senior engineers inside its clients&#39; teams. The Icalia Labs &lt;a href=&quot;https://icalialabs.com/manifesto.html&quot;&gt;manifesto&lt;/a&gt; puts the balance in one line: humans own judgment, taste and strategy; machines carry the weight of execution.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Specialization is splitting in two.&lt;/strong&gt; Engineers who want to be at the frontier will go deeper into models, languages and low-level code. Everyone else will move toward the problem. Both paths need people who understand what they are building and why.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;There will be much more software.&lt;/strong&gt; Across the event, the most repeated sentiment was some version of &amp;quot;I&#39;ve done more in the last year than in the previous ten combined&amp;quot;, attributed to the number of Tests, PRs and Lines of Code people have pushed into repositories.&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/img_4673.webp&quot; alt=&quot;Tests, 2012 to 2026 from an engineering team&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;&lt;/p&gt;
