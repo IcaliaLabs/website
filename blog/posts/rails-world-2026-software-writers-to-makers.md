@@ -76,7 +76,7 @@ A few other ideas from that hour are worth keeping:
 
 - **AI deals in probability, not prediction.** Treating its output as certain is how teams get hurt.
 - **The innovator's dilemma applies.** Established companies that dismiss this as toys or slop are repeating a familiar mistake.
-- **More people will make software.** Fewer people may be needed to maintain older systems, but many more will be able to create new ones.
+- **More people will make software.** Fewer people may be needed to maintain older systems, but many more will be able and required to create new ones.
 - **Generated code still needs owners.** Rails components carry years of maintenance behind them. Generated components will need the same ownership and care.
 - **Ruby's values still apply:** joy, agency, motivation and freedom for the people who create.
 
@@ -117,7 +117,7 @@ I think he's right. In healthcare, finance and other regulated sectors, humans i
 
 **The engineer's job is getting wider.** Building software now means being closer to the customer, the business and the experience, not only the code.
 
-When Icalia Labs started in 2011, its founders imagined engineers sitting with a client, shaping the product alongside them. For years that was a luxury. AI is making it the normal shape of the work, and it is why Icalia Labs embeds senior engineers inside its clients' teams. The Icalia Labs [manifesto](/manifesto.html) puts the balance in one line: humans own judgment, taste and strategy; machines carry the weight of execution.
+When Icalia Labs started in 2012, its founders imagined engineers sitting with a client, shaping the product alongside them. For years that was a luxury. AI is making it the normal shape of the work, and it is why Icalia Labs embeds senior engineers inside its clients' teams. The Icalia Labs [manifesto](/manifesto.html) puts the balance in one line: humans own judgment, taste and strategy; machines carry the weight of execution.
 
 **Specialization is splitting in two.** Engineers who want to be at the frontier will go deeper into models, languages and low-level code. Everyone else will move toward the problem. Both paths need people who understand what they are building and why.
 
