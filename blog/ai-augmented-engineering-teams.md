@@ -165,7 +165,7 @@ A vague answer to any of these is a finding in itself.
 
 The [Icalia Labs manifesto](/manifesto.html) starts from one line: "There is a gap between idea and impact — not of ambition, but of clarity." AI doesn't close that gap by itself; used without judgment, it widens it faster. As the manifesto puts it, "Humans own judgment, taste, and strategy; machines carry the weight of execution."
 
-Icalia Labs is an agentic engineering partner with offices in Austin, Texas, and Monterrey, Mexico, working with US product teams since 2011. It deploys nearshore forward deployed engineers: senior engineers who embed in a client's team, work in the client's time zone and use AI agents as part of how they build and ship.
+Icalia Labs is an agentic engineering partner with offices in Austin, Texas, and Monterrey, Mexico, working with US product teams since 2012. It deploys nearshore forward deployed engineers: senior engineers who embed in a client's team, work in the client's time zone and use AI agents as part of how they build and ship.
 
 To see how this has played out with teams like EMR Bear, Point B and RTS, read our [case studies](/case-studies.html), or [book a 30-minute call](/contact.html#book) to compare your team's numbers with ours.
 
@@ -215,7 +215,15 @@ Notes from Rails World 2026 in Austin: what DHH, Matz and Rails engineers said a
 
 AI Engineering
 
-](/blog/rails-world-2026-software-writers-to-makers.html)
+](/blog/rails-world-2026-software-writers-to-makers.html) [![](/assets/blog/holistic-agnostic-specific-problem-solving-cover.webp) Pre-AI era
+
+April 20, 2020
+
+### Holistic, Agnostic & Specific at solving problems
+
+Why being holistic, technology-agnostic and industry-specific makes software engineers and teams better at solving problems.
+
+Forward-Deployed Engineering (FDE)](/blog/holistic-agnostic-specific-problem-solving.html)
 
 ## Need engineers who already ship like this?
 

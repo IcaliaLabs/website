@@ -1,11 +1,11 @@
-# About Icalia Labs — Nearshore Staff Augmentation Since 2011
+# About Icalia Labs — Nearshore Staff Augmentation Since 2012
 
-> Icalia Labs is a nearshore staff augmentation firm founded in 2011. YC alum co-founders, first Docker-certified consultancy in LatAm, offices in Austin and Monterrey.
+> Icalia Labs is a nearshore staff augmentation firm founded in 2012. YC alum co-founders, first Docker-certified consultancy in LatAm, offices in Austin and Monterrey.
 
 About Icalia Labs
 
 # Builders since  
-2011\. Still hands  
+2012\. Still hands  
 on keyboard.
 
 Icalia Labs is a nearshore staff augmentation firm. We embed senior engineers directly into product teams — the same engineers you'd try to hire yourself, minus the twelve-month search.
@@ -14,9 +14,9 @@ Icalia Labs is a nearshore staff augmentation firm. We embed senior engineers di
 
 Our story
 
-## Fifteen years of shipping, not selling.
+## Shipping since 2012, not selling.
 
-Icalia Labs started in 2011 on a simple belief: world-class software teams can be built anywhere, and nearshore engineers in Mexico have the unfair advantage of delivering the same output as any U.S. engineer, in the same working hours, at a fraction of the search time.
+Icalia Labs started in 2012 on a simple belief: world-class software teams can be built anywhere, and nearshore engineers in Mexico have the unfair advantage of delivering the same output as any U.S. engineer, in the same working hours, at a fraction of the search time.
 
 Our founding team includes Y Combinator alumni who've built, shipped, and sold companies of their own — experience we now put directly into how we vet, staff, and manage engineering teams for clients in Fintech, Healthtech, Logistics, and eCommerce.
 
@@ -27,9 +27,9 @@ Credentials
 ## The receipts,  
 not just the pitch.
 
-### Founded 2011
+### Founded 2012
 
-Fifteen years of continuous delivery for U.S. and cross-border product teams.
+Continuous delivery for U.S. and cross-border product teams ever since.
 
 ### YC alum co-founders
 

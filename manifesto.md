@@ -1,6 +1,6 @@
 # Manifesto — Icalia Labs
 
-> A manifesto for builders. Since 2011, Icalia Labs has closed the gap between idea and impact — empowering engineers, designers, and founders with AI-augmented craft.
+> A manifesto for builders. Since 2012, Icalia Labs has closed the gap between idea and impact — empowering engineers, designers, and founders with AI-augmented craft.
 
 Manifesto
 
@@ -8,13 +8,13 @@ Manifesto
 idea and impact.  
 We exist to close it.
 
-A manifesto for builders — from Icalia Labs. Since 2011.
+A manifesto for builders — from Icalia Labs. Since 2012.
 
 The Letter
 
 Monterrey, Mexico
 
-2011 →
+2012 →
 
 There is a gap between idea and impact — not of ambition, but of clarity. Too many products fail because the path from vision to delivery was never properly defined. We exist to close that gap. We are hackers, designers, strategists, and builders, and we believe anyone with a vision deserves a real shot at turning it into something the world can use. Technology is the vehicle; the craft is what makes it land.
 
@@ -26,7 +26,7 @@ Co-founders, Icalia Labs
 
 Still Here
 
-## Founded 2011. Still shipping.
+## Founded 2012. Still shipping.
 
 There's never been a better time in history to build software and technology — and we've spent more than a decade earning the right to keep building it.
 

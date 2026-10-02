@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notorious mistakes we have made as a Software Services Company — Icalia Labs Blog</title>
+  <meta name="description" content="Ten mistakes Icalia Labs made in its first 3.5 years as a software services company, from pricing and contracts to culture, hiring, and mentors.">
+
+  <link rel="canonical" href="https://icalialabs.com/blog/notorious-mistakes-software-services-company.html">
+  <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+
+  <link rel="alternate" type="text/markdown" href="https://icalialabs.com/blog/notorious-mistakes-software-services-company.md">
+
+  <link rel="alternate" type="application/atom+xml" title="Icalia Labs Blog" href="https://icalialabs.com/blog/feed.xml">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSFD00QMYY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MSFD00QMYY', {
+      'page_path': '/blog/notorious-mistakes-software-services-company.html',
+      'anonymize_ip': true,
+      'cookie_expires': 63072000
+    });
+  </script>
+  <script src="/js/ga-events.js" defer></script>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://icalialabs.com/blog/notorious-mistakes-software-services-company.html">
+  <meta property="og:title" content="Notorious mistakes we have made as a Software Services Company — Icalia Labs Blog">
+  <meta property="og:description" content="Ten mistakes Icalia Labs made in its first 3.5 years as a software services company, from pricing and contracts to culture, hiring, and mentors.">
+  <meta property="og:image" content="https://icalialabs.com/assets/blog/notorious-mistakes-software-services-company-cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Notorious mistakes we have made as a Software Services Company — Icalia Labs Blog">
+  <meta name="twitter:description" content="Ten mistakes Icalia Labs made in its first 3.5 years as a software services company, from pricing and contracts to culture, hiring, and mentors.">
+  <meta name="twitter:image" content="https://icalialabs.com/assets/blog/notorious-mistakes-software-services-company-cover.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'icalia-red': '#E8453C',
+            'icalia-red-dark': '#C53B33',
+            'icalia-dark': '#1A1A22',
+            'icalia-navy': '#2D2F40',
+            'icalia-warm': '#FAF8F6',
+            'icalia-warm-2': '#F3F0EC',
+            'icalia-blush': '#FDECED',
+            'icalia-sand': '#E8E4DF',
+          },
+          fontFamily: {
+            'display': ['"Instrument Serif"', 'Georgia', 'serif'],
+            'body': ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    @media (min-width: 768px) {
+      .industries-dropdown:hover .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    }
+  </style>
+
+  <meta property="article:published_time" content="2016-04-18">
+
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Notorious mistakes we have made as a Software Services Company","description":"Ten mistakes Icalia Labs made in its first 3.5 years as a software services company, from pricing and contracts to culture, hiring, and mentors.","url":"https://icalialabs.com/blog/notorious-mistakes-software-services-company.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://icalialabs.com/blog/notorious-mistakes-software-services-company.html"},"datePublished":"2016-04-18","dateModified":"2016-04-18","image":"https://icalialabs.com/assets/blog/notorious-mistakes-software-services-company-cover.webp","inLanguage":"en","keywords":"Software Development","about":[{"@type":"Thing","name":"Software Development"}],"author":{"@type":"Person","name":"Eduardo Lopez De Leon","jobTitle":"Co-Founder & CEO","image":"https://icalialabs.com/assets/eduardo-lopez.webp","sameAs":["https://www.linkedin.com/in/elopezdeleon/","https://x.com/edolopez","https://github.com/edolopez"],"worksFor":{"@type":"Organization","name":"Icalia Labs","url":"https://icalialabs.com"}},"publisher":{"@type":"Organization","name":"Icalia Labs","url":"https://icalialabs.com","logo":{"@type":"ImageObject","url":"https://icalialabs.com/assets/logo.svg"}},"isBasedOn":"https://medium.com/icalia-labs/notorious-mistakes-we-have-made-as-a-software-services-company-83f00e56ffbc"}</script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://icalialabs.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://icalialabs.com/blog/"},{"@type":"ListItem","position":3,"name":"Software Development","item":"https://icalialabs.com/blog/topics/software-development.html"},{"@type":"ListItem","position":4,"name":"Notorious mistakes we have made as a Software Services Company","item":"https://icalialabs.com/blog/notorious-mistakes-software-services-company.html"}]}</script>
+
+  <style>
+    .post-prose { color: rgba(45, 47, 64, 0.8); font-size: 1.0625rem; line-height: 1.8; }
+    .post-prose > * + * { margin-top: 1.25rem; }
+    .post-prose h2 { font-family: "Instrument Serif", Georgia, serif; font-size: 2.125rem; line-height: 1.15; color: #1A1A22; margin-top: 3rem; scroll-margin-top: 7rem; }
+    .post-prose h3 { font-weight: 600; font-size: 1.25rem; color: #1A1A22; margin-top: 2.25rem; scroll-margin-top: 7rem; }
+    .post-prose a { color: #E8453C; text-decoration: underline; text-underline-offset: 3px; }
+    .post-prose a:hover { color: #C53B33; }
+    .post-prose strong { color: #1A1A22; font-weight: 600; }
+    .post-prose ul { list-style: disc; padding-left: 1.25rem; }
+    .post-prose ol { list-style: decimal; padding-left: 1.25rem; }
+    .post-prose li + li { margin-top: 0.5rem; }
+    .post-prose blockquote { border-left: 2px solid #E8453C; padding-left: 1.25rem; font-style: italic; color: rgba(45, 47, 64, 0.7); }
+    .post-prose code { font-size: 0.9em; background: #F3F0EC; padding: 0.15rem 0.35rem; border-radius: 0.35rem; }
+    .post-prose pre { background: #1A1A22; color: #FAF8F6; padding: 1.25rem; border-radius: 1rem; overflow-x: auto; font-size: 0.875rem; }
+    .post-prose pre code { background: none; padding: 0; }
+    .post-prose img { max-width: 100%; height: auto; border-radius: 1rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+    .post-prose .post-figure img { margin-left: auto; margin-right: auto; }
+    .post-prose .post-figure > em, .post-prose .post-caption { display: block; margin-top: 0.25rem; font-size: 0.875rem; line-height: 1.6; text-align: center; color: rgba(45, 47, 64, 0.55); }
+    .post-prose .post-figure > em a, .post-prose .post-caption a { color: inherit; }
+    .post-prose table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; display: block; overflow-x: auto; }
+    .post-prose th, .post-prose td { border-bottom: 1px solid #E8E4DF; padding: 0.65rem 0.75rem; text-align: left; vertical-align: top; }
+    .post-prose th { color: #1A1A22; font-weight: 600; background: #F3F0EC; }
+    .post-prose hr { border: 0; border-top: 1px solid #E8E4DF; margin: 2.5rem 0; }
+  </style>
+</head>
+<body class="font-body text-icalia-dark antialiased bg-icalia-warm">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+      <a href="../" class="flex items-center gap-1">
+        <img src="../assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
+      </a>
+      <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
+        <a href="../case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
+        <div class="industries-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5">
+            Domains
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
+              <a href="../industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Fintech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Compliance, transaction flows, cost of a bug at scale.</div>
+              </a>
+              <a href="../industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Healthtech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, patient data, stakes of building in healthcare.</div>
+              </a>
+              <a href="../industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
+              </a>
+              <a href="../industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Real-time data, route optimization, systems that can't afford downtime.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="../manifesto.html" class="hover:text-icalia-dark transition-colors">Manifesto</a>
+
+        <a href="../blog/" class="hover:text-icalia-dark transition-colors">Blog</a>
+
+        <a href="../careers.html" class="hover:text-icalia-dark transition-colors">Careers</a>
+        <a href="../contact.html" class="hover:text-icalia-dark transition-colors">Contact</a>
+        <a href="../contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand/50 bg-icalia-warm">
+      <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
+        <a href="../">Home</a>
+        <a href="../case-studies.html">Work</a>
+        <div>
+          <button id="mobile-industries-toggle" class="flex items-center justify-between w-full text-icalia-dark">
+            <span>Domains</span>
+            <svg id="mobile-industries-chevron" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="mobile-industries" class="hidden mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="../industries/fintech.html" class="block py-2">Fintech</a>
+            <a href="../industries/healthtech.html" class="block py-2">Healthtech</a>
+            <a href="../industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
+            <a href="../industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+          </div>
+        </div>
+        <a href="../manifesto.html">Manifesto</a>
+
+        <a href="../blog/">Blog</a>
+
+        <a href="../careers.html">Careers</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+
+<main>
+
+
+
+
+  <article>
+    <!-- Header -->
+    <header class="pt-36 pb-10 md:pt-44 md:pb-14 px-6 lg:px-10">
+      <div class="max-w-3xl mx-auto">
+
+
+
+        <div class="mb-6 text-sm text-icalia-navy/70 bg-icalia-warm-2 border border-dashed border-icalia-sand rounded-2xl px-5 py-4 space-y-2" role="note">
+
+          <p>
+            <span class="font-semibold text-icalia-dark">Pre-AI era &middot; 2016.</span>
+            Written before AI was part of how we build. The fundamentals still hold; tooling and workflow advice may be dated.
+          </p>
+
+
+          <p>
+            Originally published on <a href="https://medium.com/icalia-labs/notorious-mistakes-we-have-made-as-a-software-services-company-83f00e56ffbc" target="_blank" rel="noopener" class="font-semibold text-icalia-dark underline underline-offset-2 hover:text-icalia-red">Medium</a> on April 18, 2016.
+            Lightly edited for clarity.
+          </p>
+
+        </div>
+
+        <nav aria-label="Breadcrumb" class="text-xs font-medium text-icalia-navy/50 mb-8">
+          <ol class="flex flex-wrap items-center gap-2">
+            <li><a href="/" class="hover:text-icalia-red transition-colors">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li><a href="/blog/" class="hover:text-icalia-red transition-colors">Blog</a></li>
+
+            <li aria-hidden="true">/</li>
+            <li><a href="/blog/topics/software-development.html" class="hover:text-icalia-red transition-colors">Software Development</a></li>
+
+          </ol>
+        </nav>
+
+        <div class="flex flex-wrap gap-2 mb-6">
+
+          <a href="/blog/topics/software-development.html" class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full hover:bg-icalia-red hover:text-white transition-colors">Software Development</a>
+
+        </div>
+
+        <h1 class="font-display text-4xl md:text-6xl leading-[1.05] tracking-tight">Notorious mistakes we have made as a Software Services Company</h1>
+        <p class="mt-6 text-lg md:text-xl text-icalia-navy/60 leading-relaxed">Ten mistakes Icalia Labs made in its first 3.5 years as a software services company, from pricing and contracts to culture, hiring, and mentors.</p>
+
+        <div class="mt-8 flex items-center gap-4">
+
+          <img src="/assets/eduardo-lopez.webp" alt="Eduardo Lopez De Leon" class="w-11 h-11 rounded-full object-cover" width="44" height="44">
+
+          <div class="text-sm">
+            <p class="font-semibold text-icalia-dark">Eduardo Lopez De Leon <span class="font-normal text-icalia-navy/50">&middot; Co-Founder &amp; CEO</span></p>
+            <p class="text-icalia-navy/50">
+              <time datetime="2016-04-18">April 18, 2016</time>
+
+              &middot; 7 min read
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <figure class="px-6 lg:px-10">
+      <div class="max-w-5xl mx-auto">
+        <img src="/assets/blog/notorious-mistakes-software-services-company-cover.webp" alt="Black-and-white photo of a person with curly hair working on a laptop at a shared table with colleagues" width="1200" height="630" fetchpriority="high" decoding="async" class="w-full aspect-[1200/630] rounded-2xl object-cover bg-icalia-warm-2">
+      </div>
+    </figure>
+
+
+    <div class="px-6 lg:px-10 pb-16">
+      <div class="max-w-3xl mx-auto">
+
+
+        <div class="post-prose mt-12">
+<p>3.5 years as a company: a short period of time, but with many lessons learned to share. We didn’t have any formal support to handle unexpected and hard situations along the way.</p>
+<p>Now that we have lived through them, here is a list of the most important situations to share with the world, in the hope that any services company in the same field that is just starting out can take them as valuable input.</p>
+<p>The most hardcore mistakes we have made as a Tech Services Company are:</p>
+<p><strong>1. Wrong pricing for our work and effort.</strong></p>
+<p>What’s the price of a piece of software? What’s the value of that software being executed in the right context by the right team? What’s the cost of not properly implementing software? And what’s the value of good software for those companies that have had problems deploying good software in the past?</p>
+<p>All the considerations to build, deploy, and maintain software the right way certainly have value. All procedures around recruiting, hiring, retaining, and motivating (also perks and incentives) the right team for the right software have value. The company culture embedded within the processes, practices, and conversations to build the right product has value.</p>
+<p>Being a small team of engineers and designers matters. It is the very first step in building a culture, a service, and then a company. If somebody is looking for a team capable of building software, that means he wants to win against time, effort, and strategy in building a team; he needs execution. The execution capabilities you and your team are developing are part of that value.</p>
+<p>You are not a freelancer. You are a team, with value for your clients that needs to be charged the right way.</p>
+<p><strong>2. Working without contracts, both with clients and providers.</strong></p>
+<p>One of the worst things you can do is avoid formality in a business relationship and not sign a contract.</p>
+<p>A contract is just an artifact to develop confidence between the parties. It doesn’t mean you are going to bring attorneys to every conversation about the relationship itself. Having a contract where all parties agree on the terms maintains sanity and develops confidence faster. Also, it gives you a backup for any anomaly or irregularity that could happen in the future.</p>
+<p>It doesn’t matter how small or big the parties are. Encourage the signing of a contract, preferably a contract proposed by the one providing the service. We have faced problems where a company bigger than us, asking for our services, tried to impose a contract. The reality is that if X is asking for the services of Y, it makes more sense for Y to propose a contract, because Y is the one providing the service.</p>
+<p><strong>3. Not building our culture from the very first day.</strong></p>
+<p>Values, rituals, and a manifesto to accomplish the mission and achieve the vision. The way you recruit, the way you talk to the world, the way they see you as a company: everything happening around a business relies on the culture it defends and promotes. Normally, when you start, you forget to think about the basic elements of a culture, but once you want to grow and scale your team and your value, you realize the <a href="https://medium.com/@bchesky/dont-fuck-up-the-culture-597cde9ee9d4#.oqfs5rmz9">culture is the backbone of your entire business</a>.</p>
+<p>Competing with big companies for the right talent is not a battle you win with money, because of what they can offer; you win it with the culture and the vision you can share with others.</p>
+<p>Remember: <a href="https://web.archive.org/web/20160419001830/http://startupclass.samaltman.com:80/courses/lec11/">the first 10 employees define your company culture</a> and <a href="http://blog.idonethis.com/two-pizza-team/">you should feed them with only 2 pizzas</a>.</p>
+<p><strong>4. Agreeing on equity and working for early-stage <a href="https://en.wikipedia.org/wiki/Bootstrapping#Business">bootstrapped startups</a>.</strong></p>
+<p>Many of these cases were from first-time entrepreneurs. Nevertheless, someone wanting to share equity with our company before starting a project is a sign of a low-quality lead. Lack of investment, lack of validation, and fear of taking risks are examples of the problems we see when negotiations start with these kinds of proposals.</p>
+<p>It is always exciting to hear new ideas flowing, see entrepreneurs’ enthusiasm, and be part of a new vision looking to change an entire industry. There are many success cases of companies doing this, but the best scenario is when the founding team has a background building other companies, or the idea aligns in some way with your company’s vision and you feel it is the right moment to build something like that. Otherwise, pass. When it comes to business, if you are going to provide value to any product or new business, you need to assess the risks in every term of the relationship.</p>
+<p>Ironically, we are a bootstrapped company, just like <a href="http://37signals.com/bootstrapped">many others</a>.</p>
+<p><strong>5. Working on client products from scratch with all design done by third parties.</strong></p>
+<p>Other companies in the process will block the guarantees we offer. We have lived this in the past, and the difficult thing is helping the client realize that coordinating more entities and actors at the beginning of product development is a real challenge, and most of the time it doesn’t end well.</p>
+<p>Delays and misunderstood features, to name a few, are possible situations. The fewer communication channels while building a product, the better the outcome is going to be.</p>
+<p><strong>6. Considering one region as the only target market.</strong></p>
+<p>We started in one region — our headquarters country: Mexico. Many people started to contact us to build great software with them and change the way industries have worked for the past decades. This was part of the very first acquisition channels we had for getting in touch with interesting leads: basically, word of mouth and our network.</p>
+<p>But why stay just there? We received many similar needs from other clients around the world, derived from clients’ referrals and networks, word of mouth, open source efforts, and being connected with communities like WeWork, to mention the most effective. The interesting part was dealing with the culture, language, and diverse backgrounds of both sides. Thanks to our efforts in open source, and the connections from the company network, we started working with great clients around the world, discovering new technical and business challenges.</p>
+<p>With the power of the Internet and the many tools leveraging it, collaboration and software development can happen both co-located and remotely.</p>
+<p><strong>7. Not having mentors from the first year of the company.</strong></p>
+<p>Mistakes can be advised against.</p>
+<p>People with experience who have built teams, companies, and visions have the right profile for the advisors you need to have behind you. The same goes for investors — you need people who become part of the team, not people demanding what they think it should be.</p>
+<p>Advisors mainly advise, and help you have more perspective and input when you need to make a decision.</p>
+<p><strong>8. Lacking a hiring procedure and clear profiles of the people we needed.</strong></p>
+<p>This was something we noticed during the first years. Growing our team and the capabilities to detect great talent weren’t scalable. What’s more, the way we were executing the talent evaluation wasn’t considering important elements of our culture.</p>
+<p>We ended up firing people who didn’t fit the type of talent we believed was going to push the entire company to achieve the vision.</p>
+<p>Right now, we have established a 3-hour procedure for technical, creative, and management roles, where culture and values are the first thing we assess, followed by an activity where we test the person in a real work environment.</p>
+<p><strong>9. Focusing only on first-version products, rather than helping clients keep building them.</strong></p>
+<p>It wasn’t obvious, not only in terms of revenue but also in terms of impact, that keeping long-term relationships with clients and partners would be part of a trustworthy link that would enable the impact we wanted to see out there with the products and software we were going to build.</p>
+<p>Being part of only the initial development of an MVP, prototype, or feature enhancements wasn’t going to help our clients, nor help our vision be achieved. We have switched many of the conversations to start with an initial task to develop trust and confidence between us, and then think long-term, looking forward to helping them and having the impact they want to have as well.</p>
+<p><strong>10. Rarely asking where the software industry was going to be 5 or 10 years from now.</strong></p>
+<p>This is a rhetorical question every company should be asking about its particular industry: Where is our industry going to be in 5 years? What are we doing to see the industry at that point? What should we do to be part of that evolution?</p>
+<p>Frequently asking this question — every year, quarter, month, even every day — allows us to be continuously aligned with user, client, and industry demands. It also allows us to propose and create things that don’t exist, in the way we imagine them existing, in order to move the entire industry forward.</p>
+<p>Changing the answers as time passes is normal, but keeping that question as part of the mindset lets us be part of the future we want to see.</p>
+<p>This list will surely grow; mistakes won’t stop, and that will be a good sign.</p>
+<p>Putting an end to all the possible mistakes you can make as a company means putting an end to the capacity, willingness, and vision to innovate. Making mistakes comes from trying things you have never done before, but if you don’t take the risk, who will?</p>
+<p><em>What other lessons have your companies learned in their early stages? Let’s start an open conversation so both sides can benefit from our experience.</em></p>
+
+        </div>
+
+
+
+
+        <section class="mt-16 flex gap-5 items-start bg-white border border-icalia-sand/60 rounded-2xl p-6" aria-label="About the author">
+
+          <img src="/assets/eduardo-lopez.webp" alt="Eduardo Lopez De Leon" class="w-16 h-16 rounded-full object-cover shrink-0" width="64" height="64">
+
+          <div>
+            <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">Written by</p>
+            <p class="mt-1 font-semibold text-icalia-dark">Eduardo Lopez De Leon <span class="font-normal text-icalia-navy/50">&middot; Co-Founder &amp; CEO</span></p>
+            <p class="mt-2 text-sm text-icalia-navy/60 leading-relaxed">Strategy, brand presence, and partnership development at Icalia Labs. Startup and corporate experience. YC Founder.</p>
+
+            <p class="mt-3 flex flex-wrap gap-4 text-sm">
+
+              <a href="https://www.linkedin.com/in/elopezdeleon/" target="_blank" rel="noopener me" class="text-icalia-red font-semibold hover:underline">LinkedIn</a>
+
+              <a href="https://x.com/edolopez" target="_blank" rel="noopener me" class="text-icalia-red font-semibold hover:underline">X</a>
+
+              <a href="https://github.com/edolopez" target="_blank" rel="noopener me" class="text-icalia-red font-semibold hover:underline">GitHub</a>
+
+            </p>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </article>
+
+
+
+  <section class="py-16 md:py-20 px-6 lg:px-10 bg-icalia-warm-2 border-t border-icalia-sand/50" aria-labelledby="related-reading">
+    <div class="max-w-7xl mx-auto">
+      <h2 id="related-reading" class="font-display text-3xl md:text-4xl leading-tight mb-10">Related reading</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+
+
+<a href="/blog/how-to-hire-software-engineers-in-mexico.html" class="group flex flex-col bg-white border border-icalia-sand/50 rounded-2xl overflow-hidden hover:border-icalia-red/40 hover:shadow-lg hover:shadow-icalia-dark/5 transition-all">
+  <div class="relative aspect-[1200/630]  overflow-hidden bg-icalia-dark">
+    <img src="/assets/blog/monterrey-office-overhead.jpg" alt="" loading="lazy" decoding="async" width="1200" height="630" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+  </div>
+  <div class="flex flex-col flex-1 p-6">
+    <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">
+      <time datetime="2026-09-22">September 22, 2026</time>
+    </p>
+    <h3 class="mt-3 font-display text-2xl leading-snug text-icalia-dark group-hover:text-icalia-red transition-colors">How to Hire Software Engineers in Mexico: A US Guide</h3>
+    <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">A practical guide for US companies hiring software engineers in Mexico: hiring models, legal setup, vetting, onboarding, and the mistakes to avoid.</p>
+    <p class="mt-auto pt-6 text-xs font-semibold text-icalia-red">Nearshore Hiring</p>
+  </div>
+</a>
+
+
+
+<a href="/blog/distributed-software-teams-in-management-consulting.html" class="group flex flex-col bg-white border border-icalia-sand/50 rounded-2xl overflow-hidden hover:border-icalia-red/40 hover:shadow-lg hover:shadow-icalia-dark/5 transition-all">
+  <div class="relative aspect-[1200/630]  overflow-hidden bg-icalia-dark">
+    <img src="/assets/blog/distributed-software-teams-in-management-consulting-cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="630" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+    <span class="absolute bottom-3 right-3 text-[11px] font-semibold uppercase tracking-widest bg-icalia-warm text-icalia-navy px-2.5 py-1 rounded-full">Pre-AI era</span>
+  </div>
+  <div class="flex flex-col flex-1 p-6">
+    <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">
+      <time datetime="2021-02-26">February 26, 2021</time>
+    </p>
+    <h3 class="mt-3 font-display text-2xl leading-snug text-icalia-dark group-hover:text-icalia-red transition-colors">Adapting a distributed software team capability in Management Consulting</h3>
+    <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">Argues that management consulting firms need a software development practice and explains how distributed teams help them win deals and scale.</p>
+    <p class="mt-auto pt-6 text-xs font-semibold text-icalia-red">Nearshore Hiring</p>
+  </div>
+</a>
+
+
+
+<a href="/blog/holistic-agnostic-specific-problem-solving.html" class="group flex flex-col bg-white border border-icalia-sand/50 rounded-2xl overflow-hidden hover:border-icalia-red/40 hover:shadow-lg hover:shadow-icalia-dark/5 transition-all">
+  <div class="relative aspect-[1200/630]  overflow-hidden bg-icalia-dark">
+    <img src="/assets/blog/holistic-agnostic-specific-problem-solving-cover.webp" alt="" loading="lazy" decoding="async" width="1200" height="630" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+    <span class="absolute bottom-3 right-3 text-[11px] font-semibold uppercase tracking-widest bg-icalia-warm text-icalia-navy px-2.5 py-1 rounded-full">Pre-AI era</span>
+  </div>
+  <div class="flex flex-col flex-1 p-6">
+    <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">
+      <time datetime="2020-04-20">April 20, 2020</time>
+    </p>
+    <h3 class="mt-3 font-display text-2xl leading-snug text-icalia-dark group-hover:text-icalia-red transition-colors">Holistic, Agnostic &amp; Specific at solving problems</h3>
+    <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">Why being holistic, technology-agnostic and industry-specific makes software engineers and teams better at solving problems.</p>
+    <p class="mt-auto pt-6 text-xs font-semibold text-icalia-red">Forward-Deployed Engineering (FDE)</p>
+  </div>
+</a>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA band -->
+  <section class="py-20 md:py-28 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="font-display text-4xl md:text-6xl leading-tight">Need engineers who <span class="italic text-icalia-red">already ship like this?</span></h2>
+      <p class="mt-8 text-lg text-icalia-navy/60 max-w-2xl mx-auto">We embed senior nearshore engineers directly into your team — same time zone, same standards, no ramp-up theater.</p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-8 py-4 rounded-full font-semibold hover:bg-icalia-navy transition-colors inline-flex items-center justify-center gap-2">
+          Book a discovery call <span>→</span>
+        </a>
+
+        <a href="/developers.html" class="px-8 py-4 rounded-full font-semibold text-icalia-navy hover:text-icalia-dark transition-colors inline-flex items-center justify-center gap-2">
+          Explore our open source
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+    <!-- Footer -->
+  <footer class="bg-icalia-dark py-16 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <img src="../assets/logo-white.svg" alt="Icalia Labs" class="h-7 w-auto">
+          <p class="mt-4 text-sm text-white/30 leading-relaxed max-w-xs">Nearshore engineers who multiply: AI-driven, human-accountable. Monterrey, MX + Austin, TX. Since 2012.</p>
+          <a href="https://clutch.co/mx/developers/artificial-intelligence" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-icalia-red/40 rounded-xl px-4 py-3 transition-all group max-w-xs">
+            <svg class="shrink-0 w-10 h-12" viewBox="0 0 80 96" xmlns="http://www.w3.org/2000/svg" aria-label="Clutch Top AI Companies Mexico 2024 badge">
+              <polygon points="40,2 74,22 74,74 40,94 6,74 6,22" fill="#FAF8F6" stroke="#1C2333" stroke-width="2"/>
+              <text x="40" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">TOP</text>
+              <text x="40" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">AI COMPANIES</text>
+              <rect x="12" y="40" width="56" height="16" fill="#1C2333"/>
+              <text x="40" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="700" fill="#FAF8F6" font-style="italic">Clutch</text>
+              <text x="40" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" font-weight="600" fill="#1C2333">MEXICO</text>
+              <text x="40" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#1C2333">2024</text>
+            </svg>
+            <div>
+              <p class="text-xs font-semibold text-white leading-tight">Leading <span class="text-icalia-red">AI</span> in LatAm</p>
+              <p class="text-[10px] text-white/40 mt-0.5 group-hover:text-icalia-red transition-colors">Top AI Companies · Mexico 2024</p>
+            </div>
+          </a>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Navigate</h4>
+          <div class="flex flex-col gap-3">
+            <a href="../" class="text-sm text-white/40 hover:text-white transition-colors">Home</a>
+            <a href="../about.html" class="text-sm text-white/40 hover:text-white transition-colors">About</a>
+            <a href="../case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
+            <a href="../manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
+
+            <a href="../blog/" class="text-sm text-white/40 hover:text-white transition-colors">Blog</a>
+
+            <a href="../careers.html" class="text-sm text-white/40 hover:text-white transition-colors">Careers</a>
+            <a href="../developers.html" class="text-sm text-white/40 hover:text-white transition-colors">Developers</a>
+            <a href="../contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Industries</h4>
+          <div class="flex flex-col gap-3">
+            <a href="../industries/fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Fintech</a>
+            <a href="../industries/healthtech.html" class="text-sm text-white/40 hover:text-white transition-colors">Healthtech</a>
+            <a href="../industries/retail.html" class="text-sm text-white/40 hover:text-white transition-colors">eCommerce</a>
+            <a href="../industries/logistics.html" class="text-sm text-white/40 hover:text-white transition-colors">Logistics</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Offices</h4>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-sm text-white/50 font-medium">Austin, Texas</p>
+              <p class="text-sm text-white/30">801 Barton Springs Rd, 78704</p>
+            </div>
+            <div>
+              <p class="text-sm text-white/50 font-medium">Monterrey, Mexico</p>
+              <p class="text-sm text-white/30">Avenida Eugenio Garza Sada #3820, Col. Mas Palomas</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Get in Touch</h4>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:sales@icalialabs.com" class="text-sm text-white/40 hover:text-white transition-colors">sales@icalialabs.com</a>
+            <a href="tel:+15124814113" class="text-sm text-white/40 hover:text-white transition-colors">+1 512 481 4113</a>
+          </div>
+          <div class="flex gap-4 mt-6">
+            <a href="https://linkedin.com/company/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://clutch.co/profile/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="Clutch">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
+            </a>
+            <a href="https://github.com/IcaliaLabs/" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <p class="text-xs text-white/20">&copy; 2026 Icalia, Inc. All rights reserved.</p>
+        <div class="flex gap-6 text-xs text-white/30">
+          <a href="../privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="../terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
+  </script>
+</body>
+</html>

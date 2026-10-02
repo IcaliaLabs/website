@@ -100,7 +100,7 @@ The strongest engineers are rarely on job boards. They're employed, and they mov
 -   **Job boards and LinkedIn** — broad reach, heavy screening load.
 -   **A staffing partner with a vetted network** — fastest route to senior people, if the vetting is real.
 
-Monterrey, Guadalajara, and Mexico City are the largest hubs. Monterrey in particular has deep ties to US manufacturing, logistics, and energy companies — it's where Icalia Labs has been placing engineers since 2011.
+Monterrey, Guadalajara, and Mexico City are the largest hubs. Monterrey in particular has deep ties to US manufacturing, logistics, and energy companies — it's where Icalia Labs has been placing engineers since 2012.
 
 ![Icalia Labs engineers working late at the Monterrey office](/assets/blog/monterrey-office-night.jpg)
 
@@ -169,6 +169,34 @@ Eduardo Lopez De Leon · Co-Founder & CEO
 Strategy, brand presence, and partnership development at Icalia Labs. Startup and corporate experience. YC Founder.
 
 [LinkedIn](https://www.linkedin.com/in/elopezdeleon/) [X](https://x.com/edolopez) [GitHub](https://github.com/edolopez)
+
+## Related reading
+
+ [![](/assets/blog/distributed-software-teams-in-management-consulting-cover.webp) Pre-AI era
+
+February 26, 2021
+
+### Adapting a distributed software team capability in Management Consulting
+
+Argues that management consulting firms need a software development practice and explains how distributed teams help them win deals and scale.
+
+Nearshore Hiring](/blog/distributed-software-teams-in-management-consulting.html) [![](/assets/blog/decentralized-software-partner-relationships-cover.webp) Pre-AI era
+
+January 31, 2020
+
+### Executing a successful relationship with decentralized software partners
+
+Key takeaways from a 2020 Austin Technology Council panel on running a successful, high-performing relationship with a remote software partner.
+
+Nearshore Hiring](/blog/decentralized-software-partner-relationships.html) [![](/assets/blog/working-setup4.webp) Pre-AI era
+
+July 24, 2017
+
+### Choosing the right Software Partner for your Company
+
+Why companies hire an external software partner, and what to assess when choosing one: culture, past work, practices, people, quality, and pricing.
+
+Nearshore Hiring](/blog/choosing-the-right-software-partner.html)
 
 ## Need engineers who already ship like this?
 

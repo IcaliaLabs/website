@@ -1,6 +1,6 @@
 # Icalia Labs — Nearshore Staff Augmentation
 
-> Scale your engineering team with senior nearshore developers. Same timezone, product-minded engineers who stay. Trusted by Fortune 500 companies and startups since 2011.
+> Scale your engineering team with senior nearshore developers. Same timezone, product-minded engineers who stay. Trusted by Fortune 500 companies and startups since 2012.
 
 Nearshore Staff Augmentation
 
@@ -16,7 +16,7 @@ We embed senior engineers into your team — people who understand your stack, y
 
 \>90 NPS
 
-Based on client surveys across 210+ platforms delivered since 2011
+Based on client surveys across 210+ platforms delivered since 2012
 
 Trusted by
 
@@ -74,7 +74,7 @@ How We Operate
 ## Engineering,  
 amplified by AI.
 
-15 years of engineering practice, encoded into how we source, onboard, and ship. AI moves the work forward. Your engineers own the outcomes.
+Engineering practice since 2012, encoded into how we source, onboard, and ship. AI moves the work forward. Your engineers own the outcomes.
 
 [
 
@@ -196,11 +196,11 @@ Active OSS maintainers. Our [public repos](https://github.com/IcaliaLabs) have e
 
 AI-native operation. Founders who've built, shipped, and sold — now investing that experience in your team.
 
-15+
+2012
 
-years building software
+the year we started shipping software
 
-> "We started in 2011 with a simple belief: World-class software teams can be built anywhere, and nearshore engineers have the unfair advantage of delivering the same output as any other US engineer."
+> "We started in 2012 with a simple belief: World-class software teams can be built anywhere, and nearshore engineers have the unfair advantage of delivering the same output as any other US engineer."
 
 Same bar, different industries → [Fintech](industries/fintech.html) · [Healthtech](industries/healthtech.html) · [eCommerce](industries/retail.html) · [Logistics](industries/logistics.html)
 

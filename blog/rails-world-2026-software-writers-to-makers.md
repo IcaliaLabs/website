@@ -177,7 +177,23 @@ Every engineering partner says it uses AI. Three metrics, five questions and the
 
 AI Engineering
 
-](/blog/ai-augmented-engineering-teams.html)
+](/blog/ai-augmented-engineering-teams.html) [![](/assets/blog/office-santalucia.webp) Pre-AI era
+
+May 16, 2020
+
+### A manifesto: the foundation for any organization
+
+How Icalia Labs used its 7th anniversary to revisit its culture and write a company manifesto, from first draft to the final version.
+
+Software Makers](/blog/a-manifesto-the-foundation-for-any-organization.html) [![](/assets/blog/hack-prepas-first-high-school-hackathon-in-mexico-5.webp) Pre-AI era
+
+March 19, 2015
+
+### Organizing Hack Prepas, the first high school Hackathon in Mexico
+
+A high school apprentice at Icalia Labs recounts organizing Hack Prepas in 2015, the first high school hackathon in Mexico, from approvals to sponsors.
+
+Software Makers](/blog/hack-prepas-first-high-school-hackathon-in-mexico.html)
 
 ## Need engineers who already ship like this?
 

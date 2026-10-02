@@ -26,4 +26,12 @@ Every engineering partner says it uses AI. Three metrics, five questions and the
 
 AI Engineering
 
-](/blog/ai-augmented-engineering-teams.html)
+](/blog/ai-augmented-engineering-teams.html) [![](/assets/blog/holistic-agnostic-specific-problem-solving-cover.webp) Pre-AI era
+
+April 20, 2020
+
+## Holistic, Agnostic & Specific at solving problems
+
+Why being holistic, technology-agnostic and industry-specific makes software engineers and teams better at solving problems.
+
+Forward-Deployed Engineering (FDE)](/blog/holistic-agnostic-specific-problem-solving.html)

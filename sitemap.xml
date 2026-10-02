@@ -2,27 +2,83 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://icalialabs.com/</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-02</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/about.html</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-02</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/blog/</loc>
     <lastmod>2026-09-27</lastmod>
   </url>
   <url>
+    <loc>https://icalialabs.com/blog/a-manifesto-the-foundation-for-any-organization.html</loc>
+    <lastmod>2020-05-16</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/advantages-of-being-open.html</loc>
+    <lastmod>2015-02-16</lastmod>
+  </url>
+  <url>
     <loc>https://icalialabs.com/blog/ai-augmented-engineering-teams.html</loc>
     <lastmod>2026-09-15</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/choosing-the-right-software-partner.html</loc>
+    <lastmod>2017-07-24</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/decentralized-software-partner-relationships.html</loc>
+    <lastmod>2020-01-31</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/design-sprint-in-a-software-development-team.html</loc>
+    <lastmod>2017-11-28</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/distributed-software-teams-in-management-consulting.html</loc>
+    <lastmod>2021-02-26</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/hack-prepas-first-high-school-hackathon-in-mexico.html</loc>
+    <lastmod>2015-03-19</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/holistic-agnostic-specific-problem-solving.html</loc>
+    <lastmod>2020-04-20</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/blog/how-to-hire-software-engineers-in-mexico.html</loc>
     <lastmod>2026-09-27</lastmod>
   </url>
   <url>
+    <loc>https://icalialabs.com/blog/how-to-participate-and-win-a-hackathon.html</loc>
+    <lastmod>2014-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/north-american-block-unfair-advantage-in-tech.html</loc>
+    <lastmod>2021-01-15</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/notorious-mistakes-software-services-company.html</loc>
+    <lastmod>2016-04-18</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/open-data-opportunity-in-technology.html</loc>
+    <lastmod>2014-12-29</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/organizational-debt.html</loc>
+    <lastmod>2018-07-09</lastmod>
+  </url>
+  <url>
     <loc>https://icalialabs.com/blog/rails-world-2026-software-writers-to-makers.html</loc>
     <lastmod>2026-09-29</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/blog/software-industry-tendencies-2015.html</loc>
+    <lastmod>2015-07-27</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/blog/topics/agentic-engineering.html</loc>
@@ -70,7 +126,7 @@
   </url>
   <url>
     <loc>https://icalialabs.com/contact.html</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-02</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/developers.html</loc>
@@ -94,7 +150,7 @@
   </url>
   <url>
     <loc>https://icalialabs.com/manifesto.html</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-02</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/privacy.html</loc>

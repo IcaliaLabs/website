@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advantages of being open — Icalia Labs Blog</title>
+  <meta name="description" content="Why Icalia Labs shares its code, design, and knowledge openly, and the advantages it saw in 2015, from feedback and growth to credibility with clients.">
+
+  <link rel="canonical" href="https://icalialabs.com/blog/advantages-of-being-open.html">
+  <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+
+  <link rel="alternate" type="text/markdown" href="https://icalialabs.com/blog/advantages-of-being-open.md">
+
+  <link rel="alternate" type="application/atom+xml" title="Icalia Labs Blog" href="https://icalialabs.com/blog/feed.xml">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSFD00QMYY"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MSFD00QMYY', {
+      'page_path': '/blog/advantages-of-being-open.html',
+      'anonymize_ip': true,
+      'cookie_expires': 63072000
+    });
+  </script>
+  <script src="/js/ga-events.js" defer></script>
+
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://icalialabs.com/blog/advantages-of-being-open.html">
+  <meta property="og:title" content="Advantages of being open — Icalia Labs Blog">
+  <meta property="og:description" content="Why Icalia Labs shares its code, design, and knowledge openly, and the advantages it saw in 2015, from feedback and growth to credibility with clients.">
+  <meta property="og:image" content="https://icalialabs.com/assets/blog/advantages-of-being-open-cover.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Advantages of being open — Icalia Labs Blog">
+  <meta name="twitter:description" content="Why Icalia Labs shares its code, design, and knowledge openly, and the advantages it saw in 2015, from feedback and growth to credibility with clients.">
+  <meta name="twitter:image" content="https://icalialabs.com/assets/blog/advantages-of-being-open-cover.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'icalia-red': '#E8453C',
+            'icalia-red-dark': '#C53B33',
+            'icalia-dark': '#1A1A22',
+            'icalia-navy': '#2D2F40',
+            'icalia-warm': '#FAF8F6',
+            'icalia-warm-2': '#F3F0EC',
+            'icalia-blush': '#FDECED',
+            'icalia-sand': '#E8E4DF',
+          },
+          fontFamily: {
+            'display': ['"Instrument Serif"', 'Georgia', 'serif'],
+            'body': ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    @media (min-width: 768px) {
+      .industries-dropdown:hover .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    }
+  </style>
+
+  <meta property="article:published_time" content="2015-02-16">
+
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Advantages of being open","description":"Why Icalia Labs shares its code, design, and knowledge openly, and the advantages it saw in 2015, from feedback and growth to credibility with clients.","url":"https://icalialabs.com/blog/advantages-of-being-open.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://icalialabs.com/blog/advantages-of-being-open.html"},"datePublished":"2015-02-16","dateModified":"2015-02-16","image":"https://icalialabs.com/assets/blog/advantages-of-being-open-cover.webp","inLanguage":"en","keywords":"Software Makers, Software Development","about":[{"@type":"Thing","name":"Software Makers"},{"@type":"Thing","name":"Software Development"}],"author":{"@type":"Person","name":"Eduardo Lopez De Leon","jobTitle":"Co-Founder & CEO","image":"https://icalialabs.com/assets/eduardo-lopez.webp","sameAs":["https://www.linkedin.com/in/elopezdeleon/","https://x.com/edolopez","https://github.com/edolopez"],"worksFor":{"@type":"Organization","name":"Icalia Labs","url":"https://icalialabs.com"}},"publisher":{"@type":"Organization","name":"Icalia Labs","url":"https://icalialabs.com","logo":{"@type":"ImageObject","url":"https://icalialabs.com/assets/logo.svg"}},"isBasedOn":"https://medium.com/icalia-labs/advantages-of-being-open-3a0645f2055f"}</script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://icalialabs.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://icalialabs.com/blog/"},{"@type":"ListItem","position":3,"name":"Software Makers","item":"https://icalialabs.com/blog/topics/software-maker.html"},{"@type":"ListItem","position":4,"name":"Advantages of being open","item":"https://icalialabs.com/blog/advantages-of-being-open.html"}]}</script>
+
+  <style>
+    .post-prose { color: rgba(45, 47, 64, 0.8); font-size: 1.0625rem; line-height: 1.8; }
+    .post-prose > * + * { margin-top: 1.25rem; }
+    .post-prose h2 { font-family: "Instrument Serif", Georgia, serif; font-size: 2.125rem; line-height: 1.15; color: #1A1A22; margin-top: 3rem; scroll-margin-top: 7rem; }
+    .post-prose h3 { font-weight: 600; font-size: 1.25rem; color: #1A1A22; margin-top: 2.25rem; scroll-margin-top: 7rem; }
+    .post-prose a { color: #E8453C; text-decoration: underline; text-underline-offset: 3px; }
+    .post-prose a:hover { color: #C53B33; }
+    .post-prose strong { color: #1A1A22; font-weight: 600; }
+    .post-prose ul { list-style: disc; padding-left: 1.25rem; }
+    .post-prose ol { list-style: decimal; padding-left: 1.25rem; }
+    .post-prose li + li { margin-top: 0.5rem; }
+    .post-prose blockquote { border-left: 2px solid #E8453C; padding-left: 1.25rem; font-style: italic; color: rgba(45, 47, 64, 0.7); }
+    .post-prose code { font-size: 0.9em; background: #F3F0EC; padding: 0.15rem 0.35rem; border-radius: 0.35rem; }
+    .post-prose pre { background: #1A1A22; color: #FAF8F6; padding: 1.25rem; border-radius: 1rem; overflow-x: auto; font-size: 0.875rem; }
+    .post-prose pre code { background: none; padding: 0; }
+    .post-prose img { max-width: 100%; height: auto; border-radius: 1rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+    .post-prose .post-figure img { margin-left: auto; margin-right: auto; }
+    .post-prose .post-figure > em, .post-prose .post-caption { display: block; margin-top: 0.25rem; font-size: 0.875rem; line-height: 1.6; text-align: center; color: rgba(45, 47, 64, 0.55); }
+    .post-prose .post-figure > em a, .post-prose .post-caption a { color: inherit; }
+    .post-prose table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; display: block; overflow-x: auto; }
+    .post-prose th, .post-prose td { border-bottom: 1px solid #E8E4DF; padding: 0.65rem 0.75rem; text-align: left; vertical-align: top; }
+    .post-prose th { color: #1A1A22; font-weight: 600; background: #F3F0EC; }
+    .post-prose hr { border: 0; border-top: 1px solid #E8E4DF; margin: 2.5rem 0; }
+  </style>
+</head>
+<body class="font-body text-icalia-dark antialiased bg-icalia-warm">
+
+  <!-- Navigation -->
+  <nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+      <a href="../" class="flex items-center gap-1">
+        <img src="../assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
+      </a>
+      <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
+        <a href="../case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
+        <div class="industries-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5">
+            Domains
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
+              <a href="../industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Fintech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Compliance, transaction flows, cost of a bug at scale.</div>
+              </a>
+              <a href="../industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Healthtech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, patient data, stakes of building in healthcare.</div>
+              </a>
+              <a href="../industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
+              </a>
+              <a href="../industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Real-time data, route optimization, systems that can't afford downtime.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <a href="../manifesto.html" class="hover:text-icalia-dark transition-colors">Manifesto</a>
+
+        <a href="../blog/" class="hover:text-icalia-dark transition-colors">Blog</a>
+
+        <a href="../careers.html" class="hover:text-icalia-dark transition-colors">Careers</a>
+        <a href="../contact.html" class="hover:text-icalia-dark transition-colors">Contact</a>
+        <a href="../contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
+      </div>
+      <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand/50 bg-icalia-warm">
+      <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
+        <a href="../">Home</a>
+        <a href="../case-studies.html">Work</a>
+        <div>
+          <button id="mobile-industries-toggle" class="flex items-center justify-between w-full text-icalia-dark">
+            <span>Domains</span>
+            <svg id="mobile-industries-chevron" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div id="mobile-industries" class="hidden mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="../industries/fintech.html" class="block py-2">Fintech</a>
+            <a href="../industries/healthtech.html" class="block py-2">Healthtech</a>
+            <a href="../industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
+            <a href="../industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+          </div>
+        </div>
+        <a href="../manifesto.html">Manifesto</a>
+
+        <a href="../blog/">Blog</a>
+
+        <a href="../careers.html">Careers</a>
+        <a href="../contact.html">Contact</a>
+        <a href="../contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+
+<main>
+
+
+
+
+  <article>
+    <!-- Header -->
+    <header class="pt-36 pb-10 md:pt-44 md:pb-14 px-6 lg:px-10">
+      <div class="max-w-3xl mx-auto">
+
+
+
+        <div class="mb-6 text-sm text-icalia-navy/70 bg-icalia-warm-2 border border-dashed border-icalia-sand rounded-2xl px-5 py-4 space-y-2" role="note">
+
+          <p>
+            <span class="font-semibold text-icalia-dark">Pre-AI era &middot; 2015.</span>
+            Written before AI was part of how we build. The fundamentals still hold; tooling and workflow advice may be dated.
+          </p>
+
+
+          <p>
+            Originally published on <a href="https://medium.com/icalia-labs/advantages-of-being-open-3a0645f2055f" target="_blank" rel="noopener" class="font-semibold text-icalia-dark underline underline-offset-2 hover:text-icalia-red">Medium</a> on February 16, 2015.
+            Lightly edited for clarity.
+          </p>
+
+        </div>
+
+        <nav aria-label="Breadcrumb" class="text-xs font-medium text-icalia-navy/50 mb-8">
+          <ol class="flex flex-wrap items-center gap-2">
+            <li><a href="/" class="hover:text-icalia-red transition-colors">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li><a href="/blog/" class="hover:text-icalia-red transition-colors">Blog</a></li>
+
+            <li aria-hidden="true">/</li>
+            <li><a href="/blog/topics/software-maker.html" class="hover:text-icalia-red transition-colors">Software Makers</a></li>
+
+          </ol>
+        </nav>
+
+        <div class="flex flex-wrap gap-2 mb-6">
+
+          <a href="/blog/topics/software-maker.html" class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full hover:bg-icalia-red hover:text-white transition-colors">Software Makers</a>
+
+          <a href="/blog/topics/software-development.html" class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full hover:bg-icalia-red hover:text-white transition-colors">Software Development</a>
+
+        </div>
+
+        <h1 class="font-display text-4xl md:text-6xl leading-[1.05] tracking-tight">Advantages of being open</h1>
+        <p class="mt-6 text-lg md:text-xl text-icalia-navy/60 leading-relaxed">Why Icalia Labs shares its code, design, and knowledge openly, and the advantages it saw in 2015, from feedback and growth to credibility with clients.</p>
+
+        <div class="mt-8 flex items-center gap-4">
+
+          <img src="/assets/eduardo-lopez.webp" alt="Eduardo Lopez De Leon" class="w-11 h-11 rounded-full object-cover" width="44" height="44">
+
+          <div class="text-sm">
+            <p class="font-semibold text-icalia-dark">Eduardo Lopez De Leon <span class="font-normal text-icalia-navy/50">&middot; Co-Founder &amp; CEO</span></p>
+            <p class="text-icalia-navy/50">
+              <time datetime="2015-02-16">February 16, 2015</time>
+
+              &middot; 7 min read
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <figure class="px-6 lg:px-10">
+      <div class="max-w-5xl mx-auto">
+        <img src="/assets/blog/advantages-of-being-open-cover.webp" alt="Overhead view of two men at a wooden desk working on laptops and a desktop monitor, with phones and cables nearby" width="1200" height="630" fetchpriority="high" decoding="async" class="w-full aspect-[1200/630] rounded-2xl object-cover bg-icalia-warm-2">
+      </div>
+    </figure>
+
+
+    <div class="px-6 lg:px-10 pb-16">
+      <div class="max-w-3xl mx-auto">
+
+
+        <div class="post-prose mt-12">
+<p>People from other professional fields have always asked why the tech community is a closed one. For them, this rests on <em>obvious situations</em>, such as the few women involved in the field, introverted people working with code, or the poor social skills that define a lot of us. But there are non-obvious, high-impact actors that can defend it as an open and transparent community.</p>
+<p>Take the Internet as a reference: such a powerful engineering artifact that grew unstoppably because of the decision to share its protocols and let anyone plug into the network following the right standards. Nowadays, anything is connected to the Internet using different tools, allowing anyone to share whatever they want.</p>
+<p>As a company, we have faced challenges since the beginning of our existence. Many of those have been solved thanks to the tech community: an open and wide group of people sharing knowledge and tools with the world for learning and collaboration purposes. We couldn’t be what we are today if we hadn’t had that access in the past. We do the same today: we care about being kind and open with the world. Letting others see what we are doing in a transparent way has provided more benefits than we expected. Besides, we realized during this involvement that there is no harm in sharing our work, because the difference comes from those behind the execution of that open knowledge.</p>
+<p>There are no tangible or explicitly measurable insights about the benefits of open source, such as ROI in specific distribution channels or impact on a target market, among others; what we know is that the mantra behind our core value of Kindness can lead to different advantages that provide unique long-term benefits.</p>
+<h3 id="passion-for-the-things-we-do">Passion for the things we do</h3>
+<p>What else can carry as much passion for the work you do as giving back to the community something they can use or talk about? Being passionate about what you do means talking about it, whether it’s the weekend, you’re on vacation, or you’re on a date. Passion is what drives the craziest but most significant advancements in the world.</p>
+<p>Sharing your tools, your code, or your design is a way to talk to others at every single moment, letting them know you care about technology, creativity, and collaboration.</p>
+<h3 id="a-new-distribution-channel">A new distribution channel</h3>
+<p>My co-founder is the author of a book: <a href="https://web.archive.org/web/20150217193415/http://apionrails.icalialabs.com/">APIs on Rails</a>, a piece that was started for fun, but also because there were many gaps in the existing sources for learning how to build a service architecture on Rails. Taking advantage of <a href="https://www.softcover.io/">open tools</a> and <a href="http://news.ycombinator.com/">communities that share knowledge in different ways</a>, he was able to distribute the book in electronic and print formats. This book has been a backup of our knowledge in the Internet century, where everything is eventually going to be connected.</p>
+<p>It is a cover letter for our leads, a training tool for our hires, and a passionate showcase that has attracted attention from many people wanting to know more about this topic and about the company.</p>
+<h3 id="understanding-collaboration">Understanding collaboration</h3>
+<p>I am not saying we don’t already collaborate inside the company, but sharing what you do demands another type of collaboration. An open, decentralized, distributed, and very organized core team needs to be behind every commit, every release, or version. Collaborating with people around the globe, speaking many different languages and following a personal standard on a project, can be a hassle, but if you attract the right people because of the existence of that project, collaboration will happen as a matter of course. Without the existence of <a href="http://github.com/">GitHub</a>, <a href="http://bitbucket.com/">Bitbucket</a>, or many other <a href="http://en.wikipedia.org/wiki/Distributed_revision_control">distributed revision control systems</a>, this would be harder to imagine, but now it’s easier.</p>
+<p>Understanding collaboration means working with new or existing members in an organized and distributed way, no matter the project.</p>
+<h3 id="individual-growth-and-recognition">Individual growth and recognition</h3>
+<p>We try to encourage every member of our team to share something with the world. That can be in the form of a blog post or a picture on our social networks, but most importantly, open source tools and open design within the creative communities. We had a problem trying to convince the team to share those under the <em>/icalialabs</em> namespace on the different networks. For instance, how can you encourage any team member to publish an open source tool on behalf of the company rather than under their own username?</p>
+<p>The answer is simple but was complex to define. When you share a tool on your own, you need to define a strategy to distribute it, to let other people know about your work, and to connect with them constantly. When you get support from your company, the company can’t say no to using a tool made by a team member. Our company is committed to using it, growing it, and sharing it with the world. An open source tool in the company’s namespace can have a greater reach than one published alone, simply because a company is the sum of every individual in it. Of course, there’s going to be personal growth, and that’s something attractive for anyone collaborating in open source. Nowadays, many huge companies ask for your GitHub account to see your open projects. With the backing of the company’s reach, satisfaction and recognition can be higher.</p>
+<h3 id="continuous-feedback">Continuous feedback</h3>
+<p>We have faced some constraints, with a couple of clients rejecting the possibility of sharing any kind of design with the world. This is completely understandable when there’s a board, investors, or intellectual property involved. In contrast, on projects without bureaucracy, clients are willing to share those efforts, and the results have been rewarding. People within open online communities get inspiration in many ways, but they are also looking to discuss, comment on, and give feedback to anyone sharing there. Talent is obviously all around the world, working on different products and teams, but at the same time it is connected to anyone because of the Internet. The possibility of receiving feedback from any expert or enthusiast about the work you are doing helps you grow and add more value to what you are building.</p>
+<p>When we released <a href="http://icalialabs.github.io/furatto/">Furatto</a>, we posted the link on <a href="https://news.ycombinator.com/item?id=6035999">Hacker News</a> on a Friday. In less than 3 hours, we received comments from 3 different front-end developers involved in huge and interesting projects such as <a href="https://purecss.io/">Pure CSS</a>. The conversation helped us identify improvements and question ourselves about the project itself.</p>
+<h3 id="technical-advancement">Technical advancement</h3>
+<p>A couple of weeks ago, we had some meetings with seasoned people from very different software industries, products, and procedures, who argued that certifications were cool because of the backing you get from being supported by a monster such as Oracle or IBM.</p>
+<p>We do the opposite: we are not attached to certifications or closed source tools. Technology is improving and changing every day. Being locked into one tool that is backed by a 3-year certification document can be dangerous and toxic to the progress our company needs, because of the rapid acceleration happening in the tech field. All the open source communities are aware of this; that’s why we see new languages and frameworks—<em>options, in the end</em>—that let anyone enter the tech jungle, fight for a different goal, and propose whatever they want. They can leverage the same things as the big fish. Advances come from being open.</p>
+<p>For this specific advantage, I would like to cite what I read in <a href="http://www.amazon.com/How-Google-Works-Eric-Schmidt/dp/1455582344">How Google Works</a>:</p>
+<blockquote>
+<p>“Open-sourcing something says, in effect, that we are committed to growing a platform, an industry, and an ecosystem as a whole. It lets everyone see that the playing field is level, with no unfair advantages conferred upon any particular player. Removing this suspicion of unfair advantages helps growth”. (Schmidt &amp; Rosenberg, 2014)</p>
+</blockquote>
+<h3 id="credibility-for-the-company">Credibility for the company</h3>
+<p>Being a Latin American company competing in a worldwide market is very hard, and even harder when you see how difficult it is to attract talent and fight against the numbers revealing the low number of engineers and tech people in LatAm, the <a href="https://web.archive.org/web/20150430231144/http://www.developereconomics.com/report/sizing-the-app-economy/">region with the smallest supply of profiles</a>. Nevertheless, developing reusable tools that reduce time-to-market for our products and services has become a reference point for our expertise compared to other companies. By showing leads and clients the quality of our code and our vision for specific tools, we show them that we stand behind what we sell and what we do.</p>
+<p>A couple of current clients have engaged with the code we have made public in our <a href="http://github.com/icalialabs">GitHub account</a>, or looked at our design style on <a href="http://dribbble.com/icalialabs">Dribbble</a>. Sharing what you do every day will help others realize your potential as a team.</p>
+<p>There can be exceptions when it comes to opening something to the world. The main factors involved in deciding whether to open something can be the quality you are looking for in the tool, legal restrictions from customers, or the <a href="http://www.forbes.com/sites/gregsatell/2014/10/03/peter-thiels-4-rules-for-creating-a-great-business/">10x better-factor advantage</a> over any other tools or products available. Nevertheless, we don’t regret having Kindness as one of our core values, inspiring our team to commit to sharing and being open with the community and the world.</p>
+
+        </div>
+
+
+
+
+        <section class="mt-16 flex gap-5 items-start bg-white border border-icalia-sand/60 rounded-2xl p-6" aria-label="About the author">
+
+          <img src="/assets/eduardo-lopez.webp" alt="Eduardo Lopez De Leon" class="w-16 h-16 rounded-full object-cover shrink-0" width="64" height="64">
+
+          <div>
+            <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">Written by</p>
+            <p class="mt-1 font-semibold text-icalia-dark">Eduardo Lopez De Leon <span class="font-normal text-icalia-navy/50">&middot; Co-Founder &amp; CEO</span></p>
+            <p class="mt-2 text-sm text-icalia-navy/60 leading-relaxed">Strategy, brand presence, and partnership development at Icalia Labs. Startup and corporate experience. YC Founder.</p>
+
+            <p class="mt-3 flex flex-wrap gap-4 text-sm">
+
+              <a href="https://www.linkedin.com/in/elopezdeleon/" target="_blank" rel="noopener me" class="text-icalia-red font-semibold hover:underline">LinkedIn</a>
+
+              <a href="https://x.com/edolopez" target="_blank" rel="noopener me" class="text-icalia-red font-semibold hover:underline">X</a>
+
+              <a href="https://github.com/edolopez" target="_blank" rel="noopener me" class="text-icalia-red font-semibold hover:underline">GitHub</a>
+
+            </p>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </article>
+
+
+
+  <section class="py-16 md:py-20 px-6 lg:px-10 bg-icalia-warm-2 border-t border-icalia-sand/50" aria-labelledby="related-reading">
+    <div class="max-w-7xl mx-auto">
+      <h2 id="related-reading" class="font-display text-3xl md:text-4xl leading-tight mb-10">Related reading</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+
+
+<a href="/blog/how-to-participate-and-win-a-hackathon.html" class="group flex flex-col bg-white border border-icalia-sand/50 rounded-2xl overflow-hidden hover:border-icalia-red/40 hover:shadow-lg hover:shadow-icalia-dark/5 transition-all">
+  <div class="relative aspect-[1200/630]  overflow-hidden bg-icalia-dark">
+    <img src="/assets/blog/working-setup1.webp" alt="" loading="lazy" decoding="async" width="1200" height="630" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+    <span class="absolute bottom-3 right-3 text-[11px] font-semibold uppercase tracking-widest bg-icalia-warm text-icalia-navy px-2.5 py-1 rounded-full">Pre-AI era</span>
+  </div>
+  <div class="flex flex-col flex-1 p-6">
+    <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">
+      <time datetime="2014-12-29">December 29, 2014</time>
+    </p>
+    <h3 class="mt-3 font-display text-2xl leading-snug text-icalia-dark group-hover:text-icalia-red transition-colors">How to proudly participate in (and probably win) a Hackathon</h3>
+    <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">Icalia Labs&#39; 2014 playbook for hackathons: pick the idea early, run agile sprints, balance hackers and designers, sleep, study the judges, and nail the pitch.</p>
+    <p class="mt-auto pt-6 text-xs font-semibold text-icalia-red">Software Makers</p>
+  </div>
+</a>
+
+
+
+<a href="/blog/rails-world-2026-software-writers-to-makers.html" class="group flex flex-col bg-white border border-icalia-sand/50 rounded-2xl overflow-hidden hover:border-icalia-red/40 hover:shadow-lg hover:shadow-icalia-dark/5 transition-all">
+  <div class="relative aspect-[1200/630]  overflow-hidden bg-icalia-dark">
+    <img src="/assets/blog/img_4661.webp" alt="" loading="lazy" decoding="async" width="1200" height="630" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+  </div>
+  <div class="flex flex-col flex-1 p-6">
+    <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">
+      <time datetime="2026-09-29">September 29, 2026</time>
+    </p>
+    <h3 class="mt-3 font-display text-2xl leading-snug text-icalia-dark group-hover:text-icalia-red transition-colors">Rails World 2026: From Software Writers to Makers</h3>
+    <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">Notes from Rails World 2026 in Austin: what DHH, Matz and Rails engineers said about AI, and why software writers are becoming software makers.</p>
+    <p class="mt-auto pt-6 text-xs font-semibold text-icalia-red">AI Engineering</p>
+  </div>
+</a>
+
+
+
+<a href="/blog/how-to-hire-software-engineers-in-mexico.html" class="group flex flex-col bg-white border border-icalia-sand/50 rounded-2xl overflow-hidden hover:border-icalia-red/40 hover:shadow-lg hover:shadow-icalia-dark/5 transition-all">
+  <div class="relative aspect-[1200/630]  overflow-hidden bg-icalia-dark">
+    <img src="/assets/blog/monterrey-office-overhead.jpg" alt="" loading="lazy" decoding="async" width="1200" height="630" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+  </div>
+  <div class="flex flex-col flex-1 p-6">
+    <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">
+      <time datetime="2026-09-22">September 22, 2026</time>
+    </p>
+    <h3 class="mt-3 font-display text-2xl leading-snug text-icalia-dark group-hover:text-icalia-red transition-colors">How to Hire Software Engineers in Mexico: A US Guide</h3>
+    <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">A practical guide for US companies hiring software engineers in Mexico: hiring models, legal setup, vetting, onboarding, and the mistakes to avoid.</p>
+    <p class="mt-auto pt-6 text-xs font-semibold text-icalia-red">Nearshore Hiring</p>
+  </div>
+</a>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA band -->
+  <section class="py-20 md:py-28 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="font-display text-4xl md:text-6xl leading-tight">Need engineers who <span class="italic text-icalia-red">already ship like this?</span></h2>
+      <p class="mt-8 text-lg text-icalia-navy/60 max-w-2xl mx-auto">We embed senior nearshore engineers directly into your team — same time zone, same standards, no ramp-up theater.</p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-8 py-4 rounded-full font-semibold hover:bg-icalia-navy transition-colors inline-flex items-center justify-center gap-2">
+          Book a discovery call <span>→</span>
+        </a>
+
+        <a href="/manifesto.html" class="px-8 py-4 rounded-full font-semibold text-icalia-navy hover:text-icalia-dark transition-colors inline-flex items-center justify-center gap-2">
+          Read our manifesto
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+    <!-- Footer -->
+  <footer class="bg-icalia-dark py-16 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <img src="../assets/logo-white.svg" alt="Icalia Labs" class="h-7 w-auto">
+          <p class="mt-4 text-sm text-white/30 leading-relaxed max-w-xs">Nearshore engineers who multiply: AI-driven, human-accountable. Monterrey, MX + Austin, TX. Since 2012.</p>
+          <a href="https://clutch.co/mx/developers/artificial-intelligence" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-icalia-red/40 rounded-xl px-4 py-3 transition-all group max-w-xs">
+            <svg class="shrink-0 w-10 h-12" viewBox="0 0 80 96" xmlns="http://www.w3.org/2000/svg" aria-label="Clutch Top AI Companies Mexico 2024 badge">
+              <polygon points="40,2 74,22 74,74 40,94 6,74 6,22" fill="#FAF8F6" stroke="#1C2333" stroke-width="2"/>
+              <text x="40" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">TOP</text>
+              <text x="40" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">AI COMPANIES</text>
+              <rect x="12" y="40" width="56" height="16" fill="#1C2333"/>
+              <text x="40" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="700" fill="#FAF8F6" font-style="italic">Clutch</text>
+              <text x="40" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" font-weight="600" fill="#1C2333">MEXICO</text>
+              <text x="40" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#1C2333">2024</text>
+            </svg>
+            <div>
+              <p class="text-xs font-semibold text-white leading-tight">Leading <span class="text-icalia-red">AI</span> in LatAm</p>
+              <p class="text-[10px] text-white/40 mt-0.5 group-hover:text-icalia-red transition-colors">Top AI Companies · Mexico 2024</p>
+            </div>
+          </a>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Navigate</h4>
+          <div class="flex flex-col gap-3">
+            <a href="../" class="text-sm text-white/40 hover:text-white transition-colors">Home</a>
+            <a href="../about.html" class="text-sm text-white/40 hover:text-white transition-colors">About</a>
+            <a href="../case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
+            <a href="../manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
+
+            <a href="../blog/" class="text-sm text-white/40 hover:text-white transition-colors">Blog</a>
+
+            <a href="../careers.html" class="text-sm text-white/40 hover:text-white transition-colors">Careers</a>
+            <a href="../developers.html" class="text-sm text-white/40 hover:text-white transition-colors">Developers</a>
+            <a href="../contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Industries</h4>
+          <div class="flex flex-col gap-3">
+            <a href="../industries/fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Fintech</a>
+            <a href="../industries/healthtech.html" class="text-sm text-white/40 hover:text-white transition-colors">Healthtech</a>
+            <a href="../industries/retail.html" class="text-sm text-white/40 hover:text-white transition-colors">eCommerce</a>
+            <a href="../industries/logistics.html" class="text-sm text-white/40 hover:text-white transition-colors">Logistics</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Offices</h4>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-sm text-white/50 font-medium">Austin, Texas</p>
+              <p class="text-sm text-white/30">801 Barton Springs Rd, 78704</p>
+            </div>
+            <div>
+              <p class="text-sm text-white/50 font-medium">Monterrey, Mexico</p>
+              <p class="text-sm text-white/30">Avenida Eugenio Garza Sada #3820, Col. Mas Palomas</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Get in Touch</h4>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:sales@icalialabs.com" class="text-sm text-white/40 hover:text-white transition-colors">sales@icalialabs.com</a>
+            <a href="tel:+15124814113" class="text-sm text-white/40 hover:text-white transition-colors">+1 512 481 4113</a>
+          </div>
+          <div class="flex gap-4 mt-6">
+            <a href="https://linkedin.com/company/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://clutch.co/profile/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="Clutch">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
+            </a>
+            <a href="https://github.com/IcaliaLabs/" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <p class="text-xs text-white/20">&copy; 2026 Icalia, Inc. All rights reserved.</p>
+        <div class="flex gap-6 text-xs text-white/30">
+          <a href="../privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="../terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
+  </script>
+</body>
+</html>
