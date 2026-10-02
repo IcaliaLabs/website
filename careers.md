@@ -33,18 +33,6 @@ Modern tooling to multiply, human-accountable.
 
 Engineering Full-time Senior
 
-### Integration Engineer
-
-Design secure REST APIs and event-driven services, and build reusable connector frameworks that integrate with major enterprise platforms on AWS.
-
-Remote-friendly (LatAm)
-
-View role
-
-](/careers/integration-engineer.html)[
-
-Engineering Full-time Senior
-
 ### Frontend Modernization Engineer
 
 Lead a strategic AngularJS-to-modern-Angular migration — build reusable component libraries and ship migrations that are well-tested and invisible to end users.
@@ -65,4 +53,16 @@ Remote · LatAm / CST time zone
 
 View role
 
-](/careers/senior-ruby-on-rails-engineer.html)
+](/careers/senior-ruby-on-rails-engineer.html)[
+
+Engineering Varies by match Mid–Senior
+
+### Engineering Network
+
+Not every great engineering opportunity starts with a job posting. Tell us what you build, and we'll reach out when there's a strong match between your expertise and an opportunity.
+
+Remote · Latin America
+
+View role
+
+](/careers/engineering-network.html)
