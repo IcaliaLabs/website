@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 {% include "head.html" %}
+  {% if job.jobPostingSchema !== false %}
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -23,6 +24,7 @@
     "directApply": false
   }
   </script>
+  {% endif %}
 </head>
 <body class="font-body text-icalia-dark antialiased bg-icalia-warm">
 {% include "nav.html" %}

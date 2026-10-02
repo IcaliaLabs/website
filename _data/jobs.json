@@ -2,7 +2,7 @@
   {
     "slug": "integration-engineer",
     "title": "Integration Engineer",
-    "active": true,
+    "active": false,
     "department": "Engineering",
     "type": "Full-time",
     "level": "Senior",
@@ -157,6 +157,34 @@
     ],
     "niceToHave": [],
     "stack": ["Ruby on Rails", "PostgreSQL", "Sidekiq", "RSpec", "AWS", "Docker"]
+  },
+  {
+    "slug": "engineering-network",
+    "title": "Engineering Network",
+    "active": true,
+    "jobPostingSchema": false,
+    "department": "Engineering",
+    "type": "Varies by match",
+    "level": "Mid–Senior",
+    "location": "Remote · Latin America",
+    "postedDate": "2026-10-02",
+    "summary": "Not every great engineering opportunity starts with a job posting. Tell us what you build, and we'll reach out when there's a strong match between your expertise and an opportunity.",
+    "applyUrl": "https://forms.gle/eV1G6mR4YRw45DSZ8",
+    "overview": "The best engineers are already building — designing systems, shipping products, solving hard problems, and raising the technical bar around them. At Icalia, we connect experienced engineers across Latin America with US and global product teams working on meaningful technical challenges. If you're considering what's next, tell us what you build, the technologies you know deeply, the systems you've worked on, and the kind of problems you want to solve. We look beyond job titles and keywords, because the right match isn't just about the stack — it's about the engineer and the problem.",
+    "responsibilities": [
+      "Introduce yourself once: share what you build, the technologies you know deeply, the systems you've worked on, and the problems you want to solve.",
+      "Get matched on technical relevance — opportunities aligned with your actual experience and strengths, not keyword filters.",
+      "Do real engineering work alongside product and engineering teams building, scaling, and improving real software.",
+      "Hear from us directly when there's a reason to talk — no black-box ATS and no endless applications."
+    ],
+    "requirements": [
+      "Professional experience building and shipping production software",
+      "Technical depth in the technologies and systems you work with",
+      "Strong engineering judgment and a sense of ownership over outcomes",
+      "Ability to operate independently within distributed product teams",
+      "Based in Latin America and comfortable working with US and global teams"
+    ],
+    "niceToHave": [],
+    "stack": []
   }
-  
 ]
