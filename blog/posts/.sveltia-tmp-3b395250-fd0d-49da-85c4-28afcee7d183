@@ -1,0 +1,97 @@
+---
+title: How to proudly participate in (and probably win) a Hackathon
+description: "Icalia Labs' 2014 playbook for hackathons: pick the idea early, run agile sprints, balance hackers and designers, sleep, study the judges, and nail the pitch."
+draft: false
+date: 2014-12-29
+updated: ''
+author: eduardo-lopez
+topics:
+  - software-maker
+  - software-development
+image: /assets/blog/working-setup1.webp
+imageAlt: Overhead view of a laptop on a wooden table beside a sketched-on notebook, a pen, a smartphone, and an espresso cup
+takeaways: []
+faq: []
+originalUrl: https://medium.com/icalia-labs/how-to-proudly-participate-and-probably-win-a-hackathon-b94820c98c4d
+originalLanguage: ''
+---
+
+Our company was born during a hackathon 2+ years ago. It wasn’t a service provider like it is today, but it was something to believe in. We were a team of four with the bravery and courage to build something we wanted to show others. Our greatest reward: a product being used.
+
+![Icalia Labs' founders working on laptops at a shared table in a crowded hackathon space](/assets/blog/how-to-participate-and-win-a-hackathon-1.webp)
+
+_Our founders during a hackathon._
+
+Since the beginning, we have embraced the hackathon culture to encourage team building, to learn new tools, and to find awesome team members to be part of our family.
+
+Thanks to this culture, we have met many of the icaliers, enabling a work dynamic that recognizes the potential of each individual.
+
+Before getting to the main point of this post, I need to share our experience in numbers. We have been part of at least 8 hackathons, and some of us have organized, judged, and mentored at least 20 more hackathons. Some of our victories have been:
+
+- [Hackathon Mty III](https://web.archive.org/web/20150126022742/http://monterrey.acm.org:80/hackathon.html): 1st place.
+- [Open Data MX Hackathon](http://opendata.mx/): 1st place.
+- [DAL 2012 Mexico City](http://desarrollandoamerica.org/): 1st place and a [company launched](http://codeandomexico.org/).
+- [Startup Weekend MTY II](https://web.archive.org/web/20141218062341/http://swmty.org/): 2nd place (we transformed this event into a hackathon for us :] ).
+- [PayPal’s Battlehack Mexico City](https://web.archive.org/web/20150623125345/https://2014.battlehack.org/mexico_city): 3rd place out of 34.
+- [Angel Hack Monterrey](http://www.angelhack.com/): 4th place out of 30.
+
+After our participation in Battlehack in Mexico City, we thought it was important to share the process we followed to achieve all of these wins. In all of these hackathons, our team was made up of at least 70% icalier members, so the following practices were definitely involved.
+
+## 1. Define your idea in advance
+
+Many times we have seen teams discussing ideas at the beginning of hackathons. This is a waste of time. The hackathon is set up to hack, design, build, and code, not to chitchat about which idea would be the right one. Sometimes we have arranged [road trips to the cities](https://twitter.com/icalialabs/status/238742226539257856) hosting hackathons, and those have been very helpful. We have a minimum of 1 to 2 sessions before the hackathon in order to define the right idea. If many ideas are shared among the team, we suggest selecting the right one based on different criteria:
+
+- Feasibility of the technology to implement.
+- Communities and content generation vs. product ready to be used.
+- Idea following the rules.
+- Originality.
+- Team approves.
+- Something people are going to use.
+
+In the end, we choose the idea that fits all of the previous points, or at least the one that fits them best.
+
+## 2. Follow an agile procedure
+
+Management is an important element to scope efforts and to build something usable and useful at the end of the day. We have taken some agile practices, particularly from [Scrum](http://en.wikipedia.org/wiki/Scrum_\(software_development\)), and translated them to the hackathon context in order to constantly prioritize. Time is the biggest asset we have, as human beings and during a hackathon, so prioritizing the features and functionality to include during the event is very important.
+
+A block of time between 5 and 8 hours is called a sprint. There should be around 3 to 5 sprints, depending on the hours available for the hackathon. Each of those includes a set of features and tasks to be completed within its scope of time. For example, a 24-hour hackathon will have 3 sprints of 8 hours, with the most important tasks in the first sprint and the least important tasks in the last sprint. Tasks not finished at the end of a sprint should be moved to the next sprint, and the least important features start getting excluded from the scope of the hack.
+
+Someone needs to own the [agile coach role](http://www.amazon.com/Agile-Coaching-Rachel-Davies/dp/1934356433) to track the time in every sprint. This person leads the sprint-closing sessions, where he/she asks for the status of the estimated tasks that need to be done. This person needs to prioritize features and demand discipline from the team members.
+
+![Pencil-sketched hackathon sprint plan on brown paper: tasks by time block, a sleep/break slot, and "Twilio" boxed as #1](/assets/blog/how-to-participate-and-win-a-hackathon-2.webp)
+
+## 3. Choose your team wisely
+
+Technology teams need to be balanced. Depending on the hack you are building, you will need to choose the right team members. Nevertheless, there’s always a pattern that works for everything you are working on: Hackers + Designers.
+
+When I say hackers, I’m talking about people with knowledge of back-end development and of all the features that are going to be built. When I say designers, I’m talking about design and front-end coders: people who are going to show the hack to the world in terms of presentation and emotion, and in a humanized way. Forget about the hustlers, marketers, or any other role. You are coding in a hackathon. Of course, you will need somebody who will pitch and talk to people, and who will probably be getting out of the building for this. This can be done by either of these two groups.
+
+An A-team is balanced with hackers and designers.
+
+## 4. Sleep!
+
+Unless we are talking about a 24-hour hackathon, sleep is one of the key factors to keep building the product with energy, determination, and logical decisions. Every team member must take time to sleep properly in order to recharge and make every effort count at the end of the hackathon. Make no mistake: no sleep doesn't mean more features.
+
+Here is a graph explaining what happens when a team doesn't sleep at all:
+
+![Line chart of features over time: the team that sleeps flattens from T5 to T9, then overtakes the team that doesn't sleep](/assets/blog/how-to-participate-and-win-a-hackathon-3.webp)
+
+_The blue line represents a team that sleeps from T(5) to T(9), which allowed them to develop more features than the red line, representing a non-sleeping team._
+
+## 5. Consider the rules and judges
+
+There are always rules to follow and judges to convince. Understand the dynamics of the hackathon: What is the main technology to be used? What is the goal for the teams? Remember it and stick to it. Also, do some research on the judges’ profiles and find out what they would want to hear. Impress them with the right words. If they are mentoring, approach them and gauge their impressions. Let them know you are passionate about your project.
+
+## 6. The pitch matters
+
+We all know this is a hard part. The hacker stereotype is changing over time; nevertheless, standing in front of an audience is hard for anyone. Not only is the presenter’s diction important, but so is assessing whether a mobile product would be more impressive than a web product. Sometimes we have decided to present a web project because a mobile application cannot be accepted in marketplaces fast enough to be used by the audience during the pitch. This really depends on the idea you are working on.
+
+The pitch matters a lot, because it is how you explain to everyone what you did. Let the guy with the loudest voice present. The rest of the team can support the pitcher by performing a live demo, which is a must during the presentation. Be prepared for any bugs, crashes, or issues, so rehearse a couple of hours before the pitches start.
+
+## 7. Haters gonna hate; ignore them
+
+In all hackathons, you will find several trolls, ego hackers, and even misanthropes always complaining about other participants or the competition itself. **IGNORE THEM.** Commit to your project, to your team, and to yourself. Hack for fun, make some friends, and ignore the apathetic.
+
+## Conclusion
+
+Prepare as a team, get mentally ready, hack, build, design, code, learn, share, and [don’t be a jerk](https://www.hackerschool.com/manual).

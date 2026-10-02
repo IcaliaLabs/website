@@ -75,6 +75,39 @@ module.exports = async function (eleventyConfig) {
       tokens[idx].attrSet("decoding", "async");
       return renderImage(tokens, idx, options, env, self);
     };
+    // An italic line right after an image is its caption (and image credit):
+    //   ![alt](/assets/blog/chart.webp)
+    //   *Source: Gartner, April 2019.*
+    const onlyChild = (inline, test) => {
+      const kids = inline.children.filter((t) => !(t.type === "text" && !t.content.trim()) && t.type !== "softbreak");
+      return test(kids);
+    };
+    md.core.ruler.push("image_captions", (state) => {
+      const t = state.tokens;
+      for (let i = 0; i + 4 < t.length; i++) {
+        if (t[i].type !== "paragraph_open" || t[i + 1].type !== "inline") continue;
+        const inline = t[i + 1];
+        const imageOnly = onlyChild(inline, (k) => k.length === 1 && k[0].type === "image");
+        // Same paragraph: image, softbreak, *caption*
+        const kids = inline.children;
+        const br = kids.findIndex((k) => k.type === "softbreak");
+        if (br > 0 && kids.slice(0, br).every((k) => k.type === "image" || (k.type === "text" && !k.content.trim()))) {
+          const rest = kids.slice(br + 1).filter((k) => !(k.type === "text" && !k.content.trim()));
+          if (rest.length && rest[0].type === "em_open" && rest[rest.length - 1].type === "em_close") {
+            t[i].attrJoin("class", "post-figure");
+          }
+          continue;
+        }
+        // Next paragraph: *caption*
+        if (imageOnly && t[i + 3]?.type === "paragraph_open" && t[i + 4]?.type === "inline") {
+          const isCaption = onlyChild(t[i + 4], (k) => k.length >= 3 && k[0].type === "em_open" && k[k.length - 1].type === "em_close");
+          if (isCaption) {
+            t[i].attrJoin("class", "post-figure");
+            t[i + 3].attrJoin("class", "post-caption");
+          }
+        }
+      }
+    });
   });
 
   eleventyConfig.addPassthroughCopy("assets");
@@ -184,6 +217,15 @@ module.exports = async function (eleventyConfig) {
   const isPreAi = (value) => yearOf(value) < blogSettings.aiEraStartYear;
 
   eleventyConfig.addFilter("year", (value) => yearOf(value));
+  // Avatar fallback for authors without a photo ("Paco Martínez" → "PM").
+  eleventyConfig.addFilter("initials", (name = "") =>
+    name
+      .split(/\s+/)
+      .filter(Boolean)
+      .slice(0, 2)
+      .map((w) => w[0].toUpperCase())
+      .join("")
+  );
   eleventyConfig.addFilter("isPreAi", (value) => isPreAi(value));
 
   // Newest-first posts grouped by publish year: [{ year, preAi, posts }].

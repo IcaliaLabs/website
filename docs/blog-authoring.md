@@ -60,6 +60,24 @@ Fill in every field. Each one feeds search engines and AI answer engines:
 - **On a developer's machine:** `npm run dev`, then open `http://localhost:8080/blog/`. Drafts are visible locally with a red "Draft preview" banner.
 - **Without a token:** on a local checkout, run `npm run dev`, open `http://localhost:8080/admin/` in Chrome or Edge, and choose **Work with Local Repository**. Edits are written straight to your local files.
 
+### Image captions and credits
+
+Put an italic line directly under an image and the site renders it as a caption. Use it to credit anything that isn't yours:
+
+```markdown
+![Pie chart of consulting capabilities acquired by the top 10 providers](/assets/blog/consulting-capabilities.webp)
+*Source: Gartner, April 2019.*
+```
+
+## Republished posts (the Medium archive)
+
+Posts first published on Medium (2014–2021) live here too, with their original dates, so the blog timeline shows the full history. Two extra fields mark them:
+
+- **Originally published at** (`originalUrl`): the Medium URL. The post shows "Originally published on Medium on <date>. Lightly edited for clarity." and links to the original in its structured data.
+- **Original language** (`originalLanguage`): set to Spanish for translated posts. The note then reads "Originally published in Spanish… Translated into English."
+
+Republished posts keep their original titles and don't need key takeaways; the checks only enforce those rules on new posts. After a republished post goes live, open the Medium story → **Story settings → Advanced settings → Customize canonical link** and paste the icalialabs.com URL, so search engines treat the site as the original.
+
 ## Authors and topics
 
 - **Authors** can be added and edited in the CMS under *Authors*. The file name is the author's ID.

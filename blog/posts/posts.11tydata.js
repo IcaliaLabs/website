@@ -38,7 +38,7 @@ function buildSchema(data) {
           "@type": "Person",
           name: author.name,
           jobTitle: author.role,
-          image: `${SITE_URL}${author.photo}`,
+          ...(author.photo ? { image: `${SITE_URL}${author.photo}` } : {}),
           sameAs: author.sameAs || [],
           worksFor: { "@type": "Organization", name: "Icalia Labs", url: SITE_URL },
         }
@@ -50,6 +50,18 @@ function buildSchema(data) {
       logo: { "@type": "ImageObject", url: `${SITE_URL}/assets/logo.svg` },
     },
   };
+
+  // Republished from Medium: point back to the original (and, for translations, the source language).
+  if (data.originalUrl) {
+    posting.isBasedOn = data.originalUrl;
+    if (data.originalLanguage) {
+      posting.translationOfWork = {
+        "@type": "CreativeWork",
+        url: data.originalUrl,
+        inLanguage: data.originalLanguage,
+      };
+    }
+  }
 
   const crumbs = [
     { name: "Home", item: `${SITE_URL}/` },
