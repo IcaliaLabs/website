@@ -56,8 +56,8 @@ collections:
       - label: Title
         name: title
         widget: string
-        hint: The H1 and search result title. 30–60 characters; put the main search phrase near the start.
-        pattern: ['^.{30,60}$', 'Titles must be 30–60 characters so Google doesn’t truncate them.']
+        hint: The H1 and search result title. 30–60 characters; put the main search phrase near the start. (Posts republished from Medium keep their original title; the site check enforces 30–60 for new posts.)
+        pattern: ['^.{10,100}$', 'Titles must be 10–100 characters; aim for 30–60 so Google doesn’t truncate them.']
       - label: Meta description
         name: description
         widget: string
@@ -120,9 +120,10 @@ collections:
       - label: Key takeaways
         name: takeaways
         widget: list
+        required: false
         min: 3
         max: 5
-        hint: 3–5 one-sentence answers shown at the top. AI answer engines quote these, so make each one stand on its own.
+        hint: 3–5 one-sentence answers shown at the top. AI answer engines quote these, so make each one stand on its own. Required for new posts (the site check enforces it); posts republished from Medium have none.
         field: { label: Takeaway, name: takeaway, widget: string }
       - label: FAQ
         name: faq
@@ -132,10 +133,22 @@ collections:
         fields:
           - { label: Question, name: q, widget: string }
           - { label: Answer, name: a, widget: text }
+      - label: Originally published at
+        name: originalUrl
+        widget: string
+        required: false
+        hint: Only for posts republished from Medium or elsewhere. Adds an "Originally published on Medium" note and links the original in structured data.
+      - label: Original language
+        name: originalLanguage
+        widget: select
+        required: false
+        options:
+          - { label: Spanish, value: es }
+        hint: Only for translated posts. Changes the note to "Originally published in Spanish… Translated into English."
       - label: Body
         name: body
         widget: markdown
-        hint: Use H2 (##) for sections and H3 (###) for subsections. Don't add another H1.
+        hint: "Use H2 (##) for sections and H3 (###) for subsections. Don't add another H1. For an image caption or credit, put an italic line right under the image, e.g. *Source: Gartner, 2019.*"
 
   - name: authors
     label: Authors
@@ -151,7 +164,7 @@ collections:
       - { label: Name, name: name, widget: string }
       - { label: Role, name: role, widget: string }
       - { label: Short bio, name: bio, widget: text, hint: "One or two sentences about their expertise." }
-      - { label: Photo, name: photo, widget: image }
+      - { label: Photo, name: photo, widget: image, required: false, hint: "Optional. Without one, the post shows the author's initials." }
       - label: Profiles
         name: sameAs
         widget: list

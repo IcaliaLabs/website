@@ -234,8 +234,21 @@ function jsonLdBlocks(html) {
 for (const post of sourcePosts) {
   const d = post.data;
   const label = `blog/posts/${post.slug}.md`;
-  check(`${label}: title is 30–60 chars`, () => {
-    assert(typeof d.title === "string" && d.title.length >= 30 && d.title.length <= 60, `got ${d.title?.length}`);
+  // Posts republished from Medium (originalUrl set) keep their original titles and have no takeaways.
+  const archived = Boolean(d.originalUrl);
+  if (archived) {
+    check(`${label}: archived post has an https originalUrl and a title of 10–100 chars`, () => {
+      assert(/^https:\/\//.test(d.originalUrl), `bad originalUrl ${d.originalUrl}`);
+      assert(typeof d.title === "string" && d.title.length >= 10 && d.title.length <= 100, `got ${d.title?.length}`);
+    });
+  } else {
+    check(`${label}: title is 30–60 chars`, () => {
+      assert(typeof d.title === "string" && d.title.length >= 30 && d.title.length <= 60, `got ${d.title?.length}`);
+    });
+  }
+  check(`${label}: no TODO- placeholders (alt text, descriptions)`, () => {
+    const hits = (matter.stringify(post.content, d).match(/TODO-[A-Z]+/g) || []).length;
+    assert(hits === 0, `${hits} TODO- marker(s) left`);
   });
   check(`${label}: description is 70–160 chars`, () => {
     assert(
@@ -253,9 +266,11 @@ for (const post of sourcePosts) {
     assert(Array.isArray(d.topics) && d.topics.length >= 1 && d.topics.length <= 3, "needs 1–3 topics");
     for (const t of d.topics) assert(topicSlugs.has(t), `unknown topic "${t}"`);
   });
-  check(`${label}: has 3–5 key takeaways`, () => {
-    assert(Array.isArray(d.takeaways) && d.takeaways.length >= 3 && d.takeaways.length <= 5, "needs 3–5");
-  });
+  if (!archived) {
+    check(`${label}: has 3–5 key takeaways`, () => {
+      assert(Array.isArray(d.takeaways) && d.takeaways.length >= 3 && d.takeaways.length <= 5, "needs 3–5");
+    });
+  }
   check(`${label}: body has no H1 (the title is the H1)`, () => {
     assert(!/^#\s/m.test(post.content), "found a '# ' heading in the body");
   });

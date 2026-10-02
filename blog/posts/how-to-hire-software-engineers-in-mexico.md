@@ -66,7 +66,7 @@ The strongest engineers are rarely on job boards. They're employed, and they mov
 - **Job boards and LinkedIn** — broad reach, heavy screening load.
 - **A staffing partner with a vetted network** — fastest route to senior people, if the vetting is real.
 
-Monterrey, Guadalajara, and Mexico City are the largest hubs. Monterrey in particular has deep ties to US manufacturing, logistics, and energy companies — it's where Icalia Labs has been placing engineers since 2011.
+Monterrey, Guadalajara, and Mexico City are the largest hubs. Monterrey in particular has deep ties to US manufacturing, logistics, and energy companies — it's where Icalia Labs has been placing engineers since 2012.
 
 ![Icalia Labs engineers working late at the Monterrey office](/assets/blog/monterrey-office-night.jpg)
 

@@ -175,8 +175,8 @@ Pick the author whose expertise matches the topic, and flag the choice in the ha
 
 ### Verified Icalia Labs facts (safe to use as written)
 
-- Founded in **2011**; offices in **Austin, TX** and **Monterrey, Mexico**. Write "since 2011" rather than computing a number of years.
-- **4.6/5 on Clutch**; **>90 NPS**, based on client surveys across **210+ platforms delivered since 2011**.
+- Founded in **2012**; offices in **Austin, TX** and **Monterrey, Mexico**. Write "since 2012" rather than computing a number of years.
+- **4.6/5 on Clutch**; **>90 NPS**, based on client surveys across **210+ platforms delivered since 2012**.
 - Fewer than **0.4%** of applicants are accepted; engineers average **5+ years** of tenure; experience level is Senior+.
 - **YC alum co-founders**; the **first Docker-certified consultancy in Latin America**; **GitHub Partner** in LatAm; **5,000+** cumulative GitHub stars on public repos.
 - Monterrey runs on **Central Standard Time year-round**.
