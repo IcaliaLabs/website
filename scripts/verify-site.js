@@ -75,6 +75,9 @@ if (!fs.existsSync(SITE_DIR)) {
 }
 
 const htmlFiles = findHtmlFiles(SITE_DIR);
+const redirects = require(path.join(ROOT_DIR, "_data", "redirects.js"));
+// Site-relative output files of redirect pages (e.g. "ai-agent.html").
+const redirectFiles = new Set(redirects.map((r) => r.output.replace(/^\//, "")));
 
 // --- Fix #2: every real content page has exactly one <main> and one <h1> ---
 for (const file of htmlFiles) {
@@ -116,15 +119,76 @@ check("404.html: has a <main> landmark", () => {
   assert(/<main[\s>]/i.test(html), "no <main>");
 });
 
+// --- 404 page: served at every missing URL, so it must not create more 404s ---
+check("404.html: every link and asset is root-relative or absolute", () => {
+  const html = readSite("404.html");
+  const refs = [...html.matchAll(/<(?:a|img|link|script)\s[^>]*(?:href|src)="([^"]*)"/gi)].map((m) => m[1]);
+  const relative = refs.filter((r) => r && !/^(\/|#|[a-z][a-z0-9+.-]*:)/i.test(r));
+  assert(relative.length === 0, `relative: ${[...new Set(relative)].join(", ")}`);
+});
+check("404.html: noindex, and no canonical or og:url of its own", () => {
+  const html = readSite("404.html");
+  assert(/<meta name="robots" content="noindex/.test(html), "missing noindex");
+  assert(!/rel="canonical"/.test(html), "has a canonical link");
+  assert(!/property="og:url"/.test(html), "has og:url");
+});
+check("404.html: logs the broken path to analytics", () => {
+  assert(readSite("404.html").includes("'page_not_found'"), "no page_not_found event");
+});
+
+// --- Analytics: one page_view per page load, and only from the live site ---
+check("head: GA is disabled outside icalialabs.com", () => {
+  assert(readSite("index.html").includes("window['ga-disable-G-MSFD00QMYY'] = true"), "no hostname guard");
+});
+check("js/ga-events.js: doesn't send a second page_view", () => {
+  const js = readSite("js/ga-events.js");
+  assert(!/gtag\(\s*'event'\s*,\s*'page_view'/.test(js), "manual page_view found");
+});
+
+// --- Redirect pages for old URLs (_data/redirects.js) ---
+const sitemapForRedirects = readSite("sitemap.xml");
+const llmsForRedirects = readSite("llms.txt");
+for (const r of redirects) {
+  const rel = r.output.replace(/^\//, "");
+  check(`redirect ${r.from} -> ${r.to}`, () => {
+    assert(fs.existsSync(path.join(SITE_DIR, rel)), `${rel} not built`);
+    const html = readSite(rel);
+    assert(html.includes(`<meta http-equiv="refresh" content="0; url=${r.to}">`), "no instant meta refresh to target");
+    assert(html.includes(`<link rel="canonical" href="https://icalialabs.com${r.to}">`), "canonical isn't the target");
+    assert(html.includes('<meta name="robots" content="noindex">'), "missing noindex");
+    const target = r.to.endsWith("/") ? `${r.to}index.html` : r.to;
+    assert(fs.existsSync(path.join(SITE_DIR, target)), `target ${r.to} doesn't exist`);
+    assert(!redirectFiles.has(target.replace(/^\//, "")), `target ${r.to} is itself a redirect`);
+    assert(!/http-equiv="refresh"/.test(readSite(target)), `target ${r.to} is itself a redirect`);
+    assert(!sitemapForRedirects.includes(`icalialabs.com${r.from}`), "old URL listed in sitemap.xml");
+    assert(!llmsForRedirects.includes(`icalialabs.com${r.from}`), "old URL listed in llms.txt");
+    assert(!fs.existsSync(path.join(SITE_DIR, rel.replace(/\.html$/, ".md"))), "has a Markdown sibling");
+  });
+}
+check("redirects: no duplicate old URLs", () => {
+  const seen = redirects.map((r) => r.output);
+  assert(new Set(seen).size === seen.length, "duplicate entries in _data/redirects.js");
+});
+check("redirects: every closed role in jobs.json keeps its URL alive", () => {
+  const jobs = JSON.parse(fs.readFileSync(path.join(ROOT_DIR, "_data", "jobs.json"), "utf-8"));
+  for (const job of jobs) {
+    const has = redirectFiles.has(`careers/${job.slug}.html`);
+    assert(job.active ? !has : has, `${job.slug}: ${job.active ? "active role is redirected" : "closed role has no redirect"}`);
+  }
+});
+
 // --- Fix #3: every page has a Markdown sibling + alternate link ---
 for (const file of htmlFiles) {
   const rel = path.relative(SITE_DIR, file);
   const mdRel = rel.replace(/\.html$/, ".md");
+  // Redirect pages aren't content, and the 404 page has no URL of its own.
+  if (redirectFiles.has(rel)) continue;
 
   check(`${rel}: has a Markdown sibling (${mdRel})`, () => {
     assert(fs.existsSync(path.join(SITE_DIR, mdRel)), "sibling .md not found");
   });
 
+  if (rel === "404.html") continue;
   check(`${rel}: <link rel="alternate" type="text/markdown"> present`, () => {
     const html = fs.readFileSync(file, "utf-8");
     assert(

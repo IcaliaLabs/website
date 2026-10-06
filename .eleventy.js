@@ -244,6 +244,11 @@ module.exports = async function (eleventyConfig) {
   eleventyConfig.addFilter("topic", (slug) => topicBySlug(slug));
   eleventyConfig.addFilter("topicUrl", (slug) => `/blog/topics/${canonicalTopicSlug(slug)}.html`);
 
+  // The page in a collection that renders at `url` (e.g. a redirect's target).
+  eleventyConfig.addFilter("pageByUrl", (collection, url) =>
+    (collection || []).find((item) => item.url === url)
+  );
+
   eleventyConfig.addFilter("postsForTopic", (posts, slug, n) =>
     [...(posts || [])]
       .reverse()

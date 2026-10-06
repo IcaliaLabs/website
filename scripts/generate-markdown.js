@@ -100,6 +100,8 @@ function extractMain(html) {
 
 function toMarkdown(filePath) {
   const html = fs.readFileSync(filePath, "utf-8");
+  // Redirect pages for old URLs (redirects.njk) aren't content.
+  if (/<meta\s+http-equiv=["']refresh["']/i.test(html)) return null;
   const mainHtml = extractMain(html);
   if (!mainHtml) return null;
 

@@ -4,6 +4,12 @@ description: "The page you are looking for doesn't exist. Head back home or expl
 canonicalPath: "/404.html"
 permalink: /404.html
 eleventyExcludeFromCollections: true
+# Served at any missing URL, so every link must be root-relative: relative
+# links would resolve under the broken path and create endless new 404s.
+navRoot: "/"
+footerRoot: "/"
+noindex: true
+errorPage: true
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -46,6 +52,12 @@ eleventyExcludeFromCollections: true
         </a>
       </div>
 
+      <div id="recover" class="mt-16 max-w-lg mx-auto text-left" hidden>
+        <p id="recover-title" class="text-sm font-semibold text-icalia-dark mb-3"></p>
+        <ul id="recover-links" class="space-y-2 text-sm"></ul>
+        <p id="recover-guess" class="mt-5 text-sm text-icalia-navy/70" hidden></p>
+      </div>
+
       <div class="mt-20 pt-10 border-t border-icalia-dark/5">
         <p class="text-xs text-icalia-navy/40 uppercase tracking-widest mb-4">Popular destinations</p>
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
@@ -84,5 +96,100 @@ This path does not exist on icalialabs.com. Recover via:
 </main>
 
 {% include "footer.html" %}
+
+<script type="application/json" id="recover-pages">[
+{%- for item in collections.sitemap %}
+  {"url": {{ item.url | dump | safe }}, "title": {{ (item.data.pageTitle or item.data.title) | dump | safe }}, "date": {{ item.date | isoDate | dump | safe }}}{% if not loop.last %},{% endif %}
+{%- endfor %}
+]</script>
+<script>
+// Log the broken URL, then point the visitor at pages near what they wanted.
+// Known old URLs never get here: they have redirect pages (_data/redirects.js).
+(function () {
+  var path = location.pathname.replace(/\/+$/, '') || '/';
+  var section = path.split('/')[1] || '(root)';
+
+  if (window.gtag) {
+    gtag('event', 'page_not_found', {
+      broken_path: location.pathname + location.search,
+      broken_referrer: document.referrer || '(none)',
+      broken_section: section
+    });
+  }
+
+  var pages = [];
+  try { pages = JSON.parse(document.getElementById('recover-pages').textContent); } catch (e) {}
+
+  var box = document.getElementById('recover');
+  var title = document.getElementById('recover-title');
+  var list = document.getElementById('recover-links');
+  var guess = document.getElementById('recover-guess');
+
+  function link(page, tag) {
+    var a = document.createElement('a');
+    a.href = page.url;
+    a.textContent = (page.title || page.url).replace(/\s+[—|]\s+(Careers at )?Icalia Labs.*$/, '');
+    a.dataset.recover = tag;
+    a.className = 'text-icalia-dark hover:text-icalia-red underline underline-offset-4 decoration-icalia-dark/20';
+    return a;
+  }
+  function add(page, tag) {
+    var li = document.createElement('li');
+    li.appendChild(link(page, tag));
+    list.appendChild(li);
+  }
+  function byPrefix(re) { return pages.filter(function (p) { return re.test(p.url); }); }
+
+  // 1) Links for the section the visitor was in.
+  if (section === 'blog' || section === 'post' || section === 'blogs') {
+    title.textContent = 'That article isn\u2019t here. Latest from the blog:';
+    byPrefix(/^\/blog\/[^/]+\.html$/)
+      .sort(function (a, b) { return a.date < b.date ? 1 : -1; })
+      .slice(0, 5)
+      .forEach(function (p) { add(p, 'blog-post'); });
+    add({ url: '/blog/', title: 'All articles' }, 'blog-index');
+  } else if (section === 'careers') {
+    title.textContent = 'That role may have closed. Open roles:';
+    byPrefix(/^\/careers\/[^/]+\.html$/).forEach(function (p) { add(p, 'role'); });
+    add({ url: '/careers.html', title: 'All careers' }, 'careers');
+  } else if (section === 'industries') {
+    title.textContent = 'Industries Icalia Labs builds for:';
+    byPrefix(/^\/industries\//).forEach(function (p) { add(p, 'industry'); });
+  }
+
+  // 2) "Did you mean": the live page sharing the most words with the broken URL.
+  var stop = { html: 1, www: 1, icalia: 1, labs: 1, the: 1, and: 1, for: 1, with: 1, you: 1, your: 1, how: 1, what: 1 };
+  function words(s) {
+    return (s || '').toLowerCase().split(/[^a-z0-9]+/).filter(function (w) { return w.length > 2 && !stop[w]; });
+  }
+  var wanted = words(decodeURIComponent(path));
+  var best = null, bestScore = 0;
+  pages.forEach(function (p) {
+    var have = words(p.url + ' ' + p.title);
+    var score = wanted.filter(function (w) { return have.indexOf(w) > -1; }).length;
+    if (score > bestScore) { best = p; bestScore = score; }
+  });
+  if (best && bestScore >= 2) {
+    guess.hidden = false;
+    guess.appendChild(document.createTextNode('Did you mean '));
+    guess.appendChild(link(best, 'guess'));
+    guess.appendChild(document.createTextNode('?'));
+  }
+
+  if (list.children.length || !guess.hidden) box.hidden = false;
+
+  // Recovery rate = page_not_found_recover / page_not_found.
+  document.querySelector('main').addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (a && window.gtag) {
+      gtag('event', 'page_not_found_recover', {
+        broken_path: location.pathname,
+        choice: a.dataset.recover || 'static',
+        target: a.getAttribute('href')
+      });
+    }
+  });
+})();
+</script>
 </body>
 </html>
