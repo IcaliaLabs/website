@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moved: Nearshore Hiring — Icalia Labs Blog</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://icalialabs.com/blog/topics/nearshore-hiring.html">
+  <script>
+    // Forward with the query string and hash. A redirect hides the original
+    // referrer from analytics, so when the visitor came from another site
+    // without UTMs, tag the landing URL with that site as the source.
+    (function () {
+      var to = "/blog/topics/nearshore-hiring.html";
+      var query = location.search;
+      if (document.referrer && !/[?&]utm_/.test(query)) {
+        try {
+          var host = new URL(document.referrer).hostname.replace(/^www\./, "");
+          if (host && host !== "icalialabs.com") {
+            var isSearch = /(^|\.)(google|bing|duckduckgo|yahoo|yandex|baidu|ecosia)\./.test(host);
+            var utm = "utm_source=" + encodeURIComponent(host) +
+              "&utm_medium=" + (isSearch ? "organic" : "referral") +
+              "&utm_campaign=moved-url&utm_content=" + encodeURIComponent(location.pathname);
+            query = query ? query + "&" + utm : "?" + utm;
+          }
+        } catch (e) {}
+      }
+      location.replace(to + query + location.hash);
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0; url=/blog/topics/nearshore-hiring.html">
+</head>
+<body>
+<main>
+  <h1>This page has moved</h1>
+  <p>It now lives at <a href="/blog/topics/nearshore-hiring.html">Nearshore Hiring — Icalia Labs Blog</a>.</p>
+  <p>How US product teams find, vet, and embed senior engineers from Mexico and Latin America.</p>
+</main>
+</body>
+</html>

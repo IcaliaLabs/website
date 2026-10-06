@@ -6,7 +6,9 @@
   <title>The North American Block: An Unfair Advantage in Tech — Icalia Labs Blog</title>
   <meta name="description" content="Why the US, Canada and Mexico together give tech companies a strategic edge in talent and proximity, and why it remains undervalued in 2021.">
 
+
   <link rel="canonical" href="https://icalialabs.com/blog/north-american-block-unfair-advantage-in-tech.html">
+
   <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
 
@@ -17,11 +19,14 @@
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSFD00QMYY"></script>
   <script>
+    // Only the live site reports; local and preview builds stay out of GA.
+    if (location.hostname !== 'icalialabs.com') { window['ga-disable-G-MSFD00QMYY'] = true; }
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-MSFD00QMYY', {
       'page_path': '/blog/north-american-block-unfair-advantage-in-tech.html',
+      'page_type': location.pathname.includes('/industries/') ? 'industry_page' : 'root_page',
       'anonymize_ip': true,
       'cookie_expires': 63072000
     });
@@ -29,7 +34,9 @@
   <script src="/js/ga-events.js" defer></script>
 
   <meta property="og:type" content="article">
+
   <meta property="og:url" content="https://icalialabs.com/blog/north-american-block-unfair-advantage-in-tech.html">
+
   <meta property="og:title" content="The North American Block: An Unfair Advantage in Tech — Icalia Labs Blog">
   <meta property="og:description" content="Why the US, Canada and Mexico together give tech companies a strategic edge in talent and proximity, and why it remains undervalued in 2021.">
   <meta property="og:image" content="https://icalialabs.com/assets/blog/north-american-block-unfair-advantage-in-tech-1.webp">

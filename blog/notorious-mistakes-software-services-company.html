@@ -6,7 +6,9 @@
   <title>Notorious mistakes we have made as a Software Services Company — Icalia Labs Blog</title>
   <meta name="description" content="Ten mistakes Icalia Labs made in its first 3.5 years as a software services company, from pricing and contracts to culture, hiring, and mentors.">
 
+
   <link rel="canonical" href="https://icalialabs.com/blog/notorious-mistakes-software-services-company.html">
+
   <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
 
@@ -17,11 +19,14 @@
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSFD00QMYY"></script>
   <script>
+    // Only the live site reports; local and preview builds stay out of GA.
+    if (location.hostname !== 'icalialabs.com') { window['ga-disable-G-MSFD00QMYY'] = true; }
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-MSFD00QMYY', {
       'page_path': '/blog/notorious-mistakes-software-services-company.html',
+      'page_type': location.pathname.includes('/industries/') ? 'industry_page' : 'root_page',
       'anonymize_ip': true,
       'cookie_expires': 63072000
     });
@@ -29,7 +34,9 @@
   <script src="/js/ga-events.js" defer></script>
 
   <meta property="og:type" content="article">
+
   <meta property="og:url" content="https://icalialabs.com/blog/notorious-mistakes-software-services-company.html">
+
   <meta property="og:title" content="Notorious mistakes we have made as a Software Services Company — Icalia Labs Blog">
   <meta property="og:description" content="Ten mistakes Icalia Labs made in its first 3.5 years as a software services company, from pricing and contracts to culture, hiring, and mentors.">
   <meta property="og:image" content="https://icalialabs.com/assets/blog/notorious-mistakes-software-services-company-cover.webp">

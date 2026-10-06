@@ -6,7 +6,9 @@
   <title>Healthtech — Icalia Labs</title>
   <meta name="description" content="PHI-aware engineers who keep the sprint moving. HIPAA, FHIR, and EHR integration for healthtech teams.">
 
+
   <link rel="canonical" href="https://icalialabs.com/industries/healthtech.html">
+
   <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
 
@@ -17,11 +19,14 @@
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSFD00QMYY"></script>
   <script>
+    // Only the live site reports; local and preview builds stay out of GA.
+    if (location.hostname !== 'icalialabs.com') { window['ga-disable-G-MSFD00QMYY'] = true; }
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-MSFD00QMYY', {
       'page_path': '/industries/healthtech.html',
+      'page_type': location.pathname.includes('/industries/') ? 'industry_page' : 'root_page',
       'anonymize_ip': true,
       'cookie_expires': 63072000
     });
@@ -29,7 +34,9 @@
   <script src="/js/ga-events.js" defer></script>
 
   <meta property="og:type" content="website">
+
   <meta property="og:url" content="https://icalialabs.com/industries/healthtech.html">
+
   <meta property="og:title" content="Healthtech — Icalia Labs">
   <meta property="og:description" content="PHI-aware engineers who keep the sprint moving. HIPAA, FHIR, and EHR integration for healthtech teams.">
   <meta property="og:image" content="https://icalialabs.com/assets/og-image.png">

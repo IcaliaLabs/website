@@ -51,41 +51,42 @@ if (typeof gtag !== 'undefined') {
         'timestamp': new Date().getTime()
       });
     });
+
+    // Track form submission success (enhance existing form handler).
+    // Only polled on pages that have the form.
+    const observeFormSuccess = setInterval(function() {
+      const successBtn = document.getElementById('contact-submit-btn');
+      if (successBtn && successBtn.classList.contains('btn-success')) {
+        gtag('event', 'form_submit', {
+          'form_name': 'contact_form',
+          'form_status': 'success',
+          'timestamp': new Date().getTime()
+        });
+        clearInterval(observeFormSuccess);
+      }
+    }, 500);
+
+    // Track form submission error
+    const observeFormError = setInterval(function() {
+      const errorBtn = document.getElementById('contact-submit-btn');
+      if (errorBtn && errorBtn.classList.contains('btn-error')) {
+        gtag('event', 'form_submit', {
+          'form_name': 'contact_form',
+          'form_status': 'error',
+          'button_text': errorBtn.textContent,
+          'timestamp': new Date().getTime()
+        });
+        clearInterval(observeFormError);
+      }
+    }, 500);
   }
-
-  // Track form submission success (enhance existing form handler)
-  const observeFormSuccess = setInterval(function() {
-    const successBtn = document.getElementById('contact-submit-btn');
-    if (successBtn && successBtn.classList.contains('btn-success')) {
-      gtag('event', 'form_submit', {
-        'form_name': 'contact_form',
-        'form_status': 'success',
-        'timestamp': new Date().getTime()
-      });
-      clearInterval(observeFormSuccess);
-    }
-  }, 500);
-
-  // Track form submission error
-  const observeFormError = setInterval(function() {
-    const errorBtn = document.getElementById('contact-submit-btn');
-    if (errorBtn && errorBtn.classList.contains('btn-error')) {
-      gtag('event', 'form_submit', {
-        'form_name': 'contact_form',
-        'form_status': 'error',
-        'button_text': errorBtn.textContent,
-        'timestamp': new Date().getTime()
-      });
-      clearInterval(observeFormError);
-    }
-  }, 500);
 
   // ========================================
   // 2. CTA BUTTON TRACKING
   // ========================================
 
   // Track "Book a Call" buttons
-  document.querySelectorAll('a[href*="calendly"], a[href="#book"]').forEach(btn => {
+  document.querySelectorAll('a[href*="calendly"], a[href*="#book"]').forEach(btn => {
     btn.addEventListener('click', function(e) {
       gtag('event', 'cta_button_click', {
         'button_text': this.textContent.trim(),
@@ -269,20 +270,11 @@ if (typeof gtag !== 'undefined') {
     });
   });
 
-  // ========================================
-  // 8. PAGE TYPE CUSTOM DIMENSION
-  // ========================================
-
-  // Set custom dimension for page type
-  const pageType = window.location.pathname.includes('/industries/') ? 'industry_page' : 'root_page';
-  gtag('event', 'page_view', {
-    'page_type': pageType,
-    'page_path': window.location.pathname,
-    'page_title': document.title
-  });
+  // page_view and page_type come from gtag('config') in _includes/head.html.
+  // Don't send page_view here: it would count every page view twice.
 
   // ========================================
-  // 9. ERROR LOGGING
+  // 8. ERROR LOGGING
   // ========================================
 
   // Track form submission errors

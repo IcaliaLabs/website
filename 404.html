@@ -6,22 +6,26 @@
   <title>Page not found — Icalia Labs</title>
   <meta name="description" content="The page you are looking for doesn&#39;t exist. Head back home or explore our work.">
 
-  <link rel="canonical" href="https://icalialabs.com/404.html">
+  <meta name="robots" content="noindex, follow">
+
+
   <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
   <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
 
-  <link rel="alternate" type="text/markdown" href="https://icalialabs.com/404.md">
 
   <link rel="alternate" type="application/atom+xml" title="Icalia Labs Blog" href="https://icalialabs.com/blog/feed.xml">
 
   <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSFD00QMYY"></script>
   <script>
+    // Only the live site reports; local and preview builds stay out of GA.
+    if (location.hostname !== 'icalialabs.com') { window['ga-disable-G-MSFD00QMYY'] = true; }
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-MSFD00QMYY', {
       'page_path': '/404.html',
+      'page_type': location.pathname.includes('/industries/') ? 'industry_page' : 'root_page',
       'anonymize_ip': true,
       'cookie_expires': 63072000
     });
@@ -29,7 +33,7 @@
   <script src="/js/ga-events.js" defer></script>
 
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://icalialabs.com/404.html">
+
   <meta property="og:title" content="Page not found — Icalia Labs">
   <meta property="og:description" content="The page you are looking for doesn&#39;t exist. Head back home or explore our work.">
   <meta property="og:image" content="https://icalialabs.com/assets/og-image.png">
@@ -82,7 +86,7 @@
   <nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50">
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
       <a href="/" class="flex items-center gap-1">
-        <img src="assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
+        <img src="/assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
       </a>
       <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
         <a href="/case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
@@ -184,6 +188,12 @@
         </a>
       </div>
 
+      <div id="recover" class="mt-16 max-w-lg mx-auto text-left" hidden>
+        <p id="recover-title" class="text-sm font-semibold text-icalia-dark mb-3"></p>
+        <ul id="recover-links" class="space-y-2 text-sm"></ul>
+        <p id="recover-guess" class="mt-5 text-sm text-icalia-navy/70" hidden></p>
+      </div>
+
       <div class="mt-20 pt-10 border-t border-icalia-dark/5">
         <p class="text-xs text-icalia-navy/40 uppercase tracking-widest mb-4">Popular destinations</p>
         <div class="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-sm">
@@ -226,7 +236,7 @@ This path does not exist on icalialabs.com. Recover via:
     <div class="max-w-7xl mx-auto">
       <div class="grid md:grid-cols-12 gap-12">
         <div class="md:col-span-4">
-          <img src="assets/logo-white.svg" alt="Icalia Labs" class="h-7 w-auto">
+          <img src="/assets/logo-white.svg" alt="Icalia Labs" class="h-7 w-auto">
           <p class="mt-4 text-sm text-white/30 leading-relaxed max-w-xs">Nearshore engineers who multiply: AI-driven, human-accountable. Monterrey, MX + Austin, TX. Since 2012.</p>
           <a href="https://clutch.co/mx/developers/artificial-intelligence" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-icalia-red/40 rounded-xl px-4 py-3 transition-all group max-w-xs">
             <svg class="shrink-0 w-10 h-12" viewBox="0 0 80 96" xmlns="http://www.w3.org/2000/svg" aria-label="Clutch Top AI Companies Mexico 2024 badge">
@@ -248,24 +258,24 @@ This path does not exist on icalialabs.com. Recover via:
           <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Navigate</h4>
           <div class="flex flex-col gap-3">
             <a href="/" class="text-sm text-white/40 hover:text-white transition-colors">Home</a>
-            <a href="about.html" class="text-sm text-white/40 hover:text-white transition-colors">About</a>
-            <a href="case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
-            <a href="manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
+            <a href="/about.html" class="text-sm text-white/40 hover:text-white transition-colors">About</a>
+            <a href="/case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
+            <a href="/manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
 
-            <a href="blog/" class="text-sm text-white/40 hover:text-white transition-colors">Blog</a>
+            <a href="/blog/" class="text-sm text-white/40 hover:text-white transition-colors">Blog</a>
 
-            <a href="careers.html" class="text-sm text-white/40 hover:text-white transition-colors">Careers</a>
-            <a href="developers.html" class="text-sm text-white/40 hover:text-white transition-colors">Developers</a>
-            <a href="contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
+            <a href="/careers.html" class="text-sm text-white/40 hover:text-white transition-colors">Careers</a>
+            <a href="/developers.html" class="text-sm text-white/40 hover:text-white transition-colors">Developers</a>
+            <a href="/contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
           </div>
         </div>
         <div class="md:col-span-2">
           <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Industries</h4>
           <div class="flex flex-col gap-3">
-            <a href="industries/fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Fintech</a>
-            <a href="industries/healthtech.html" class="text-sm text-white/40 hover:text-white transition-colors">Healthtech</a>
-            <a href="industries/retail.html" class="text-sm text-white/40 hover:text-white transition-colors">eCommerce</a>
-            <a href="industries/logistics.html" class="text-sm text-white/40 hover:text-white transition-colors">Logistics</a>
+            <a href="/industries/fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Fintech</a>
+            <a href="/industries/healthtech.html" class="text-sm text-white/40 hover:text-white transition-colors">Healthtech</a>
+            <a href="/industries/retail.html" class="text-sm text-white/40 hover:text-white transition-colors">eCommerce</a>
+            <a href="/industries/logistics.html" class="text-sm text-white/40 hover:text-white transition-colors">Logistics</a>
           </div>
         </div>
         <div class="md:col-span-2">
@@ -303,12 +313,144 @@ This path does not exist on icalialabs.com. Recover via:
       <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
         <p class="text-xs text-white/20">&copy; 2026 Icalia, Inc. All rights reserved.</p>
         <div class="flex gap-6 text-xs text-white/30">
-          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
-          <a href="terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+          <a href="/privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="/terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
         </div>
       </div>
     </div>
   </footer>
 
+
+<script type="application/json" id="recover-pages">[
+  {"url": "/", "title": "Icalia Labs — Nearshore Staff Augmentation", "date": "2026-10-06"},
+  {"url": "/about.html", "title": "About Icalia Labs — Nearshore Staff Augmentation Since 2012", "date": "2026-10-06"},
+  {"url": "/blog/", "title": "Icalia Labs Blog — Nearshore Engineering, AI & Agentic Delivery", "date": "2026-10-06"},
+  {"url": "/blog/a-manifesto-the-foundation-for-any-organization.html", "title": "A manifesto: the foundation for any organization — Icalia Labs Blog", "date": "2020-05-16"},
+  {"url": "/blog/advantages-of-being-open.html", "title": "Advantages of being open — Icalia Labs Blog", "date": "2015-02-16"},
+  {"url": "/blog/ai-augmented-engineering-teams.html", "title": "AI-Augmented Engineering Teams: What Buyers Pay For — Icalia Labs Blog", "date": "2026-09-15"},
+  {"url": "/blog/choosing-the-right-software-partner.html", "title": "Choosing the right Software Partner for your Company — Icalia Labs Blog", "date": "2017-07-24"},
+  {"url": "/blog/decentralized-software-partner-relationships.html", "title": "Executing a successful relationship with decentralized software partners — Icalia Labs Blog", "date": "2020-01-31"},
+  {"url": "/blog/design-sprint-in-a-software-development-team.html", "title": "Successfully Integrating the Design Sprint into a Software Development Team — Icalia Labs Blog", "date": "2017-11-28"},
+  {"url": "/blog/distributed-software-teams-in-management-consulting.html", "title": "Adapting a distributed software team capability in Management Consulting — Icalia Labs Blog", "date": "2021-02-26"},
+  {"url": "/blog/hack-prepas-first-high-school-hackathon-in-mexico.html", "title": "Organizing Hack Prepas, the first high school Hackathon in Mexico — Icalia Labs Blog", "date": "2015-03-19"},
+  {"url": "/blog/holistic-agnostic-specific-problem-solving.html", "title": "Holistic, Agnostic & Specific at solving problems — Icalia Labs Blog", "date": "2020-04-20"},
+  {"url": "/blog/how-to-hire-software-engineers-in-mexico.html", "title": "How to Hire Software Engineers in Mexico: A US Guide — Icalia Labs Blog", "date": "2026-09-22"},
+  {"url": "/blog/how-to-participate-and-win-a-hackathon.html", "title": "How to proudly participate in (and probably win) a Hackathon — Icalia Labs Blog", "date": "2014-12-29"},
+  {"url": "/blog/north-american-block-unfair-advantage-in-tech.html", "title": "The North American Block: An Unfair Advantage in Tech — Icalia Labs Blog", "date": "2021-01-15"},
+  {"url": "/blog/notorious-mistakes-software-services-company.html", "title": "Notorious mistakes we have made as a Software Services Company — Icalia Labs Blog", "date": "2016-04-18"},
+  {"url": "/blog/open-data-opportunity-in-technology.html", "title": "A new opportunity in technology is with Open Data — Icalia Labs Blog", "date": "2014-12-29"},
+  {"url": "/blog/organizational-debt.html", "title": "Organizational Debt — Icalia Labs Blog", "date": "2018-07-09"},
+  {"url": "/blog/rails-world-2026-software-writers-to-makers.html", "title": "Rails World 2026: From Software Writers to Makers — Icalia Labs Blog", "date": "2026-09-29"},
+  {"url": "/blog/software-industry-tendencies-2015.html", "title": "Tendencies and services already happening for the software industry — Icalia Labs Blog", "date": "2015-07-27"},
+  {"url": "/blog/topics/agentic-engineering.html", "title": "Agentic Engineering — Icalia Labs Blog", "date": "2026-10-06"},
+  {"url": "/blog/topics/ai-engineering.html", "title": "AI Engineering — Icalia Labs Blog", "date": "2026-10-06"},
+  {"url": "/blog/topics/forward-deployed-engineer.html", "title": "Forward-Deployed Engineering (FDE) — Icalia Labs Blog", "date": "2026-10-06"},
+  {"url": "/blog/topics/nearshore-hiring.html", "title": "Nearshore Hiring — Icalia Labs Blog", "date": "2026-10-06"},
+  {"url": "/blog/topics/software-development.html", "title": "Software Development — Icalia Labs Blog", "date": "2026-10-06"},
+  {"url": "/blog/topics/software-maker.html", "title": "Software Makers — Icalia Labs Blog", "date": "2026-10-06"},
+  {"url": "/careers.html", "title": "Careers — Icalia Labs", "date": "2026-10-06"},
+  {"url": "/careers/engineering-network.html", "title": "Engineering Network — Careers at Icalia Labs", "date": "2026-10-06"},
+  {"url": "/careers/frontend-modernization-engineer.html", "title": "Frontend Modernization Engineer — Careers at Icalia Labs", "date": "2026-10-06"},
+  {"url": "/careers/senior-ruby-on-rails-engineer.html", "title": "Senior Ruby on Rails Engineer — Careers at Icalia Labs", "date": "2026-10-06"},
+  {"url": "/case-studies.html", "title": "Case Studies — Icalia Labs", "date": "2026-10-06"},
+  {"url": "/contact.html", "title": "Contact — Icalia Labs", "date": "2026-10-06"},
+  {"url": "/developers.html", "title": "Icalia Labs Developer Resources — Open Source, SDKs & MCP Servers", "date": "2026-10-06"},
+  {"url": "/industries/fintech.html", "title": "Fintech — Icalia Labs", "date": "2026-10-06"},
+  {"url": "/industries/healthtech.html", "title": "Healthtech — Icalia Labs", "date": "2026-10-06"},
+  {"url": "/industries/logistics.html", "title": "Logistics & Supply Chain — Icalia Labs", "date": "2026-10-06"},
+  {"url": "/industries/retail.html", "title": "eCommerce & Retail — Icalia Labs", "date": "2026-10-06"},
+  {"url": "/manifesto.html", "title": "Manifesto — Icalia Labs", "date": "2026-10-06"},
+  {"url": "/privacy.html", "title": "Privacy Policy — Icalia Labs", "date": "2026-10-06"},
+  {"url": "/terms.html", "title": "Terms and Conditions — Icalia Labs", "date": "2026-10-06"}
+]</script>
+<script>
+// Log the broken URL, then point the visitor at pages near what they wanted.
+// Known old URLs never get here: they have redirect pages (_data/redirects.js).
+(function () {
+  var path = location.pathname.replace(/\/+$/, '') || '/';
+  var section = path.split('/')[1] || '(root)';
+
+  if (window.gtag) {
+    gtag('event', 'page_not_found', {
+      broken_path: location.pathname + location.search,
+      broken_referrer: document.referrer || '(none)',
+      broken_section: section
+    });
+  }
+
+  var pages = [];
+  try { pages = JSON.parse(document.getElementById('recover-pages').textContent); } catch (e) {}
+
+  var box = document.getElementById('recover');
+  var title = document.getElementById('recover-title');
+  var list = document.getElementById('recover-links');
+  var guess = document.getElementById('recover-guess');
+
+  function link(page, tag) {
+    var a = document.createElement('a');
+    a.href = page.url;
+    a.textContent = (page.title || page.url).replace(/\s+[—|]\s+(Careers at )?Icalia Labs.*$/, '');
+    a.dataset.recover = tag;
+    a.className = 'text-icalia-dark hover:text-icalia-red underline underline-offset-4 decoration-icalia-dark/20';
+    return a;
+  }
+  function add(page, tag) {
+    var li = document.createElement('li');
+    li.appendChild(link(page, tag));
+    list.appendChild(li);
+  }
+  function byPrefix(re) { return pages.filter(function (p) { return re.test(p.url); }); }
+
+  // 1) Links for the section the visitor was in.
+  if (section === 'blog' || section === 'post' || section === 'blogs') {
+    title.textContent = 'That article isn\u2019t here. Latest from the blog:';
+    byPrefix(/^\/blog\/[^/]+\.html$/)
+      .sort(function (a, b) { return a.date < b.date ? 1 : -1; })
+      .slice(0, 5)
+      .forEach(function (p) { add(p, 'blog-post'); });
+    add({ url: '/blog/', title: 'All articles' }, 'blog-index');
+  } else if (section === 'careers') {
+    title.textContent = 'That role may have closed. Open roles:';
+    byPrefix(/^\/careers\/[^/]+\.html$/).forEach(function (p) { add(p, 'role'); });
+    add({ url: '/careers.html', title: 'All careers' }, 'careers');
+  } else if (section === 'industries') {
+    title.textContent = 'Industries Icalia Labs builds for:';
+    byPrefix(/^\/industries\//).forEach(function (p) { add(p, 'industry'); });
+  }
+
+  // 2) "Did you mean": the live page sharing the most words with the broken URL.
+  var stop = { html: 1, www: 1, icalia: 1, labs: 1, the: 1, and: 1, for: 1, with: 1, you: 1, your: 1, how: 1, what: 1 };
+  function words(s) {
+    return (s || '').toLowerCase().split(/[^a-z0-9]+/).filter(function (w) { return w.length > 2 && !stop[w]; });
+  }
+  var wanted = words(decodeURIComponent(path));
+  var best = null, bestScore = 0;
+  pages.forEach(function (p) {
+    var have = words(p.url + ' ' + p.title);
+    var score = wanted.filter(function (w) { return have.indexOf(w) > -1; }).length;
+    if (score > bestScore) { best = p; bestScore = score; }
+  });
+  if (best && bestScore >= 2) {
+    guess.hidden = false;
+    guess.appendChild(document.createTextNode('Did you mean '));
+    guess.appendChild(link(best, 'guess'));
+    guess.appendChild(document.createTextNode('?'));
+  }
+
+  if (list.children.length || !guess.hidden) box.hidden = false;
+
+  // Recovery rate = page_not_found_recover / page_not_found.
+  document.querySelector('main').addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href]');
+    if (a && window.gtag) {
+      gtag('event', 'page_not_found_recover', {
+        broken_path: location.pathname,
+        choice: a.dataset.recover || 'static',
+        target: a.getAttribute('href')
+      });
+    }
+  });
+})();
+</script>
 </body>
 </html>

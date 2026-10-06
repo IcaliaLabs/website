@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moved: Icalia Labs — Nearshore Staff Augmentation</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://icalialabs.com/">
+  <script>
+    // Forward with the query string and hash. A redirect hides the original
+    // referrer from analytics, so when the visitor came from another site
+    // without UTMs, tag the landing URL with that site as the source.
+    (function () {
+      var to = "/";
+      var query = location.search;
+      if (document.referrer && !/[?&]utm_/.test(query)) {
+        try {
+          var host = new URL(document.referrer).hostname.replace(/^www\./, "");
+          if (host && host !== "icalialabs.com") {
+            var isSearch = /(^|\.)(google|bing|duckduckgo|yahoo|yandex|baidu|ecosia)\./.test(host);
+            var utm = "utm_source=" + encodeURIComponent(host) +
+              "&utm_medium=" + (isSearch ? "organic" : "referral") +
+              "&utm_campaign=moved-url&utm_content=" + encodeURIComponent(location.pathname);
+            query = query ? query + "&" + utm : "?" + utm;
+          }
+        } catch (e) {}
+      }
+      location.replace(to + query + location.hash);
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0; url=/">
+</head>
+<body>
+<main>
+  <h1>This page has moved</h1>
+  <p>It now lives at <a href="/">Icalia Labs — Nearshore Staff Augmentation</a>.</p>
+  <p>Scale your engineering team with senior nearshore developers. Same timezone, product-minded engineers who stay. Trusted by Fortune 500 companies and startups since 2012.</p>
+</main>
+</body>
+</html>

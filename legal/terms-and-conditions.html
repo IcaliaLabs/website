@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Moved: Terms and Conditions — Icalia Labs</title>
+  <meta name="robots" content="noindex">
+  <link rel="canonical" href="https://icalialabs.com/terms.html">
+  <script>
+    // Forward with the query string and hash. A redirect hides the original
+    // referrer from analytics, so when the visitor came from another site
+    // without UTMs, tag the landing URL with that site as the source.
+    (function () {
+      var to = "/terms.html";
+      var query = location.search;
+      if (document.referrer && !/[?&]utm_/.test(query)) {
+        try {
+          var host = new URL(document.referrer).hostname.replace(/^www\./, "");
+          if (host && host !== "icalialabs.com") {
+            var isSearch = /(^|\.)(google|bing|duckduckgo|yahoo|yandex|baidu|ecosia)\./.test(host);
+            var utm = "utm_source=" + encodeURIComponent(host) +
+              "&utm_medium=" + (isSearch ? "organic" : "referral") +
+              "&utm_campaign=moved-url&utm_content=" + encodeURIComponent(location.pathname);
+            query = query ? query + "&" + utm : "?" + utm;
+          }
+        } catch (e) {}
+      }
+      location.replace(to + query + location.hash);
+    })();
+  </script>
+  <meta http-equiv="refresh" content="0; url=/terms.html">
+</head>
+<body>
+<main>
+  <h1>This page has moved</h1>
+  <p>It now lives at <a href="/terms.html">Terms and Conditions — Icalia Labs</a>.</p>
+  <p>Icalia Labs Terms and Conditions governing use of the website.</p>
+</main>
+</body>
+</html>
