@@ -16,6 +16,18 @@ How AI-augmented engineers ship faster without giving up human judgment on archi
 
 [
 
+![](/assets/blog/dev-loop-seven-step-loop.jpg)
+
+October 20, 2026
+
+## AI Code Review Agents: Teaching AI to Finish Its Work
+
+Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.
+
+Agentic Engineering
+
+](/blog/ai-code-review-agents-teaching-ai-to-finish.html)[
+
 ![](/assets/blog/img_4661.webp)
 
 September 29, 2026

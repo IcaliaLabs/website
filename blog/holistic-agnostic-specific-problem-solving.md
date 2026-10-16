@@ -88,6 +88,18 @@ Strategy, brand presence, and partnership development at Icalia Labs. Startup an
 
 [
 
+![](/assets/blog/dev-loop-seven-step-loop.jpg)
+
+October 20, 2026
+
+### AI Code Review Agents: Teaching AI to Finish Its Work
+
+Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.
+
+Agentic Engineering
+
+](/blog/ai-code-review-agents-teaching-ai-to-finish.html)[
+
 ![](/assets/blog/monterrey-office-overhead.jpg)
 
 September 22, 2026
@@ -110,15 +122,7 @@ Every engineering partner says it uses AI. Three metrics, five questions and the
 
 AI Engineering
 
-](/blog/ai-augmented-engineering-teams.html) [![](/assets/blog/distributed-software-teams-in-management-consulting-cover.webp) Pre-AI era
-
-February 26, 2021
-
-### Adapting a distributed software team capability in Management Consulting
-
-Argues that management consulting firms need a software development practice and explains how distributed teams help them win deals and scale.
-
-Nearshore Hiring](/blog/distributed-software-teams-in-management-consulting.html)
+](/blog/ai-augmented-engineering-teams.html)
 
 ## Need engineers who already ship like this?
 

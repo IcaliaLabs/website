@@ -9,7 +9,7 @@ how we build.
 
 Engineers, founders, and operators at Icalia Labs writing about nearshore teams, AI-augmented and agentic engineering, and what it takes to ship. Every entry is dated, so you can tell what we learned before the AI era from what we know now.
 
-[Nearshore Hiring 5](/blog/topics/nearshore-hiring.html) [Software Development 11](/blog/topics/software-development.html) [Software Makers 6](/blog/topics/software-maker.html) [AI Engineering 2](/blog/topics/ai-engineering.html) [Agentic Engineering 2](/blog/topics/agentic-engineering.html) [Forward-Deployed Engineering (FDE) 2](/blog/topics/forward-deployed-engineer.html)
+[Nearshore Hiring 5](/blog/topics/nearshore-hiring.html) [Software Development 11](/blog/topics/software-development.html) [Software Makers 6](/blog/topics/software-maker.html) [AI Engineering 3](/blog/topics/ai-engineering.html) [Agentic Engineering 3](/blog/topics/agentic-engineering.html) [Forward-Deployed Engineering (FDE) 3](/blog/topics/forward-deployed-engineer.html)
 
 Timeline AI era [2026](#y2026) Pre-AI era [2021](#y2021) [2020](#y2020) [2018](#y2018) [2017](#y2017) [2016](#y2016) [2015](#y2015) [2014](#y2014)
 
@@ -17,19 +17,31 @@ Timeline AI era [2026](#y2026) Pre-AI era [2021](#y2021) [2020](#y2020) [2018](#
 
 AI era
 
-3 articles
+4 articles
 
- [![](/assets/blog/img_4661.webp) ![](/assets/blog/img_4661.webp)
+ [![](/assets/blog/dev-loop-seven-step-loop.jpg) ![](/assets/blog/dev-loop-seven-step-loop.jpg)
 
-Latest · September 29, 2026
+Latest · October 20, 2026
+
+### AI Code Review Agents: Teaching AI to Finish Its Work
+
+Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.
+
+Agentic Engineering Read the article →](/blog/ai-code-review-agents-teaching-ai-to-finish.html)
+
+[
+
+![](/assets/blog/img_4661.webp)
+
+September 29, 2026
 
 ### Rails World 2026: From Software Writers to Makers
 
 Notes from Rails World 2026 in Austin: what DHH, Matz and Rails engineers said about AI, and why software writers are becoming software makers.
 
-AI Engineering Read the article →](/blog/rails-world-2026-software-writers-to-makers.html)
+AI Engineering
 
-[
+](/blog/rails-world-2026-software-writers-to-makers.html)[
 
 ![](/assets/blog/monterrey-office-overhead.jpg)
 

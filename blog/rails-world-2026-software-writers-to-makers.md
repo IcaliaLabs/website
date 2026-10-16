@@ -167,6 +167,18 @@ Strategy, brand presence, and partnership development at Icalia Labs. Startup an
 
 [
 
+![](/assets/blog/dev-loop-seven-step-loop.jpg)
+
+October 20, 2026
+
+### AI Code Review Agents: Teaching AI to Finish Its Work
+
+Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.
+
+Agentic Engineering
+
+](/blog/ai-code-review-agents-teaching-ai-to-finish.html)[
+
 ![](/assets/blog/blur-1853305.webp)
 
 September 15, 2026
@@ -185,15 +197,7 @@ May 16, 2020
 
 How Icalia Labs used its 7th anniversary to revisit its culture and write a company manifesto, from first draft to the final version.
 
-Software Makers](/blog/a-manifesto-the-foundation-for-any-organization.html) [![](/assets/blog/hack-prepas-first-high-school-hackathon-in-mexico-5.webp) Pre-AI era
-
-March 19, 2015
-
-### Organizing Hack Prepas, the first high school Hackathon in Mexico
-
-A high school apprentice at Icalia Labs recounts organizing Hack Prepas in 2015, the first high school hackathon in Mexico, from approvals to sponsors.
-
-Software Makers](/blog/hack-prepas-first-high-school-hackathon-in-mexico.html)
+Software Makers](/blog/a-manifesto-the-foundation-for-any-organization.html)
 
 ## Need engineers who already ship like this?
 

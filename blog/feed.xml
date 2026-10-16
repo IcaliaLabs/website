@@ -5,12 +5,132 @@
   <subtitle>Nearshore engineering, AI-augmented delivery, and building software teams that ship.</subtitle>
   <link href="https://icalialabs.com/blog/feed.xml" rel="self" />
   <link href="https://icalialabs.com/" />
-  <updated>2026-09-29T00:00:00Z</updated>
+  <updated>2026-10-20T00:00:00Z</updated>
   <id>https://icalialabs.com/</id>
   <author>
     <name>Icalia Labs</name>
     <email>sales@icalialabs.com</email>
   </author>
+  <entry>
+    <title>AI Code Review Agents: Teaching AI to Finish Its Work</title>
+    <link href="https://icalialabs.com/blog/ai-code-review-agents-teaching-ai-to-finish.html" />
+    <updated>2026-10-20T00:00:00Z</updated>
+    <id>https://icalialabs.com/blog/ai-code-review-agents-teaching-ai-to-finish.html</id>
+    <summary>Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.</summary>
+    <content type="html">&lt;p&gt;AI coding agents now write working-looking code in seconds. The hard part is no longer starting the work; it is finishing it. A review loop that separates planning, building and adversarial review, with a senior engineer approving the plan and owning the definition of done, closes most of that gap at roughly 1.84x the cost of a loop without those guarantees. That is what I presented on September 29, 2026, at Monterrey Startup Week, at Expedition FEMSA, Tecnológico de Monterrey, in my session &amp;quot;dev-loop: Teaching AI to Finish Its Work, Not Just Start It.&amp;quot;&lt;/p&gt;
+&lt;h2 id=&quot;the-short-answer&quot;&gt;The short answer&lt;/h2&gt;
+&lt;p&gt;Teams that want AI agents to ship production code, not just drafts, need three things: a reviewer that is not the author, a test gate that runs before any review, and a stop rule that lets one serious error block delivery. I packaged those three ideas into dev-loop, a free and open-source workflow I published at &lt;a href=&quot;https://github.com/kurenn/dev-loop&quot;&gt;github.com/kurenn/dev-loop&lt;/a&gt;. Its README sums up the rule in one line: a development loop &amp;quot;that won&#39;t ship while anything is blocking.&amp;quot;&lt;/p&gt;
+&lt;h2 id=&quot;why-looks-ready-is-not-ready&quot;&gt;Why &amp;quot;looks ready&amp;quot; is not ready&lt;/h2&gt;
+&lt;p&gt;My talk opened on a simple question: AI already writes code in seconds, but who reviews it? Three problems show up when the answer is &amp;quot;the same AI&amp;quot;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&amp;quot;Looks ready&amp;quot; is not ready.&lt;/strong&gt; Agent output usually compiles, reads cleanly and passes a quick glance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI tends to grade its own work.&lt;/strong&gt; Self-review favors the author.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A good grade can hide a serious error.&lt;/strong&gt; A change rated 8.5 out of 10 can still ship the bug that breaks everything.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This matches what other practitioners are reporting. Simon Willison wrote on &lt;a href=&quot;https://simonwillison.net/2026/Sep/24/harder/&quot;&gt;September 24, 2026&lt;/a&gt; that &amp;quot;the more time I spend working with coding agents, the more convinced I am that they make software engineering even harder,&amp;quot; and that getting the most from them &amp;quot;requires extraordinary discipline and knowledge.&amp;quot; Google&#39;s &lt;a href=&quot;https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report&quot;&gt;2025 DORA report&lt;/a&gt; reached a similar conclusion at scale: &amp;quot;AI doesn&#39;t fix a team; it amplifies what&#39;s already there.&amp;quot;&lt;/p&gt;
+&lt;h2 id=&quot;the-surgical-team-revisited&quot;&gt;The surgical team, revisited&lt;/h2&gt;
+&lt;p&gt;In &lt;em&gt;The Mythical Man-Month&lt;/em&gt; (1975), Fred Brooks described Harlan Mills&#39; proposal for a &amp;quot;surgical team&amp;quot;: one chief programmer does the critical design and coding, surrounded by specialists who support, test and document. The team moves at the speed of one mind, with the throughput of several people.&lt;/p&gt;
+&lt;p&gt;Agents make that structure practical again. The specialists are now agents that build, test and challenge in parallel. The chief programmer is a senior engineer who:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;plans the change, or approves an agent&#39;s plan after it has been challenged,&lt;/li&gt;
+&lt;li&gt;decides what counts as a serious problem,&lt;/li&gt;
+&lt;li&gt;owns the decision to ship.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;At Icalia Labs, we call that role a nearshore forward deployed engineer: a senior engineer embedded in a client&#39;s team, time-zone aligned, who directs agents instead of competing with them on typing speed.&lt;/p&gt;
+&lt;h2 id=&quot;the-seven-step-loop&quot;&gt;The seven-step loop&lt;/h2&gt;
+&lt;p&gt;dev-loop turns the surgical team into a repeatable process. In the version I presented, each change runs through seven steps:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Someone plans.&lt;/strong&gt; One agent writes the implementation plan.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Someone else challenges the plan.&lt;/strong&gt; A second agent, blind to the planner, reviews it from scratch.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A human approves.&lt;/strong&gt; The engineer signs off before any code is written.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;It gets built in parallel.&lt;/strong&gt; Several agents work on separate files.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Agents review the basics.&lt;/strong&gt; Does it build, do the tests pass, does it follow the style rules?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;An outside auditor tries to break it.&lt;/strong&gt; A model from a different family looks for serious failures.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;It gets fixed, and reviewed again.&lt;/strong&gt; The loop repeats until nothing serious is left.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/dev-loop-seven-step-loop.jpg&quot; alt=&quot;Diagram of the seven-step dev-loop cycle: plan, challenge the plan, human approval, parallel build, basic review, outside challenge, fix and re-review, ending in ship only when zero serious issues remain.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The example on my slides was a request to add a login. A Claude Opus agent planned it, and a second Opus agent challenged the plan from scratch. A human approved. Three agents built it in separate files, and the basic review passed. OpenAI&#39;s Codex then audited the change, tried to break it and found one serious issue. After one round of fixes, a second audit found zero serious issues, and the change shipped.&lt;/p&gt;
+&lt;p&gt;The public repository describes a more granular version of the same cycle: plan, critique, approve, implement, gate (build, test, lint, typecheck, coverage), adversarial review, a blind rating, fix and ship. Findings go back to the gate, not to the reviewer. The seven steps above are the version I presented in the talk.&lt;/p&gt;
+&lt;h2 id=&quot;the-rule-ship-only-when-nothing-serious-is-left&quot;&gt;The rule: ship only when nothing serious is left&lt;/h2&gt;
+&lt;p&gt;The loop&#39;s stop rule is deliberately strict. A change ships only when no serious issue remains, and &amp;quot;serious&amp;quot; has a fixed definition:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;incorrect behavior,&lt;/li&gt;
+&lt;li&gt;data loss,&lt;/li&gt;
+&lt;li&gt;a security hole,&lt;/li&gt;
+&lt;li&gt;an unmet acceptance criterion.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the loop cannot get there within its capped fix rounds, it stops and tells the engineer rather than lowering the bar. It does not ship a &amp;quot;mostly good&amp;quot; change. This is the part that turns a fast agent into a finished deliverable: one serious finding is enough to block delivery, no matter how good the average score looks.&lt;/p&gt;
+&lt;h2 id=&quot;how-dev-loop-was-tested-an-auditors-approach&quot;&gt;How dev-loop was tested: an auditor&#39;s approach&lt;/h2&gt;
+&lt;p&gt;I built the benchmark behind the talk the way an auditor tests a control, not the way a vendor runs a demo. Instead of asking whether the code looked good, it asked whether the process caught what it was supposed to catch:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Known defects were seeded on purpose.&lt;/strong&gt; Frozen changes were salted with defects such as a nil dereference, a missing authorization check and removed test coverage, and the gate decisions were replayed against them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The acceptance tests were hidden.&lt;/strong&gt; They were written from the task description, and the agents never saw them.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Grading was blind.&lt;/strong&gt; Graders scored the code with the loop&#39;s own artifacts stripped out and the order of the versions alternated.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;The auditor is a different model.&lt;/strong&gt; Codex reviews code written by Claude agents, and an Opus rater scores it without knowing the shipping threshold.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In total: 17 loop runs, 60 gate replays and 24 blind gradings, on one Rails repository with two tasks. The full method and raw numbers are published in the repository&#39;s &lt;a href=&quot;https://github.com/kurenn/dev-loop/blob/main/bench/RESULTS.md&quot;&gt;benchmark results&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;does-it-work-and-what-does-it-cost&quot;&gt;Does it work, and what does it cost?&lt;/h2&gt;
+&lt;p&gt;I was direct about the price in the talk.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;Measure&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;Loop without the guarantees&lt;/th&gt;
+&lt;th style=&quot;text-align:left&quot;&gt;dev-loop&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Cost per task&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;$6.22&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;$11.44 (1.84x)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Reviewer checking code that fails its own tests&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;2 of 5 runs&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Never: no review starts until build and tests pass (8 of 8 mechanical assertions met)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Seeded defects caught before shipping&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;A score gate (8.5 out of 10 or higher) passed work its own rater had flagged&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;23 of 25, with 0 correct changes blocked&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Blind-graded code quality&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Baseline&lt;/td&gt;
+&lt;td style=&quot;text-align:left&quot;&gt;Parity, not superiority&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/dev-loop-cost-vs-outcome.jpg&quot; alt=&quot;Bar chart comparing a loop without guarantees at $6.22 per task with dev-loop at $11.44 per task (1.84x), alongside outcomes: an unguarded loop reviewed failing code in 2 of 5 runs while dev-loop runs tests before any review, and dev-loop&#39;s severity gate caught 23 of 25 seeded defects with 0 correct changes blocked.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;&lt;/p&gt;
+&lt;p&gt;Two reviewer failures account for most of the gain:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Reviewing code that does not even run.&lt;/strong&gt; An unguarded loop reviewed failing code in 2 of 5 runs. dev-loop runs the build and tests first; if they fail, there is no review.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Giving a good grade to work that should not ship.&lt;/strong&gt; A gate that shipped anything rated 8.5 or more out of 10 passed work its own rater had flagged as needing action. dev-loop replaces the average score with a severity gate: any single blocking finding stops delivery. That gate caught 23 of 25 seeded defects and did not block a single correct change.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The benchmark is also candid about what the extra cost does not buy. On blind-graded code quality, the loop reaches &amp;quot;parity, not superiority.&amp;quot; As I wrote in the repository: &amp;quot;You are buying process guarantees, not better code.&amp;quot; Or, as one of my slides put it: &amp;quot;Reviewing has a price.&amp;quot;&lt;/p&gt;
+&lt;p&gt;The scope is narrow by design: one Rails application, two tasks, and I built both the tool and the benchmark. The repository states that its stack-agnostic claim is designed for but not yet measured, and I welcome outside review. Teams that adopt a loop like this should run the same kind of audit on their own codebase.&lt;/p&gt;
+&lt;h2 id=&quot;when-the-extra-cost-is-worth-it&quot;&gt;When the extra cost is worth it&lt;/h2&gt;
+&lt;p&gt;My answer in the talk was short: when mistakes are expensive. That describes regulated industries, where an error is not just a bug but a compliance, safety or financial event. It also describes most of the systems we work on at Icalia Labs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://icalialabs.com/industries/fintech.html&quot;&gt;Fintech&lt;/a&gt;:&lt;/strong&gt; a ledger or payment change with incorrect behavior is a financial and compliance event.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://icalialabs.com/industries/healthtech.html&quot;&gt;Healthtech&lt;/a&gt;:&lt;/strong&gt; data loss or a privacy hole in a clinical workflow is a regulatory problem.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a href=&quot;https://icalialabs.com/industries/logistics.html&quot;&gt;Logistics and supply chain&lt;/a&gt;:&lt;/strong&gt; a wrong integration can stop dispatch or misroute freight.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The same logic applies in other regulated spaces where software touches safety, people and physical assets:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Aviation:&lt;/strong&gt; maintenance, scheduling and crew systems operate under strict certification and audit requirements.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Airspace:&lt;/strong&gt; drone, air traffic and flight-data systems have no tolerance for silent failures.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Mobility:&lt;/strong&gt; fleet, ride and vehicle software moves people and must hold up under safety and data rules.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Energy, insurance and other regulated sectors:&lt;/strong&gt; anywhere an auditor, a regulator or a safety review will read the change history.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;For prototypes and internal tools, a single agent is often enough. For production systems with real users and real constraints, paying 1.84x per task to stop serious errors before they ship is cheaper than finding them in production. It also moves the bottleneck where it belongs: from typing code to senior review of what the code should do.&lt;/p&gt;
+&lt;h2 id=&quot;what-engineering-leaders-should-take-from-it&quot;&gt;What engineering leaders should take from it&lt;/h2&gt;
+&lt;p&gt;The question for a CTO is no longer whether a team uses agents. It is who decides when the agents&#39; work is done, and what rule they use. Teams that answer with a named senior engineer, a test gate, an outside auditor and a stop rule for serious errors get the speed without the surprise.&lt;/p&gt;
+&lt;p&gt;I closed the talk with a line that sums up the loop: &amp;quot;Fast is easy. Finished is what matters.&amp;quot;&lt;/p&gt;
+&lt;p&gt;To see how we embed senior engineers who run agent workflows like this inside client teams, &lt;a href=&quot;https://icalialabs.com/case-studies.html&quot;&gt;see our case studies&lt;/a&gt; or &lt;a href=&quot;https://icalialabs.com/contact.html#book&quot;&gt;book a 30-minute call&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Rails World 2026: From Software Writers to Makers</title>
     <link href="https://icalialabs.com/blog/rails-world-2026-software-writers-to-makers.html" />

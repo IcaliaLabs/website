@@ -212,6 +212,18 @@ From the blog
 
 [
 
+![](/assets/blog/dev-loop-seven-step-loop.jpg)
+
+October 20, 2026
+
+### AI Code Review Agents: Teaching AI to Finish Its Work
+
+Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.
+
+Agentic Engineering
+
+](/blog/ai-code-review-agents-teaching-ai-to-finish.html)[
+
 ![](/assets/blog/img_4661.webp)
 
 September 29, 2026
@@ -234,19 +246,7 @@ A practical guide for US companies hiring software engineers in Mexico: hiring m
 
 Nearshore Hiring
 
-](/blog/how-to-hire-software-engineers-in-mexico.html)[
-
-![](/assets/blog/blur-1853305.webp)
-
-September 15, 2026
-
-### AI-Augmented Engineering Teams: What Buyers Pay For
-
-Every engineering partner says it uses AI. Three metrics, five questions and the review standard that separate delivery outcomes from AI hype.
-
-AI Engineering
-
-](/blog/ai-augmented-engineering-teams.html)
+](/blog/how-to-hire-software-engineers-in-mexico.html)
 
 ## Ready to scale  
 your team?

@@ -16,6 +16,18 @@ Forward-deployed engineers: senior engineers who work inside the customer's team
 
 [
 
+![](/assets/blog/dev-loop-seven-step-loop.jpg)
+
+October 20, 2026
+
+## AI Code Review Agents: Teaching AI to Finish Its Work
+
+Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.
+
+Agentic Engineering
+
+](/blog/ai-code-review-agents-teaching-ai-to-finish.html)[
+
 ![](/assets/blog/blur-1853305.webp)
 
 September 15, 2026
