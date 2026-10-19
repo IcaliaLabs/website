@@ -109,7 +109,7 @@ Don't invent new topics. If none fits, say so in the handoff note. Adding a topi
 | `author` ID | Name | Role | Best for |
 |---|---|---|---|
 | `eduardo-lopez` | Eduardo Lopez De Leon | Co-Founder & CEO | Strategy, hiring models, partnerships, company perspective |
-| `abraham-kuri` | Abraham Kuri | Co-Founder & CTO | AI and agentic engineering, technical depth, engineering practice |
+| `abraham-kuri` | Abraham Kuri | Co-founder and Former CTO | AI and agentic engineering, technical depth, engineering practice |
 | `carlos-medellin` | Carlos Medellin | Board Member | Governance, fintech, financial sustainability |
 
 Pick the author whose expertise matches the topic, and flag the choice in the handoff note. Write in a voice that person could credibly sign. New authors get added in the CMS under *Authors*; don't reference an ID that isn't in this table.
@@ -175,9 +175,13 @@ Pick the author whose expertise matches the topic, and flag the choice in the ha
 
 ### Verified Icalia Labs facts (safe to use as written)
 
-- Founded in **2012**; offices in **Austin, TX** and **Monterrey, Mexico**. Write "since 2012" rather than computing a number of years.
+- Founded in **2012**; offices in **Austin, TX** and **Monterrey, Mexico**. Write "since 2012" or "14 years". Never "since 2011", "15 years" or "more than a decade".
+- Trusted by **Fortune 500** companies and startups since 2012.
 - **4.6/5 on Clutch**; **>90 NPS**, based on client surveys across **210+ platforms delivered since 2012**.
-- Fewer than **0.4%** of applicants are accepted; engineers average **5+ years** of tenure; experience level is Senior+.
+- Fewer than **0.4%** of applicants are accepted; **95% retention over 5+ years**; experience level is Senior+. Every engineer is ID-verified before any client interview.
+- Delivery cadence: first versions in production in **under a week**, and **from 10 to hundreds of changes per week** on live systems. Use exactly this wording; never "100–500" or "10–100+".
+- Positioning: Icalia Labs is an **agentic engineering partner** that deploys **nearshore forward deployed engineers**. The managed offer is called **Talent Augmentation** (managed nearshore staff augmentation). On the AI ladder, AI-assisted → AI-augmented → agentic engineering, Icalia works at the agentic rung.
+- Don't claim a Claude Partner Network status or badge, and don't imply guaranteed outcomes: engagements bill time and materials.
 - **YC alum co-founders**; the **first Docker-certified consultancy in Latin America**; **GitHub Partner** in LatAm; **5,000+** cumulative GitHub stars on public repos.
 - Monterrey runs on **Central Standard Time year-round**.
 - Open source: **Sepomex**, an open REST API and MCP server for Mexican postal codes (see `/developers.html`).
@@ -189,7 +193,7 @@ Pick the author whose expertise matches the topic, and flag the choice in the ha
 | RTS (acquired) | Six-person senior squad plus design bench in Monterrey; 5+ years; oil-and-gas operations; **3x ROE** on technology investment; **5/5 NPS** |
 | Point B | Six senior engineers plus two front-end specialists; 5+ years; helped launch software services generating **40%+ value-add revenue** |
 | Apply Digital | Canadian consultancy's first LatAm footprint; **15-person** team across Mexico and Colombia; Build/Operate/Transfer; **6–12 months** to stand up the team |
-| Everlance (acquired) | San Francisco consumer startup; **eight senior engineers** (backend and native mobile); same-quality hires at **60% cost savings**; every engineer stayed through the acquisition |
+| Everlance (acquired) | San Francisco consumer startup; **eight senior engineers** (backend and native mobile); same-quality senior hires; every engineer stayed through the acquisition. **Never cite a cost-savings figure.** |
 | EMR Bear (acquired) | New Mexico healthcare company; **four** specialized Rails engineers; first critical features in production within **four weeks**; kept shipping through the acquisition |
 
 ### Rules

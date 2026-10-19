@@ -30,31 +30,31 @@
   {
     "slug": "ai-engineering",
     "label": "AI Engineering",
-    "description": "How AI-augmented engineers ship faster without giving up human judgment on architecture, security, and quality.",
-    "relatedUrl": "/manifesto.html",
-    "relatedLabel": "Read our manifesto"
+    "description": "How engineering teams climb from AI-assisted to AI-augmented to agentic engineering without giving up human judgment on architecture, security, and quality.",
+    "relatedUrl": "/agentic-engineering.html",
+    "relatedLabel": "How we build with agents"
   },
   {
     "slug": "agentic-engineering",
     "label": "Agentic Engineering",
-    "description": "Building with and for AI agents: agent workflows, MCP servers, agent skills, and human-accountable automation.",
-    "relatedUrl": "/developers.html",
-    "relatedLabel": "See our MCP server and agent skills"
+    "description": "Building with and for AI agents: agents implement inside governed workflows while senior engineers own the specification, review, and release of every change.",
+    "relatedUrl": "/agentic-engineering.html",
+    "relatedLabel": "See our agentic engineering practice"
   },
   {
     "slug": "forward-deployed-engineer",
     "label": "Forward-Deployed Engineering (FDE)",
     "description": "Forward-deployed engineers: senior engineers who work inside the customer's team and ship against real production problems.",
-    "relatedUrl": "/contact.html#book",
-    "relatedLabel": "Embed an engineer in your team"
+    "relatedUrl": "/forward-deployed-engineers.html",
+    "relatedLabel": "Embed a forward deployed engineer"
   },
   {
     "slug": "fde",
     "label": "FDE",
     "description": "Forward-deployed engineers: senior engineers who work inside the customer's team and ship against real production problems.",
     "canonicalSlug": "forward-deployed-engineer",
-    "relatedUrl": "/contact.html#book",
-    "relatedLabel": "Embed an engineer in your team"
+    "relatedUrl": "/forward-deployed-engineers.html",
+    "relatedLabel": "Embed a forward deployed engineer"
   },
   {
     "slug": "fintech",
