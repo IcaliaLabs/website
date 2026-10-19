@@ -12,7 +12,7 @@ Topic
 
 Forward-deployed engineers: senior engineers who work inside the customer's team and ship against real production problems.
 
-[Embed an engineer in your team →](/contact.html#book)
+[Embed a forward deployed engineer →](/forward-deployed-engineers.html)
 
 [
 

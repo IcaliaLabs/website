@@ -2,11 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://icalialabs.com/</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/about.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/agentic-engineering.html</loc>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/blog/</loc>
@@ -110,39 +114,47 @@
   </url>
   <url>
     <loc>https://icalialabs.com/careers.html</loc>
-    <lastmod>2026-06-05</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/careers/engineering-network.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/careers/frontend-modernization-engineer.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/careers/senior-ruby-on-rails-engineer.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/case-studies.html</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/contact.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/developers.html</loc>
     <lastmod>2026-09-27</lastmod>
   </url>
   <url>
+    <loc>https://icalialabs.com/forward-deployed-engineers.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/how-we-vet.html</loc>
+    <lastmod>2026-10-19</lastmod>
+  </url>
+  <url>
     <loc>https://icalialabs.com/industries/fintech.html</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/industries/healthtech.html</loc>
-    <lastmod>2026-09-27</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/industries/logistics.html</loc>
@@ -154,11 +166,15 @@
   </url>
   <url>
     <loc>https://icalialabs.com/manifesto.html</loc>
-    <lastmod>2026-10-02</lastmod>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/privacy.html</loc>
     <lastmod>2026-09-27</lastmod>
+  </url>
+  <url>
+    <loc>https://icalialabs.com/services.html</loc>
+    <lastmod>2026-10-19</lastmod>
   </url>
   <url>
     <loc>https://icalialabs.com/terms.html</loc>

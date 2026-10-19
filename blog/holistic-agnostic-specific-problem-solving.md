@@ -128,4 +128,4 @@ AI Engineering
 
 We embed senior nearshore engineers directly into your team — same time zone, same standards, no ramp-up theater.
 
-[Book a discovery call →](/contact.html#book) [Embed an engineer in your team](/contact.html#book)
+[Book a discovery call →](/contact.html#book) [Embed a forward deployed engineer](/forward-deployed-engineers.html)

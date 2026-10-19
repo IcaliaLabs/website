@@ -76,21 +76,21 @@ What we've shipped
 
 ## Real work. Real stakes.
 
-Payments platform
+Agentic data consolidation
 
-Cut settlement time by 60% across three sponsor banks.
-
-Case study in progress
-
-Card program
-
-Launched a consumer debit program on Marqeta in 14 weeks.
+Built an MCP server with a financial partner that cut 80% of the manual effort in consolidating data.
 
 Case study in progress
 
-Ledger modernization
+Direct-to-bank
 
-Rebuilt a legacy journal engine to handle 10× volume.
+Launched a new direct-to-bank connection in under 3 months.
+
+Case study in progress
+
+Cross-border flow of funds
+
+Shipped cross-border flow-of-funds functionality through compliance, regulatory, and legal review.
 
 Case study in progress
 

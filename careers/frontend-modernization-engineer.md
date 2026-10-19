@@ -94,9 +94,9 @@ Same time zone as your team, clear written communication, and the autonomy to mo
 
 Code reviews that teach, documented patterns, and senior engineers who lift the bench. You'll grow faster here than on most in-house teams.
 
-### AI-augmented, human-accountable
+### Agentic, human-accountable
 
-We use modern AI tooling to multiply output — but a named human always owns the quality, security, and judgment behind every line that ships.
+Agents carry a large share of the implementation, and a named engineer always owns the quality, security, and judgment behind every change that ships.
 
 Why Icalia
 

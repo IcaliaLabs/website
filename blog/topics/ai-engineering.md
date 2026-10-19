@@ -1,6 +1,6 @@
 # AI Engineering — Icalia Labs Blog
 
-> How AI-augmented engineers ship faster without giving up human judgment on architecture, security, and quality.
+> How engineering teams climb from AI-assisted to AI-augmented to agentic engineering without giving up human judgment on architecture, security, and quality.
 
 1.  [Home](/)
 2.  /
@@ -10,9 +10,9 @@ Topic
 
 # AI Engineering
 
-How AI-augmented engineers ship faster without giving up human judgment on architecture, security, and quality.
+How engineering teams climb from AI-assisted to AI-augmented to agentic engineering without giving up human judgment on architecture, security, and quality.
 
-[Read our manifesto →](/manifesto.html)
+[How we build with agents →](/agentic-engineering.html)
 
 [
 

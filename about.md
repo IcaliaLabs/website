@@ -1,6 +1,6 @@
-# About Icalia Labs — Nearshore Staff Augmentation Since 2012
+# About Icalia Labs: Agentic Engineering Since 2012
 
-> Icalia Labs is a nearshore staff augmentation firm founded in 2012. YC alum co-founders, first Docker-certified consultancy in LatAm, offices in Austin and Monterrey.
+> Icalia Labs is an agentic engineering partner founded in 2012, deploying senior nearshore engineers from Austin and Monterrey. YC alum co-founders.
 
 About Icalia Labs
 
@@ -8,7 +8,7 @@ About Icalia Labs
 2012\. Still hands  
 on keyboard.
 
-Icalia Labs is a nearshore staff augmentation firm. We embed senior engineers directly into product teams — the same engineers you'd try to hire yourself, minus the twelve-month search.
+Icalia Labs is an agentic engineering partner. We deploy nearshore forward deployed engineers — senior engineers from Mexico and Latin America who embed in US product teams and own outcomes in production. The same engineers you’d try to hire yourself, minus the twelve-month search.
 
 [Talk to us →](contact.html#book) [Read our manifesto](manifesto.html)
 
@@ -16,11 +16,11 @@ Our story
 
 ## Shipping since 2012, not selling.
 
-Icalia Labs started in 2012 on a simple belief: world-class software teams can be built anywhere, and nearshore engineers in Mexico have the unfair advantage of delivering the same output as any U.S. engineer, in the same working hours, at a fraction of the search time.
+Icalia Labs started in 2012 on a simple belief: great software teams can be built anywhere, and nearshore engineers in Mexico have the unfair advantage of delivering the same output as any U.S. engineer, in the same working hours, in a fraction of the search time.
 
-Our founding team includes Y Combinator alumni who've built, shipped, and sold companies of their own — experience we now put directly into how we vet, staff, and manage engineering teams for clients in Fintech, Healthtech, Logistics, and eCommerce.
+Our founding team includes Y Combinator alumni who've built, shipped, and sold companies of their own — experience we now put directly into how we vet, embed, and support engineering teams for clients in fintech, healthtech, logistics, and other regulated industries.
 
-We don't sell bodies or resumes. We sell senior engineers who join your standups, your code reviews, and your on-call rotation — and who use AI as a force multiplier without letting it replace human judgment on architecture, security, or taste.
+We’re not a vendor that puts people in seats. Our engineers built products before AI, and now build them with AI. They join your standups, your code reviews, and your on-call rotation, and they own the architecture, security, and taste that agents can’t.
 
 Credentials
 

@@ -16,7 +16,7 @@ Why AI coding agents ship code that only looks ready, and how a seven-step revie
 
 ![Abraham Kuri](/assets/abraham-kuri.webp)
 
-Abraham Kuri · Co-Founder & CTO
+Abraham Kuri · Co-founder and Former CTO
 
 October 20, 2026 · 7 min read
 
@@ -198,7 +198,7 @@ It is worth it when a mistake is expensive: incorrect behavior, data loss or a s
 
 Written by
 
-Abraham Kuri · Co-Founder & CTO
+Abraham Kuri · Co-founder and Former CTO
 
 Head of AI & Technology at Icalia Labs. Owns the agentic methodology and engineering capability. YC Founder.
 
@@ -244,4 +244,4 @@ Forward-Deployed Engineering (FDE)](/blog/holistic-agnostic-specific-problem-sol
 
 We embed senior nearshore engineers directly into your team — same time zone, same standards, no ramp-up theater.
 
-[Book a discovery call →](/contact.html#book) [See our MCP server and agent skills](/developers.html)
+[Book a discovery call →](/contact.html#book) [See our agentic engineering practice](/agentic-engineering.html)

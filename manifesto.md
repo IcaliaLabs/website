@@ -1,6 +1,6 @@
-# Manifesto — Icalia Labs
+# The Icalia Labs Manifesto: Closing the Clarity Gap
 
-> A manifesto for builders. Since 2012, Icalia Labs has closed the gap between idea and impact — empowering engineers, designers, and founders with AI-augmented craft.
+> When code costs almost nothing to write, someone senior has to decide what should not be written at all. Ten operating principles from Icalia Labs, since 2012.
 
 Manifesto
 
@@ -28,7 +28,7 @@ Still Here
 
 ## Founded 2012. Still shipping.
 
-There's never been a better time in history to build software and technology — and we've spent more than a decade earning the right to keep building it.
+There’s never been a better time to build software. When code costs almost nothing to write, someone senior has to decide what should not be written at all. That has been the job for 14 years.
 
 14+
 

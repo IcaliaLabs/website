@@ -342,7 +342,7 @@
 &lt;/table&gt;
 &lt;p&gt;Agentic engineering is a way of building software in which AI agents do a large share of the implementation inside a defined workflow, while senior engineers own the definition, review and release of every change.&lt;/p&gt;
 &lt;p&gt;Most of the value, and most of the risk, sits between the second row and the third.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/ai-augmented-engineering-teams-loop.webp&quot; alt=&quot;Diagram of the agentic engineering loop: Specify, Implement, Review, Release, Learn. Senior engineers own specify, review and learn; agents implement; rejected work goes back to the agent; example cadence of 100 to 500 changes a week on a live system&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/ai-augmented-engineering-teams-loop.webp&quot; alt=&quot;Diagram of the agentic engineering loop: Specify, Implement, Review, Release, Learn. Senior engineers own specify, review and learn; agents implement; rejected work goes back to the agent; example cadence of 10 to hundreds of changes a week on a live system&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;why-isnt-we-use-ai-evidence-of-anything&quot;&gt;Why isn&#39;t &amp;quot;we use AI&amp;quot; evidence of anything?&lt;/h2&gt;
 &lt;p&gt;Because it describes an input. Adoption is close to universal, and developer confidence in the output hasn&#39;t kept pace.&lt;/p&gt;
 &lt;p&gt;The &lt;a href=&quot;https://survey.stackoverflow.co/2025/ai&quot;&gt;2025 Stack Overflow Developer Survey&lt;/a&gt; found that 84% of developers use or plan to use AI tools. Yet 46% actively distrust the accuracy of what those tools produce, and only 3% highly trust it. The most common frustration, cited by 66% of respondents, is &amp;quot;AI solutions that are almost right, but not quite.&amp;quot; Almost half (45%) say debugging AI-generated code takes more time than expected.&lt;/p&gt;
@@ -365,7 +365,7 @@
 &lt;h3 id=&quot;what-gets-rejected-in-review&quot;&gt;What gets rejected in review&lt;/h3&gt;
 &lt;p&gt;How often is agent output rejected or rewritten, and why? A partner that can&#39;t answer isn&#39;t reviewing systematically. A partner that says &amp;quot;never&amp;quot; isn&#39;t reviewing at all.&lt;/p&gt;
 &lt;h3 id=&quot;what-this-looks-like-in-practice&quot;&gt;What this looks like in practice&lt;/h3&gt;
-&lt;p&gt;Icalia Labs holds its teams to these numbers. According to Icalia Labs delivery data, first versions reach production in under a week, and teams working on production software with CI/CD push 10 - 100+ changes a week. Icalia Labs engineers deliver at least 10x productivity with AI-native tools compared to commit pushes in terms of PRs from 12+ months back, based on our internal delivery data.&lt;/p&gt;
+&lt;p&gt;Icalia Labs holds its teams to these numbers. According to Icalia Labs delivery data, first versions reach production in under a week, and teams working on production software with CI/CD push from 10 to hundreds of changes per week. Icalia Labs engineers deliver at least 10x productivity with AI-native tools compared to commit pushes in terms of PRs from 12+ months back, based on our internal delivery data.&lt;/p&gt;
 &lt;h2 id=&quot;where-do-agents-fail-and-who-catches-them&quot;&gt;Where do agents fail, and who catches them?&lt;/h2&gt;
 &lt;p&gt;Agents fail in predictable places:&lt;/p&gt;
 &lt;ul&gt;

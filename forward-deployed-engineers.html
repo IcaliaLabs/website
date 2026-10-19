@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nearshore Forward Deployed Engineers (FDE) | Icalia Labs</title>
+  <meta name="description" content="Nearshore forward deployed engineers: senior engineers from Mexico and Latin America who embed in your team, work US hours, and own outcomes in production.">
+
+
+  <link rel="canonical" href="https://icalialabs.com/forward-deployed-engineers.html">
+
+  <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+
+  <link rel="alternate" type="text/markdown" href="https://icalialabs.com/forward-deployed-engineers.md">
+
+  <link rel="alternate" type="application/atom+xml" title="Icalia Labs Blog" href="https://icalialabs.com/blog/feed.xml">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSFD00QMYY"></script>
+  <script>
+    // Only the live site reports; local and preview builds stay out of GA.
+    if (location.hostname !== 'icalialabs.com') { window['ga-disable-G-MSFD00QMYY'] = true; }
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MSFD00QMYY', {
+      'page_path': '/forward-deployed-engineers.html',
+      'page_type': location.pathname.includes('/industries/') ? 'industry_page' : 'root_page',
+      'anonymize_ip': true,
+      'cookie_expires': 63072000
+    });
+  </script>
+  <script src="/js/ga-events.js" defer></script>
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="https://icalialabs.com/forward-deployed-engineers.html">
+
+  <meta property="og:title" content="Nearshore Forward Deployed Engineers (FDE) | Icalia Labs">
+  <meta property="og:description" content="Nearshore forward deployed engineers: senior engineers from Mexico and Latin America who embed in your team, work US hours, and own outcomes in production.">
+  <meta property="og:image" content="https://icalialabs.com/assets/og-image.png">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Nearshore Forward Deployed Engineers (FDE) | Icalia Labs">
+  <meta name="twitter:description" content="Nearshore forward deployed engineers: senior engineers from Mexico and Latin America who embed in your team, work US hours, and own outcomes in production.">
+  <meta name="twitter:image" content="https://icalialabs.com/assets/og-image.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'icalia-red': '#E8453C',
+            'icalia-red-dark': '#C53B33',
+            'icalia-dark': '#1A1A22',
+            'icalia-navy': '#2D2F40',
+            'icalia-warm': '#FAF8F6',
+            'icalia-warm-2': '#F3F0EC',
+            'icalia-blush': '#FDECED',
+            'icalia-sand': '#E8E4DF',
+          },
+          fontFamily: {
+            'display': ['"Instrument Serif"', 'Georgia', 'serif'],
+            'body': ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    @media (min-width: 768px) {
+      .nav-dropdown:hover .industries-panel, .nav-dropdown:focus-within .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    }
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://icalialabs.com/"},{"@type":"ListItem","position":2,"name":"Forward Deployed Engineers","item":"https://icalialabs.com/forward-deployed-engineers.html"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Nearshore Forward Deployed Engineers","serviceType":"Forward Deployed Engineering","description":"Senior engineers from Mexico and Latin America who work embedded in the client's team, in US time zones, and own outcomes in production, not just assigned tickets.","url":"https://icalialabs.com/forward-deployed-engineers.html","areaServed":["US","CA","MX"],"provider":{"@type":"Organization","name":"Icalia Labs","url":"https://icalialabs.com","foundingDate":"2012"}}</script>
+</head>
+<body class="font-body text-icalia-dark antialiased bg-icalia-warm">
+
+<nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50" aria-label="Main">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-1">
+        <img src="assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
+      </a>
+      <div class="hidden lg:flex items-center gap-9 text-sm font-medium text-icalia-navy/70">
+
+        <div class="nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Services
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[38rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2 grid grid-cols-5 gap-2">
+              <a href="/agentic-engineering.html" class="col-span-2 block bg-icalia-dark text-white rounded-xl p-5 hover:bg-icalia-navy transition-colors">
+                <div class="text-[10px] font-bold text-icalia-red tracking-widest uppercase">Lead service</div>
+                <div class="mt-3 font-display text-2xl leading-tight">Agentic Engineering</div>
+                <div class="mt-2 text-xs text-white/60 leading-relaxed">Agents implement. Senior engineers own the spec, the review, and the release.</div>
+                <div class="mt-4 text-xs font-semibold text-white/80">Explore &rarr;</div>
+              </a>
+              <div class="col-span-3">
+                <a href="/forward-deployed-engineers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Forward Deployed Engineers</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Senior engineers who own outcomes in production.</div>
+                </a>
+                <a href="/services.html#talent-augmentation" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Talent Augmentation</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Embedded, managed nearshore engineers.</div>
+                </a>
+                <a href="/services.html#placements" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Placements &amp; BOT</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Teams you own, after you see them deliver.</div>
+                </a>
+                <a href="/how-we-vet.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">How We Vet</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Five gates, ID-verified, under 0.4% accepted.</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industries-dropdown nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Industries
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
+              <a href="/industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Fintech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Flow of funds, cards, direct-to-bank, ledgers.</div>
+              </a>
+              <a href="/industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Healthtech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, clinical and claims data, agentic guardrails.</div>
+              </a>
+              <a href="/industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Carrier integrations and systems built for uptime.</div>
+              </a>
+              <a href="/industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="/case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
+
+        <div class="nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Company
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute right-0 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[34rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2 grid grid-cols-5 gap-2">
+              <a href="/manifesto.html" class="col-span-2 block bg-icalia-warm-2 border border-icalia-sand/60 rounded-xl p-5 hover:border-icalia-red/40 transition-colors">
+                <div class="text-[10px] font-bold text-icalia-red tracking-widest uppercase">Manifesto</div>
+                <div class="mt-3 font-display text-xl leading-tight text-icalia-dark italic">There is a gap between idea and impact.</div>
+                <div class="mt-4 text-xs font-semibold text-icalia-dark">Read the ten principles &rarr;</div>
+              </a>
+              <div class="col-span-3">
+                <a href="/about.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">About</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Builders since 2012. Austin and Monterrey.</div>
+                </a>
+                <a href="/careers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Careers</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Join the engineers who multiply.</div>
+                </a>
+                <a href="/developers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Open Source</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">MCP servers, SDKs, and agent skills we maintain.</div>
+                </a>
+                <a href="/contact.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Contact</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">sales@icalialabs.com and office details.</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <a href="/blog/" class="hover:text-icalia-dark transition-colors">Blog</a>
+
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
+      </div>
+      <button id="mobile-menu-btn" class="lg:hidden p-2" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-icalia-sand/50 bg-icalia-warm max-h-[calc(100vh-4.5rem)] overflow-y-auto">
+      <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
+        <a href="/">Home</a>
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Services</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="/agentic-engineering.html" class="block py-2 font-semibold text-icalia-dark">Agentic Engineering</a>
+            <a href="/forward-deployed-engineers.html" class="block py-2">Forward Deployed Engineers</a>
+            <a href="/services.html#talent-augmentation" class="block py-2">Talent Augmentation</a>
+            <a href="/services.html#placements" class="block py-2">Placements &amp; BOT</a>
+            <a href="/how-we-vet.html" class="block py-2">How We Vet</a>
+          </div>
+        </details>
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Industries</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div id="mobile-industries" class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="/industries/fintech.html" class="block py-2">Fintech</a>
+            <a href="/industries/healthtech.html" class="block py-2">Healthtech</a>
+            <a href="/industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+            <a href="/industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
+          </div>
+        </details>
+        <a href="/case-studies.html">Work</a>
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Company</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="/manifesto.html" class="block py-2 font-semibold text-icalia-dark">Manifesto</a>
+            <a href="/about.html" class="block py-2">About</a>
+            <a href="/careers.html" class="block py-2">Careers</a>
+            <a href="/developers.html" class="block py-2">Open Source</a>
+            <a href="/contact.html" class="block py-2">Contact</a>
+          </div>
+        </details>
+
+        <a href="/blog/">Blog</a>
+
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+
+<main>
+  <!-- Hero -->
+  <section class="pt-36 pb-16 md:pt-48 md:pb-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto reveal">
+      <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">Forward Deployed Engineers</p>
+      <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight max-w-5xl">
+        Senior engineers,
+        <span class="block italic text-icalia-red">forward deployed into your team.</span>
+      </h1>
+      <p class="mt-8 text-lg md:text-xl text-icalia-navy/60 leading-relaxed max-w-3xl">
+        A nearshore forward deployed engineer (FDE) is a senior engineer from a nearby, time-zone-aligned country who works embedded in your team and owns outcomes in production, not just assigned tickets. Ours work from Mexico and Latin America, on US hours, and they built products before AI &mdash; now they build them with AI.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4">
+        <a href="/contact.html#book" class="bg-icalia-red text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-icalia-red-dark transition-all hover:shadow-lg hover:shadow-icalia-red/20 text-center">Book a Discovery Call</a>
+        <a href="/how-we-vet.html" class="text-icalia-dark px-8 py-4 text-sm font-semibold hover:text-icalia-red transition-colors text-center">How we vet &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Tickets vs outcomes -->
+  <section class="py-20 md:py-28 px-6 lg:px-10 bg-icalia-warm-2 border-y border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mb-12 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">What an FDE Does</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">Not more hands on the backlog. <span class="italic">An owner for the outcome.</span></h2>
+      </div>
+      <div class="overflow-x-auto reveal">
+        <table class="w-full text-left text-sm bg-white border border-icalia-sand/60 rounded-2xl overflow-hidden">
+          <thead>
+            <tr class="border-b border-icalia-sand/60">
+              <th scope="col" class="p-5 font-semibold text-icalia-navy/50 w-1/4"></th>
+              <th scope="col" class="p-5 font-semibold text-icalia-navy/50">A contractor on your backlog</th>
+              <th scope="col" class="p-5 font-semibold text-icalia-dark">A forward deployed engineer</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-icalia-sand/60">
+            <tr><th scope="row" class="p-5 font-semibold text-icalia-dark">Unit of work</th><td class="p-5 text-icalia-navy/60">Assigned tickets</td><td class="p-5 text-icalia-dark">What reaches production</td></tr>
+            <tr><th scope="row" class="p-5 font-semibold text-icalia-dark">Context</th><td class="p-5 text-icalia-navy/60">The codebase</td><td class="p-5 text-icalia-dark">The codebase, the users, the business, and its constraints</td></tr>
+            <tr><th scope="row" class="p-5 font-semibold text-icalia-dark">AI</th><td class="p-5 text-icalia-navy/60">A copilot in the editor</td><td class="p-5 text-icalia-dark">Agents inside a specified, reviewed workflow</td></tr>
+            <tr><th scope="row" class="p-5 font-semibold text-icalia-dark">Time zone</th><td class="p-5 text-icalia-navy/60">Varies</td><td class="p-5 text-icalia-dark">Your working day</td></tr>
+            <tr><th scope="row" class="p-5 font-semibold text-icalia-dark">When it ends</th><td class="p-5 text-icalia-navy/60">The knowledge leaves</td><td class="p-5 text-icalia-dark">A planned handover; 95% retention over 5+ years means it rarely ends</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- The bar -->
+  <section class="py-24 md:py-32 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-5 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">The Bar</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">Built before AI. <span class="italic">Building with it now.</span></h2>
+      </div>
+      <div class="md:col-span-7 space-y-5 text-icalia-navy/60 leading-relaxed reveal reveal-delay-1">
+        <p>Our forward deployed engineers are subject matter experts: people who have spent years crafting production software, and who have built with agents in production in the last 12 months. Senior means 6+ years of hands-on experience, and AI-native ability is tested, not assumed.</p>
+        <p>Fewer than 0.4% of applicants are accepted. Every one is ID-verified before a client interview, and you still run the final interviews.</p>
+        <p><a href="/how-we-vet.html" class="text-icalia-dark font-semibold underline underline-offset-4 decoration-icalia-red/40 hover:decoration-icalia-red">The five gates before a candidate reaches you &rarr;</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why now -->
+  <section class="py-24 md:py-32 px-6 lg:px-10 bg-icalia-dark text-white">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-5 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">Why Now</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">Industries that lost the talent war <span class="italic">can now build software.</span></h2>
+      </div>
+      <div class="md:col-span-7 space-y-5 text-white/60 leading-relaxed reveal reveal-delay-1">
+        <p>Agents have made building cheaper, so more industries that never touched software are going to try. A carrier can run its own TMS and own its data. A clinic network can own its integrations. More builders are going to be required, and the scarce part is the senior engineer who knows what to build and how to finish it.</p>
+        <p>When one engineer isn&rsquo;t enough, a forward deployed team pairs vertical consulting and engineering talent to turn AI and technology initiatives into real operating capabilities.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Where FDEs land -->
+  <section class="py-24 md:py-32 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mb-12 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">Where FDEs Land</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">Domains where the stakes are real.</h2>
+      </div>
+      <div class="grid md:grid-cols-3 gap-4">
+        <a href="/industries/logistics.html" class="group block bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-8 hover:border-icalia-red/40 transition-colors reveal">
+          <h3 class="font-display text-2xl mb-3 group-hover:text-icalia-red transition-colors">Logistics</h3>
+          <p class="text-sm text-icalia-navy/60 leading-relaxed">Carrier and partner integrations that can&rsquo;t wait for a hiring cycle, built by engineers who already work with an AI-oriented stack.</p>
+        </a>
+        <a href="/industries/fintech.html" class="group block bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-8 hover:border-icalia-red/40 transition-colors reveal reveal-delay-1">
+          <h3 class="font-display text-2xl mb-3 group-hover:text-icalia-red transition-colors">Fintech</h3>
+          <p class="text-sm text-icalia-navy/60 leading-relaxed">Engineers who have worked with banks directly, integrated cards, and know how flow of funds works.</p>
+        </a>
+        <a href="/industries/healthtech.html" class="group block bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-8 hover:border-icalia-red/40 transition-colors reveal reveal-delay-2">
+          <h3 class="font-display text-2xl mb-3 group-hover:text-icalia-red transition-colors">Healthtech</h3>
+          <p class="text-sm text-icalia-navy/60 leading-relaxed">HIPAA-trained engineers who treat patient data as the most valuable thing the company has.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="py-20 md:py-28 px-6 lg:px-10 border-t border-icalia-sand/50" aria-labelledby="faq">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">FAQ</p>
+      <h2 id="faq" class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">Frequently asked questions</h2>
+      <div class="mt-10 space-y-4">
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">What is a nearshore forward deployed engineer?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">A nearshore forward deployed engineer (FDE) is a senior engineer from a nearby, time-zone-aligned country who works embedded in the client&#39;s team and owns outcomes in production, not just assigned tickets.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">How is a forward deployed engineer different from staff augmentation?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Staff augmentation adds capacity to a backlog. A forward deployed engineer is accountable for what reaches production: they learn the business and its constraints, shape the work with your leads, and build with AI agents inside a reviewed workflow. Our Talent Augmentation contracts are how FDEs usually join a team.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">Can a forward deployed engineer be fractional?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Yes. Senior experts can join for 15 to 20 hours a week as part of an Agentic Engineering engagement, or full time when the work needs a dedicated owner.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">What time zone do your engineers work in?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">US hours. Our engineers are in Mexico and Latin America, and Monterrey runs on Central Standard Time year-round, so standups, reviews and incidents happen inside your working day.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">How fast can a forward deployed engineer start?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">We present matched candidate profiles within days. You run the final interviews, and the engineer joins your workflows and tools from day one.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">Who manages a forward deployed engineer day to day?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">You direct the work alongside your leads. We handle employment, growth plans, performance reviews and continuity behind them, so the knowledge stays with your team.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a nearshore forward deployed engineer?","acceptedAnswer":{"@type":"Answer","text":"A nearshore forward deployed engineer (FDE) is a senior engineer from a nearby, time-zone-aligned country who works embedded in the client's team and owns outcomes in production, not just assigned tickets."}},{"@type":"Question","name":"How is a forward deployed engineer different from staff augmentation?","acceptedAnswer":{"@type":"Answer","text":"Staff augmentation adds capacity to a backlog. A forward deployed engineer is accountable for what reaches production: they learn the business and its constraints, shape the work with your leads, and build with AI agents inside a reviewed workflow. Our Talent Augmentation contracts are how FDEs usually join a team."}},{"@type":"Question","name":"Can a forward deployed engineer be fractional?","acceptedAnswer":{"@type":"Answer","text":"Yes. Senior experts can join for 15 to 20 hours a week as part of an Agentic Engineering engagement, or full time when the work needs a dedicated owner."}},{"@type":"Question","name":"What time zone do your engineers work in?","acceptedAnswer":{"@type":"Answer","text":"US hours. Our engineers are in Mexico and Latin America, and Monterrey runs on Central Standard Time year-round, so standups, reviews and incidents happen inside your working day."}},{"@type":"Question","name":"How fast can a forward deployed engineer start?","acceptedAnswer":{"@type":"Answer","text":"We present matched candidate profiles within days. You run the final interviews, and the engineer joins your workflows and tools from day one."}},{"@type":"Question","name":"Who manages a forward deployed engineer day to day?","acceptedAnswer":{"@type":"Answer","text":"You direct the work alongside your leads. We handle employment, growth plans, performance reviews and continuity behind them, so the knowledge stays with your team."}}]}</script>
+
+
+  <section class="py-28 md:py-36 px-6 lg:px-10 border-t border-icalia-sand/50 reveal">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="font-display text-5xl md:text-6xl leading-[0.95] tracking-tight">Who should be<br><span class="italic text-icalia-red">forward deployed?</span></h2>
+      <p class="mt-6 text-icalia-navy/50 text-lg max-w-lg mx-auto">A 30-minute call. If we&rsquo;re not the right partner, you&rsquo;ll hear that on the first one.</p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact.html#book" class="bg-icalia-red text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-icalia-red-dark transition-all hover:shadow-lg hover:shadow-icalia-red/20">Book a Discovery Call</a>
+        <a href="mailto:sales@icalialabs.com" class="text-icalia-dark px-10 py-4 text-sm font-semibold hover:text-icalia-red transition-colors">Or email us &rarr;</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <!-- Footer -->
+  <footer class="bg-icalia-dark py-16 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <img src="assets/logo-white.svg" alt="Icalia Labs" class="h-7 w-auto">
+          <p class="mt-4 text-sm text-white/30 leading-relaxed max-w-xs">Nearshore engineers who multiply: AI-driven, human-accountable. Monterrey, MX + Austin, TX. Since 2012.</p>
+          <a href="https://clutch.co/mx/developers/artificial-intelligence" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-icalia-red/40 rounded-xl px-4 py-3 transition-all group max-w-xs">
+            <svg class="shrink-0 w-10 h-12" viewBox="0 0 80 96" xmlns="http://www.w3.org/2000/svg" aria-label="Clutch Top AI Companies Mexico 2024 badge">
+              <polygon points="40,2 74,22 74,74 40,94 6,74 6,22" fill="#FAF8F6" stroke="#1C2333" stroke-width="2"/>
+              <text x="40" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">TOP</text>
+              <text x="40" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">AI COMPANIES</text>
+              <rect x="12" y="40" width="56" height="16" fill="#1C2333"/>
+              <text x="40" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="700" fill="#FAF8F6" font-style="italic">Clutch</text>
+              <text x="40" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" font-weight="600" fill="#1C2333">MEXICO</text>
+              <text x="40" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#1C2333">2024</text>
+            </svg>
+            <div>
+              <p class="text-xs font-semibold text-white leading-tight">Leading <span class="text-icalia-red">AI</span> in LatAm</p>
+              <p class="text-[10px] text-white/40 mt-0.5 group-hover:text-icalia-red transition-colors">Top AI Companies · Mexico 2024</p>
+            </div>
+          </a>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Navigate</h4>
+          <div class="flex flex-col gap-3">
+            <a href="/" class="text-sm text-white/40 hover:text-white transition-colors">Home</a>
+            <a href="about.html" class="text-sm text-white/40 hover:text-white transition-colors">About</a>
+            <a href="case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
+            <a href="manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
+
+            <a href="blog/" class="text-sm text-white/40 hover:text-white transition-colors">Blog</a>
+
+            <a href="careers.html" class="text-sm text-white/40 hover:text-white transition-colors">Careers</a>
+            <a href="developers.html" class="text-sm text-white/40 hover:text-white transition-colors">Developers</a>
+            <a href="contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Services</h4>
+          <div class="flex flex-col gap-3">
+            <a href="agentic-engineering.html" class="text-sm text-white/40 hover:text-white transition-colors">Agentic Engineering</a>
+            <a href="forward-deployed-engineers.html" class="text-sm text-white/40 hover:text-white transition-colors">Forward Deployed Engineers</a>
+            <a href="services.html" class="text-sm text-white/40 hover:text-white transition-colors">Talent Augmentation</a>
+            <a href="how-we-vet.html" class="text-sm text-white/40 hover:text-white transition-colors">How We Vet</a>
+          </div>
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mt-10 mb-5">Industries</h4>
+          <div class="flex flex-col gap-3">
+            <a href="industries/fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Fintech</a>
+            <a href="industries/healthtech.html" class="text-sm text-white/40 hover:text-white transition-colors">Healthtech</a>
+            <a href="industries/retail.html" class="text-sm text-white/40 hover:text-white transition-colors">eCommerce</a>
+            <a href="industries/logistics.html" class="text-sm text-white/40 hover:text-white transition-colors">Logistics</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Offices</h4>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-sm text-white/50 font-medium">Austin, Texas</p>
+              <p class="text-sm text-white/30">801 Barton Springs Rd, 78704</p>
+            </div>
+            <div>
+              <p class="text-sm text-white/50 font-medium">Monterrey, Mexico</p>
+              <p class="text-sm text-white/30">Avenida Eugenio Garza Sada #3820, Col. Mas Palomas</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Get in Touch</h4>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:sales@icalialabs.com" class="text-sm text-white/40 hover:text-white transition-colors">sales@icalialabs.com</a>
+            <a href="tel:+15124814113" class="text-sm text-white/40 hover:text-white transition-colors">+1 512 481 4113</a>
+          </div>
+          <div class="flex gap-4 mt-6">
+            <a href="https://linkedin.com/company/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://clutch.co/profile/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="Clutch">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
+            </a>
+            <a href="https://github.com/IcaliaLabs/" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <p class="text-xs text-white/20">&copy; 2026 Icalia, Inc. All rights reserved.</p>
+        <div class="flex gap-6 text-xs text-white/30">
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

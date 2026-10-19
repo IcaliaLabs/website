@@ -1,13 +1,13 @@
 # Careers — Icalia Labs
 
-> Join Icalia Labs. We place senior engineers into world-class product teams from Monterrey and across LatAm. See our open roles.
+> Join Icalia Labs. We embed senior engineers in product teams that respect senior engineers, from Monterrey and across LatAm. See our open roles.
 
 Careers at Icalia
 
 # Build a career  
 worth keeping.
 
-We embed senior engineers into world-class product teams — US-quality work from Monterrey and across LatAm. Strong craft, real ownership, and peers worth learning from.
+We embed senior engineers in product teams that respect senior engineers — US-quality work from Monterrey and across LatAm. Strong craft, real ownership, and peers worth learning from.
 
 ### Craft & ownership
 
@@ -21,9 +21,9 @@ Same time zone, clear writing, real autonomy.
 
 Reviews that teach and a bench that lifts you.
 
-### AI-augmented
+### Agentic
 
-Modern tooling to multiply, human-accountable.
+Agents carry the execution. You own the judgment.
 
 ## Open roles
 

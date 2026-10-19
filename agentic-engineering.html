@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agentic Engineering for Production Teams | Icalia Labs</title>
+  <meta name="description" content="Agentic engineering with senior nearshore engineers: agents implement inside a governed workflow, and seniors own the spec, review and release of every change.">
+
+
+  <link rel="canonical" href="https://icalialabs.com/agentic-engineering.html">
+
+  <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+
+  <link rel="alternate" type="text/markdown" href="https://icalialabs.com/agentic-engineering.md">
+
+  <link rel="alternate" type="application/atom+xml" title="Icalia Labs Blog" href="https://icalialabs.com/blog/feed.xml">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSFD00QMYY"></script>
+  <script>
+    // Only the live site reports; local and preview builds stay out of GA.
+    if (location.hostname !== 'icalialabs.com') { window['ga-disable-G-MSFD00QMYY'] = true; }
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MSFD00QMYY', {
+      'page_path': '/agentic-engineering.html',
+      'page_type': location.pathname.includes('/industries/') ? 'industry_page' : 'root_page',
+      'anonymize_ip': true,
+      'cookie_expires': 63072000
+    });
+  </script>
+  <script src="/js/ga-events.js" defer></script>
+
+  <meta property="og:type" content="website">
+
+  <meta property="og:url" content="https://icalialabs.com/agentic-engineering.html">
+
+  <meta property="og:title" content="Agentic Engineering for Production Teams | Icalia Labs">
+  <meta property="og:description" content="Agentic engineering with senior nearshore engineers: agents implement inside a governed workflow, and seniors own the spec, review and release of every change.">
+  <meta property="og:image" content="https://icalialabs.com/assets/blog/ai-augmented-engineering-teams-loop.webp">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Agentic Engineering for Production Teams | Icalia Labs">
+  <meta name="twitter:description" content="Agentic engineering with senior nearshore engineers: agents implement inside a governed workflow, and seniors own the spec, review and release of every change.">
+  <meta name="twitter:image" content="https://icalialabs.com/assets/blog/ai-augmented-engineering-teams-loop.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'icalia-red': '#E8453C',
+            'icalia-red-dark': '#C53B33',
+            'icalia-dark': '#1A1A22',
+            'icalia-navy': '#2D2F40',
+            'icalia-warm': '#FAF8F6',
+            'icalia-warm-2': '#F3F0EC',
+            'icalia-blush': '#FDECED',
+            'icalia-sand': '#E8E4DF',
+          },
+          fontFamily: {
+            'display': ['"Instrument Serif"', 'Georgia', 'serif'],
+            'body': ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    @media (min-width: 768px) {
+      .nav-dropdown:hover .industries-panel, .nav-dropdown:focus-within .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    }
+  </style>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://icalialabs.com/"},{"@type":"ListItem","position":2,"name":"Agentic Engineering","item":"https://icalialabs.com/agentic-engineering.html"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"Service","name":"Agentic Engineering","serviceType":"Agentic Engineering","description":"Senior engineers who redesign how a team builds with AI agents: specifications before prompts, guardrails in CI/CD, and senior review on every change, from first version to production.","url":"https://icalialabs.com/agentic-engineering.html","areaServed":["US","CA","MX"],"provider":{"@type":"Organization","name":"Icalia Labs","url":"https://icalialabs.com","foundingDate":"2012"}}</script>
+</head>
+<body class="font-body text-icalia-dark antialiased bg-icalia-warm">
+
+<nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50" aria-label="Main">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+      <a href="/" class="flex items-center gap-1">
+        <img src="assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
+      </a>
+      <div class="hidden lg:flex items-center gap-9 text-sm font-medium text-icalia-navy/70">
+
+        <div class="nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Services
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[38rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2 grid grid-cols-5 gap-2">
+              <a href="/agentic-engineering.html" class="col-span-2 block bg-icalia-dark text-white rounded-xl p-5 hover:bg-icalia-navy transition-colors">
+                <div class="text-[10px] font-bold text-icalia-red tracking-widest uppercase">Lead service</div>
+                <div class="mt-3 font-display text-2xl leading-tight">Agentic Engineering</div>
+                <div class="mt-2 text-xs text-white/60 leading-relaxed">Agents implement. Senior engineers own the spec, the review, and the release.</div>
+                <div class="mt-4 text-xs font-semibold text-white/80">Explore &rarr;</div>
+              </a>
+              <div class="col-span-3">
+                <a href="/forward-deployed-engineers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Forward Deployed Engineers</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Senior engineers who own outcomes in production.</div>
+                </a>
+                <a href="/services.html#talent-augmentation" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Talent Augmentation</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Embedded, managed nearshore engineers.</div>
+                </a>
+                <a href="/services.html#placements" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Placements &amp; BOT</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Teams you own, after you see them deliver.</div>
+                </a>
+                <a href="/how-we-vet.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">How We Vet</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Five gates, ID-verified, under 0.4% accepted.</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industries-dropdown nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Industries
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
+              <a href="/industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Fintech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Flow of funds, cards, direct-to-bank, ledgers.</div>
+              </a>
+              <a href="/industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Healthtech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, clinical and claims data, agentic guardrails.</div>
+              </a>
+              <a href="/industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Carrier integrations and systems built for uptime.</div>
+              </a>
+              <a href="/industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="/case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
+
+        <div class="nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Company
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute right-0 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[34rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2 grid grid-cols-5 gap-2">
+              <a href="/manifesto.html" class="col-span-2 block bg-icalia-warm-2 border border-icalia-sand/60 rounded-xl p-5 hover:border-icalia-red/40 transition-colors">
+                <div class="text-[10px] font-bold text-icalia-red tracking-widest uppercase">Manifesto</div>
+                <div class="mt-3 font-display text-xl leading-tight text-icalia-dark italic">There is a gap between idea and impact.</div>
+                <div class="mt-4 text-xs font-semibold text-icalia-dark">Read the ten principles &rarr;</div>
+              </a>
+              <div class="col-span-3">
+                <a href="/about.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">About</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Builders since 2012. Austin and Monterrey.</div>
+                </a>
+                <a href="/careers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Careers</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Join the engineers who multiply.</div>
+                </a>
+                <a href="/developers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Open Source</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">MCP servers, SDKs, and agent skills we maintain.</div>
+                </a>
+                <a href="/contact.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Contact</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">sales@icalialabs.com and office details.</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <a href="/blog/" class="hover:text-icalia-dark transition-colors">Blog</a>
+
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
+      </div>
+      <button id="mobile-menu-btn" class="lg:hidden p-2" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-icalia-sand/50 bg-icalia-warm max-h-[calc(100vh-4.5rem)] overflow-y-auto">
+      <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
+        <a href="/">Home</a>
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Services</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="/agentic-engineering.html" class="block py-2 font-semibold text-icalia-dark">Agentic Engineering</a>
+            <a href="/forward-deployed-engineers.html" class="block py-2">Forward Deployed Engineers</a>
+            <a href="/services.html#talent-augmentation" class="block py-2">Talent Augmentation</a>
+            <a href="/services.html#placements" class="block py-2">Placements &amp; BOT</a>
+            <a href="/how-we-vet.html" class="block py-2">How We Vet</a>
+          </div>
+        </details>
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Industries</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div id="mobile-industries" class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="/industries/fintech.html" class="block py-2">Fintech</a>
+            <a href="/industries/healthtech.html" class="block py-2">Healthtech</a>
+            <a href="/industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+            <a href="/industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
+          </div>
+        </details>
+        <a href="/case-studies.html">Work</a>
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Company</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="/manifesto.html" class="block py-2 font-semibold text-icalia-dark">Manifesto</a>
+            <a href="/about.html" class="block py-2">About</a>
+            <a href="/careers.html" class="block py-2">Careers</a>
+            <a href="/developers.html" class="block py-2">Open Source</a>
+            <a href="/contact.html" class="block py-2">Contact</a>
+          </div>
+        </details>
+
+        <a href="/blog/">Blog</a>
+
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+
+<main>
+  <!-- Hero -->
+  <section class="pt-36 pb-16 md:pt-48 md:pb-24 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-10 items-end">
+      <div class="md:col-span-8 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">Agentic Engineering</p>
+        <h1 class="font-display text-5xl md:text-7xl lg:text-8xl leading-[0.95] tracking-tight">
+          Agentic engineering.
+          <span class="block mt-4 text-4xl md:text-5xl lg:text-6xl italic text-icalia-red">Fast is easy. Finished is what matters.</span>
+        </h1>
+        <p class="mt-8 text-lg md:text-xl text-icalia-navy/60 leading-relaxed max-w-2xl">
+          Agentic engineering is a way of building software in which AI agents do a large share of the implementation inside a defined workflow, while senior engineers own the definition, review, and release of every change. It&rsquo;s how we build, and it&rsquo;s what we help your team adopt.
+        </p>
+        <div class="mt-10 flex flex-col sm:flex-row gap-4">
+          <a href="/contact.html#book" class="bg-icalia-red text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-icalia-red-dark transition-all hover:shadow-lg hover:shadow-icalia-red/20 text-center">Book a Discovery Call</a>
+          <a href="#loop" class="text-icalia-dark px-8 py-4 text-sm font-semibold hover:text-icalia-red transition-colors text-center">See the loop &darr;</a>
+        </div>
+      </div>
+      <div class="md:col-span-4 reveal reveal-delay-1">
+        <div class="bg-icalia-dark text-white rounded-2xl p-8">
+          <p class="font-display text-2xl leading-snug italic">&ldquo;The agent brings the speed. The people and the system around it bring the safety.&rdquo;</p>
+          <p class="mt-4 text-xs text-white/40 uppercase tracking-widest">How we work</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The ladder -->
+  <section class="py-20 md:py-28 px-6 lg:px-10 bg-icalia-warm-2 border-y border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mb-12 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">The AI Maturity Ladder</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">Most teams are on the first or second rung.</h2>
+        <p class="mt-6 text-icalia-navy/60 leading-relaxed">Every engineering partner says it uses AI. What matters is where the AI sits in the way the team ships.</p>
+      </div>
+      <ol class="grid md:grid-cols-3 gap-4">
+        <li class="bg-white border border-icalia-sand/60 rounded-2xl p-8 reveal">
+          <span class="text-xs font-bold text-icalia-navy/40 tracking-widest uppercase">Rung 1</span>
+          <h3 class="font-display text-2xl mt-4 mb-3">AI-assisted</h3>
+          <p class="text-sm text-icalia-navy/60 leading-relaxed">Individuals use copilots. Typing gets faster; delivery doesn&rsquo;t change much.</p>
+        </li>
+        <li class="bg-white border border-icalia-sand/60 rounded-2xl p-8 reveal reveal-delay-1">
+          <span class="text-xs font-bold text-icalia-navy/40 tracking-widest uppercase">Rung 2</span>
+          <h3 class="font-display text-2xl mt-4 mb-3">AI-augmented</h3>
+          <p class="text-sm text-icalia-navy/60 leading-relaxed">The team&rsquo;s workflow is redesigned around AI. Faster tasks, but quality depends on each reviewer.</p>
+        </li>
+        <li class="bg-icalia-dark text-white rounded-2xl p-8 reveal reveal-delay-2 relative overflow-hidden">
+          <div class="absolute top-0 left-0 w-16 h-1 bg-icalia-red"></div>
+          <span class="text-xs font-bold text-icalia-red tracking-widest uppercase">Rung 3 &middot; Where we work</span>
+          <h3 class="font-display text-2xl mt-4 mb-3">Agentic engineering</h3>
+          <p class="text-sm text-white/60 leading-relaxed">Agents implement inside governed loops. Senior engineers own the specification, the review, and the release.</p>
+        </li>
+      </ol>
+      <p class="mt-10 reveal"><a href="/blog/ai-augmented-engineering-teams.html" class="text-sm font-semibold text-icalia-dark hover:text-icalia-red transition-colors">Five questions to ask a partner that says it uses AI &rarr;</a></p>
+    </div>
+  </section>
+
+  <!-- The loop -->
+  <section id="loop" class="py-24 md:py-32 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12 items-start">
+        <div class="md:col-span-4 reveal">
+          <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">The Loop</p>
+          <h2 class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">Agents carry the implementation. <span class="italic">Seniors own the rest.</span></h2>
+        </div>
+        <div class="md:col-span-8 reveal reveal-delay-1">
+          <img src="/assets/blog/ai-augmented-engineering-teams-loop.webp" alt="Diagram of the agentic engineering loop: Specify, Implement, Review, Release, Learn. Senior engineers own specify, review and learn; agents implement; rejected work goes back to the agent; example cadence of 10 to hundreds of changes a week on a live system." class="w-full rounded-2xl border border-icalia-sand/60" loading="lazy" decoding="async" width="1800" height="1012">
+          <ol class="mt-10 grid sm:grid-cols-2 gap-x-10 gap-y-6 text-sm">
+            <li><span class="font-semibold text-icalia-dark">1. Specify.</span> <span class="text-icalia-navy/60">A senior engineer defines scope, constraints, and what &ldquo;done&rdquo; means, before any prompt.</span></li>
+            <li><span class="font-semibold text-icalia-dark">2. Implement.</span> <span class="text-icalia-navy/60">Agents write the code and the tests inside that definition.</span></li>
+            <li><span class="font-semibold text-icalia-dark">3. Review.</span> <span class="text-icalia-navy/60">A senior engineer reviews, rejects, or rewrites. Rejected work goes back to the agent.</span></li>
+            <li><span class="font-semibold text-icalia-dark">4. Release.</span> <span class="text-icalia-navy/60">CI/CD ships small, frequent changes that are easy to test and roll back.</span></li>
+            <li><span class="font-semibold text-icalia-dark">5. Learn.</span> <span class="text-icalia-navy/60">Production feedback sharpens the next specification.</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Beyond the prototype -->
+  <section class="py-24 md:py-32 px-6 lg:px-10 bg-icalia-dark text-white">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12">
+      <div class="md:col-span-5 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">Beyond the Prototype</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">&ldquo;Looks ready&rdquo; <span class="italic">is not ready.</span></h2>
+      </div>
+      <div class="md:col-span-7 space-y-5 text-white/60 leading-relaxed reveal reveal-delay-1">
+        <p>The cost of building a prototype has gone toward zero. Payments, real services, compliance, and maintenance haven&rsquo;t. That&rsquo;s where agentic work either becomes production software or becomes a demo nobody can maintain.</p>
+        <p>A feature someone built over a weekend with an agent still has to fit the architecture, pass the tests, and satisfy the compliance rules. In production systems where those stakes are real, finishing is the job.</p>
+        <p class="font-display text-2xl md:text-3xl text-white italic leading-snug pt-4">When code costs almost nothing to write, someone senior has to decide what should not be written at all.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Fix the system -->
+  <section class="py-24 md:py-32 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="max-w-2xl mb-14 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">Fix the System, Not the Mistake</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">If the tests are thin, a faster team just ships more risk.</h2>
+        <p class="mt-6 text-icalia-navy/60 leading-relaxed">So the first work is usually around the code, not in it: specifications agents can follow, tests that run before any review, review loops where one serious finding stops a release, and pipelines that make small changes cheap.</p>
+      </div>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 reveal">
+          <div class="font-display text-4xl text-icalia-dark">&lt;1 wk</div>
+          <p class="mt-2 text-sm text-icalia-navy/55 leading-relaxed">From kickoff to a first version in production.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 reveal reveal-delay-1">
+          <div class="font-display text-4xl text-icalia-dark">10&rarr;100s</div>
+          <p class="mt-2 text-sm text-icalia-navy/55 leading-relaxed">From 10 to hundreds of changes per week on live systems, each one reviewed.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 reveal reveal-delay-2">
+          <div class="font-display text-4xl text-icalia-dark">23 / 25</div>
+          <p class="mt-2 text-sm text-icalia-navy/55 leading-relaxed">Seeded defects caught by our open-source review loop, with no correct change blocked (one Rails app). <a href="/blog/ai-code-review-agents-teaching-ai-to-finish.html" class="text-icalia-red font-semibold hover:underline">How it works</a></p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 reveal reveal-delay-3">
+          <div class="font-display text-4xl text-icalia-dark">12 mo</div>
+          <p class="mt-2 text-sm text-icalia-navy/55 leading-relaxed">Our senior engineers have been building with agents in production for at least the last year.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How engagements work -->
+  <section class="py-20 md:py-28 px-6 lg:px-10 bg-icalia-warm-2 border-y border-icalia-sand/50">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-12 gap-12 items-center">
+      <div class="md:col-span-6 reveal">
+        <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">How Engagements Work</p>
+        <h2 class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">A high-throughput intervention, <span class="italic">not a staffing plan.</span></h2>
+      </div>
+      <div class="md:col-span-6 space-y-5 text-icalia-navy/60 leading-relaxed reveal reveal-delay-1">
+        <p>Agentic Engineering usually starts fractional: senior experts working 15 to 20 hours a week alongside your leads, redesigning one workflow at a time. When you need more hands, <a href="/forward-deployed-engineers.html" class="text-icalia-dark font-semibold underline underline-offset-4 decoration-icalia-red/40 hover:decoration-icalia-red">forward deployed engineers</a> join full time through <a href="/services.html#talent-augmentation" class="text-icalia-dark font-semibold underline underline-offset-4 decoration-icalia-red/40 hover:decoration-icalia-red">Talent Augmentation</a>.</p>
+        <p>Engagements bill time and materials. Outcomes are how we frame the value of the work, not a pricing promise.</p>
+      </div>
+    </div>
+  </section>
+
+
+
+  <section class="py-20 md:py-28 px-6 lg:px-10 border-t border-icalia-sand/50" aria-labelledby="faq">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">FAQ</p>
+      <h2 id="faq" class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">Frequently asked questions</h2>
+      <div class="mt-10 space-y-4">
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">What is agentic engineering?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Agentic engineering is a way of building software in which AI agents do a large share of the implementation inside a defined workflow, while senior engineers own the definition, review and release of every change.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">What&#39;s the difference between AI-assisted, AI-augmented, and agentic engineering?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">They&#39;re three rungs of a ladder. AI-assisted means individual engineers use copilots. AI-augmented means the team&#39;s workflow is redesigned around AI. Agentic engineering means agents implement inside governed loops, and senior engineers own judgment: the specification, the review and the release.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">How does an engineering team adopt AI without losing quality?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Start with one real workflow, not a tool rollout. We write the specification before the prompt, wire agents into the work with tests and review guardrails in CI/CD, and measure time to production and change frequency against your current baseline. Then we widen it to the next workflow.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">How do you keep AI-written code maintainable?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">By building the system around the code for it. Agents implement inside a defined workflow, a senior engineer reviews every change before it ships, and the tests and conventions stay strong enough that the next change is easy too. If the pipeline is slow or the tests are thin, a faster team just ships more risk.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">Does agentic engineering replace our engineers?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">No. We work alongside your team. The specifications, guardrails and review habits we build stay with your engineers, and agents take on more of the execution while your people own more of the judgment.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">How do engagements work and how do you bill?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Agentic Engineering usually starts as a fractional, high-throughput engagement: senior experts working 15 to 20 hours a week alongside your leads. Engineers can also join full time through Talent Augmentation. Engagements bill time and materials.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is agentic engineering?","acceptedAnswer":{"@type":"Answer","text":"Agentic engineering is a way of building software in which AI agents do a large share of the implementation inside a defined workflow, while senior engineers own the definition, review and release of every change."}},{"@type":"Question","name":"What's the difference between AI-assisted, AI-augmented, and agentic engineering?","acceptedAnswer":{"@type":"Answer","text":"They're three rungs of a ladder. AI-assisted means individual engineers use copilots. AI-augmented means the team's workflow is redesigned around AI. Agentic engineering means agents implement inside governed loops, and senior engineers own judgment: the specification, the review and the release."}},{"@type":"Question","name":"How does an engineering team adopt AI without losing quality?","acceptedAnswer":{"@type":"Answer","text":"Start with one real workflow, not a tool rollout. We write the specification before the prompt, wire agents into the work with tests and review guardrails in CI/CD, and measure time to production and change frequency against your current baseline. Then we widen it to the next workflow."}},{"@type":"Question","name":"How do you keep AI-written code maintainable?","acceptedAnswer":{"@type":"Answer","text":"By building the system around the code for it. Agents implement inside a defined workflow, a senior engineer reviews every change before it ships, and the tests and conventions stay strong enough that the next change is easy too. If the pipeline is slow or the tests are thin, a faster team just ships more risk."}},{"@type":"Question","name":"Does agentic engineering replace our engineers?","acceptedAnswer":{"@type":"Answer","text":"No. We work alongside your team. The specifications, guardrails and review habits we build stay with your engineers, and agents take on more of the execution while your people own more of the judgment."}},{"@type":"Question","name":"How do engagements work and how do you bill?","acceptedAnswer":{"@type":"Answer","text":"Agentic Engineering usually starts as a fractional, high-throughput engagement: senior experts working 15 to 20 hours a week alongside your leads. Engineers can also join full time through Talent Augmentation. Engagements bill time and materials."}}]}</script>
+
+
+  <section class="py-28 md:py-36 px-6 lg:px-10 border-t border-icalia-sand/50 reveal">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="font-display text-5xl md:text-6xl leading-[0.95] tracking-tight">Ready to climb<br><span class="italic text-icalia-red">the ladder?</span></h2>
+      <p class="mt-6 text-icalia-navy/50 text-lg max-w-lg mx-auto">A 30-minute call. If we&rsquo;re not the right partner, you&rsquo;ll hear that on the first one.</p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact.html#book" class="bg-icalia-red text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-icalia-red-dark transition-all hover:shadow-lg hover:shadow-icalia-red/20">Book a Discovery Call</a>
+        <a href="mailto:sales@icalialabs.com" class="text-icalia-dark px-10 py-4 text-sm font-semibold hover:text-icalia-red transition-colors">Or email us &rarr;</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+    <!-- Footer -->
+  <footer class="bg-icalia-dark py-16 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <img src="assets/logo-white.svg" alt="Icalia Labs" class="h-7 w-auto">
+          <p class="mt-4 text-sm text-white/30 leading-relaxed max-w-xs">Nearshore engineers who multiply: AI-driven, human-accountable. Monterrey, MX + Austin, TX. Since 2012.</p>
+          <a href="https://clutch.co/mx/developers/artificial-intelligence" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-icalia-red/40 rounded-xl px-4 py-3 transition-all group max-w-xs">
+            <svg class="shrink-0 w-10 h-12" viewBox="0 0 80 96" xmlns="http://www.w3.org/2000/svg" aria-label="Clutch Top AI Companies Mexico 2024 badge">
+              <polygon points="40,2 74,22 74,74 40,94 6,74 6,22" fill="#FAF8F6" stroke="#1C2333" stroke-width="2"/>
+              <text x="40" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">TOP</text>
+              <text x="40" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">AI COMPANIES</text>
+              <rect x="12" y="40" width="56" height="16" fill="#1C2333"/>
+              <text x="40" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="700" fill="#FAF8F6" font-style="italic">Clutch</text>
+              <text x="40" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" font-weight="600" fill="#1C2333">MEXICO</text>
+              <text x="40" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#1C2333">2024</text>
+            </svg>
+            <div>
+              <p class="text-xs font-semibold text-white leading-tight">Leading <span class="text-icalia-red">AI</span> in LatAm</p>
+              <p class="text-[10px] text-white/40 mt-0.5 group-hover:text-icalia-red transition-colors">Top AI Companies · Mexico 2024</p>
+            </div>
+          </a>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Navigate</h4>
+          <div class="flex flex-col gap-3">
+            <a href="/" class="text-sm text-white/40 hover:text-white transition-colors">Home</a>
+            <a href="about.html" class="text-sm text-white/40 hover:text-white transition-colors">About</a>
+            <a href="case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
+            <a href="manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
+
+            <a href="blog/" class="text-sm text-white/40 hover:text-white transition-colors">Blog</a>
+
+            <a href="careers.html" class="text-sm text-white/40 hover:text-white transition-colors">Careers</a>
+            <a href="developers.html" class="text-sm text-white/40 hover:text-white transition-colors">Developers</a>
+            <a href="contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Services</h4>
+          <div class="flex flex-col gap-3">
+            <a href="agentic-engineering.html" class="text-sm text-white/40 hover:text-white transition-colors">Agentic Engineering</a>
+            <a href="forward-deployed-engineers.html" class="text-sm text-white/40 hover:text-white transition-colors">Forward Deployed Engineers</a>
+            <a href="services.html" class="text-sm text-white/40 hover:text-white transition-colors">Talent Augmentation</a>
+            <a href="how-we-vet.html" class="text-sm text-white/40 hover:text-white transition-colors">How We Vet</a>
+          </div>
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mt-10 mb-5">Industries</h4>
+          <div class="flex flex-col gap-3">
+            <a href="industries/fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Fintech</a>
+            <a href="industries/healthtech.html" class="text-sm text-white/40 hover:text-white transition-colors">Healthtech</a>
+            <a href="industries/retail.html" class="text-sm text-white/40 hover:text-white transition-colors">eCommerce</a>
+            <a href="industries/logistics.html" class="text-sm text-white/40 hover:text-white transition-colors">Logistics</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Offices</h4>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-sm text-white/50 font-medium">Austin, Texas</p>
+              <p class="text-sm text-white/30">801 Barton Springs Rd, 78704</p>
+            </div>
+            <div>
+              <p class="text-sm text-white/50 font-medium">Monterrey, Mexico</p>
+              <p class="text-sm text-white/30">Avenida Eugenio Garza Sada #3820, Col. Mas Palomas</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Get in Touch</h4>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:sales@icalialabs.com" class="text-sm text-white/40 hover:text-white transition-colors">sales@icalialabs.com</a>
+            <a href="tel:+15124814113" class="text-sm text-white/40 hover:text-white transition-colors">+1 512 481 4113</a>
+          </div>
+          <div class="flex gap-4 mt-6">
+            <a href="https://linkedin.com/company/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://clutch.co/profile/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="Clutch">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
+            </a>
+            <a href="https://github.com/IcaliaLabs/" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <p class="text-xs text-white/20">&copy; 2026 Icalia, Inc. All rights reserved.</p>
+        <div class="flex gap-6 text-xs text-white/30">
+          <a href="privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

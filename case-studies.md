@@ -1,15 +1,15 @@
-# Case Studies — Icalia Labs
+# Case Studies: Nearshore Teams That Stayed | Icalia Labs
 
-> See how Icalia Labs has helped companies in healthtech, fintech, and enterprise build great software products.
+> Long-tenured engineering teams that scaled through growth and acquisition: RTS, Point B, Apply Digital, Everlance, and EMR Bear.
 
 Selected Work
 
 # Teams we’ve built.  
 Outcomes they shipped.
 
-Each engagement below is a squad we embedded, scaled, or operated alongside a US client. Different industries, different stacks — same standard.
+Each engagement below is a squad we embedded, scaled, or operated alongside a US client. We take engineering teams from 0 to 1 and from 1 to 10, with 95% retention over 5+ years — and they stay even after an acquisition.
 
-Energy · Staff Augmentation 5+ years · 6 engineers + design
+Energy · Talent Augmentation 5+ years · 6 engineers + design
 
 ## RTS (acquired)
 
@@ -21,7 +21,7 @@ A six-person senior squad and design bench based in Monterrey — one flight fro
 
 3x ROE NPS 5/5 Ruby on Rails JavaScript Docker
 
-Professional Services · Staff Aug 5+ years · 8 engineers
+Professional Services · Talent Augmentation 5+ years · 8 engineers
 
 ## Point B
 
@@ -47,9 +47,9 @@ Consumer · Placements 5+ years · 8 engineers
 
 ## Everlance (acquired)
 
-A San Francisco-based consumer startup needed senior engineering capacity outside the world’s most competitive tech hub. We placed eight senior engineers across backend and native-mobile roles — diversifying the talent strategy and delivering same-quality hires at 60% cost savings. Every engineer stayed through the acquisition.
+A San Francisco-based consumer startup needed senior engineering capacity outside the world’s most competitive tech hub. We placed eight senior engineers across backend and native-mobile roles — diversifying the talent strategy with same-quality senior hires. Every engineer stayed through the acquisition.
 
-60% savings 100% retention thru acq. Ruby on Rails Native Mobile
+8 senior engineers 100% retention thru acq. Ruby on Rails Native Mobile
 
 Healthcare · Placements 4+ years · 4 specialized engineers
 

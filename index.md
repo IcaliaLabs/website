@@ -1,16 +1,14 @@
-# Icalia Labs — Nearshore Staff Augmentation
+# Nearshore Agentic Engineering Teams | Icalia Labs
 
-> Scale your engineering team with senior nearshore developers. Same timezone, product-minded engineers who stay. Trusted by Fortune 500 companies and startups since 2012.
+> Senior nearshore engineers who built software before AI and now build with it. Forward deployed into your team, in your time zone, accountable for production.
 
-Nearshore Staff Augmentation
+Agentic Engineering · Nearshore
 
-# Your next engineer  
-is already part  
-of your team.
+# Engineers who multiply. AI-driven, human-accountable.
 
-We embed senior engineers into your team — people who understand your stack, your pace, and your industry before writing a single line of code. Same timezone. Zero ramp-up theater.
+We deploy senior engineers who built products before AI, and now build them with AI. They embed in your team, work your hours, and own what reaches production — not just the tickets they’re assigned.
 
-[Book a Discovery Call](contact.html#book) [See How It Works ↓](#how)
+[Book a Discovery Call](contact.html#book) [How we build with agents →](agentic-engineering.html)
 
 4.6 /5 on Clutch
 
@@ -19,6 +17,34 @@ We embed senior engineers into your team — people who understand your stack, y
 Based on client surveys across 210+ platforms delivered since 2012
 
 Trusted by
+
+The AI Maturity Ladder
+
+## Every engineering partner says it uses AI.  
+Here’s how to check.
+
+1.  Rung 1
+    
+    ### AI-assisted
+    
+    Individual engineers use copilots and chat in the editor. Typing gets faster. How the team ships doesn’t change.
+    
+2.  Rung 2
+    
+    ### AI-augmented
+    
+    The team’s workflow is redesigned around AI. Tasks go to agents, and each engineer reviews what comes back.
+    
+3.  Rung 3 · Where we work
+    
+    ### Agentic engineering
+    
+    AI agents do a large share of the implementation inside a defined workflow, while senior engineers own the definition, review, and release of every change.
+    
+
+We work at the top rung, and help teams climb to it.
+
+[What to ask a partner that says it uses AI →](blog/ai-augmented-engineering-teams.html)
 
 The Caliber
 
@@ -39,9 +65,9 @@ Avg. experience level
 
 Applicant acceptance rate
 
-5+ yrs
+95%
 
-Avg. tenure at Icalia
+Retention over 5+ years
 
 Process
 
@@ -71,14 +97,12 @@ Your new team members join your workflows, standups, and tools from day one. No 
 
 How We Operate
 
-## Engineering,  
-amplified by AI.
+## Agentic engineering,  
+governed by senior judgment.
 
-Engineering practice since 2012, encoded into how we source, onboard, and ship. AI moves the work forward. Your engineers own the outcomes.
+The agent brings the speed. The people and the system around it bring the safety. Fourteen years of engineering practice, encoded into how we vet, embed, and ship.
 
 [
-
-Innovate, build, love.
 
 Leading AI in LatAm
 
@@ -88,26 +112,47 @@ View on Clutch →
 
 01 · Selection
 
-### The right engineer,  
-faster.
+### Five gates before  
+a candidate reaches you.
 
-AI-assisted sourcing and matching across our vetted network. We screen for stack fit, product sense, and culture — in days, not weeks. You interview only the top of the top.
+Every engineer is ID-verified before any client interview, and fewer than 0.4% of applicants are accepted. You still run the final interviews. [How we vet →](how-we-vet.html)
 
 02 · Engagement
 
-### Day-one  
-productivity.
+### Embedded.  
+Accountable.
 
-AI-powered onboarding accelerates context transfer — your codebase, conventions, product. Ongoing performance reviews, growth plans, and clean off-boarding are handled with the same rigor.
+Engineers join your standups, code reviews, and on-call from day one. We handle growth plans, performance reviews, and continuity behind them, so the knowledge stays with your team.
 
 03 · Throughput
 
 ### Ship more.  
-Ship better.
+Finish it.
 
-Modern AI tooling across the full dev loop: backlog refinement, coding, code review, testing, and refactoring. Your engineers bring taste. AI brings velocity.
+First versions in production in under a week. From 10 to hundreds of changes per week on live systems, each one reviewed by a senior engineer before it ships.
 
-Innovate, build, love.
+Fast is easy. Finished is what matters.
+
+What You’re Paying For
+
+## Your partner uses AI.  
+What are you paying for?
+
+Senior judgment plus AI leverage, measured in outcomes.
+
+### Not the lowest rate.
+
+Senior, experienced engineers in your time zone. We compete on seniority and continuity, not on the hourly rate.
+
+### Not bodies in seats.
+
+Continuity, management, and senior advisory behind every engineer, so the knowledge stays when people grow.
+
+### Not more code.
+
+Reviewed changes that reach production. When code costs almost nothing to write, someone senior has to decide what should not be written at all.
+
+Engagements bill time and materials. Cost becomes a result, not the pitch. [See engagement models →](services.html)
 
 Selected Work
 
@@ -118,7 +163,7 @@ for itself.
 
 [
 
-Energy · Staff Augmentation
+Energy · Talent Augmentation
 
 ### RTS
 
@@ -130,7 +175,7 @@ A Monterrey-based product squad embedded with a Central Texas oil-and-gas operat
 
 [
 
-Professional Services · Staff Aug
+Professional Services · Talent Augmentation
 
 ### Point B
 
@@ -142,7 +187,7 @@ Consumer · Placements
 
 ### Everlance
 
-8 senior engineers placed alongside a San Francisco team. 60% cost savings, full team retained through acquisition.
+8 senior engineers placed alongside a San Francisco team. The whole team stayed through the acquisition.
 
 ](case-studies.html)
 
@@ -194,13 +239,13 @@ Recognized GitHub Partner in Latin America. Deep roots in the developer ecosyste
 
 Active OSS maintainers. Our [public repos](https://github.com/IcaliaLabs) have earned 5K+ cumulative GitHub stars.
 
-AI-native operation. Founders who've built, shipped, and sold — now investing that experience in your team.
+95% retention over 5+ years. Founders who’ve built, shipped, and sold — now investing that experience in your team.
 
 2012
 
 the year we started shipping software
 
-> "We started in 2012 with a simple belief: World-class software teams can be built anywhere, and nearshore engineers have the unfair advantage of delivering the same output as any other US engineer."
+> "We started in 2012 believing great software teams can be built anywhere. Fourteen years later, the engineers who built products before AI are the ones building best with it."
 
 Same bar, different industries → [Fintech](industries/fintech.html) · [Healthtech](industries/healthtech.html) · [eCommerce](industries/retail.html) · [Logistics](industries/logistics.html)
 

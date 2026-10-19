@@ -1,6 +1,6 @@
 # Agentic Engineering — Icalia Labs Blog
 
-> Building with and for AI agents: agent workflows, MCP servers, agent skills, and human-accountable automation.
+> Building with and for AI agents: agents implement inside governed workflows while senior engineers own the specification, review, and release of every change.
 
 1.  [Home](/)
 2.  /
@@ -10,9 +10,9 @@ Topic
 
 # Agentic Engineering
 
-Building with and for AI agents: agent workflows, MCP servers, agent skills, and human-accountable automation.
+Building with and for AI agents: agents implement inside governed workflows while senior engineers own the specification, review, and release of every change.
 
-[See our MCP server and agent skills →](/developers.html)
+[See our agentic engineering practice →](/agentic-engineering.html)
 
 [
 

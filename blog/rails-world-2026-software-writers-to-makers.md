@@ -203,4 +203,4 @@ Software Makers](/blog/a-manifesto-the-foundation-for-any-organization.html)
 
 We embed senior nearshore engineers directly into your team — same time zone, same standards, no ramp-up theater.
 
-[Book a discovery call →](/contact.html#book) [Read our manifesto](/manifesto.html)
+[Book a discovery call →](/contact.html#book) [How we build with agents](/agentic-engineering.html)

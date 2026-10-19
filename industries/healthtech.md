@@ -76,23 +76,21 @@ What we've shipped
 
 ## Real work. Real stakes.
 
-EHR integration
+Agentic healthcare systems
 
-Wired a telehealth platform into Epic in under 10 weeks.
-
-Case study in progress
-
-Claims pipeline
-
-Rebuilt a claims ingestion pipeline to cut rejection rate by 40%.
+Built guardrails and harness architecture so HIPAA-sensitive systems could become agentic.
 
 Case study in progress
 
-RPM platform
+[
 
-Shipped a HIPAA-compliant RPM ingest pipeline across 3 device OEMs.
+EMR Bear (acquired)
 
-Case study in progress
+Four specialized engineers had critical features in production within four weeks, and kept shipping through the acquisition.
+
+Read the case study →
+
+](../case-studies.html)
 
 Roles we staff most
 

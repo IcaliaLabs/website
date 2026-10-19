@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contact — Icalia Labs</title>
-  <meta name="description" content="Get in touch with Icalia Labs. Book a call to discuss your staff augmentation needs or email us at sales@icalialabs.com.">
+  <meta name="description" content="Book a 30-minute call about agentic engineering, forward deployed engineers, or talent augmentation, or email us at sales@icalialabs.com.">
 
 
   <link rel="canonical" href="https://icalialabs.com/contact.html">
@@ -38,11 +38,11 @@
   <meta property="og:url" content="https://icalialabs.com/contact.html">
 
   <meta property="og:title" content="Contact — Icalia Labs">
-  <meta property="og:description" content="Get in touch with Icalia Labs. Book a call to discuss your staff augmentation needs or email us at sales@icalialabs.com.">
+  <meta property="og:description" content="Book a 30-minute call about agentic engineering, forward deployed engineers, or talent augmentation, or email us at sales@icalialabs.com.">
   <meta property="og:image" content="https://icalialabs.com/assets/og-image.png">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Contact — Icalia Labs">
-  <meta name="twitter:description" content="Get in touch with Icalia Labs. Book a call to discuss your staff augmentation needs.">
+  <meta name="twitter:description" content="Book a 30-minute call about agentic engineering, forward deployed engineers, or talent augmentation.">
   <meta name="twitter:image" content="https://icalialabs.com/assets/og-image.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -77,58 +77,10 @@
     .reveal-delay-1 { transition-delay: 0.1s; }
     .reveal-delay-2 { transition-delay: 0.2s; }
     @media (min-width: 768px) {
-      .industries-dropdown:hover .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+      .nav-dropdown:hover .industries-panel, .nav-dropdown:focus-within .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
     }
   </style>
 
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What services does Icalia Labs offer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Icalia Labs provides nearshore staff augmentation and software development services. We specialize in fintech, healthtech, eCommerce & retail, and logistics & supply chain solutions. Our senior engineers work within your team to deliver high-quality software."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does nearshore staffing augmentation work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We match you with senior product-minded engineers who work in your timezone. They integrate directly into your team, participate in standups and planning, and contribute as if they were in-house. We handle all HR, payroll, and management overhead."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What industries do you specialize in?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We specialize in four key industries: Fintech (compliance, transaction flows, ledgers), Healthtech (HIPAA, patient data, EHR integration), eCommerce & Retail (peak traffic, conversion, integrations), and Logistics & Supply Chain (real-time data, route optimization, uptime-critical systems)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I get started with Icalia Labs?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Book a call with our team to discuss your staffing needs. We'll assess your requirements, match you with the right engineers, and get them integrated into your team. You can book a call or email us at sales@icalialabs.com."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What makes Icalia Labs different from other staff augmentation companies?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We focus on product-minded engineers who stay. We've been trusted by Fortune 500 companies and startups since 2012. Our engineers are senior, committed to long-term partnerships, and integrated into your team culture."
-        }
-      }
-    ]
-  }
-  </script>
   <style>
     input:focus, textarea:focus { box-shadow: 0 0 0 3px rgba(238, 58, 67, 0.08); }
     .btn-loading { opacity: 0.7; cursor: not-allowed !important; }
@@ -143,75 +95,167 @@
 <body class="font-body text-icalia-dark antialiased bg-icalia-warm">
 
   <!-- Navigation -->
-  <nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50">
+<nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50" aria-label="Main">
     <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
       <a href="/" class="flex items-center gap-1">
         <img src="assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
       </a>
-      <div class="hidden md:flex items-center gap-10 text-sm font-medium text-icalia-navy/70">
-        <a href="/case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
-        <div class="industries-dropdown relative">
-          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5">
-            Domains
-            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+      <div class="hidden lg:flex items-center gap-9 text-sm font-medium text-icalia-navy/70">
+
+        <div class="nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Services
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[38rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2 grid grid-cols-5 gap-2">
+              <a href="/agentic-engineering.html" class="col-span-2 block bg-icalia-dark text-white rounded-xl p-5 hover:bg-icalia-navy transition-colors">
+                <div class="text-[10px] font-bold text-icalia-red tracking-widest uppercase">Lead service</div>
+                <div class="mt-3 font-display text-2xl leading-tight">Agentic Engineering</div>
+                <div class="mt-2 text-xs text-white/60 leading-relaxed">Agents implement. Senior engineers own the spec, the review, and the release.</div>
+                <div class="mt-4 text-xs font-semibold text-white/80">Explore &rarr;</div>
+              </a>
+              <div class="col-span-3">
+                <a href="/forward-deployed-engineers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Forward Deployed Engineers</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Senior engineers who own outcomes in production.</div>
+                </a>
+                <a href="/services.html#talent-augmentation" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Talent Augmentation</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Embedded, managed nearshore engineers.</div>
+                </a>
+                <a href="/services.html#placements" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Placements &amp; BOT</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Teams you own, after you see them deliver.</div>
+                </a>
+                <a href="/how-we-vet.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">How We Vet</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Five gates, ID-verified, under 0.4% accepted.</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industries-dropdown nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Industries
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
           </button>
           <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
             <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
               <a href="/industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
                 <div class="font-semibold text-icalia-dark">Fintech</div>
-                <div class="text-xs text-icalia-navy/60 mt-0.5">Compliance, transaction flows, cost of a bug at scale.</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Flow of funds, cards, direct-to-bank, ledgers.</div>
               </a>
               <a href="/industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
                 <div class="font-semibold text-icalia-dark">Healthtech</div>
-                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, patient data, stakes of building in healthcare.</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, clinical and claims data, agentic guardrails.</div>
+              </a>
+              <a href="/industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Carrier integrations and systems built for uptime.</div>
               </a>
               <a href="/industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
                 <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
                 <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
               </a>
-              <a href="/industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
-                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
-                <div class="text-xs text-icalia-navy/60 mt-0.5">Real-time data, route optimization, systems that can't afford downtime.</div>
-              </a>
             </div>
           </div>
         </div>
-        <a href="/manifesto.html" class="hover:text-icalia-dark transition-colors">Manifesto</a>
+
+        <a href="/case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
+
+        <div class="nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Company
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute right-0 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[34rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2 grid grid-cols-5 gap-2">
+              <a href="/manifesto.html" class="col-span-2 block bg-icalia-warm-2 border border-icalia-sand/60 rounded-xl p-5 hover:border-icalia-red/40 transition-colors">
+                <div class="text-[10px] font-bold text-icalia-red tracking-widest uppercase">Manifesto</div>
+                <div class="mt-3 font-display text-xl leading-tight text-icalia-dark italic">There is a gap between idea and impact.</div>
+                <div class="mt-4 text-xs font-semibold text-icalia-dark">Read the ten principles &rarr;</div>
+              </a>
+              <div class="col-span-3">
+                <a href="/about.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">About</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Builders since 2012. Austin and Monterrey.</div>
+                </a>
+                <a href="/careers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Careers</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Join the engineers who multiply.</div>
+                </a>
+                <a href="/developers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Open Source</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">MCP servers, SDKs, and agent skills we maintain.</div>
+                </a>
+                <a href="/contact.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Contact</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">sales@icalialabs.com and office details.</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
         <a href="/blog/" class="hover:text-icalia-dark transition-colors">Blog</a>
 
-        <a href="/careers.html" class="hover:text-icalia-dark transition-colors">Careers</a>
-        <a href="/contact.html" class="hover:text-icalia-dark transition-colors">Contact</a>
         <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
       </div>
-      <button id="mobile-menu-btn" class="md:hidden p-2" aria-label="Open menu">
+      <button id="mobile-menu-btn" class="lg:hidden p-2" aria-label="Open menu">
         <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
         </svg>
       </button>
     </div>
-    <div id="mobile-menu" class="hidden md:hidden border-t border-icalia-sand/50 bg-icalia-warm">
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-icalia-sand/50 bg-icalia-warm max-h-[calc(100vh-4.5rem)] overflow-y-auto">
       <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
         <a href="/">Home</a>
-        <a href="/case-studies.html">Work</a>
-        <div>
-          <button id="mobile-industries-toggle" class="flex items-center justify-between w-full text-icalia-dark">
-            <span>Domains</span>
-            <svg id="mobile-industries-chevron" class="w-4 h-4 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
-          </button>
-          <div id="mobile-industries" class="hidden mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Services</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="/agentic-engineering.html" class="block py-2 font-semibold text-icalia-dark">Agentic Engineering</a>
+            <a href="/forward-deployed-engineers.html" class="block py-2">Forward Deployed Engineers</a>
+            <a href="/services.html#talent-augmentation" class="block py-2">Talent Augmentation</a>
+            <a href="/services.html#placements" class="block py-2">Placements &amp; BOT</a>
+            <a href="/how-we-vet.html" class="block py-2">How We Vet</a>
+          </div>
+        </details>
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Industries</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div id="mobile-industries" class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
             <a href="/industries/fintech.html" class="block py-2">Fintech</a>
             <a href="/industries/healthtech.html" class="block py-2">Healthtech</a>
-            <a href="/industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
             <a href="/industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+            <a href="/industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
           </div>
-        </div>
-        <a href="/manifesto.html">Manifesto</a>
+        </details>
+        <a href="/case-studies.html">Work</a>
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Company</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="/manifesto.html" class="block py-2 font-semibold text-icalia-dark">Manifesto</a>
+            <a href="/about.html" class="block py-2">About</a>
+            <a href="/careers.html" class="block py-2">Careers</a>
+            <a href="/developers.html" class="block py-2">Open Source</a>
+            <a href="/contact.html" class="block py-2">Contact</a>
+          </div>
+        </details>
 
         <a href="/blog/">Blog</a>
 
-        <a href="/careers.html">Careers</a>
-        <a href="/contact.html">Contact</a>
         <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
       </div>
     </div>
@@ -229,7 +273,7 @@
         <span class="italic text-icalia-red">your team.</span>
       </h1>
       <p class="mt-6 text-lg text-icalia-navy/50 max-w-lg">
-        Whether you need one senior developer or an entire squad, we're here to help you scale.
+        Tell us what has to reach production. If we&rsquo;re not the right partner, you&rsquo;ll hear that on the first call.
       </p>
     </div>
   </section>
@@ -316,6 +360,58 @@
     </div>
   </section>
 
+
+  <section class="py-20 md:py-28 px-6 lg:px-10 border-t border-icalia-sand/50" aria-labelledby="faq">
+    <div class="max-w-4xl mx-auto">
+      <p class="text-sm font-semibold text-icalia-red tracking-wide uppercase mb-4">FAQ</p>
+      <h2 id="faq" class="font-display text-4xl md:text-5xl leading-[1.05] tracking-tight">Frequently asked questions</h2>
+      <div class="mt-10 space-y-4">
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">What does Icalia Labs do?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Icalia Labs is an agentic engineering partner. We deploy nearshore forward deployed engineers: senior engineers from Mexico and Latin America who embed in your team, work your hours, and own outcomes in production. Engagements run as Agentic Engineering, Talent Augmentation (managed nearshore staff augmentation), or Placements and Build-Operate-Transfer.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">How does Talent Augmentation work?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">We present senior engineers matched to your stack and team, and you run the final interviews. Engineers join your standups, planning, and code review as part of your team, while we handle employment, payroll, growth plans, and continuity behind them.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">Which industries do you specialize in?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Regulated and uptime-critical domains: fintech (flow of funds, cards, ledgers, direct-to-bank connections), healthtech (HIPAA, EHR and claims integrations), and logistics (TMS, EDI, telematics, and DOT and FMCSA integrations).</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">Is AI-written code maintainable?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">It is when the system around it is built for it. Agents implement inside a defined workflow, senior engineers own the specification and review every change before it ships, and the tests and conventions stay strong enough that the next change is easy too.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">How do you vet engineers for AI skill?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Every candidate is ID-verified, then does a live build in under 45 minutes with their own models and agents. Fewer than 0.4% of applicants are accepted.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">Do we get to interview the engineers?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Yes. You still run the final interviews, and your standards decide who joins.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">What happens if an engineer leaves?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">We plan for continuity from day one. Growth plans and regular reviews keep engineers engaged, with 95% retention over 5+ years, and when someone does move on we run a planned handover and present a replacement.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">How do you bill?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Engagements bill time and materials, usually on an evergreen SOW so there are fewer renewal cycles to administer. We frame the work around outcomes, but we don&#39;t sell guaranteed outcomes.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">What makes Icalia Labs different from other staffing vendors?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Our engineers built products before AI and now build them with AI, and they stay. We&#39;ve been trusted by Fortune 500 companies and startups since 2012.</p>
+        </div>
+        <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-7">
+          <h3 class="font-semibold text-icalia-dark">How can I get started?</h3>
+          <p class="mt-3 text-icalia-navy/70 leading-relaxed">Book a 30-minute call. We&#39;ll talk through what has to ship and by when, and recommend the engagement model that fits. You can also email sales@icalialabs.com.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What does Icalia Labs do?","acceptedAnswer":{"@type":"Answer","text":"Icalia Labs is an agentic engineering partner. We deploy nearshore forward deployed engineers: senior engineers from Mexico and Latin America who embed in your team, work your hours, and own outcomes in production. Engagements run as Agentic Engineering, Talent Augmentation (managed nearshore staff augmentation), or Placements and Build-Operate-Transfer."}},{"@type":"Question","name":"How does Talent Augmentation work?","acceptedAnswer":{"@type":"Answer","text":"We present senior engineers matched to your stack and team, and you run the final interviews. Engineers join your standups, planning, and code review as part of your team, while we handle employment, payroll, growth plans, and continuity behind them."}},{"@type":"Question","name":"Which industries do you specialize in?","acceptedAnswer":{"@type":"Answer","text":"Regulated and uptime-critical domains: fintech (flow of funds, cards, ledgers, direct-to-bank connections), healthtech (HIPAA, EHR and claims integrations), and logistics (TMS, EDI, telematics, and DOT and FMCSA integrations)."}},{"@type":"Question","name":"Is AI-written code maintainable?","acceptedAnswer":{"@type":"Answer","text":"It is when the system around it is built for it. Agents implement inside a defined workflow, senior engineers own the specification and review every change before it ships, and the tests and conventions stay strong enough that the next change is easy too."}},{"@type":"Question","name":"How do you vet engineers for AI skill?","acceptedAnswer":{"@type":"Answer","text":"Every candidate is ID-verified, then does a live build in under 45 minutes with their own models and agents. Fewer than 0.4% of applicants are accepted."}},{"@type":"Question","name":"Do we get to interview the engineers?","acceptedAnswer":{"@type":"Answer","text":"Yes. You still run the final interviews, and your standards decide who joins."}},{"@type":"Question","name":"What happens if an engineer leaves?","acceptedAnswer":{"@type":"Answer","text":"We plan for continuity from day one. Growth plans and regular reviews keep engineers engaged, with 95% retention over 5+ years, and when someone does move on we run a planned handover and present a replacement."}},{"@type":"Question","name":"How do you bill?","acceptedAnswer":{"@type":"Answer","text":"Engagements bill time and materials, usually on an evergreen SOW so there are fewer renewal cycles to administer. We frame the work around outcomes, but we don't sell guaranteed outcomes."}},{"@type":"Question","name":"What makes Icalia Labs different from other staffing vendors?","acceptedAnswer":{"@type":"Answer","text":"Our engineers built products before AI and now build them with AI, and they stay. We've been trusted by Fortune 500 companies and startups since 2012."}},{"@type":"Question","name":"How can I get started?","acceptedAnswer":{"@type":"Answer","text":"Book a 30-minute call. We'll talk through what has to ship and by when, and recommend the engagement model that fits. You can also email sales@icalialabs.com."}}]}</script>
+
+
 </main>
 
     <!-- Footer -->
@@ -357,7 +453,14 @@
           </div>
         </div>
         <div class="md:col-span-2">
-          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Industries</h4>
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Services</h4>
+          <div class="flex flex-col gap-3">
+            <a href="agentic-engineering.html" class="text-sm text-white/40 hover:text-white transition-colors">Agentic Engineering</a>
+            <a href="forward-deployed-engineers.html" class="text-sm text-white/40 hover:text-white transition-colors">Forward Deployed Engineers</a>
+            <a href="services.html" class="text-sm text-white/40 hover:text-white transition-colors">Talent Augmentation</a>
+            <a href="how-we-vet.html" class="text-sm text-white/40 hover:text-white transition-colors">How We Vet</a>
+          </div>
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mt-10 mb-5">Industries</h4>
           <div class="flex flex-col gap-3">
             <a href="industries/fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Fintech</a>
             <a href="industries/healthtech.html" class="text-sm text-white/40 hover:text-white transition-colors">Healthtech</a>

@@ -82,7 +82,7 @@ Agentic engineering is a way of building software in which AI agents do a large 
 
 Most of the value, and most of the risk, sits between the second row and the third.
 
-![Diagram of the agentic engineering loop: Specify, Implement, Review, Release, Learn. Senior engineers own specify, review and learn; agents implement; rejected work goes back to the agent; example cadence of 100 to 500 changes a week on a live system](/assets/blog/ai-augmented-engineering-teams-loop.webp)
+![Diagram of the agentic engineering loop: Specify, Implement, Review, Release, Learn. Senior engineers own specify, review and learn; agents implement; rejected work goes back to the agent; example cadence of 10 to hundreds of changes a week on a live system](/assets/blog/ai-augmented-engineering-teams-loop.webp)
 
 ## Why isn't "we use AI" evidence of anything?
 
@@ -128,7 +128,7 @@ How often is agent output rejected or rewritten, and why? A partner that can't a
 
 ### What this looks like in practice
 
-Icalia Labs holds its teams to these numbers. According to Icalia Labs delivery data, first versions reach production in under a week, and teams working on production software with CI/CD push 10 - 100+ changes a week. Icalia Labs engineers deliver at least 10x productivity with AI-native tools compared to commit pushes in terms of PRs from 12+ months back, based on our internal delivery data.
+Icalia Labs holds its teams to these numbers. According to Icalia Labs delivery data, first versions reach production in under a week, and teams working on production software with CI/CD push from 10 to hundreds of changes per week. Icalia Labs engineers deliver at least 10x productivity with AI-native tools compared to commit pushes in terms of PRs from 12+ months back, based on our internal delivery data.
 
 ## Where do agents fail, and who catches them?
 
@@ -241,4 +241,4 @@ Forward-Deployed Engineering (FDE)](/blog/holistic-agnostic-specific-problem-sol
 
 We embed senior nearshore engineers directly into your team — same time zone, same standards, no ramp-up theater.
 
-[Book a discovery call →](/contact.html#book) [Read our manifesto](/manifesto.html)
+[Book a discovery call →](/contact.html#book) [How we build with agents](/agentic-engineering.html)
