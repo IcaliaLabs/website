@@ -275,6 +275,20 @@ module.exports = async function (eleventyConfig) {
   // Safe to drop into <script type="application/ld+json">.
   eleventyConfig.addFilter("jsonLd", (obj) => JSON.stringify(obj).replace(/</g, "\\u003c"));
 
+  // FAQPage JSON-LD from a page's `faq` list ([{ q, a }]), so the schema and
+  // the visible FAQ (_includes/faq-section.html) can't drift apart.
+  eleventyConfig.addFilter("faqSchema", (faq) =>
+    JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      mainEntity: (faq || []).map((f) => ({
+        "@type": "Question",
+        name: f.q,
+        acceptedAnswer: { "@type": "Answer", text: f.a },
+      })),
+    }).replace(/</g, "\\u003c")
+  );
+
   return {
     dir: {
       input: ".",

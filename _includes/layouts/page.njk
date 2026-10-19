@@ -1,0 +1,70 @@
+{#- Layout for service pages (agentic engineering, FDEs, services, how we vet).
+    Front matter: title, description, canonicalPath, breadcrumb (short name),
+    service ({ name, serviceType, description }), faq ([{ q, a }]),
+    ctaHeading, ctaText. The page body is the main content between nav and FAQ. -#}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+{% include "head.html" %}
+  <script type="application/ld+json">{{ {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Home", "item": siteUrl ~ "/" },
+      { "@type": "ListItem", "position": 2, "name": breadcrumb or title, "item": siteUrl ~ canonicalPath }
+    ]
+  } | jsonLd | safe }}</script>
+{%- if service %}
+  <script type="application/ld+json">{{ {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": service.name,
+    "serviceType": service.serviceType,
+    "description": service.description,
+    "url": siteUrl ~ canonicalPath,
+    "areaServed": ["US", "CA", "MX"],
+    "provider": { "@type": "Organization", "name": "Icalia Labs", "url": siteUrl, "foundingDate": "2012" }
+  } | jsonLd | safe }}</script>
+{%- endif %}
+</head>
+<body class="font-body text-icalia-dark antialiased bg-icalia-warm">
+
+{% include "nav.html" %}
+
+<main>
+{{ content | safe }}
+
+{% include "faq-section.html" %}
+
+  <section class="py-28 md:py-36 px-6 lg:px-10 border-t border-icalia-sand/50 reveal">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="font-display text-5xl md:text-6xl leading-[0.95] tracking-tight">{{ (ctaHeading or "Tell us what has to reach production.") | safe }}</h2>
+      <p class="mt-6 text-icalia-navy/50 text-lg max-w-lg mx-auto">{{ (ctaText or "A 30-minute call. If we&rsquo;re not the right partner, you&rsquo;ll hear that on the first one.") | safe }}</p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact.html#book" class="bg-icalia-red text-white px-10 py-4 rounded-full text-sm font-semibold hover:bg-icalia-red-dark transition-all hover:shadow-lg hover:shadow-icalia-red/20">Book a Discovery Call</a>
+        <a href="mailto:sales@icalialabs.com" class="text-icalia-dark px-10 py-4 text-sm font-semibold hover:text-icalia-red transition-colors">Or email us &rarr;</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+  {% include "footer.html" %}
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => { if (entry.isIntersecting) entry.target.classList.add('visible'); });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+  </script>
+</body>
+</html>

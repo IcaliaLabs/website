@@ -541,6 +541,31 @@ for (const file of htmlFiles) {
   });
 }
 
+// --- Retired claims (GTM language refresh, Oct 2026) must not come back ---
+const RETIRED_PHRASES = [
+  "60% cost savings",
+  "60% savings",
+  "since 2011",
+  "more than a decade",
+  "Innovate, build, love",
+  "Outcome-based",
+  "100-500 changes",
+  "100–500 changes",
+  "100 to 500 changes",
+  "10 - 100+",
+];
+check("no retired claims in built pages or llms.txt", () => {
+  const hits = [];
+  const sources = htmlFiles.map((f) => [path.relative(SITE_DIR, f), fs.readFileSync(f, "utf-8")]);
+  sources.push(["llms.txt", readSite("llms.txt")]);
+  for (const [rel, text] of sources) {
+    for (const phrase of RETIRED_PHRASES) {
+      if (text.toLowerCase().includes(phrase.toLowerCase())) hits.push(`${rel}: "${phrase}"`);
+    }
+  }
+  assert(hits.length === 0, hits.join("; "));
+});
+
 console.log(`\n${checks} checks run, ${failures.length} failed.\n`);
 if (failures.length > 0) {
   for (const f of failures) console.error(`FAIL: ${f}`);

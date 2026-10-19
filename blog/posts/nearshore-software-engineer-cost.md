@@ -12,7 +12,7 @@ takeaways:
   - "Senior nearshore engineers usually cost substantially less than equivalent US hires while keeping real-time collaboration."
   - "Turnover is the largest hidden cost: every departure restarts recruiting and ramp-up."
   - "Staff augmentation rates bundle sourcing, employment, benefits, and replacement, so they look higher than a raw salary but cover more."
-  - "Everlance saw 60% cost savings on same-quality senior hires with an embedded nearshore team."
+  - "Everlance added eight senior engineers through an embedded nearshore team, and every engineer stayed through the company's acquisition."
 faq:
   - q: "How much does a nearshore software engineer cost?"
     a: "It depends on seniority, stack, and engagement model. Senior nearshore engineers typically cost meaningfully less than equivalent US-based engineers, and staff augmentation rates usually include sourcing, employment costs, benefits, and replacement guarantees."
@@ -28,7 +28,7 @@ The first number most teams compare is the hourly rate. It's also the least usef
 
 ## The short answer
 
-Senior nearshore engineers from Mexico and Latin America usually cost substantially less than equivalent US hires, while working in your time zone as part of your team. For example, [Everlance](/case-studies.html), a San Francisco-based startup, added eight senior engineers across backend and native mobile — same-quality hires at **60% cost savings** — and every engineer stayed through the company's acquisition.
+Senior nearshore engineers from Mexico and Latin America usually cost substantially less than equivalent US hires, while working in your time zone as part of your team. For example, [Everlance](/case-studies.html), a San Francisco-based startup, added eight senior engineers across backend and native mobile — same-quality senior hires — and every engineer stayed through the company's acquisition.
 
 ## Typical rate ranges
 

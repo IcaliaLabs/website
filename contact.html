@@ -1,61 +1,34 @@
 ---
 title: "Contact — Icalia Labs"
-description: "Get in touch with Icalia Labs. Book a call to discuss your staff augmentation needs or email us at sales@icalialabs.com."
-twitterDescription: "Get in touch with Icalia Labs. Book a call to discuss your staff augmentation needs."
+description: "Book a 30-minute call about agentic engineering, forward deployed engineers, or talent augmentation, or email us at sales@icalialabs.com."
+twitterDescription: "Book a 30-minute call about agentic engineering, forward deployed engineers, or talent augmentation."
+faq:
+  - q: "What does Icalia Labs do?"
+    a: "Icalia Labs is an agentic engineering partner. We deploy nearshore forward deployed engineers: senior engineers from Mexico and Latin America who embed in your team, work your hours, and own outcomes in production. Engagements run as Agentic Engineering, Talent Augmentation (managed nearshore staff augmentation), or Placements and Build-Operate-Transfer."
+  - q: "How does Talent Augmentation work?"
+    a: "We present senior engineers matched to your stack and team, and you run the final interviews. Engineers join your standups, planning, and code review as part of your team, while we handle employment, payroll, growth plans, and continuity behind them."
+  - q: "Which industries do you specialize in?"
+    a: "Regulated and uptime-critical domains: fintech (flow of funds, cards, ledgers, direct-to-bank connections), healthtech (HIPAA, EHR and claims integrations), and logistics (TMS, EDI, telematics, and DOT and FMCSA integrations)."
+  - q: "Is AI-written code maintainable?"
+    a: "It is when the system around it is built for it. Agents implement inside a defined workflow, senior engineers own the specification and review every change before it ships, and the tests and conventions stay strong enough that the next change is easy too."
+  - q: "How do you vet engineers for AI skill?"
+    a: "Every candidate is ID-verified, then does a live build in under 45 minutes with their own models and agents. Fewer than 0.4% of applicants are accepted."
+  - q: "Do we get to interview the engineers?"
+    a: "Yes. You still run the final interviews, and your standards decide who joins."
+  - q: "What happens if an engineer leaves?"
+    a: "We plan for continuity from day one. Growth plans and regular reviews keep engineers engaged, with 95% retention over 5+ years, and when someone does move on we run a planned handover and present a replacement."
+  - q: "How do you bill?"
+    a: "Engagements bill time and materials, usually on an evergreen SOW so there are fewer renewal cycles to administer. We frame the work around outcomes, but we don't sell guaranteed outcomes."
+  - q: "What makes Icalia Labs different from other staffing vendors?"
+    a: "Our engineers built products before AI and now build them with AI, and they stay. We've been trusted by Fortune 500 companies and startups since 2012."
+  - q: "How can I get started?"
+    a: "Book a 30-minute call. We'll talk through what has to ship and by when, and recommend the engagement model that fits. You can also email sales@icalialabs.com."
 canonicalPath: "/contact.html"
 ---
 <!DOCTYPE html>
 <html lang="en">
 <head>
 {% include "head.html" %}
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": [
-      {
-        "@type": "Question",
-        "name": "What services does Icalia Labs offer?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Icalia Labs provides nearshore staff augmentation and software development services. We specialize in fintech, healthtech, eCommerce & retail, and logistics & supply chain solutions. Our senior engineers work within your team to deliver high-quality software."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How does nearshore staffing augmentation work?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We match you with senior product-minded engineers who work in your timezone. They integrate directly into your team, participate in standups and planning, and contribute as if they were in-house. We handle all HR, payroll, and management overhead."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What industries do you specialize in?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We specialize in four key industries: Fintech (compliance, transaction flows, ledgers), Healthtech (HIPAA, patient data, EHR integration), eCommerce & Retail (peak traffic, conversion, integrations), and Logistics & Supply Chain (real-time data, route optimization, uptime-critical systems)."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "How can I get started with Icalia Labs?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "Book a call with our team to discuss your staffing needs. We'll assess your requirements, match you with the right engineers, and get them integrated into your team. You can book a call or email us at sales@icalialabs.com."
-        }
-      },
-      {
-        "@type": "Question",
-        "name": "What makes Icalia Labs different from other staff augmentation companies?",
-        "acceptedAnswer": {
-          "@type": "Answer",
-          "text": "We focus on product-minded engineers who stay. We've been trusted by Fortune 500 companies and startups since 2012. Our engineers are senior, committed to long-term partnerships, and integrated into your team culture."
-        }
-      }
-    ]
-  }
-  </script>
   <style>
     input:focus, textarea:focus { box-shadow: 0 0 0 3px rgba(238, 58, 67, 0.08); }
     .btn-loading { opacity: 0.7; cursor: not-allowed !important; }
@@ -83,7 +56,7 @@ canonicalPath: "/contact.html"
         <span class="italic text-icalia-red">your team.</span>
       </h1>
       <p class="mt-6 text-lg text-icalia-navy/50 max-w-lg">
-        Whether you need one senior developer or an entire squad, we're here to help you scale.
+        Tell us what has to reach production. If we&rsquo;re not the right partner, you&rsquo;ll hear that on the first call.
       </p>
     </div>
   </section>
@@ -169,6 +142,8 @@ canonicalPath: "/contact.html"
       </div>
     </div>
   </section>
+
+{% include "faq-section.html" %}
 
 </main>
 
