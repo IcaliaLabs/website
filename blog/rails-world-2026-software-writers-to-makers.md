@@ -189,15 +189,19 @@ Every engineering partner says it uses AI. Three metrics, five questions and the
 
 AI Engineering
 
-](/blog/ai-augmented-engineering-teams.html) [![](/assets/blog/office-santalucia.webp) Pre-AI era
+](/blog/ai-augmented-engineering-teams.html)[
 
-May 16, 2020
+![](/assets/blog/vet-nearshore-engineers-cover.webp)
 
-### A manifesto: the foundation for any organization
+October 27, 2026
 
-How Icalia Labs used its 7th anniversary to revisit its culture and write a company manifesto, from first draft to the final version.
+### How to Vet Nearshore Engineers in the AI Era
 
-Software Makers](/blog/a-manifesto-the-foundation-for-any-organization.html)
+How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.
+
+Nearshore Hiring
+
+](/blog/how-to-vet-nearshore-engineers.html)
 
 ## Need engineers who already ship like this?
 

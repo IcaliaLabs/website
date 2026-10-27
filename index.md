@@ -257,6 +257,18 @@ From the blog
 
 [
 
+![](/assets/blog/vet-nearshore-engineers-cover.webp)
+
+October 27, 2026
+
+### How to Vet Nearshore Engineers in the AI Era
+
+How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.
+
+Nearshore Hiring
+
+](/blog/how-to-vet-nearshore-engineers.html)[
+
 ![](/assets/blog/dev-loop-seven-step-loop.jpg)
 
 October 20, 2026
@@ -279,19 +291,7 @@ Notes from Rails World 2026 in Austin: what DHH, Matz and Rails engineers said a
 
 AI Engineering
 
-](/blog/rails-world-2026-software-writers-to-makers.html)[
-
-![](/assets/blog/monterrey-office-overhead.jpg)
-
-September 22, 2026
-
-### How to Hire Software Engineers in Mexico: A US Guide
-
-A practical guide for US companies hiring software engineers in Mexico: hiring models, legal setup, vetting, onboarding, and the mistakes to avoid.
-
-Nearshore Hiring
-
-](/blog/how-to-hire-software-engineers-in-mexico.html)
+](/blog/rails-world-2026-software-writers-to-makers.html)
 
 ## Ready to scale  
 your team?

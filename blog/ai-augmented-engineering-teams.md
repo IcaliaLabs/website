@@ -217,6 +217,18 @@ Agentic Engineering
 
 ](/blog/ai-code-review-agents-teaching-ai-to-finish.html)[
 
+![](/assets/blog/vet-nearshore-engineers-cover.webp)
+
+October 27, 2026
+
+### How to Vet Nearshore Engineers in the AI Era
+
+How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.
+
+Nearshore Hiring
+
+](/blog/how-to-vet-nearshore-engineers.html)[
+
 ![](/assets/blog/img_4661.webp)
 
 September 29, 2026
@@ -227,15 +239,7 @@ Notes from Rails World 2026 in Austin: what DHH, Matz and Rails engineers said a
 
 AI Engineering
 
-](/blog/rails-world-2026-software-writers-to-makers.html) [![](/assets/blog/holistic-agnostic-specific-problem-solving-cover.webp) Pre-AI era
-
-April 20, 2020
-
-### Holistic, Agnostic & Specific at solving problems
-
-Why being holistic, technology-agnostic and industry-specific makes software engineers and teams better at solving problems.
-
-Forward-Deployed Engineering (FDE)](/blog/holistic-agnostic-specific-problem-solving.html)
+](/blog/rails-world-2026-software-writers-to-makers.html)
 
 ## Need engineers who already ship like this?
 

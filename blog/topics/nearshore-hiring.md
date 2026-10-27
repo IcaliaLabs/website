@@ -16,6 +16,18 @@ How US product teams find, vet, and embed senior engineers from Mexico and Latin
 
 [
 
+![](/assets/blog/vet-nearshore-engineers-cover.webp)
+
+October 27, 2026
+
+## How to Vet Nearshore Engineers in the AI Era
+
+How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.
+
+Nearshore Hiring
+
+](/blog/how-to-vet-nearshore-engineers.html)[
+
 ![](/assets/blog/monterrey-office-overhead.jpg)
 
 September 22, 2026

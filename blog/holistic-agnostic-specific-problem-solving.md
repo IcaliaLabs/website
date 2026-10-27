@@ -88,6 +88,18 @@ Strategy, brand presence, and partnership development at Icalia Labs. Startup an
 
 [
 
+![](/assets/blog/vet-nearshore-engineers-cover.webp)
+
+October 27, 2026
+
+### How to Vet Nearshore Engineers in the AI Era
+
+How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.
+
+Nearshore Hiring
+
+](/blog/how-to-vet-nearshore-engineers.html)[
+
 ![](/assets/blog/dev-loop-seven-step-loop.jpg)
 
 October 20, 2026
@@ -110,19 +122,7 @@ A practical guide for US companies hiring software engineers in Mexico: hiring m
 
 Nearshore Hiring
 
-](/blog/how-to-hire-software-engineers-in-mexico.html)[
-
-![](/assets/blog/blur-1853305.webp)
-
-September 15, 2026
-
-### AI-Augmented Engineering Teams: What Buyers Pay For
-
-Every engineering partner says it uses AI. Three metrics, five questions and the review standard that separate delivery outcomes from AI hype.
-
-AI Engineering
-
-](/blog/ai-augmented-engineering-teams.html)
+](/blog/how-to-hire-software-engineers-in-mexico.html)
 
 ## Need engineers who already ship like this?
 

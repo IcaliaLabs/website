@@ -58,6 +58,18 @@ Strategy, brand presence, and partnership development at Icalia Labs. Startup an
 
 [
 
+![](/assets/blog/vet-nearshore-engineers-cover.webp)
+
+October 27, 2026
+
+### How to Vet Nearshore Engineers in the AI Era
+
+How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.
+
+Nearshore Hiring
+
+](/blog/how-to-vet-nearshore-engineers.html)[
+
 ![](/assets/blog/monterrey-office-overhead.jpg)
 
 September 22, 2026
@@ -76,15 +88,7 @@ February 26, 2021
 
 Argues that management consulting firms need a software development practice and explains how distributed teams help them win deals and scale.
 
-Nearshore Hiring](/blog/distributed-software-teams-in-management-consulting.html) [![](/assets/blog/decentralized-software-partner-relationships-cover.webp) Pre-AI era
-
-January 31, 2020
-
-### Executing a successful relationship with decentralized software partners
-
-Key takeaways from a 2020 Austin Technology Council panel on running a successful, high-performing relationship with a remote software partner.
-
-Nearshore Hiring](/blog/decentralized-software-partner-relationships.html)
+Nearshore Hiring](/blog/distributed-software-teams-in-management-consulting.html)
 
 ## Need engineers who already ship like this?
 

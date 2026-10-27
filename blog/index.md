@@ -9,7 +9,7 @@ how we build.
 
 Engineers, founders, and operators at Icalia Labs writing about nearshore teams, AI-augmented and agentic engineering, and what it takes to ship. Every entry is dated, so you can tell what we learned before the AI era from what we know now.
 
-[Nearshore Hiring 5](/blog/topics/nearshore-hiring.html) [Software Development 11](/blog/topics/software-development.html) [Software Makers 6](/blog/topics/software-maker.html) [AI Engineering 3](/blog/topics/ai-engineering.html) [Agentic Engineering 3](/blog/topics/agentic-engineering.html) [Forward-Deployed Engineering (FDE) 3](/blog/topics/forward-deployed-engineer.html)
+[Nearshore Hiring 6](/blog/topics/nearshore-hiring.html) [Software Development 11](/blog/topics/software-development.html) [Software Makers 6](/blog/topics/software-maker.html) [AI Engineering 4](/blog/topics/ai-engineering.html) [Agentic Engineering 3](/blog/topics/agentic-engineering.html) [Forward-Deployed Engineering (FDE) 4](/blog/topics/forward-deployed-engineer.html)
 
 Timeline AI era [2026](#y2026) Pre-AI era [2021](#y2021) [2020](#y2020) [2018](#y2018) [2017](#y2017) [2016](#y2016) [2015](#y2015) [2014](#y2014)
 
@@ -17,19 +17,31 @@ Timeline AI era [2026](#y2026) Pre-AI era [2021](#y2021) [2020](#y2020) [2018](#
 
 AI era
 
-4 articles
+5 articles
 
- [![](/assets/blog/dev-loop-seven-step-loop.jpg) ![](/assets/blog/dev-loop-seven-step-loop.jpg)
+ [![](/assets/blog/vet-nearshore-engineers-cover.webp) ![](/assets/blog/vet-nearshore-engineers-cover.webp)
 
-Latest · October 20, 2026
+Latest · October 27, 2026
+
+### How to Vet Nearshore Engineers in the AI Era
+
+How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.
+
+Nearshore Hiring Read the article →](/blog/how-to-vet-nearshore-engineers.html)
+
+[
+
+![](/assets/blog/dev-loop-seven-step-loop.jpg)
+
+October 20, 2026
 
 ### AI Code Review Agents: Teaching AI to Finish Its Work
 
 Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.
 
-Agentic Engineering Read the article →](/blog/ai-code-review-agents-teaching-ai-to-finish.html)
+Agentic Engineering
 
-[
+](/blog/ai-code-review-agents-teaching-ai-to-finish.html)[
 
 ![](/assets/blog/img_4661.webp)
 

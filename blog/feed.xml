@@ -5,12 +5,127 @@
   <subtitle>Nearshore engineering, AI-augmented delivery, and building software teams that ship.</subtitle>
   <link href="https://icalialabs.com/blog/feed.xml" rel="self" />
   <link href="https://icalialabs.com/" />
-  <updated>2026-10-20T00:00:00Z</updated>
+  <updated>2026-10-27T00:00:00Z</updated>
   <id>https://icalialabs.com/</id>
   <author>
     <name>Icalia Labs</name>
     <email>sales@icalialabs.com</email>
   </author>
+  <entry>
+    <title>How to Vet Nearshore Engineers in the AI Era</title>
+    <link href="https://icalialabs.com/blog/how-to-vet-nearshore-engineers.html" />
+    <updated>2026-10-27T00:00:00Z</updated>
+    <id>https://icalialabs.com/blog/how-to-vet-nearshore-engineers.html</id>
+    <summary>How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.</summary>
+    <content type="html">&lt;p&gt;Vetting a nearshore engineer in 2026 means proving two things before anything else: the person is who they say they are, and they did the work they claim. AI has made both cheaper to fake. The fix is layered, and most of the layers already exist in fintech: identity checks borrowed from know-your-customer programs, a structured technical conversation that tests depth, a live build with the candidate&#39;s own AI tooling, and in-person contact for critical roles.&lt;/p&gt;
+&lt;h2 id=&quot;the-short-answer&quot;&gt;The short answer&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Verify identity before any client interview.&lt;/strong&gt; A formal ID check plus a face match on video.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Cross-check history.&lt;/strong&gt; The résumé, LinkedIn, GitHub and public work should tell the same story.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Take one project three levels deep.&lt;/strong&gt; Real engineers get more specific under follow-up questions; fabricated ones get vaguer.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Watch them build with AI.&lt;/strong&gt; A short live build with their own models and agents shows judgment that a tools questionnaire cannot.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Meet critical hires in person.&lt;/strong&gt; Identity, presence and team fit are easier to read in the same room.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;why-remote-hiring-fraud-got-cheaper&quot;&gt;Why remote hiring fraud got cheaper&lt;/h2&gt;
+&lt;p&gt;Remote hiring fraud is not new. In June 2022 the FBI&#39;s Internet Crime Complaint Center &lt;a href=&quot;https://www.ic3.gov/PSA/2022/PSA220628&quot;&gt;warned&lt;/a&gt; that deepfakes and stolen personal data were being used to apply for remote roles in &amp;quot;information technology and computer programming, database, and software related job functions,&amp;quot; noting that some positions &amp;quot;include access to customer PII, financial data, corporate IT databases and/or proprietary information.&amp;quot;&lt;/p&gt;
+&lt;p&gt;What changed is the cost. Generative AI writes a convincing résumé in seconds, fills a matching LinkedIn profile and coaches a candidate through a first call. In July 2025, &lt;a href=&quot;https://www.gartner.com/en/newsroom/press-releases/2025-07-31-gartner-survey-shows-just-26-percent-of-job-applicants-trust-ai-will-fairly-evaluate-them&quot;&gt;Gartner predicted&lt;/a&gt; that by 2028 one in four candidate profiles worldwide will be fake. In the same release, 6% of 3,000 surveyed candidates admitted to interview fraud, either impersonating someone else or having someone impersonate them.&lt;/p&gt;
+&lt;p&gt;The tools now work live, on camera. Real-time face swaps can put a different face on a candidate during a video interview, and Jennifer Jackman, D.C. managing partner at the law firm Ice Miller, told &lt;a href=&quot;https://federalnewsnetwork.com/workforce/2026/07/organizations-are-discovering-the-remote-worker-they-hired-might-not-be-the-one-doing-the-work/&quot;&gt;Federal News Network&lt;/a&gt; in July 2026 that some candidates are &amp;quot;actually getting everything from AI in real time&amp;quot; during interviews.&lt;/p&gt;
+&lt;p&gt;Simple checks still catch some of it. In a recording shared widely in February 2025, Dawid Moczadło, co-founder of Vidoc Security Lab, asked a job candidate to wave a hand in front of his face, a move that makes many real-time face filters glitch. The candidate refused, and Moczadło ended the call, as &lt;a href=&quot;https://www.theregister.com/2025/02/11/it_worker_scam&quot;&gt;The Register reported&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Icalia Labs sees the same pattern in its own queue. A single engineering job post draws 600 to 700 applications. Since May 2026, the recruiting team has blocked or reported more than 100 fake profiles, including accounts only a few months old claiming up to 14 years of experience.&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/vet-nearshore-engineers-screening-numbers.webp&quot; alt=&quot;Three figures from Icalia Labs recruiting in 2026: 600 to 700 applications per engineering job post, more than 100 fake profiles blocked or reported since May, and fewer than 0.4% of applicants accepted at the senior+ bar.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;&lt;/p&gt;
+&lt;p&gt;The stakes are higher in regulated spaces. In &lt;a href=&quot;https://icalialabs.com/industries/fintech.html&quot;&gt;fintech&lt;/a&gt;, &lt;a href=&quot;https://icalialabs.com/industries/healthtech.html&quot;&gt;healthtech&lt;/a&gt; and &lt;a href=&quot;https://icalialabs.com/industries/logistics.html&quot;&gt;logistics&lt;/a&gt;, as well as aviation, airspace and mobility, an engineer often touches customer data, payment flows or safety-relevant systems in the first weeks. As Jackman put it, &amp;quot;It stops from being a workplace productivity issue to more of who&#39;s gotten access to your data.&amp;quot; Gartner&#39;s Jamie Kohn makes the same point: &amp;quot;Candidate fraud creates cybersecurity risks that can be far more serious than making a bad hire.&amp;quot;&lt;/p&gt;
+&lt;h2 id=&quot;know-your-workforce-borrow-the-kyc-playbook&quot;&gt;Know your workforce: borrow the KYC playbook&lt;/h2&gt;
+&lt;p&gt;Know your customer (KYC) is the identity-verification practice banks and fintechs run before they open an account. Its central idea transfers directly to hiring: no single check is trusted on its own, and each layer catches what the previous one misses.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Layer&lt;/th&gt;
+&lt;th&gt;What it checks&lt;/th&gt;
+&lt;th&gt;What it catches&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Document&lt;/td&gt;
+&lt;td&gt;Government ID format and check digits (for example RFC and CURP in Mexico, NIT in Colombia, CUIT/CUIL in Argentina)&lt;/td&gt;
+&lt;td&gt;Invented or mistyped identities&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Face match&lt;/td&gt;
+&lt;td&gt;The person on video matches the ID&lt;/td&gt;
+&lt;td&gt;Proxies and stand-ins on calls&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;History consistency&lt;/td&gt;
+&lt;td&gt;Profile age, public work and GitHub commit timezones line up with the résumé&lt;/td&gt;
+&lt;td&gt;Recently created or borrowed profiles&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Payment details&lt;/td&gt;
+&lt;td&gt;Account holder name matches the ID; payment destination country matches the stated location&lt;/td&gt;
+&lt;td&gt;Identities used by someone else&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Behavior over time&lt;/td&gt;
+&lt;td&gt;Interview notes match the document packet; first-week video and equipment delivery&lt;/td&gt;
+&lt;td&gt;Swaps after the offer&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Icalia Labs published this approach as an open-source, MIT-licensed &lt;a href=&quot;https://github.com/IcaliaLabs/identity-verification-skill&quot;&gt;identity-verification skill&lt;/a&gt; for teams hiring remote engineers across the US and Latin America. It splits the work between AI review stages and human stages, and it is explicit about its limits: &amp;quot;A well-forged document will pass.&amp;quot; It does not replace a dedicated ID-verification vendor, Form I-9 or E-Verify, or an interviewer&#39;s judgment. That honesty is the point. Layers exist because each one fails sometimes.&lt;/p&gt;
+&lt;p&gt;Layers also keep the process fair to real candidates. A single red flag is a reason to check the next layer, not a verdict. Jackman&#39;s advice to employers is the same: &amp;quot;you don&#39;t want to just make the assumption that there&#39;s fraud.&amp;quot;&lt;/p&gt;
+&lt;p&gt;In Icalia Labs&#39; own process, 100% of candidates pass a formal ID check through an international verification vendor before any client-facing interview, as described in the &lt;a href=&quot;https://icalialabs.github.io/icalia-labs-services-deck/collateral/talent-engine.html&quot;&gt;Talent Engine playbook&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;what-a-real-vetting-conversation-looks-like&quot;&gt;What a real vetting conversation looks like&lt;/h2&gt;
+&lt;p&gt;Identity checks confirm the person exists. A structured conversation confirms the experience is theirs. Eduardo Lopez De Leon, Icalia Labs&#39; co-founder and CEO, uses a seven-step structure for screening calls:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Set the frame.&lt;/strong&gt; Who is on the call, what will be confirmed and what happens next. He opens with &amp;quot;I&#39;m not a recruiter, I&#39;m a software engineer,&amp;quot; which sets up an honest technical conversation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Confirm the profile against reality.&lt;/strong&gt; Current role, languages and frameworks, and how time is really split between full-time and freelance work.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Go deep on one project.&lt;/strong&gt; What the software does, who uses it, then architecture, integrations, authentication and what was hard.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Probe practices by name.&lt;/strong&gt; Unit and integration tests, deployment, how the candidate understands a problem before writing code.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Check ownership.&lt;/strong&gt; US companies hiring in the region often need engineers who can take a project and develop it with little hand-holding, which is why most ask for at least 3 to 4 years of end-to-end experience.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ask about direction.&lt;/strong&gt; What the candidate wants to get better at.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Close honestly.&lt;/strong&gt; Specific feedback, a request for evidence such as an updated résumé, and a dated next step.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The structure does two jobs. It catches fabricated profiles, because depth collapses under the third follow-up question. And it rewards honesty: a candidate who says &amp;quot;I haven&#39;t worked with that&amp;quot; is easier to trust than one who claims everything. As Lopez De Leon puts it, &amp;quot;the programming language is just a tool&amp;quot;; the fundamentals underneath are what get tested.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A five-line checklist for any screening call&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;One project, three levels deep.&lt;/li&gt;
+&lt;li&gt;Ask about practices (tests, deploys) by name.&lt;/li&gt;
+&lt;li&gt;Confirm every claim with a document or artifact.&lt;/li&gt;
+&lt;li&gt;Treat an admitted gap as signal, not a disqualifier.&lt;/li&gt;
+&lt;li&gt;Close with specific feedback and a dated next step.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;testing-ai-skill-watch-them-build&quot;&gt;Testing AI skill: watch them build&lt;/h2&gt;
+&lt;p&gt;Most AI questions in interviews ask about tools. That tests vocabulary. The more useful test is a live build. JG, a YC founder, runs a live session where the candidate uses models plus their own agents and skills to build a small system in under 45 minutes, &amp;quot;that way I can see if they can really solve and build something.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Evaluators watch three things: whether the result works, how the candidate plans, prompts and checks the output, and what they reject. The last one matters most. Agents are fast at writing code and just as fast at writing the wrong code, so the senior signal is knowing when to stop and fix the system around the agent.&lt;/p&gt;
+&lt;p&gt;Before the build, Icalia Labs places each candidate on an AI skill ladder, from copy-paste and autocomplete through vibe coding, AI-assisted and AI-augmented work, up to agentic loops running in production with guardrails. The question that separates the levels fastest is when the AI was wrong and how the candidate caught it.&lt;/p&gt;
+&lt;p&gt;This is still an open field. Abraham Kuri, Icalia Labs&#39; co-founder, says it is too early to name a settled standard for evaluating AI skill. A live build is one gate among several, not a replacement for the identity and depth checks above.&lt;/p&gt;
+&lt;h2 id=&quot;in-person-interviews-are-back-for-critical-roles&quot;&gt;In-person interviews are back for critical roles&lt;/h2&gt;
+&lt;p&gt;Video made remote hiring fast. It also made it easier to fake. Icalia Labs has brought in-person interviews back in specific cases, to corroborate identity, read body language, and check the energy and fit between the engineer and the team. It encourages the same for critical roles, both in client engagements and in its own hiring. Icalia Labs is not alone: after two AI-generated candidates reached its interviews, Vidoc Security now flies candidates in for a paid, one-day in-person interview, &lt;a href=&quot;https://www.cbsnews.com/news/fake-job-seekers-flooding-market-artificial-intelligence/&quot;&gt;CBS News reported&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;For a US company, this is where nearshore has a structural edge. An engineer in Monterrey is a short flight from Austin and works in the same time zone, so meeting in person before a critical hire is a trip, not an expedition.&lt;/p&gt;
+&lt;h2 id=&quot;vet-for-the-hire-who-stays&quot;&gt;Vet for the hire who stays&lt;/h2&gt;
+&lt;p&gt;Fraud is the loudest risk, but the more common one is a real, skilled engineer who leaves in six months. In conversations Lopez De Leon has had with engineers across Latin America hired remotely by US and Canadian companies, including a North American digital agency and a large US tech company, the same retention factors came up again and again:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Core work.&lt;/strong&gt; Building the product with real users, not maintenance on the side.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Equal treatment.&lt;/strong&gt; The same kind of work and the same standards as the home-country team.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Remote-first, not remote-tolerated.&lt;/strong&gt; Strong written documentation and decisions that do not happen in a hallway the remote engineer is not in.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;An environment that makes shipping safe.&lt;/strong&gt; Layered tests and validation give engineers the confidence to change production systems, the same principle behind &lt;a href=&quot;https://icalialabs.com/blog/ai-code-review-agents-teaching-ai-to-finish.html&quot;&gt;review loops that make agents finish their work&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Visible growth.&lt;/strong&gt; Growth plans with an objective reviewer outside the team.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;What pushes engineers out is just as consistent: sustained overload with no sign anyone cares about burnout, and return-to-office mandates. Vetting for fit means asking whether the team on the other side offers these conditions, not only whether the engineer meets the bar.&lt;/p&gt;
+&lt;p&gt;This is also why forward deployed engineering changes the vetting question. Nearshore forward deployed engineers are senior engineers in Latin America, time-zone aligned with US teams, embedded in the client&#39;s team and accountable for production outcomes. When the engineer is embedded, fit with that specific team carries as much weight as the résumé.&lt;/p&gt;
+&lt;h2 id=&quot;five-questions-to-ask-any-nearshore-partner&quot;&gt;Five questions to ask any nearshore partner&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;When is identity verified?&lt;/strong&gt; Before or after the candidate reaches your interview?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How is work history cross-checked?&lt;/strong&gt; Against which public sources, and with what tooling?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How is AI skill tested?&lt;/strong&gt; A live build, or a questionnaire?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;What share of applicants is accepted?&lt;/strong&gt; At Icalia Labs it is fewer than 0.4%, at a senior+ bar.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Can you meet the engineer in person for a critical role?&lt;/strong&gt; And how fast?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;A partner that answers all five with specifics has done the work. One that answers with adjectives has not.&lt;/p&gt;
+&lt;p&gt;For the US side of the process, from hiring models to benefits that are law in Mexico, see &lt;a href=&quot;https://icalialabs.com/blog/how-to-hire-software-engineers-in-mexico.html&quot;&gt;how to hire software engineers in Mexico&lt;/a&gt;. To see how vetted teams performed in production, read the &lt;a href=&quot;https://icalialabs.com/case-studies.html&quot;&gt;case studies&lt;/a&gt;, or &lt;a href=&quot;https://icalialabs.com/contact.html#book&quot;&gt;book a 30-minute call&lt;/a&gt; to talk through a critical role.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>AI Code Review Agents: Teaching AI to Finish Its Work</title>
     <link href="https://icalialabs.com/blog/ai-code-review-agents-teaching-ai-to-finish.html" />
