@@ -288,6 +288,19 @@ const sitemapXml = readSite("sitemap.xml");
 const feedXml = readSite("blog/feed.xml");
 const llmsTxt = readSite("llms.txt");
 
+// The Atom feed only carries the newest posts (collection limit in .eleventy.js).
+// Posts sharing the cutoff date may fall on either side of it, so only posts
+// strictly newer than the oldest feed slot are required to be in the feed.
+const FEED_LIMIT = 20;
+const postTimes = renderedPosts.map((p) => new Date(p.data.date).getTime()).sort((a, b) => b - a);
+const feedCutoff = postTimes.length > FEED_LIMIT ? postTimes[FEED_LIMIT - 1] : -Infinity;
+const mustBeInFeed = (post) => new Date(post.data.date).getTime() > feedCutoff;
+
+check(`feed.xml carries the newest ${FEED_LIMIT} posts`, () => {
+  const entries = (feedXml.match(/<entry>/g) || []).length;
+  assert(entries === Math.min(FEED_LIMIT, renderedPosts.length), `got ${entries} entries`);
+});
+
 function jsonLdBlocks(html) {
   return [...html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)].map((m) =>
     JSON.parse(m[1])
@@ -388,9 +401,9 @@ for (const post of renderedPosts) {
     assert(html.includes('og:type" content="article"'), "og:type not article");
     assert(/<h2 id="[^"]+"/.test(html), "no anchored H2s");
   });
-  check(`${rel}: listed in sitemap.xml, feed.xml, and llms.txt`, () => {
+  check(`${rel}: listed in sitemap.xml, llms.txt, and (if among the newest ${FEED_LIMIT}) feed.xml`, () => {
     assert(sitemapXml.includes(`<loc>${url}</loc>`), "not in sitemap.xml");
-    assert(feedXml.includes(`<id>${url}</id>`), "not in feed.xml");
+    if (mustBeInFeed(post)) assert(feedXml.includes(`<id>${url}</id>`), "not in feed.xml");
     assert(llmsTxt.includes(`](${url})`), "not in llms.txt");
   });
 }
