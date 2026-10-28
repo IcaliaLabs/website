@@ -16,6 +16,18 @@ How US product teams find, vet, and embed senior engineers from Mexico and Latin
 
 [
 
+![](/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp)
+
+October 28, 2026
+
+## How to Evaluate an Engineer's AI Skills Before Hiring
+
+Place candidates on an AI skill ladder, ask where AI was wrong and what runs in production, then watch them build live with their own agents.
+
+AI Engineering
+
+](/blog/how-to-evaluate-an-engineers-ai-skills.html)[
+
 ![](/assets/blog/vet-nearshore-engineers-cover.webp)
 
 October 27, 2026

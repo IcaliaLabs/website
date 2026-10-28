@@ -257,6 +257,18 @@ From the blog
 
 [
 
+![](/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp)
+
+October 28, 2026
+
+### How to Evaluate an Engineer's AI Skills Before Hiring
+
+Place candidates on an AI skill ladder, ask where AI was wrong and what runs in production, then watch them build live with their own agents.
+
+AI Engineering
+
+](/blog/how-to-evaluate-an-engineers-ai-skills.html)[
+
 ![](/assets/blog/vet-nearshore-engineers-cover.webp)
 
 October 27, 2026
@@ -279,19 +291,7 @@ Why AI coding agents ship code that only looks ready, and how a seven-step revie
 
 Agentic Engineering
 
-](/blog/ai-code-review-agents-teaching-ai-to-finish.html)[
-
-![](/assets/blog/img_4661.webp)
-
-September 29, 2026
-
-### Rails World 2026: From Software Writers to Makers
-
-Notes from Rails World 2026 in Austin: what DHH, Matz and Rails engineers said about AI, and why software writers are becoming software makers.
-
-AI Engineering
-
-](/blog/rails-world-2026-software-writers-to-makers.html)
+](/blog/ai-code-review-agents-teaching-ai-to-finish.html)
 
 ## Ready to scale  
 your team?

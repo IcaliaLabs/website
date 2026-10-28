@@ -191,17 +191,17 @@ AI Engineering
 
 ](/blog/ai-augmented-engineering-teams.html)[
 
-![](/assets/blog/vet-nearshore-engineers-cover.webp)
+![](/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp)
 
-October 27, 2026
+October 28, 2026
 
-### How to Vet Nearshore Engineers in the AI Era
+### How to Evaluate an Engineer's AI Skills Before Hiring
 
-How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.
+Place candidates on an AI skill ladder, ask where AI was wrong and what runs in production, then watch them build live with their own agents.
 
-Nearshore Hiring
+AI Engineering
 
-](/blog/how-to-vet-nearshore-engineers.html)
+](/blog/how-to-evaluate-an-engineers-ai-skills.html)
 
 ## Need engineers who already ship like this?
 

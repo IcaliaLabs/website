@@ -5,12 +5,84 @@
   <subtitle>Nearshore engineering, AI-augmented delivery, and building software teams that ship.</subtitle>
   <link href="https://icalialabs.com/blog/feed.xml" rel="self" />
   <link href="https://icalialabs.com/" />
-  <updated>2026-10-27T00:00:00Z</updated>
+  <updated>2026-10-28T00:00:00Z</updated>
   <id>https://icalialabs.com/</id>
   <author>
     <name>Icalia Labs</name>
     <email>sales@icalialabs.com</email>
   </author>
+  <entry>
+    <title>How to Evaluate an Engineer&#39;s AI Skills Before Hiring</title>
+    <link href="https://icalialabs.com/blog/how-to-evaluate-an-engineers-ai-skills.html" />
+    <updated>2026-10-28T00:00:00Z</updated>
+    <id>https://icalialabs.com/blog/how-to-evaluate-an-engineers-ai-skills.html</id>
+    <summary>Place candidates on an AI skill ladder, ask where AI was wrong and what runs in production, then watch them build live with their own agents.</summary>
+    <content type="html">&lt;p&gt;Evaluating an engineer&#39;s AI skills takes three moves: place them on a skill ladder, ask where the AI was wrong and what they run in production, and watch them build. Icalia Labs treats AI skill as a core part of vetting, not an extra. As of 2026 it does not hire engineers who don&#39;t use AI in their daily work.&lt;/p&gt;
+&lt;h2 id=&quot;the-short-answer&quot;&gt;The short answer&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Place the candidate on a ladder.&lt;/strong&gt; Copy-paste and autocomplete, vibe coding, AI-assisted, AI-augmented, agentic loops.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ask where the AI was wrong.&lt;/strong&gt; How they noticed, and how they fixed it.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Ask what runs in production.&lt;/strong&gt; Which agents or loops cover testing, QA, pull requests or CI/CD, and what guardrails keep mistakes from repeating.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Watch them build.&lt;/strong&gt; A live session of under 45 minutes with their own models, agents and skills.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Keep it one gate among several.&lt;/strong&gt; Identity, history and depth checks still come first.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;the-ai-skill-ladder&quot;&gt;The AI skill ladder&lt;/h2&gt;
+&lt;p&gt;Most interviews ask &amp;quot;do you use AI?&amp;quot; The useful question is how far up the ladder the candidate works:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Level&lt;/th&gt;
+&lt;th&gt;What it looks like&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Copy-paste / autocomplete&lt;/td&gt;
+&lt;td&gt;Pastes into a chat window or accepts inline suggestions&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Vibe coding&lt;/td&gt;
+&lt;td&gt;Prompts until something runs, with little review&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;AI-assisted&lt;/td&gt;
+&lt;td&gt;Uses AI inside the IDE or terminal, reviews and tests the output&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;AI-augmented&lt;/td&gt;
+&lt;td&gt;Uses AI across the cycle: tests, code review, documentation&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Agentic loops&lt;/td&gt;
+&lt;td&gt;Runs agents or loops in production across testing, QA, PRs and CI/CD, with guardrails&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;Icalia Labs&#39; recruiting team groups candidates as beginner, intermediate, advanced or differential along this ladder. The framework is deliberately exploratory: it changes as the tools do.&lt;/p&gt;
+&lt;h2 id=&quot;five-questions-that-separate-the-levels&quot;&gt;Five questions that separate the levels&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Daily use.&lt;/strong&gt; Terminal, IDE or copy-paste?&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;When the AI was wrong.&lt;/strong&gt; What happened, how they caught it, what they changed.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Testing and code review.&lt;/strong&gt; Where AI sits in their quality loop.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Automations and agents.&lt;/strong&gt; What they have built to take repeat work off their plate.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;AI inside a product.&lt;/strong&gt; Have they shipped AI features beyond a chatbot?&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;The second question does the most work. In one recent Icalia Labs interview, the candidate who stood out described catching AI-generated database queries that would have deleted columns. That is the skill: knowing when the output is wrong. In the same interviews, most candidates had not yet put AI into a product beyond a chatbot, which is why the fifth question is a strong differentiator.&lt;/p&gt;
+&lt;p&gt;Two follow-ups matter for senior roles: which agents or loops the engineer runs in production, and how they set guardrails so the same error doesn&#39;t happen twice.&lt;/p&gt;
+&lt;h2 id=&quot;vibe-coding-is-not-a-skill-on-its-own&quot;&gt;Vibe coding is not a skill on its own&lt;/h2&gt;
+&lt;p&gt;Vibe coding, prompting until something runs, can look fast in an interview. It is only a positive signal when the engineer is senior enough to review what the model produced. Without that judgment, speed turns into risk.&lt;/p&gt;
+&lt;p&gt;The risk is highest in regulated spaces. In &lt;a href=&quot;https://icalialabs.com/industries/fintech.html&quot;&gt;fintech&lt;/a&gt;, &lt;a href=&quot;https://icalialabs.com/industries/healthtech.html&quot;&gt;healthtech&lt;/a&gt; and similar industries, an engineer touches sensitive data from the first week. Someone using AI on that data for the first time, without guardrails, is a compliance problem waiting to happen.&lt;/p&gt;
+&lt;h2 id=&quot;watch-them-build&quot;&gt;Watch them build&lt;/h2&gt;
+&lt;p&gt;Questions show how a candidate thinks about AI. A live build shows whether they can use it. JG, a YC founder, describes the format: a live interview where the candidate uses models and their own agents and skills to build a system in under 45 minutes, &amp;quot;that way I can see if they can really solve and build something.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Evaluators watch three things: whether it works, how the candidate plans, prompts and checks the output, and what they throw away.&lt;/p&gt;
+&lt;h2 id=&quot;fundamentals-over-years-in-a-stack&quot;&gt;Fundamentals over years in a stack&lt;/h2&gt;
+&lt;p&gt;With AI in the loop, engineering fundamentals may predict success better than years in one framework. A strong engineer with agents can pick up an unfamiliar stack quickly. This is still a judgment call, and some roles do need deep, version-specific experience, so Icalia Labs adjusts the weighting per engagement.&lt;/p&gt;
+&lt;h2 id=&quot;why-its-still-early&quot;&gt;Why it&#39;s still early&lt;/h2&gt;
+&lt;p&gt;There is no settled industry standard for testing AI skill yet. Abraham Kuri, Icalia Labs&#39; co-founder, says it is too early to name one. That is why AI evaluation sits inside a broader set of gates: fraud-aware screening against public work, a formal ID check before any client interview, a technical evaluation where AI-native ability is tested rather than assumed, a recorded English assessment, and a final hire-bar question. Fewer than 0.4% of applicants are accepted, as described in the &lt;a href=&quot;https://icalialabs.github.io/icalia-labs-services-deck/collateral/talent-engine.html&quot;&gt;Talent Engine playbook&lt;/a&gt;.&lt;/p&gt;
+&lt;h2 id=&quot;what-to-do-next&quot;&gt;What to do next&lt;/h2&gt;
+&lt;p&gt;If your engineers will work with agents every day, add the ladder, the &amp;quot;when was the AI wrong&amp;quot; question and a short live build to your loop. To see how vetted teams performed in production, read the &lt;a href=&quot;https://icalialabs.com/case-studies.html&quot;&gt;case studies&lt;/a&gt;, or &lt;a href=&quot;https://icalialabs.com/contact.html#book&quot;&gt;book a 30-minute call&lt;/a&gt;.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>How to Vet Nearshore Engineers in the AI Era</title>
     <link href="https://icalialabs.com/blog/how-to-vet-nearshore-engineers.html" />
@@ -98,7 +170,7 @@
 &lt;h2 id=&quot;testing-ai-skill-watch-them-build&quot;&gt;Testing AI skill: watch them build&lt;/h2&gt;
 &lt;p&gt;Most AI questions in interviews ask about tools. That tests vocabulary. The more useful test is a live build. JG, a YC founder, runs a live session where the candidate uses models plus their own agents and skills to build a small system in under 45 minutes, &amp;quot;that way I can see if they can really solve and build something.&amp;quot;&lt;/p&gt;
 &lt;p&gt;Evaluators watch three things: whether the result works, how the candidate plans, prompts and checks the output, and what they reject. The last one matters most. Agents are fast at writing code and just as fast at writing the wrong code, so the senior signal is knowing when to stop and fix the system around the agent.&lt;/p&gt;
-&lt;p&gt;Before the build, Icalia Labs places each candidate on an AI skill ladder, from copy-paste and autocomplete through vibe coding, AI-assisted and AI-augmented work, up to agentic loops running in production with guardrails. The question that separates the levels fastest is when the AI was wrong and how the candidate caught it.&lt;/p&gt;
+&lt;p&gt;Before the build, Icalia Labs places each candidate on an AI skill ladder, from copy-paste and autocomplete through vibe coding, AI-assisted and AI-augmented work, up to agentic loops running in production with guardrails. The question that separates the levels fastest is when the AI was wrong and how the candidate caught it. The full ladder and the interview questions behind it are in &lt;a href=&quot;https://icalialabs.com/blog/how-to-evaluate-an-engineers-ai-skills.html&quot;&gt;How to Evaluate an Engineer&#39;s AI Skills Before Hiring&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;This is still an open field. Abraham Kuri, Icalia Labs&#39; co-founder, says it is too early to name a settled standard for evaluating AI skill. A live build is one gate among several, not a replacement for the identity and depth checks above.&lt;/p&gt;
 &lt;h2 id=&quot;in-person-interviews-are-back-for-critical-roles&quot;&gt;In-person interviews are back for critical roles&lt;/h2&gt;
 &lt;p&gt;Video made remote hiring fast. It also made it easier to fake. Icalia Labs has brought in-person interviews back in specific cases, to corroborate identity, read body language, and check the energy and fit between the engineer and the team. It encourages the same for critical roles, both in client engagements and in its own hiring. Icalia Labs is not alone: after two AI-generated candidates reached its interviews, Vidoc Security now flies candidates in for a paid, one-day in-person interview, &lt;a href=&quot;https://www.cbsnews.com/news/fake-job-seekers-flooding-market-artificial-intelligence/&quot;&gt;CBS News reported&lt;/a&gt;.&lt;/p&gt;

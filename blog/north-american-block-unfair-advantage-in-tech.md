@@ -58,6 +58,18 @@ Strategy, brand presence, and partnership development at Icalia Labs. Startup an
 
 [
 
+![](/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp)
+
+October 28, 2026
+
+### How to Evaluate an Engineer's AI Skills Before Hiring
+
+Place candidates on an AI skill ladder, ask where AI was wrong and what runs in production, then watch them build live with their own agents.
+
+AI Engineering
+
+](/blog/how-to-evaluate-an-engineers-ai-skills.html)[
+
 ![](/assets/blog/vet-nearshore-engineers-cover.webp)
 
 October 27, 2026
@@ -80,15 +92,7 @@ A practical guide for US companies hiring software engineers in Mexico: hiring m
 
 Nearshore Hiring
 
-](/blog/how-to-hire-software-engineers-in-mexico.html) [![](/assets/blog/distributed-software-teams-in-management-consulting-cover.webp) Pre-AI era
-
-February 26, 2021
-
-### Adapting a distributed software team capability in Management Consulting
-
-Argues that management consulting firms need a software development practice and explains how distributed teams help them win deals and scale.
-
-Nearshore Hiring](/blog/distributed-software-teams-in-management-consulting.html)
+](/blog/how-to-hire-software-engineers-in-mexico.html)
 
 ## Need engineers who already ship like this?
 

@@ -130,7 +130,7 @@ Most AI questions in interviews ask about tools. That tests vocabulary. The more
 
 Evaluators watch three things: whether the result works, how the candidate plans, prompts and checks the output, and what they reject. The last one matters most. Agents are fast at writing code and just as fast at writing the wrong code, so the senior signal is knowing when to stop and fix the system around the agent.
 
-Before the build, Icalia Labs places each candidate on an AI skill ladder, from copy-paste and autocomplete through vibe coding, AI-assisted and AI-augmented work, up to agentic loops running in production with guardrails. The question that separates the levels fastest is when the AI was wrong and how the candidate caught it.
+Before the build, Icalia Labs places each candidate on an AI skill ladder, from copy-paste and autocomplete through vibe coding, AI-assisted and AI-augmented work, up to agentic loops running in production with guardrails. The question that separates the levels fastest is when the AI was wrong and how the candidate caught it. The full ladder and the interview questions behind it are in [How to Evaluate an Engineer's AI Skills Before Hiring](/blog/how-to-evaluate-an-engineers-ai-skills.html).
 
 This is still an open field. Abraham Kuri, Icalia Labs' co-founder, says it is too early to name a settled standard for evaluating AI skill. A live build is one gate among several, not a replacement for the identity and depth checks above.
 
@@ -202,6 +202,18 @@ Strategy, brand presence, and partnership development at Icalia Labs. Startup an
 
 [
 
+![](/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp)
+
+October 28, 2026
+
+### How to Evaluate an Engineer's AI Skills Before Hiring
+
+Place candidates on an AI skill ladder, ask where AI was wrong and what runs in production, then watch them build live with their own agents.
+
+AI Engineering
+
+](/blog/how-to-evaluate-an-engineers-ai-skills.html)[
+
 ![](/assets/blog/dev-loop-seven-step-loop.jpg)
 
 October 20, 2026
@@ -224,19 +236,7 @@ Every engineering partner says it uses AI. Three metrics, five questions and the
 
 AI Engineering
 
-](/blog/ai-augmented-engineering-teams.html)[
-
-![](/assets/blog/img_4661.webp)
-
-September 29, 2026
-
-### Rails World 2026: From Software Writers to Makers
-
-Notes from Rails World 2026 in Austin: what DHH, Matz and Rails engineers said about AI, and why software writers are becoming software makers.
-
-AI Engineering
-
-](/blog/rails-world-2026-software-writers-to-makers.html)
+](/blog/ai-augmented-engineering-teams.html)
 
 ## Need engineers who already ship like this?
 
