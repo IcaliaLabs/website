@@ -101,7 +101,7 @@ Most AI questions in interviews ask about tools. That tests vocabulary. The more
 
 Evaluators watch three things: whether the result works, how the candidate plans, prompts and checks the output, and what they reject. The last one matters most. Agents are fast at writing code and just as fast at writing the wrong code, so the senior signal is knowing when to stop and fix the system around the agent.
 
-Before the build, Icalia Labs places each candidate on an AI skill ladder, from copy-paste and autocomplete through vibe coding, AI-assisted and AI-augmented work, up to agentic loops running in production with guardrails. The question that separates the levels fastest is when the AI was wrong and how the candidate caught it.
+Before the build, Icalia Labs places each candidate on an AI skill ladder, from copy-paste and autocomplete through vibe coding, AI-assisted and AI-augmented work, up to agentic loops running in production with guardrails. The question that separates the levels fastest is when the AI was wrong and how the candidate caught it. The full ladder and the interview questions behind it are in [How to Evaluate an Engineer's AI Skills Before Hiring](/blog/how-to-evaluate-an-engineers-ai-skills.html).
 
 This is still an open field. Abraham Kuri, Icalia Labs' co-founder, says it is too early to name a settled standard for evaluating AI skill. A live build is one gate among several, not a replacement for the identity and depth checks above.
 
