@@ -20,7 +20,7 @@ Abraham Kuri · Co-founder and Former CTO
 
 October 20, 2026 · 7 min read
 
-![Diagram of the dev-loop review cycle: plan, challenge the plan, human approval, parallel build, basic review, outside challenge, fix and review again, then ship only when no serious issue remains.](/assets/blog/photo-2026-09-29-22-24-59.webp)
+![Keynote speaker: Abraham Kuri, presenting the dev-loop methodology and his approach to supervising agentic engineering work.](/assets/blog/photo-2026-09-29-22-24-59.webp)
 
 ## Key takeaways
 
