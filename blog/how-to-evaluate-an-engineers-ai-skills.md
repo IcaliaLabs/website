@@ -20,7 +20,7 @@ Eduardo Lopez De Leon · Co-Founder & CEO
 
 October 28, 2026 · 3 min read
 
-![The AI skill ladder for software engineers, five levels from bottom to top: 1 copy-paste or autocomplete, 2 vibe coding, 3 AI-assisted, 4 AI-augmented, 5 agentic loops running in production across testing, QA, PRs and CI/CD with guardrails.](/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp)
+![People about to enter an interview in the new AI-era.](/assets/blog/bonding-1985863.webp)
 
 ## Key takeaways
 
@@ -41,6 +41,8 @@ Evaluating an engineer's AI skills takes three moves: place them on a skill ladd
 5.  **Keep it one gate among several.** Identity, history and depth checks still come first.
 
 ## The AI skill ladder
+
+![The AI skill ladder for software engineers, five levels from bottom to top: 1 copy-paste or autocomplete, 2 vibe coding, 3 AI-assisted, 4 AI-augmented, 5 agentic loops running in production across testing, QA, PRs and CI/CD with guardrails.](/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp "The AI skill ladder for software engineers")
 
 Most interviews ask "do you use AI?" The useful question is how far up the ladder the candidate works:
 

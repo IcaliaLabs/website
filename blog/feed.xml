@@ -27,6 +27,7 @@
 &lt;li&gt;&lt;strong&gt;Keep it one gate among several.&lt;/strong&gt; Identity, history and depth checks still come first.&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;the-ai-skill-ladder&quot;&gt;The AI skill ladder&lt;/h2&gt;
+&lt;p&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp&quot; alt=&quot;The AI skill ladder for software engineers, five levels from bottom to top: 1 copy-paste or autocomplete, 2 vibe coding, 3 AI-assisted, 4 AI-augmented, 5 agentic loops running in production across testing, QA, PRs and CI/CD with guardrails.&quot; title=&quot;The AI skill ladder for software engineers&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;&lt;/p&gt;
 &lt;p&gt;Most interviews ask &amp;quot;do you use AI?&amp;quot; The useful question is how far up the ladder the candidate works:&lt;/p&gt;
 &lt;table&gt;
 &lt;thead&gt;

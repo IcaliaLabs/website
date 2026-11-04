@@ -19,7 +19,7 @@ AI era
 
 6 articles
 
- [![](/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp) ![](/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp)
+ [![](/assets/blog/bonding-1985863.webp) ![](/assets/blog/bonding-1985863.webp)
 
 Latest · October 28, 2026
 

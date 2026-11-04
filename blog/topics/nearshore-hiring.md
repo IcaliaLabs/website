@@ -16,7 +16,7 @@ How US product teams find, vet, and embed senior engineers from Mexico and Latin
 
 [
 
-![](/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp)
+![](/assets/blog/bonding-1985863.webp)
 
 October 28, 2026
 
