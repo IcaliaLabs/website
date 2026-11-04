@@ -1,34 +1,37 @@
 ---
-title: "AI Code Review Agents: Teaching AI to Finish Its Work"
-description: "Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished."
+title: 'AI Code Review Agents: Teaching AI to Finish Its Work'
+description: Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.
 draft: false
 date: 2026-10-20
+updated: ''
 author: abraham-kuri
 topics:
   - agentic-engineering
   - ai-engineering
   - forward-deployed-engineer
-image: /assets/blog/dev-loop-seven-step-loop.jpg
-imageAlt: "Diagram of the dev-loop review cycle: plan, challenge the plan, human approval, parallel build, basic review, outside challenge, fix and review again, then ship only when no serious issue remains."
+image: /assets/blog/photo-2026-09-29-22-24-59.webp
+imageAlt: 'Diagram of the dev-loop review cycle: plan, challenge the plan, human approval, parallel build, basic review, outside challenge, fix and review again, then ship only when no serious issue remains.'
 takeaways:
-  - "AI coding agents write code in seconds, but code that looks ready is not the same as code that is finished."
-  - "An AI that grades its own work can pass changes it has already flagged, so a single serious finding must be able to stop delivery on its own."
-  - "In the dev-loop benchmark, the full review loop cost 1.84x more per task than a loop without its guarantees ($11.44 vs $6.22), and its severity gate caught 23 of 25 seeded defects without blocking any correct change."
-  - "The senior engineer's job in an agent team is to plan, approve and own the definition of done; agents build, and an outside model audits the work."
-  - "A full review loop is worth its cost wherever mistakes are expensive: regulated industries such as fintech, healthtech, logistics, aviation, airspace and mobility."
+  - AI coding agents write code in seconds, but code that looks ready is not the same as code that is finished.
+  - An AI that grades its own work can pass changes it has already flagged, so a single serious finding must be able to stop delivery on its own.
+  - In the dev-loop benchmark, the full review loop cost 1.84x more per task than a loop without its guarantees ($11.44 vs $6.22), and its severity gate caught 23 of 25 seeded defects without blocking any correct change.
+  - The senior engineer's job in an agent team is to plan, approve and own the definition of done; agents build, and an outside model audits the work.
+  - 'A full review loop is worth its cost wherever mistakes are expensive: regulated industries such as fintech, healthtech, logistics, aviation, airspace and mobility.'
 faq:
-  - q: "What is an AI code review agent?"
-    a: "An AI code review agent is a model that inspects code written by another agent or a person, looking for incorrect behavior, missing tests, security problems or style issues before the change ships."
-  - q: "Why can't a coding agent review its own work?"
-    a: "A model grading its own output tends to rate it favorably. In the dev-loop benchmark, a gate that shipped any change scoring 8.5 or more out of 10 passed work that its own rater had flagged as needing action before shipping."
-  - q: "What is dev-loop?"
-    a: "dev-loop is a free, open-source workflow I created as CTO of Icalia Labs. It makes AI agents plan, challenge, build, review and fix code in a loop, and ships only when no serious issue is left. It is published under the MIT license at github.com/kurenn/dev-loop."
-  - q: "How much more does a guarded review loop cost?"
-    a: "In the dev-loop benchmark I presented at Monterrey Startup Week on September 29, 2026, the full loop cost $11.44 per task against $6.22 for an earlier version without its guarantees, about 1.84x more. The extra cost buys process guarantees, such as a test gate before review and a stop rule for serious errors, not better-looking code."
-  - q: "How was dev-loop tested?"
-    a: "Like an audit. The benchmark seeded known defects into changes, replayed the gate decisions, hid the acceptance tests from the agents and had graders score the code blind. It ran 17 loop runs, 60 gate replays and 24 blind gradings on one Rails repository with two tasks."
-  - q: "When is a multi-agent review loop worth it?"
-    a: "It is worth it when a mistake is expensive: incorrect behavior, data loss or a security hole in production, especially in regulated industries such as fintech, healthtech, logistics, aviation and mobility. For throwaway prototypes, a single agent is usually enough."
+  - q: What is an AI code review agent?
+    a: An AI code review agent is a model that inspects code written by another agent or a person, looking for incorrect behavior, missing tests, security problems or style issues before the change ships.
+  - q: Why can't a coding agent review its own work?
+    a: A model grading its own output tends to rate it favorably. In the dev-loop benchmark, a gate that shipped any change scoring 8.5 or more out of 10 passed work that its own rater had flagged as needing action before shipping.
+  - q: What is dev-loop?
+    a: dev-loop is a free, open-source workflow I created as CTO of Icalia Labs. It makes AI agents plan, challenge, build, review and fix code in a loop, and ships only when no serious issue is left. It is published under the MIT license at github.com/kurenn/dev-loop.
+  - q: How much more does a guarded review loop cost?
+    a: In the dev-loop benchmark I presented at Monterrey Startup Week on September 29, 2026, the full loop cost $11.44 per task against $6.22 for an earlier version without its guarantees, about 1.84x more. The extra cost buys process guarantees, such as a test gate before review and a stop rule for serious errors, not better-looking code.
+  - q: How was dev-loop tested?
+    a: Like an audit. The benchmark seeded known defects into changes, replayed the gate decisions, hid the acceptance tests from the agents and had graders score the code blind. It ran 17 loop runs, 60 gate replays and 24 blind gradings on one Rails repository with two tasks.
+  - q: When is a multi-agent review loop worth it?
+    a: 'It is worth it when a mistake is expensive: incorrect behavior, data loss or a security hole in production, especially in regulated industries such as fintech, healthtech, logistics, aviation and mobility. For throwaway prototypes, a single agent is usually enough.'
+originalUrl: ''
+originalLanguage: ''
 ---
 
 AI coding agents now write working-looking code in seconds. The hard part is no longer starting the work; it is finishing it. A review loop that separates planning, building and adversarial review, with a senior engineer approving the plan and owning the definition of done, closes most of that gap at roughly 1.84x the cost of a loop without those guarantees. That is what I presented on September 29, 2026, at Monterrey Startup Week, at Expedition FEMSA, Tecnológico de Monterrey, in my session "dev-loop: Teaching AI to Finish Its Work, Not Just Start It."
@@ -49,7 +52,7 @@ This matches what other practitioners are reporting. Simon Willison wrote on [Se
 
 ## The surgical team, revisited
 
-In *The Mythical Man-Month* (1975), Fred Brooks described Harlan Mills' proposal for a "surgical team": one chief programmer does the critical design and coding, surrounded by specialists who support, test and document. The team moves at the speed of one mind, with the throughput of several people.
+In _The Mythical Man-Month_ (1975), Fred Brooks described Harlan Mills' proposal for a "surgical team": one chief programmer does the critical design and coding, surrounded by specialists who support, test and document. The team moves at the speed of one mind, with the throughput of several people.
 
 Agents make that structure practical again. The specialists are now agents that build, test and challenge in parallel. The chief programmer is a senior engineer who:
 
@@ -104,7 +107,7 @@ In total: 17 loop runs, 60 gate replays and 24 blind gradings, on one Rails repo
 I was direct about the price in the talk.
 
 | Measure | Loop without the guarantees | dev-loop |
-| :---- | :---- | :---- |
+| --- | --- | --- |
 | Cost per task | $6.22 | $11.44 (1.84x) |
 | Reviewer checking code that fails its own tests | 2 of 5 runs | Never: no review starts until build and tests pass (8 of 8 mechanical assertions met) |
 | Seeded defects caught before shipping | A score gate (8.5 out of 10 or higher) passed work its own rater had flagged | 23 of 25, with 0 correct changes blocked |
@@ -125,9 +128,9 @@ The scope is narrow by design: one Rails application, two tasks, and I built bot
 
 My answer in the talk was short: when mistakes are expensive. That describes regulated industries, where an error is not just a bug but a compliance, safety or financial event. It also describes most of the systems we work on at Icalia Labs:
 
-- **[Fintech](/industries/fintech.html):** a ledger or payment change with incorrect behavior is a financial and compliance event.
-- **[Healthtech](/industries/healthtech.html):** data loss or a privacy hole in a clinical workflow is a regulatory problem.
-- **[Logistics and supply chain](/industries/logistics.html):** a wrong integration can stop dispatch or misroute freight.
+- [**Fintech**](/industries/fintech.html)**:** a ledger or payment change with incorrect behavior is a financial and compliance event.
+- [**Healthtech**](/industries/healthtech.html)**:** data loss or a privacy hole in a clinical workflow is a regulatory problem.
+- [**Logistics and supply chain**](/industries/logistics.html)**:** a wrong integration can stop dispatch or misroute freight.
 
 The same logic applies in other regulated spaces where software touches safety, people and physical assets:
 
