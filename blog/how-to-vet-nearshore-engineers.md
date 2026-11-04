@@ -20,7 +20,7 @@ Eduardo Lopez De Leon · Co-Founder & CEO
 
 October 27, 2026 · 8 min read
 
-![Diagram of five vetting layers for remote engineers: identity, history, technical depth, AI skill in a live build, and in-person contact for critical roles.](/assets/blog/vet-nearshore-engineers-cover.webp)
+![Individual in a live remote interview with an open laptop, most likely with AI-augmentation tools.](/assets/blog/computer-1185626.webp)
 
 ## Key takeaways
 
@@ -123,6 +123,8 @@ The structure does two jobs. It catches fabricated profiles, because depth colla
 -   Confirm every claim with a document or artifact.
 -   Treat an admitted gap as signal, not a disqualifier.
 -   Close with specific feedback and a dated next step.
+
+![Diagram of five vetting layers for remote engineers: identity, history, technical depth, AI skill in a live build, and in-person contact for critical roles.](/assets/blog/vet-nearshore-engineers-cover.webp "Vetting Remote Engineers Framwork.")
 
 ## Testing AI skill: watch them build
 

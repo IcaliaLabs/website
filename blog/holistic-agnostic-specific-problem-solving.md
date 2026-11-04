@@ -88,7 +88,7 @@ Strategy, brand presence, and partnership development at Icalia Labs. Startup an
 
 [
 
-![](/assets/blog/vet-nearshore-engineers-cover.webp)
+![](/assets/blog/computer-1185626.webp)
 
 October 27, 2026
 

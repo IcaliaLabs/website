@@ -16,7 +16,7 @@ Forward-deployed engineers: senior engineers who work inside the customer's team
 
 [
 
-![](/assets/blog/vet-nearshore-engineers-cover.webp)
+![](/assets/blog/computer-1185626.webp)
 
 October 27, 2026
 

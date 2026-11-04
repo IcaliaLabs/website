@@ -168,6 +168,7 @@
 &lt;li&gt;Treat an admitted gap as signal, not a disqualifier.&lt;/li&gt;
 &lt;li&gt;Close with specific feedback and a dated next step.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/vet-nearshore-engineers-cover.webp&quot; alt=&quot;Diagram of five vetting layers for remote engineers: identity, history, technical depth, AI skill in a live build, and in-person contact for critical roles.&quot; title=&quot;Vetting Remote Engineers Framwork.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;&lt;/p&gt;
 &lt;h2 id=&quot;testing-ai-skill-watch-them-build&quot;&gt;Testing AI skill: watch them build&lt;/h2&gt;
 &lt;p&gt;Most AI questions in interviews ask about tools. That tests vocabulary. The more useful test is a live build. JG, a YC founder, runs a live session where the candidate uses models plus their own agents and skills to build a small system in under 45 minutes, &amp;quot;that way I can see if they can really solve and build something.&amp;quot;&lt;/p&gt;
 &lt;p&gt;Evaluators watch three things: whether the result works, how the candidate plans, prompts and checks the output, and what they reject. The last one matters most. Agents are fast at writing code and just as fast at writing the wrong code, so the senior signal is knowing when to stop and fix the system around the agent.&lt;/p&gt;

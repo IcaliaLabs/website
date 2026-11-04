@@ -220,7 +220,7 @@ AI Engineering
 
 ](/blog/ai-augmented-engineering-teams.html)[
 
-![](/assets/blog/vet-nearshore-engineers-cover.webp)
+![](/assets/blog/computer-1185626.webp)
 
 October 27, 2026
 

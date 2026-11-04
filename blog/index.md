@@ -31,7 +31,7 @@ AI Engineering Read the article →](/blog/how-to-evaluate-an-engineers-ai-skill
 
 [
 
-![](/assets/blog/vet-nearshore-engineers-cover.webp)
+![](/assets/blog/computer-1185626.webp)
 
 October 27, 2026
 
