@@ -214,7 +214,7 @@ AI Engineering
 
 ](/blog/how-to-evaluate-an-engineers-ai-skills.html)[
 
-![](/assets/blog/dev-loop-seven-step-loop.jpg)
+![](/assets/blog/photo-2026-09-29-22-24-59.webp)
 
 October 20, 2026
 

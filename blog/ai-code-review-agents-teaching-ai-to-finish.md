@@ -20,7 +20,7 @@ Abraham Kuri · Co-founder and Former CTO
 
 October 20, 2026 · 7 min read
 
-![Diagram of the dev-loop review cycle: plan, challenge the plan, human approval, parallel build, basic review, outside challenge, fix and review again, then ship only when no serious issue remains.](/assets/blog/dev-loop-seven-step-loop.jpg)
+![Diagram of the dev-loop review cycle: plan, challenge the plan, human approval, parallel build, basic review, outside challenge, fix and review again, then ship only when no serious issue remains.](/assets/blog/photo-2026-09-29-22-24-59.webp)
 
 ## Key takeaways
 
@@ -147,9 +147,9 @@ The scope is narrow by design: one Rails application, two tasks, and I built bot
 
 My answer in the talk was short: when mistakes are expensive. That describes regulated industries, where an error is not just a bug but a compliance, safety or financial event. It also describes most of the systems we work on at Icalia Labs:
 
--   **[Fintech](/industries/fintech.html):** a ledger or payment change with incorrect behavior is a financial and compliance event.
--   **[Healthtech](/industries/healthtech.html):** data loss or a privacy hole in a clinical workflow is a regulatory problem.
--   **[Logistics and supply chain](/industries/logistics.html):** a wrong integration can stop dispatch or misroute freight.
+-   [**Fintech**](/industries/fintech.html)**:** a ledger or payment change with incorrect behavior is a financial and compliance event.
+-   [**Healthtech**](/industries/healthtech.html)**:** data loss or a privacy hole in a clinical workflow is a regulatory problem.
+-   [**Logistics and supply chain**](/industries/logistics.html)**:** a wrong integration can stop dispatch or misroute freight.
 
 The same logic applies in other regulated spaces where software touches safety, people and physical assets:
 
