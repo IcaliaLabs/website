@@ -1,31 +1,34 @@
 ---
-title: "How to Evaluate an Engineer's AI Skills Before Hiring"
-description: "Place candidates on an AI skill ladder, ask where AI was wrong and what runs in production, then watch them build live with their own agents."
+title: How to Evaluate an Engineer's AI Skills Before Hiring
+description: Place candidates on an AI skill ladder, ask where AI was wrong and what runs in production, then watch them build live with their own agents.
 draft: false
 date: 2026-10-28
+updated: ''
 author: eduardo-lopez
 topics:
   - ai-engineering
   - nearshore-hiring
-image: "/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp"
-imageAlt: "The AI skill ladder for software engineers, five levels from bottom to top: 1 copy-paste or autocomplete, 2 vibe coding, 3 AI-assisted, 4 AI-augmented, 5 agentic loops running in production across testing, QA, PRs and CI/CD with guardrails."
+image: /assets/blog/bonding-1985863.webp
+imageAlt: People about to enter an interview in the new AI-era.
 takeaways:
-  - "Evaluating an engineer's AI skills means placing them on a ladder, from copy-paste and autocomplete through vibe coding, AI-assisted and AI-augmented work, up to agentic loops."
-  - "The most revealing AI interview question is when the AI was wrong and how the engineer caught and fixed it."
-  - "Senior AI skill shows in production: which agents or loops an engineer runs across testing, QA, pull requests and CI/CD, and what guardrails keep errors from repeating."
-  - "Vibe coding on its own is not a positive signal unless the engineer is senior enough to catch what the model gets wrong."
-  - "As of 2026 there is no settled industry standard for testing AI skill, so structured questions and a short live build work best as one gate alongside identity and depth checks."
+  - Evaluating an engineer's AI skills means placing them on a ladder, from copy-paste and autocomplete through vibe coding, AI-assisted and AI-augmented work, up to agentic loops.
+  - The most revealing AI interview question is when the AI was wrong and how the engineer caught and fixed it.
+  - 'Senior AI skill shows in production: which agents or loops an engineer runs across testing, QA, pull requests and CI/CD, and what guardrails keep errors from repeating.'
+  - Vibe coding on its own is not a positive signal unless the engineer is senior enough to catch what the model gets wrong.
+  - As of 2026 there is no settled industry standard for testing AI skill, so structured questions and a short live build work best as one gate alongside identity and depth checks.
 faq:
-  - q: "What questions should you ask to assess an engineer's AI skills?"
-    a: "Ask how they use AI day to day (terminal, IDE or copy-paste), a time the AI was wrong and how they fixed it, how they use AI in testing and code review, which automations or agents they run, and whether they have built AI into a product beyond a chatbot."
-  - q: "What are the levels of AI skill for software engineers?"
-    a: "A practical ladder runs from copy-paste and autocomplete, to vibe coding, to AI-assisted and AI-augmented development, up to agentic loops that run in production across testing, review and deployment."
-  - q: "Is vibe coding a good sign in a candidate?"
-    a: "Not on its own. Vibe coding is only a positive signal when the engineer is senior enough to review the output and catch mistakes, such as a generated query that would delete data."
-  - q: "What is a live build interview?"
-    a: "A live build interview is a timeboxed session, typically under 45 minutes, where a candidate builds a small working system with their own models, agents and skills while the interviewer watches."
-  - q: "Why does production AI experience matter in regulated industries?"
-    a: "In fintech, healthtech and other regulated spaces, engineers handle sensitive data from day one. An engineer using AI on that data for the first time is a compliance risk, so production experience with guardrails matters more there than anywhere else."
+  - q: What questions should you ask to assess an engineer's AI skills?
+    a: Ask how they use AI day to day (terminal, IDE or copy-paste), a time the AI was wrong and how they fixed it, how they use AI in testing and code review, which automations or agents they run, and whether they have built AI into a product beyond a chatbot.
+  - q: What are the levels of AI skill for software engineers?
+    a: A practical ladder runs from copy-paste and autocomplete, to vibe coding, to AI-assisted and AI-augmented development, up to agentic loops that run in production across testing, review and deployment.
+  - q: Is vibe coding a good sign in a candidate?
+    a: Not on its own. Vibe coding is only a positive signal when the engineer is senior enough to review the output and catch mistakes, such as a generated query that would delete data.
+  - q: What is a live build interview?
+    a: A live build interview is a timeboxed session, typically under 45 minutes, where a candidate builds a small working system with their own models, agents and skills while the interviewer watches.
+  - q: Why does production AI experience matter in regulated industries?
+    a: In fintech, healthtech and other regulated spaces, engineers handle sensitive data from day one. An engineer using AI on that data for the first time is a compliance risk, so production experience with guardrails matters more there than anywhere else.
+originalUrl: ''
+originalLanguage: ''
 ---
 
 Evaluating an engineer's AI skills takes three moves: place them on a skill ladder, ask where the AI was wrong and what they run in production, and watch them build. Icalia Labs treats AI skill as a core part of vetting, not an extra. As of 2026 it does not hire engineers who don't use AI in their daily work.
@@ -40,10 +43,12 @@ Evaluating an engineer's AI skills takes three moves: place them on a skill ladd
 
 ## The AI skill ladder
 
+![The AI skill ladder for software engineers, five levels from bottom to top: 1 copy-paste or autocomplete, 2 vibe coding, 3 AI-assisted, 4 AI-augmented, 5 agentic loops running in production across testing, QA, PRs and CI/CD with guardrails.](/assets/blog/how-to-evaluate-an-engineers-ai-skills-cover.webp "The AI skill ladder for software engineers")
+
 Most interviews ask "do you use AI?" The useful question is how far up the ladder the candidate works:
 
 | Level | What it looks like |
-|---|---|
+| --- | --- |
 | Copy-paste / autocomplete | Pastes into a chat window or accepts inline suggestions |
 | Vibe coding | Prompts until something runs, with little review |
 | AI-assisted | Uses AI inside the IDE or terminal, reviews and tests the output |
