@@ -10,7 +10,7 @@ topics:
   - ai-engineering
   - forward-deployed-engineer
 image: /assets/blog/photo-2026-09-29-22-24-59.webp
-imageAlt: 'Diagram of the dev-loop review cycle: plan, challenge the plan, human approval, parallel build, basic review, outside challenge, fix and review again, then ship only when no serious issue remains.'
+imageAlt: 'Keynote speaker: Abraham Kuri, presenting the dev-loop methodology and his approach to supervising agentic engineering work.'
 takeaways:
   - AI coding agents write code in seconds, but code that looks ready is not the same as code that is finished.
   - An AI that grades its own work can pass changes it has already flagged, so a single serious finding must be able to stop delivery on its own.
