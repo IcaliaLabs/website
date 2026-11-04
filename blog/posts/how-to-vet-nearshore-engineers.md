@@ -1,32 +1,35 @@
 ---
-title: "How to Vet Nearshore Engineers in the AI Era"
-description: "How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit."
+title: How to Vet Nearshore Engineers in the AI Era
+description: How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.
 draft: false
 date: 2026-10-27
+updated: ''
 author: eduardo-lopez
 topics:
   - nearshore-hiring
   - forward-deployed-engineer
   - ai-engineering
-image: /assets/blog/vet-nearshore-engineers-cover.webp
-imageAlt: "Diagram of five vetting layers for remote engineers: identity, history, technical depth, AI skill in a live build, and in-person contact for critical roles."
+image: /assets/blog/computer-1185626.webp
+imageAlt: Individual in a live remote interview with an open laptop, most likely with AI-augmentation tools.
 takeaways:
-  - "Vetting a remote engineer in 2026 starts with proving the person is real and did the work they claim, because AI makes a polished fake profile cheap to produce."
-  - "Fintech know-your-customer (KYC) practice gives hiring teams a ready model: layered checks on documents, face match, history consistency and payment details, where no single check is trusted alone."
-  - "Fabricated profiles fail structured technical conversations because depth collapses when an interviewer takes one project three levels down."
-  - "AI skill is best tested by watching a candidate build a small working system with their own models and agents, not by asking which tools they use."
-  - "In-person interviews are returning for critical roles because they confirm identity, presence and team fit in a way video cannot."
+  - Vetting a remote engineer in 2026 starts with proving the person is real and did the work they claim, because AI makes a polished fake profile cheap to produce.
+  - 'Fintech know-your-customer (KYC) practice gives hiring teams a ready model: layered checks on documents, face match, history consistency and payment details, where no single check is trusted alone.'
+  - Fabricated profiles fail structured technical conversations because depth collapses when an interviewer takes one project three levels down.
+  - AI skill is best tested by watching a candidate build a small working system with their own models and agents, not by asking which tools they use.
+  - In-person interviews are returning for critical roles because they confirm identity, presence and team fit in a way video cannot.
 faq:
-  - q: "How common is fake candidate fraud in remote engineering hiring?"
-    a: "Gartner predicted in July 2025 that by 2028 one in four candidate profiles worldwide will be fake, and 6% of 3,000 candidates it surveyed admitted to interview fraud. Icalia Labs' recruiting team has blocked or reported more than 100 fake profiles since May 2026, out of 600 to 700 applications per engineering job post."
-  - q: "What is KYC, and how does it apply to hiring engineers?"
-    a: "Know your customer (KYC) is the identity-verification practice banks and fintechs use before opening an account. Applied to hiring, it means layered checks on government ID, a live face match, consistency of work history and payment details before a candidate reaches a client."
-  - q: "How do you test a nearshore engineer's AI skills?"
-    a: "Ask the candidate to build a small working system live, in under 45 minutes, using their own models, agents and skills. Evaluators watch whether it works, how the candidate plans and checks the output, and what they reject."
-  - q: "Are in-person interviews necessary for nearshore engineers?"
-    a: "Not for every role, but they are back for critical ones. Meeting in person confirms identity, shows body language and tests the energy and fit between the engineer and the team."
-  - q: "What should a US company ask a nearshore partner about vetting?"
-    a: "Ask when identity is verified (before or after the client interview), how work history is cross-checked, how AI skill is tested, what share of applicants is accepted, and whether in-person contact is available for critical roles."
+  - q: How common is fake candidate fraud in remote engineering hiring?
+    a: Gartner predicted in July 2025 that by 2028 one in four candidate profiles worldwide will be fake, and 6% of 3,000 candidates it surveyed admitted to interview fraud. Icalia Labs' recruiting team has blocked or reported more than 100 fake profiles since May 2026, out of 600 to 700 applications per engineering job post.
+  - q: What is KYC, and how does it apply to hiring engineers?
+    a: Know your customer (KYC) is the identity-verification practice banks and fintechs use before opening an account. Applied to hiring, it means layered checks on government ID, a live face match, consistency of work history and payment details before a candidate reaches a client.
+  - q: How do you test a nearshore engineer's AI skills?
+    a: Ask the candidate to build a small working system live, in under 45 minutes, using their own models, agents and skills. Evaluators watch whether it works, how the candidate plans and checks the output, and what they reject.
+  - q: Are in-person interviews necessary for nearshore engineers?
+    a: Not for every role, but they are back for critical ones. Meeting in person confirms identity, shows body language and tests the energy and fit between the engineer and the team.
+  - q: What should a US company ask a nearshore partner about vetting?
+    a: Ask when identity is verified (before or after the client interview), how work history is cross-checked, how AI skill is tested, what share of applicants is accepted, and whether in-person contact is available for critical roles.
+originalUrl: ''
+originalLanguage: ''
 ---
 
 Vetting a nearshore engineer in 2026 means proving two things before anything else: the person is who they say they are, and they did the work they claim. AI has made both cheaper to fake. The fix is layered, and most of the layers already exist in fintech: identity checks borrowed from know-your-customer programs, a structured technical conversation that tests depth, a live build with the candidate's own AI tooling, and in-person contact for critical roles.
@@ -60,7 +63,7 @@ The stakes are higher in regulated spaces. In [fintech](/industries/fintech.html
 Know your customer (KYC) is the identity-verification practice banks and fintechs run before they open an account. Its central idea transfers directly to hiring: no single check is trusted on its own, and each layer catches what the previous one misses.
 
 | Layer | What it checks | What it catches |
-|---|---|---|
+| --- | --- | --- |
 | Document | Government ID format and check digits (for example RFC and CURP in Mexico, NIT in Colombia, CUIT/CUIL in Argentina) | Invented or mistyped identities |
 | Face match | The person on video matches the ID | Proxies and stand-ins on calls |
 | History consistency | Profile age, public work and GitHub commit timezones line up with the résumé | Recently created or borrowed profiles |
@@ -94,6 +97,8 @@ The structure does two jobs. It catches fabricated profiles, because depth colla
 - Confirm every claim with a document or artifact.
 - Treat an admitted gap as signal, not a disqualifier.
 - Close with specific feedback and a dated next step.
+
+![Diagram of five vetting layers for remote engineers: identity, history, technical depth, AI skill in a live build, and in-person contact for critical roles.](/assets/blog/vet-nearshore-engineers-cover.webp "Vetting Remote Engineers Framwork.")
 
 ## Testing AI skill: watch them build
 
