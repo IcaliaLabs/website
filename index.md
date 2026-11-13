@@ -257,6 +257,18 @@ From the blog
 
 [
 
+![](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg)
+
+November 12, 2026
+
+### Nearshore vs Offshore vs Onshore: How to Choose
+
+How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.
+
+Forward-Deployed Engineering (FDE)
+
+](/blog/nearshore-vs-offshore-vs-onshore.html)[
+
 ![](/assets/blog/bonding-1985863.webp)
 
 October 28, 2026
@@ -279,19 +291,7 @@ How AI-amplified hiring fraud works, and the layered checks US engineering leade
 
 Nearshore Hiring
 
-](/blog/how-to-vet-nearshore-engineers.html)[
-
-![](/assets/blog/photo-2026-09-29-22-24-59.webp)
-
-October 20, 2026
-
-### AI Code Review Agents: Teaching AI to Finish Its Work
-
-Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.
-
-Agentic Engineering
-
-](/blog/ai-code-review-agents-teaching-ai-to-finish.html)
+](/blog/how-to-vet-nearshore-engineers.html)
 
 ## Ready to scale  
 your team?

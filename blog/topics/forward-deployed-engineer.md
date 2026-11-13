@@ -16,6 +16,18 @@ Forward-deployed engineers: senior engineers who work inside the customer's team
 
 [
 
+![](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg)
+
+November 12, 2026
+
+## Nearshore vs Offshore vs Onshore: How to Choose
+
+How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.
+
+Forward-Deployed Engineering (FDE)
+
+](/blog/nearshore-vs-offshore-vs-onshore.html)[
+
 ![](/assets/blog/computer-1185626.webp)
 
 October 27, 2026

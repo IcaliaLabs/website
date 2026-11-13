@@ -156,6 +156,18 @@ Nearshore Hiring
 
 ](/blog/how-to-vet-nearshore-engineers.html)[
 
+![](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg)
+
+November 12, 2026
+
+### Nearshore vs Offshore vs Onshore: How to Choose
+
+How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.
+
+Forward-Deployed Engineering (FDE)
+
+](/blog/nearshore-vs-offshore-vs-onshore.html)[
+
 ![](/assets/blog/photo-2026-09-29-22-24-59.webp)
 
 October 20, 2026
@@ -166,19 +178,7 @@ Why AI coding agents ship code that only looks ready, and how a seven-step revie
 
 Agentic Engineering
 
-](/blog/ai-code-review-agents-teaching-ai-to-finish.html)[
-
-![](/assets/blog/img_4661.webp)
-
-September 29, 2026
-
-### Rails World 2026: From Software Writers to Makers
-
-Notes from Rails World 2026 in Austin: what DHH, Matz and Rails engineers said about AI, and why software writers are becoming software makers.
-
-AI Engineering
-
-](/blog/rails-world-2026-software-writers-to-makers.html)
+](/blog/ai-code-review-agents-teaching-ai-to-finish.html)
 
 ## Need engineers who already ship like this?
 

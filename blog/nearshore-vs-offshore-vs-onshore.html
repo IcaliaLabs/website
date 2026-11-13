@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nearshore vs Offshore vs Onshore: How to Choose — Icalia Labs Blog</title>
+  <meta name="description" content="How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.">
+
+
+  <link rel="canonical" href="https://icalialabs.com/blog/nearshore-vs-offshore-vs-onshore.html">
+
+  <link rel="icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+  <link rel="shortcut icon" type="image/x-icon" href="https://icalialabs.com/assets/favicon.ico">
+
+  <link rel="alternate" type="text/markdown" href="https://icalialabs.com/blog/nearshore-vs-offshore-vs-onshore.md">
+
+  <link rel="alternate" type="application/atom+xml" title="Icalia Labs Blog" href="https://icalialabs.com/blog/feed.xml">
+
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-MSFD00QMYY"></script>
+  <script>
+    // Only the live site reports; local and preview builds stay out of GA.
+    if (location.hostname !== 'icalialabs.com') { window['ga-disable-G-MSFD00QMYY'] = true; }
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-MSFD00QMYY', {
+      'page_path': '/blog/nearshore-vs-offshore-vs-onshore.html',
+      'page_type': location.pathname.includes('/industries/') ? 'industry_page' : 'root_page',
+      'anonymize_ip': true,
+      'cookie_expires': 63072000
+    });
+  </script>
+  <script src="/js/ga-events.js" defer></script>
+
+  <meta property="og:type" content="article">
+
+  <meta property="og:url" content="https://icalialabs.com/blog/nearshore-vs-offshore-vs-onshore.html">
+
+  <meta property="og:title" content="Nearshore vs Offshore vs Onshore: How to Choose — Icalia Labs Blog">
+  <meta property="og:description" content="How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.">
+  <meta property="og:image" content="https://icalialabs.com/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Nearshore vs Offshore vs Onshore: How to Choose — Icalia Labs Blog">
+  <meta name="twitter:description" content="How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.">
+  <meta name="twitter:image" content="https://icalialabs.com/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            'icalia-red': '#E8453C',
+            'icalia-red-dark': '#C53B33',
+            'icalia-dark': '#1A1A22',
+            'icalia-navy': '#2D2F40',
+            'icalia-warm': '#FAF8F6',
+            'icalia-warm-2': '#F3F0EC',
+            'icalia-blush': '#FDECED',
+            'icalia-sand': '#E8E4DF',
+          },
+          fontFamily: {
+            'display': ['"Instrument Serif"', 'Georgia', 'serif'],
+            'body': ['"DM Sans"', 'system-ui', 'sans-serif'],
+          },
+        }
+      }
+    }
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    .reveal { opacity: 0; transform: translateY(32px); transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    @media (min-width: 768px) {
+      .nav-dropdown:hover .industries-panel, .nav-dropdown:focus-within .industries-panel { opacity: 1; visibility: visible; transform: translateY(0); }
+    }
+  </style>
+
+  <meta property="article:published_time" content="2026-11-12">
+
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","headline":"Nearshore vs Offshore vs Onshore: How to Choose","description":"How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.","url":"https://icalialabs.com/blog/nearshore-vs-offshore-vs-onshore.html","mainEntityOfPage":{"@type":"WebPage","@id":"https://icalialabs.com/blog/nearshore-vs-offshore-vs-onshore.html"},"datePublished":"2026-11-12","dateModified":"2026-11-12","image":"https://icalialabs.com/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg","inLanguage":"en","keywords":"Forward-Deployed Engineering (FDE), Nearshore Hiring, Engineering Costs","about":[{"@type":"Thing","name":"Forward-Deployed Engineering (FDE)"},{"@type":"Thing","name":"Nearshore Hiring"},{"@type":"Thing","name":"Engineering Costs"}],"author":{"@type":"Person","name":"Eduardo Lopez De Leon","jobTitle":"Co-Founder & CEO","image":"https://icalialabs.com/assets/eduardo-lopez.webp","sameAs":["https://www.linkedin.com/in/elopezdeleon/","https://x.com/edolopez","https://github.com/edolopez"],"worksFor":{"@type":"Organization","name":"Icalia Labs","url":"https://icalialabs.com"}},"publisher":{"@type":"Organization","name":"Icalia Labs","url":"https://icalialabs.com","logo":{"@type":"ImageObject","url":"https://icalialabs.com/assets/logo.svg"}}}</script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://icalialabs.com/"},{"@type":"ListItem","position":2,"name":"Blog","item":"https://icalialabs.com/blog/"},{"@type":"ListItem","position":3,"name":"Forward-Deployed Engineering (FDE)","item":"https://icalialabs.com/blog/topics/forward-deployed-engineer.html"},{"@type":"ListItem","position":4,"name":"Nearshore vs Offshore vs Onshore: How to Choose","item":"https://icalialabs.com/blog/nearshore-vs-offshore-vs-onshore.html"}]}</script>
+
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is the difference between nearshore, offshore and onshore software development?","acceptedAnswer":{"@type":"Answer","text":"Onshore means engineers in the same country as the client. Nearshore means engineers in a nearby country with a similar time zone, such as Mexico for US companies. Offshore means engineers in a distant region, usually 7 to 14 hours ahead of US time."}},{"@type":"Question","name":"Is nearshore better than offshore for US companies?","acceptedAnswer":{"@type":"Answer","text":"Nearshore is the better fit when the work needs daily collaboration with US product and engineering leads, because a Mexico-based team shares the full workday with US Central time. Offshore can fit well-specified work that runs asynchronously or needs round-the-clock coverage."}},{"@type":"Question","name":"How many working hours overlap between the US and Mexico?","acceptedAnswer":{"@type":"Answer","text":"Monterrey runs on Central Standard Time year-round, so a Monterrey team shares the full 8-hour workday with US Central in winter, 7 hours during US daylight saving time, and 6 to 7 hours with US Eastern and Pacific."}},{"@type":"Question","name":"What is a nearshore forward deployed engineer?","acceptedAnswer":{"@type":"Answer","text":"A nearshore forward deployed engineer (FDE) is a senior engineer based in Latin America who works inside a US client's team, in its time zone and tools, and is accountable for outcomes in production rather than for a fixed scope of tickets."}},{"@type":"Question","name":"Does AI-assisted development make offshore teams more attractive?","acceptedAnswer":{"@type":"Answer","text":"AI tools make code faster to produce, but 66% of developers in Stack Overflow's 2025 survey said their biggest frustration is AI output that is almost right. That moves the scarce work to review and decisions, which favors engineers who share working hours with the product team."}}]}</script>
+
+  <style>
+    .post-prose { color: rgba(45, 47, 64, 0.8); font-size: 1.0625rem; line-height: 1.8; }
+    .post-prose > * + * { margin-top: 1.25rem; }
+    .post-prose h2 { font-family: "Instrument Serif", Georgia, serif; font-size: 2.125rem; line-height: 1.15; color: #1A1A22; margin-top: 3rem; scroll-margin-top: 7rem; }
+    .post-prose h3 { font-weight: 600; font-size: 1.25rem; color: #1A1A22; margin-top: 2.25rem; scroll-margin-top: 7rem; }
+    .post-prose a { color: #E8453C; text-decoration: underline; text-underline-offset: 3px; }
+    .post-prose a:hover { color: #C53B33; }
+    .post-prose strong { color: #1A1A22; font-weight: 600; }
+    .post-prose ul { list-style: disc; padding-left: 1.25rem; }
+    .post-prose ol { list-style: decimal; padding-left: 1.25rem; }
+    .post-prose li + li { margin-top: 0.5rem; }
+    .post-prose blockquote { border-left: 2px solid #E8453C; padding-left: 1.25rem; font-style: italic; color: rgba(45, 47, 64, 0.7); }
+    .post-prose code { font-size: 0.9em; background: #F3F0EC; padding: 0.15rem 0.35rem; border-radius: 0.35rem; }
+    .post-prose pre { background: #1A1A22; color: #FAF8F6; padding: 1.25rem; border-radius: 1rem; overflow-x: auto; font-size: 0.875rem; }
+    .post-prose pre code { background: none; padding: 0; }
+    .post-prose img { max-width: 100%; height: auto; border-radius: 1rem; margin-top: 2rem; margin-bottom: 0.5rem; }
+    .post-prose .post-figure img { margin-left: auto; margin-right: auto; }
+    .post-prose .post-figure > em, .post-prose .post-caption { display: block; margin-top: 0.25rem; font-size: 0.875rem; line-height: 1.6; text-align: center; color: rgba(45, 47, 64, 0.55); }
+    .post-prose .post-figure > em a, .post-prose .post-caption a { color: inherit; }
+    .post-prose table { width: 100%; border-collapse: collapse; font-size: 0.9375rem; display: block; overflow-x: auto; }
+    .post-prose th, .post-prose td { border-bottom: 1px solid #E8E4DF; padding: 0.65rem 0.75rem; text-align: left; vertical-align: top; }
+    .post-prose th { color: #1A1A22; font-weight: 600; background: #F3F0EC; }
+    .post-prose hr { border: 0; border-top: 1px solid #E8E4DF; margin: 2.5rem 0; }
+  </style>
+</head>
+<body class="font-body text-icalia-dark antialiased bg-icalia-warm">
+
+  <!-- Navigation -->
+<nav class="fixed top-0 w-full bg-icalia-warm/90 backdrop-blur-md z-50" aria-label="Main">
+    <div class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+      <a href="../" class="flex items-center gap-1">
+        <img src="../assets/logo.svg" alt="Icalia Labs" class="h-7 w-auto">
+      </a>
+      <div class="hidden lg:flex items-center gap-9 text-sm font-medium text-icalia-navy/70">
+
+        <div class="nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Services
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[38rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2 grid grid-cols-5 gap-2">
+              <a href="../agentic-engineering.html" class="col-span-2 block bg-icalia-dark text-white rounded-xl p-5 hover:bg-icalia-navy transition-colors">
+                <div class="text-[10px] font-bold text-icalia-red tracking-widest uppercase">Lead service</div>
+                <div class="mt-3 font-display text-2xl leading-tight">Agentic Engineering</div>
+                <div class="mt-2 text-xs text-white/60 leading-relaxed">Agents implement. Senior engineers own the spec, the review, and the release.</div>
+                <div class="mt-4 text-xs font-semibold text-white/80">Explore &rarr;</div>
+              </a>
+              <div class="col-span-3">
+                <a href="../forward-deployed-engineers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Forward Deployed Engineers</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Senior engineers who own outcomes in production.</div>
+                </a>
+                <a href="../services.html#talent-augmentation" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Talent Augmentation</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Embedded, managed nearshore engineers.</div>
+                </a>
+                <a href="../services.html#placements" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Placements &amp; BOT</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Teams you own, after you see them deliver.</div>
+                </a>
+                <a href="../how-we-vet.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">How We Vet</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Five gates, ID-verified, under 0.4% accepted.</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="industries-dropdown nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Industries
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute left-1/2 -translate-x-1/2 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[22rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2">
+              <a href="../industries/fintech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Fintech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Flow of funds, cards, direct-to-bank, ledgers.</div>
+              </a>
+              <a href="../industries/healthtech.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Healthtech</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">HIPAA, clinical and claims data, agentic guardrails.</div>
+              </a>
+              <a href="../industries/logistics.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">Logistics &amp; Supply Chain</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Carrier integrations and systems built for uptime.</div>
+              </a>
+              <a href="../industries/retail.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                <div class="font-semibold text-icalia-dark">eCommerce &amp; Retail</div>
+                <div class="text-xs text-icalia-navy/60 mt-0.5">Peak traffic, conversion, integrations that work.</div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <a href="../case-studies.html" class="hover:text-icalia-dark transition-colors">Work</a>
+
+        <div class="nav-dropdown relative">
+          <button class="hover:text-icalia-dark flex items-center gap-1.5 py-5 -my-5" aria-haspopup="true">
+            Company
+            <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </button>
+          <div class="industries-panel absolute right-0 top-full pt-3 opacity-0 invisible translate-y-1 transition-all duration-150 w-[34rem]">
+            <div class="bg-white border border-icalia-sand rounded-2xl shadow-xl p-2 grid grid-cols-5 gap-2">
+              <a href="../manifesto.html" class="col-span-2 block bg-icalia-warm-2 border border-icalia-sand/60 rounded-xl p-5 hover:border-icalia-red/40 transition-colors">
+                <div class="text-[10px] font-bold text-icalia-red tracking-widest uppercase">Manifesto</div>
+                <div class="mt-3 font-display text-xl leading-tight text-icalia-dark italic">There is a gap between idea and impact.</div>
+                <div class="mt-4 text-xs font-semibold text-icalia-dark">Read the ten principles &rarr;</div>
+              </a>
+              <div class="col-span-3">
+                <a href="../about.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">About</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Builders since 2012. Austin and Monterrey.</div>
+                </a>
+                <a href="../careers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Careers</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">Join the engineers who multiply.</div>
+                </a>
+                <a href="../developers.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Open Source</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">MCP servers, SDKs, and agent skills we maintain.</div>
+                </a>
+                <a href="../contact.html" class="block p-3 rounded-lg hover:bg-icalia-warm-2 transition-colors">
+                  <div class="font-semibold text-icalia-dark">Contact</div>
+                  <div class="text-xs text-icalia-navy/60 mt-0.5">sales@icalialabs.com and office details.</div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <a href="../blog/" class="hover:text-icalia-dark transition-colors">Blog</a>
+
+        <a href="../contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-2.5 rounded-full text-sm font-semibold hover:bg-icalia-navy transition-colors">Book a Call</a>
+      </div>
+      <button id="mobile-menu-btn" class="lg:hidden p-2" aria-label="Open menu">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden lg:hidden border-t border-icalia-sand/50 bg-icalia-warm max-h-[calc(100vh-4.5rem)] overflow-y-auto">
+      <div class="px-6 py-6 flex flex-col gap-5 text-sm font-medium text-icalia-navy">
+        <a href="../">Home</a>
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Services</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="../agentic-engineering.html" class="block py-2 font-semibold text-icalia-dark">Agentic Engineering</a>
+            <a href="../forward-deployed-engineers.html" class="block py-2">Forward Deployed Engineers</a>
+            <a href="../services.html#talent-augmentation" class="block py-2">Talent Augmentation</a>
+            <a href="../services.html#placements" class="block py-2">Placements &amp; BOT</a>
+            <a href="../how-we-vet.html" class="block py-2">How We Vet</a>
+          </div>
+        </details>
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Industries</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div id="mobile-industries" class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="../industries/fintech.html" class="block py-2">Fintech</a>
+            <a href="../industries/healthtech.html" class="block py-2">Healthtech</a>
+            <a href="../industries/logistics.html" class="block py-2">Logistics &amp; Supply Chain</a>
+            <a href="../industries/retail.html" class="block py-2">eCommerce &amp; Retail</a>
+          </div>
+        </details>
+        <a href="../case-studies.html">Work</a>
+        <details class="group">
+          <summary class="flex items-center justify-between cursor-pointer list-none text-icalia-dark">
+            <span>Company</span>
+            <svg class="w-4 h-4 transition-transform group-open:rotate-180" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+          </summary>
+          <div class="mt-3 ml-3 pl-3 border-l border-icalia-sand text-icalia-navy/70">
+            <a href="../manifesto.html" class="block py-2 font-semibold text-icalia-dark">Manifesto</a>
+            <a href="../about.html" class="block py-2">About</a>
+            <a href="../careers.html" class="block py-2">Careers</a>
+            <a href="../developers.html" class="block py-2">Open Source</a>
+            <a href="../contact.html" class="block py-2">Contact</a>
+          </div>
+        </details>
+
+        <a href="../blog/">Blog</a>
+
+        <a href="../contact.html#book" class="bg-icalia-dark text-icalia-warm px-5 py-3 rounded-full text-center font-semibold">Book a Call</a>
+      </div>
+    </div>
+  </nav>
+
+
+<main>
+
+
+
+
+  <article>
+    <!-- Header -->
+    <header class="pt-36 pb-10 md:pt-44 md:pb-14 px-6 lg:px-10">
+      <div class="max-w-3xl mx-auto">
+
+
+
+        <nav aria-label="Breadcrumb" class="text-xs font-medium text-icalia-navy/50 mb-8">
+          <ol class="flex flex-wrap items-center gap-2">
+            <li><a href="/" class="hover:text-icalia-red transition-colors">Home</a></li>
+            <li aria-hidden="true">/</li>
+            <li><a href="/blog/" class="hover:text-icalia-red transition-colors">Blog</a></li>
+
+            <li aria-hidden="true">/</li>
+            <li><a href="/blog/topics/forward-deployed-engineer.html" class="hover:text-icalia-red transition-colors">Forward-Deployed Engineering (FDE)</a></li>
+
+          </ol>
+        </nav>
+
+        <div class="flex flex-wrap gap-2 mb-6">
+
+          <a href="/blog/topics/forward-deployed-engineer.html" class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full hover:bg-icalia-red hover:text-white transition-colors">Forward-Deployed Engineering (FDE)</a>
+
+          <a href="/blog/topics/nearshore-hiring.html" class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full hover:bg-icalia-red hover:text-white transition-colors">Nearshore Hiring</a>
+
+          <a href="/blog/topics/engineering-costs.html" class="text-xs font-semibold text-icalia-red bg-icalia-blush px-3 py-1.5 rounded-full hover:bg-icalia-red hover:text-white transition-colors">Engineering Costs</a>
+
+        </div>
+
+        <h1 class="font-display text-4xl md:text-6xl leading-[1.05] tracking-tight">Nearshore vs Offshore vs Onshore: How to Choose</h1>
+        <p class="mt-6 text-lg md:text-xl text-icalia-navy/60 leading-relaxed">How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.</p>
+
+        <div class="mt-8 flex items-center gap-4">
+
+          <img src="/assets/eduardo-lopez.webp" alt="Eduardo Lopez De Leon" class="w-11 h-11 rounded-full object-cover" width="44" height="44">
+
+          <div class="text-sm">
+            <p class="font-semibold text-icalia-dark">Eduardo Lopez De Leon <span class="font-normal text-icalia-navy/50">&middot; Co-Founder &amp; CEO</span></p>
+            <p class="text-icalia-navy/50">
+              <time datetime="2026-11-12">November 12, 2026</time>
+
+              &middot; 7 min read
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <figure class="px-6 lg:px-10">
+      <div class="max-w-5xl mx-auto">
+        <img src="/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg" alt="Bar chart of shared workday hours with a 9-to-5 US Central team: onshore 8 hours, nearshore in Monterrey 8 hours, Eastern Europe about 1 hour, India 0 hours." width="1200" height="630" fetchpriority="high" decoding="async" class="w-full aspect-[1200/630] rounded-2xl object-cover bg-icalia-warm-2">
+      </div>
+    </figure>
+
+
+    <div class="px-6 lg:px-10 pb-16">
+      <div class="max-w-3xl mx-auto">
+
+        <aside class="mt-10 bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6 md:p-8" aria-labelledby="key-takeaways">
+          <h2 id="key-takeaways" class="text-xs font-semibold text-icalia-red uppercase tracking-widest mb-4">Key takeaways</h2>
+          <ul class="space-y-3">
+
+            <li class="flex gap-3 text-icalia-navy/80 leading-relaxed">
+              <span class="shrink-0 mt-2.5 w-1.5 h-1.5 rounded-full bg-icalia-red"></span>
+              <span>Onshore, nearshore and offshore engineering differ less in talent than in how many working hours the team shares with the people who make product decisions.</span>
+            </li>
+
+            <li class="flex gap-3 text-icalia-navy/80 leading-relaxed">
+              <span class="shrink-0 mt-2.5 w-1.5 h-1.5 rounded-full bg-icalia-red"></span>
+              <span>A nearshore team in Mexico shares 6 to 8 hours of the workday with every continental US time zone, while a team in India shares none on a standard 9-to-5 schedule.</span>
+            </li>
+
+            <li class="flex gap-3 text-icalia-navy/80 leading-relaxed">
+              <span class="shrink-0 mt-2.5 w-1.5 h-1.5 rounded-full bg-icalia-red"></span>
+              <span>AI coding agents shift the bottleneck from writing code to reviewing it and deciding what to build, which raises the value of engineers who work the same hours as the product team.</span>
+            </li>
+
+            <li class="flex gap-3 text-icalia-navy/80 leading-relaxed">
+              <span class="shrink-0 mt-2.5 w-1.5 h-1.5 rounded-full bg-icalia-red"></span>
+              <span>Offshore still fits well-specified, asynchronous work and follow-the-sun support; onshore still fits roles that require on-site presence or US-only access.</span>
+            </li>
+
+            <li class="flex gap-3 text-icalia-navy/80 leading-relaxed">
+              <span class="shrink-0 mt-2.5 w-1.5 h-1.5 rounded-full bg-icalia-red"></span>
+              <span>Nearshore forward deployed engineers are senior engineers in Latin America, embedded in a US client&#39;s team and accountable for production outcomes, not only for tickets closed.</span>
+            </li>
+
+          </ul>
+        </aside>
+
+
+        <div class="post-prose mt-12">
+<p>Nearshore, offshore and onshore engineering teams can all be senior and all use AI. The real difference is how many hours of the workday the team shares with the people who decide what gets built, and who is accountable when the software reaches production. For US product companies that need daily collaboration, nearshore engineers in Mexico and Latin America usually give the best balance of overlap, access and accountability. Offshore still fits work that is well specified and asynchronous, and onshore still fits roles that require on-site presence.</p>
+<p class="post-figure"><img src="/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg" alt="Bar chart of shared workday hours with a 9-to-5 US Central team: onshore 8 hours, nearshore in Monterrey 8 hours, Eastern Europe about 1 hour, India 0 hours." loading="lazy" decoding="async">
+<em>Shared hours of a 9-to-5 workday with a team on US Central Standard Time. Source: Icalia Labs calculation from standard UTC offsets (Monterrey UTC−6 year-round, Warsaw UTC+1, India UTC+5:30).</em></p>
+<h2 id="the-short-answer">The short answer</h2>
+<ul>
+<li><strong>Choose onshore</strong> when the role requires on-site presence, US-only data or system access, or a security clearance.</li>
+<li><strong>Choose nearshore</strong> when the team needs to work in the same hours as US product and engineering leads, ship to production often, and meet in person for critical moments.</li>
+<li><strong>Choose offshore</strong> when the work is well specified, can run asynchronously, or benefits from follow-the-sun coverage.</li>
+<li><strong>Choose nearshore forward deployed engineers</strong> when the goal is a production outcome, not a staffed seat: senior engineers embedded in the team and accountable for what ships.</li>
+</ul>
+<h2 id="what-each-model-means">What each model means</h2>
+<p><strong>Onshore</strong> engineering means the engineers work in the same country as the client, whether employed directly or through a US vendor.</p>
+<p><strong>Nearshore</strong> engineering means the engineers work in a nearby country with a similar time zone. For US companies, that usually means Mexico and the rest of Latin America. Monterrey, where Icalia Labs has an office, runs on Central Standard Time year-round.</p>
+<p><strong>Offshore</strong> engineering means the engineers work in a distant region, most often South or Southeast Asia or Eastern Europe, usually 7 to 14 hours ahead of US Central time.</p>
+<p><strong>A forward deployed engineer (FDE)</strong> is an engineer embedded in the customer's team who owns outcomes in production. A nearshore FDE combines that operating model with the nearshore time zone.</p>
+<h2 id="nearshore-vs-offshore-vs-onshore-the-comparison">Nearshore vs offshore vs onshore: the comparison</h2>
+<table>
+<thead>
+<tr>
+<th>Factor</th>
+<th>Onshore (US)</th>
+<th>Nearshore (Mexico / LatAm)</th>
+<th>Offshore (Asia / Eastern Europe)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Shared hours with a 9-to-5 US Central team</td>
+<td>8</td>
+<td>8 in winter, 7 in US summer (6–7 with US Eastern and Pacific)</td>
+<td>0 (India) to about 1 (Eastern Europe)</td>
+</tr>
+<tr>
+<td>In-person meeting for a critical decision</td>
+<td>Same day</td>
+<td>Short flight; Monterrey is close to Austin</td>
+<td>Long-haul travel</td>
+</tr>
+<tr>
+<td>Typical collaboration mode</td>
+<td>Synchronous</td>
+<td>Synchronous</td>
+<td>Mostly asynchronous handoffs</td>
+</tr>
+<tr>
+<td>Fit for daily product decisions</td>
+<td>Strong</td>
+<td>Strong</td>
+<td>Weak unless one side shifts hours</td>
+</tr>
+<tr>
+<td>Fit for well-specified, async work</td>
+<td>Strong</td>
+<td>Strong</td>
+<td>Strong</td>
+</tr>
+<tr>
+<td>Follow-the-sun coverage</td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+</tr>
+</tbody>
+</table>
+<p class="post-figure"><img src="/assets/blog/nearshore-vs-offshore-vs-onshore-table.jpg" alt="Comparison table: shared hours with a 9-to-5 US Central team are 8 onshore, 8 in winter and 7 in summer nearshore, and 0 to about 1 offshore; nearshore and onshore are synchronous and strong for daily product decisions; offshore runs on async handoffs and offers follow-the-sun coverage." loading="lazy" decoding="async">
+<em>Onshore, nearshore and offshore compared on the factors that change delivery. Shared hours: Icalia Labs calculation from standard UTC offsets.</em></p>
+<p>The overlap numbers come from plain arithmetic. A 9-to-5 day in US Central time runs from 15:00 to 23:00 UTC. In Monterrey, which stays on UTC−6 all year, that is the same 9-to-5 in winter; when the US moves to daylight saving time, the overlap drops to 7 hours. In India (UTC+5:30), a local 9-to-5 ends at 11:30 UTC, more than three hours before the US Central day starts. In Warsaw (UTC+1), the local day overlaps with the US Central morning by about one hour.</p>
+<h2 id="why-time-zone-overlap-matters-more-with-ai-agents">Why time-zone overlap matters more with AI agents</h2>
+<p>AI coding tools are now standard. In the <a href="https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report">2025 DORA report</a>, 90% of respondents reported using AI at work, and 84% of developers in <a href="https://survey.stackoverflow.co/2025/ai">Stack Overflow's 2025 Developer Survey</a> said they use or plan to use AI tools in development.</p>
+<p>That changes where the bottleneck sits. When agents write a first version in minutes, the slow parts are reviewing the output, catching what is almost right, and deciding what to build next. In the same Stack Overflow survey, 46% of developers said they distrust the accuracy of AI output and 66% named &quot;AI solutions that are almost right, but not quite&quot; as their biggest frustration. DORA summarizes the effect in one line: &quot;AI doesn't fix a team; it amplifies what's already there.&quot;</p>
+<p>Both of those slow parts depend on fast conversations with the people who own the product. This is the clarity gap: the distance between what the business means and what gets built. An agent can widen it quickly. A senior engineer who can ask a product lead a question at 11 a.m. and get an answer at 11:05 closes it. With zero shared hours, the same question waits a full day, and so does every review loop that depends on it.</p>
+<p>For teams running AI-assisted delivery, that is why overlap now matters more than it did when the main constraint was how fast humans could type code. Icalia Labs' engineering teams ship first versions to production in under one week and run from 10 to hundreds of changes per week through CI/CD; that pace depends on review and decisions happening in the same working day.</p>
+<h2 id="where-offshore-still-wins">Where offshore still wins</h2>
+<p>Offshore teams are a real option, and a fair comparison says when. Offshore fits work that is well specified and changes slowly, such as maintenance of stable systems, test automation against clear acceptance criteria, or data processing with defined rules. It also fits follow-the-sun support, where a team on the other side of the world covers the hours a US team is offline.</p>
+<p>The trade-off is the handoff. Every unclear requirement becomes a round trip that costs a day. Teams that succeed offshore invest heavily in written specifications, overlapping on-call windows, or a US-based lead who works early or late to bridge the gap.</p>
+<p>The gap shows up most after launch. Icalia Labs has seen it with more than one client whose engineering team works in a different time zone from the rest of the business. With AI-assisted delivery, those teams ship quickly. Supporting the live operation is harder: when something breaks, someone has to fix it while customers are using the product, working alongside the operations team in the same room or at least the same hours. When that support waits for the next workday on the other side of the world, the cost can range from frustrated consumer customers to strained B2B relationships, and a single B2B account can matter a great deal to a smaller company.</p>
+<h2 id="where-onshore-still-wins">Where onshore still wins</h2>
+<p>Onshore engineers remain the right call for roles that require physical presence, such as hardware labs or on-site operations, for work that needs US-only access to data or systems, and for roles that require a security clearance. Onshore is also the default for engineering leadership roles that sit inside the US executive team.</p>
+<p>The constraint is supply and cost. The <a href="https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm">U.S. Bureau of Labor Statistics</a> reports a median annual wage of $135,980 for software developers in May 2025, before benefits, and projects employment of software developers to grow 10% from 2025 to 2035, much faster than the average for all occupations. Many teams use both: a US core for leadership and on-site needs, and a nearshore team for capacity that works the same hours.</p>
+<h2 id="the-nearshore-forward-deployed-engineer-model">The nearshore forward deployed engineer model</h2>
+<p>Nearshore forward deployed engineers are senior engineers in Latin America, time-zone aligned with US teams, embedded in the client's team and accountable for production outcomes. The difference from classic staff augmentation is ownership: an FDE is measured by what reaches production, not by hours logged or tickets closed.</p>
+<p>In practice, that looks like this in Icalia Labs' <a href="/case-studies.html">case studies</a>:</p>
+<ul>
+<li><strong>EMR Bear</strong>, a New Mexico healthcare company, worked with four specialized Rails engineers who put the first critical features in production within four weeks and kept shipping through the company's acquisition.</li>
+<li><strong>Everlance</strong>, a San Francisco consumer startup, built with eight senior backend and native mobile engineers, and every engineer stayed through the acquisition.</li>
+<li><strong>Apply Digital</strong>, a Canadian consultancy, stood up its first Latin American footprint, a 15-person team across Mexico and Colombia, through a Build/Operate/Transfer model in 6 to 12 months.</li>
+</ul>
+<p>Vetting is part of the model. Fewer than 0.4% of applicants to Icalia Labs are accepted, at a senior+ bar, and the process is described in <a href="/blog/how-to-vet-nearshore-engineers.html">how to vet nearshore engineers in the AI era</a>.</p>
+<p>The model fits regulated industries where the first weeks already touch sensitive systems, such as <a href="/industries/fintech.html">fintech</a>, <a href="/industries/healthtech.html">healthtech</a> and <a href="/industries/logistics.html">logistics</a>, as well as aviation, airspace and mobility.</p>
+<h2 id="how-to-decide-five-questions">How to decide: five questions</h2>
+<ol>
+<li><strong>How often does the team need a product decision?</strong> Daily or more points to onshore or nearshore. Weekly or less can work offshore.</li>
+<li><strong>How specified is the work?</strong> Clear, stable specifications travel well across time zones. Discovery work does not.</li>
+<li><strong>Does anyone need to be in the room?</strong> On-site or clearance requirements point to onshore. Occasional in-person sessions for critical moments fit nearshore.</li>
+<li><strong>Who is accountable for production?</strong> If the answer is &quot;our team, after handoff,&quot; the vendor is selling capacity. If it is &quot;the embedded engineers, with us,&quot; that is the forward deployed model.</li>
+<li><strong>How will AI change the work in the next 12 months?</strong> If agents will write more of the first drafts, plan for more review and more decisions, and for the shared hours those need.</li>
+</ol>
+<p>For the US side of hiring in the region, see <a href="/blog/how-to-hire-software-engineers-in-mexico.html">how to hire software engineers in Mexico</a> and <a href="/blog/how-to-evaluate-an-engineers-ai-skills.html">how to evaluate an engineer's AI skills before hiring</a>. To see how embedded teams performed in production, read the <a href="/case-studies.html">case studies</a>, or <a href="/contact.html#book">book a 30-minute call</a> to compare models for your next hires.</p>
+
+        </div>
+
+
+        <section class="mt-16 pt-12 border-t border-icalia-sand" aria-labelledby="faq">
+          <h2 id="faq" class="font-display text-3xl md:text-4xl leading-tight mb-8">Frequently asked questions</h2>
+          <div class="space-y-6">
+
+            <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6">
+              <h3 class="font-semibold text-icalia-dark">What is the difference between nearshore, offshore and onshore software development?</h3>
+              <p class="mt-3 text-icalia-navy/70 leading-relaxed">Onshore means engineers in the same country as the client. Nearshore means engineers in a nearby country with a similar time zone, such as Mexico for US companies. Offshore means engineers in a distant region, usually 7 to 14 hours ahead of US time.</p>
+            </div>
+
+            <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6">
+              <h3 class="font-semibold text-icalia-dark">Is nearshore better than offshore for US companies?</h3>
+              <p class="mt-3 text-icalia-navy/70 leading-relaxed">Nearshore is the better fit when the work needs daily collaboration with US product and engineering leads, because a Mexico-based team shares the full workday with US Central time. Offshore can fit well-specified work that runs asynchronously or needs round-the-clock coverage.</p>
+            </div>
+
+            <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6">
+              <h3 class="font-semibold text-icalia-dark">How many working hours overlap between the US and Mexico?</h3>
+              <p class="mt-3 text-icalia-navy/70 leading-relaxed">Monterrey runs on Central Standard Time year-round, so a Monterrey team shares the full 8-hour workday with US Central in winter, 7 hours during US daylight saving time, and 6 to 7 hours with US Eastern and Pacific.</p>
+            </div>
+
+            <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6">
+              <h3 class="font-semibold text-icalia-dark">What is a nearshore forward deployed engineer?</h3>
+              <p class="mt-3 text-icalia-navy/70 leading-relaxed">A nearshore forward deployed engineer (FDE) is a senior engineer based in Latin America who works inside a US client&#39;s team, in its time zone and tools, and is accountable for outcomes in production rather than for a fixed scope of tickets.</p>
+            </div>
+
+            <div class="bg-icalia-warm-2 border border-icalia-sand/60 rounded-2xl p-6">
+              <h3 class="font-semibold text-icalia-dark">Does AI-assisted development make offshore teams more attractive?</h3>
+              <p class="mt-3 text-icalia-navy/70 leading-relaxed">AI tools make code faster to produce, but 66% of developers in Stack Overflow&#39;s 2025 survey said their biggest frustration is AI output that is almost right. That moves the scarce work to review and decisions, which favors engineers who share working hours with the product team.</p>
+            </div>
+
+          </div>
+        </section>
+
+
+
+        <section class="mt-16 flex gap-5 items-start bg-white border border-icalia-sand/60 rounded-2xl p-6" aria-label="About the author">
+
+          <img src="/assets/eduardo-lopez.webp" alt="Eduardo Lopez De Leon" class="w-16 h-16 rounded-full object-cover shrink-0" width="64" height="64">
+
+          <div>
+            <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">Written by</p>
+            <p class="mt-1 font-semibold text-icalia-dark">Eduardo Lopez De Leon <span class="font-normal text-icalia-navy/50">&middot; Co-Founder &amp; CEO</span></p>
+            <p class="mt-2 text-sm text-icalia-navy/60 leading-relaxed">Strategy, brand presence, and partnership development at Icalia Labs. Startup and corporate experience. YC Founder.</p>
+
+            <p class="mt-3 flex flex-wrap gap-4 text-sm">
+
+              <a href="https://www.linkedin.com/in/elopezdeleon/" target="_blank" rel="noopener me" class="text-icalia-red font-semibold hover:underline">LinkedIn</a>
+
+              <a href="https://x.com/edolopez" target="_blank" rel="noopener me" class="text-icalia-red font-semibold hover:underline">X</a>
+
+              <a href="https://github.com/edolopez" target="_blank" rel="noopener me" class="text-icalia-red font-semibold hover:underline">GitHub</a>
+
+            </p>
+
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </article>
+
+
+
+  <section class="py-16 md:py-20 px-6 lg:px-10 bg-icalia-warm-2 border-t border-icalia-sand/50" aria-labelledby="related-reading">
+    <div class="max-w-7xl mx-auto">
+      <h2 id="related-reading" class="font-display text-3xl md:text-4xl leading-tight mb-10">Related reading</h2>
+      <div class="grid md:grid-cols-3 gap-6">
+
+
+<a href="/blog/how-to-vet-nearshore-engineers.html" class="group flex flex-col bg-white border border-icalia-sand/50 rounded-2xl overflow-hidden hover:border-icalia-red/40 hover:shadow-lg hover:shadow-icalia-dark/5 transition-all">
+  <div class="relative aspect-[1200/630]  overflow-hidden bg-icalia-dark">
+    <img src="/assets/blog/computer-1185626.webp" alt="" loading="lazy" decoding="async" width="1200" height="630" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+  </div>
+  <div class="flex flex-col flex-1 p-6">
+    <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">
+      <time datetime="2026-10-27">October 27, 2026</time>
+    </p>
+    <h3 class="mt-3 font-display text-2xl leading-snug text-icalia-dark group-hover:text-icalia-red transition-colors">How to Vet Nearshore Engineers in the AI Era</h3>
+    <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.</p>
+    <p class="mt-auto pt-6 text-xs font-semibold text-icalia-red">Nearshore Hiring</p>
+  </div>
+</a>
+
+
+
+<a href="/blog/how-to-evaluate-an-engineers-ai-skills.html" class="group flex flex-col bg-white border border-icalia-sand/50 rounded-2xl overflow-hidden hover:border-icalia-red/40 hover:shadow-lg hover:shadow-icalia-dark/5 transition-all">
+  <div class="relative aspect-[1200/630]  overflow-hidden bg-icalia-dark">
+    <img src="/assets/blog/bonding-1985863.webp" alt="" loading="lazy" decoding="async" width="1200" height="630" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+  </div>
+  <div class="flex flex-col flex-1 p-6">
+    <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">
+      <time datetime="2026-10-28">October 28, 2026</time>
+    </p>
+    <h3 class="mt-3 font-display text-2xl leading-snug text-icalia-dark group-hover:text-icalia-red transition-colors">How to Evaluate an Engineer&#39;s AI Skills Before Hiring</h3>
+    <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">Place candidates on an AI skill ladder, ask where AI was wrong and what runs in production, then watch them build live with their own agents.</p>
+    <p class="mt-auto pt-6 text-xs font-semibold text-icalia-red">AI Engineering</p>
+  </div>
+</a>
+
+
+
+<a href="/blog/ai-code-review-agents-teaching-ai-to-finish.html" class="group flex flex-col bg-white border border-icalia-sand/50 rounded-2xl overflow-hidden hover:border-icalia-red/40 hover:shadow-lg hover:shadow-icalia-dark/5 transition-all">
+  <div class="relative aspect-[1200/630]  overflow-hidden bg-icalia-dark">
+    <img src="/assets/blog/photo-2026-09-29-22-24-59.webp" alt="" loading="lazy" decoding="async" width="1200" height="630" class="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]">
+  </div>
+  <div class="flex flex-col flex-1 p-6">
+    <p class="text-xs font-semibold text-icalia-navy/40 uppercase tracking-widest">
+      <time datetime="2026-10-20">October 20, 2026</time>
+    </p>
+    <h3 class="mt-3 font-display text-2xl leading-snug text-icalia-dark group-hover:text-icalia-red transition-colors">AI Code Review Agents: Teaching AI to Finish Its Work</h3>
+    <p class="mt-3 text-sm text-icalia-navy/60 leading-relaxed">Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.</p>
+    <p class="mt-auto pt-6 text-xs font-semibold text-icalia-red">Agentic Engineering</p>
+  </div>
+</a>
+
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- CTA band -->
+  <section class="py-20 md:py-28 px-6 lg:px-10 border-t border-icalia-sand/50">
+    <div class="max-w-5xl mx-auto text-center">
+      <h2 class="font-display text-4xl md:text-6xl leading-tight">Need engineers who <span class="italic text-icalia-red">already ship like this?</span></h2>
+      <p class="mt-8 text-lg text-icalia-navy/60 max-w-2xl mx-auto">We embed senior nearshore engineers directly into your team — same time zone, same standards, no ramp-up theater.</p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact.html#book" class="bg-icalia-dark text-icalia-warm px-8 py-4 rounded-full font-semibold hover:bg-icalia-navy transition-colors inline-flex items-center justify-center gap-2">
+          Book a discovery call <span>→</span>
+        </a>
+
+        <a href="/forward-deployed-engineers.html" class="px-8 py-4 rounded-full font-semibold text-icalia-navy hover:text-icalia-dark transition-colors inline-flex items-center justify-center gap-2">
+          Embed a forward deployed engineer
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+    <!-- Footer -->
+  <footer class="bg-icalia-dark py-16 px-6 lg:px-10">
+    <div class="max-w-7xl mx-auto">
+      <div class="grid md:grid-cols-12 gap-12">
+        <div class="md:col-span-4">
+          <img src="../assets/logo-white.svg" alt="Icalia Labs" class="h-7 w-auto">
+          <p class="mt-4 text-sm text-white/30 leading-relaxed max-w-xs">Nearshore engineers who multiply: AI-driven, human-accountable. Monterrey, MX + Austin, TX. Since 2012.</p>
+          <a href="https://clutch.co/mx/developers/artificial-intelligence" target="_blank" rel="noopener" class="mt-6 inline-flex items-center gap-3 bg-white/5 hover:bg-white/10 border border-white/10 hover:border-icalia-red/40 rounded-xl px-4 py-3 transition-all group max-w-xs">
+            <svg class="shrink-0 w-10 h-12" viewBox="0 0 80 96" xmlns="http://www.w3.org/2000/svg" aria-label="Clutch Top AI Companies Mexico 2024 badge">
+              <polygon points="40,2 74,22 74,74 40,94 6,74 6,22" fill="#FAF8F6" stroke="#1C2333" stroke-width="2"/>
+              <text x="40" y="20" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">TOP</text>
+              <text x="40" y="30" text-anchor="middle" font-family="Arial, sans-serif" font-size="7" font-weight="700" fill="#1C2333">AI COMPANIES</text>
+              <rect x="12" y="40" width="56" height="16" fill="#1C2333"/>
+              <text x="40" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="11" font-weight="700" fill="#FAF8F6" font-style="italic">Clutch</text>
+              <text x="40" y="72" text-anchor="middle" font-family="Arial, sans-serif" font-size="6.5" font-weight="600" fill="#1C2333">MEXICO</text>
+              <text x="40" y="83" text-anchor="middle" font-family="Arial, sans-serif" font-size="9" font-weight="700" fill="#1C2333">2024</text>
+            </svg>
+            <div>
+              <p class="text-xs font-semibold text-white leading-tight">Leading <span class="text-icalia-red">AI</span> in LatAm</p>
+              <p class="text-[10px] text-white/40 mt-0.5 group-hover:text-icalia-red transition-colors">Top AI Companies · Mexico 2024</p>
+            </div>
+          </a>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Navigate</h4>
+          <div class="flex flex-col gap-3">
+            <a href="../" class="text-sm text-white/40 hover:text-white transition-colors">Home</a>
+            <a href="../about.html" class="text-sm text-white/40 hover:text-white transition-colors">About</a>
+            <a href="../case-studies.html" class="text-sm text-white/40 hover:text-white transition-colors">Work</a>
+            <a href="../manifesto.html" class="text-sm text-white/40 hover:text-white transition-colors">Manifesto</a>
+
+            <a href="../blog/" class="text-sm text-white/40 hover:text-white transition-colors">Blog</a>
+
+            <a href="../careers.html" class="text-sm text-white/40 hover:text-white transition-colors">Careers</a>
+            <a href="../developers.html" class="text-sm text-white/40 hover:text-white transition-colors">Developers</a>
+            <a href="../contact.html" class="text-sm text-white/40 hover:text-white transition-colors">Contact</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Services</h4>
+          <div class="flex flex-col gap-3">
+            <a href="../agentic-engineering.html" class="text-sm text-white/40 hover:text-white transition-colors">Agentic Engineering</a>
+            <a href="../forward-deployed-engineers.html" class="text-sm text-white/40 hover:text-white transition-colors">Forward Deployed Engineers</a>
+            <a href="../services.html" class="text-sm text-white/40 hover:text-white transition-colors">Talent Augmentation</a>
+            <a href="../how-we-vet.html" class="text-sm text-white/40 hover:text-white transition-colors">How We Vet</a>
+          </div>
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mt-10 mb-5">Industries</h4>
+          <div class="flex flex-col gap-3">
+            <a href="../industries/fintech.html" class="text-sm text-white/40 hover:text-white transition-colors">Fintech</a>
+            <a href="../industries/healthtech.html" class="text-sm text-white/40 hover:text-white transition-colors">Healthtech</a>
+            <a href="../industries/retail.html" class="text-sm text-white/40 hover:text-white transition-colors">eCommerce</a>
+            <a href="../industries/logistics.html" class="text-sm text-white/40 hover:text-white transition-colors">Logistics</a>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Offices</h4>
+          <div class="flex flex-col gap-4">
+            <div>
+              <p class="text-sm text-white/50 font-medium">Austin, Texas</p>
+              <p class="text-sm text-white/30">801 Barton Springs Rd, 78704</p>
+            </div>
+            <div>
+              <p class="text-sm text-white/50 font-medium">Monterrey, Mexico</p>
+              <p class="text-sm text-white/30">Avenida Eugenio Garza Sada #3820, Col. Mas Palomas</p>
+            </div>
+          </div>
+        </div>
+        <div class="md:col-span-2">
+          <h4 class="text-xs font-semibold text-white/20 uppercase tracking-widest mb-5">Get in Touch</h4>
+          <div class="flex flex-col gap-3">
+            <a href="mailto:sales@icalialabs.com" class="text-sm text-white/40 hover:text-white transition-colors">sales@icalialabs.com</a>
+            <a href="tel:+15124814113" class="text-sm text-white/40 hover:text-white transition-colors">+1 512 481 4113</a>
+          </div>
+          <div class="flex gap-4 mt-6">
+            <a href="https://linkedin.com/company/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+            </a>
+            <a href="https://clutch.co/profile/icalia-labs" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="Clutch">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="currentColor"/></svg>
+            </a>
+            <a href="https://github.com/IcaliaLabs/" class="text-white/30 hover:text-white transition-colors" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.796 24 17.299 24 12c0-6.627-5.373-12-12-12z"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-16 pt-8 border-t border-white/5 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+        <p class="text-xs text-white/20">&copy; 2026 Icalia, Inc. All rights reserved.</p>
+        <div class="flex gap-6 text-xs text-white/30">
+          <a href="../privacy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+          <a href="../terms.html" class="hover:text-white transition-colors">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+  <script>
+    document.getElementById('mobile-menu-btn').addEventListener('click', function() {
+      document.getElementById('mobile-menu').classList.toggle('hidden');
+    });
+    const miToggle = document.getElementById('mobile-industries-toggle');
+    if (miToggle) {
+      miToggle.addEventListener('click', function() {
+        document.getElementById('mobile-industries').classList.toggle('hidden');
+        document.getElementById('mobile-industries-chevron').classList.toggle('rotate-180');
+      });
+    }
+  </script>
+</body>
+</html>

@@ -88,6 +88,18 @@ Strategy, brand presence, and partnership development at Icalia Labs. Startup an
 
 [
 
+![](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg)
+
+November 12, 2026
+
+### Nearshore vs Offshore vs Onshore: How to Choose
+
+How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.
+
+Forward-Deployed Engineering (FDE)
+
+](/blog/nearshore-vs-offshore-vs-onshore.html)[
+
 ![](/assets/blog/computer-1185626.webp)
 
 October 27, 2026
@@ -110,19 +122,7 @@ Why AI coding agents ship code that only looks ready, and how a seven-step revie
 
 Agentic Engineering
 
-](/blog/ai-code-review-agents-teaching-ai-to-finish.html)[
-
-![](/assets/blog/monterrey-office-overhead.jpg)
-
-September 22, 2026
-
-### How to Hire Software Engineers in Mexico: A US Guide
-
-A practical guide for US companies hiring software engineers in Mexico: hiring models, legal setup, vetting, onboarding, and the mistakes to avoid.
-
-Nearshore Hiring
-
-](/blog/how-to-hire-software-engineers-in-mexico.html)
+](/blog/ai-code-review-agents-teaching-ai-to-finish.html)
 
 ## Need engineers who already ship like this?
 

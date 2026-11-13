@@ -5,12 +5,118 @@
   <subtitle>Nearshore engineering, AI-augmented delivery, and building software teams that ship.</subtitle>
   <link href="https://icalialabs.com/blog/feed.xml" rel="self" />
   <link href="https://icalialabs.com/" />
-  <updated>2026-10-28T00:00:00Z</updated>
+  <updated>2026-11-12T00:00:00Z</updated>
   <id>https://icalialabs.com/</id>
   <author>
     <name>Icalia Labs</name>
     <email>sales@icalialabs.com</email>
   </author>
+  <entry>
+    <title>Nearshore vs Offshore vs Onshore: How to Choose</title>
+    <link href="https://icalialabs.com/blog/nearshore-vs-offshore-vs-onshore.html" />
+    <updated>2026-11-12T00:00:00Z</updated>
+    <id>https://icalialabs.com/blog/nearshore-vs-offshore-vs-onshore.html</id>
+    <summary>How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.</summary>
+    <content type="html">&lt;p&gt;Nearshore, offshore and onshore engineering teams can all be senior and all use AI. The real difference is how many hours of the workday the team shares with the people who decide what gets built, and who is accountable when the software reaches production. For US product companies that need daily collaboration, nearshore engineers in Mexico and Latin America usually give the best balance of overlap, access and accountability. Offshore still fits work that is well specified and asynchronous, and onshore still fits roles that require on-site presence.&lt;/p&gt;
+&lt;p class=&quot;post-figure&quot;&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg&quot; alt=&quot;Bar chart of shared workday hours with a 9-to-5 US Central team: onshore 8 hours, nearshore in Monterrey 8 hours, Eastern Europe about 1 hour, India 0 hours.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;em&gt;Shared hours of a 9-to-5 workday with a team on US Central Standard Time. Source: Icalia Labs calculation from standard UTC offsets (Monterrey UTC−6 year-round, Warsaw UTC+1, India UTC+5:30).&lt;/em&gt;&lt;/p&gt;
+&lt;h2 id=&quot;the-short-answer&quot;&gt;The short answer&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Choose onshore&lt;/strong&gt; when the role requires on-site presence, US-only data or system access, or a security clearance.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Choose nearshore&lt;/strong&gt; when the team needs to work in the same hours as US product and engineering leads, ship to production often, and meet in person for critical moments.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Choose offshore&lt;/strong&gt; when the work is well specified, can run asynchronously, or benefits from follow-the-sun coverage.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Choose nearshore forward deployed engineers&lt;/strong&gt; when the goal is a production outcome, not a staffed seat: senior engineers embedded in the team and accountable for what ships.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&quot;what-each-model-means&quot;&gt;What each model means&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Onshore&lt;/strong&gt; engineering means the engineers work in the same country as the client, whether employed directly or through a US vendor.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nearshore&lt;/strong&gt; engineering means the engineers work in a nearby country with a similar time zone. For US companies, that usually means Mexico and the rest of Latin America. Monterrey, where Icalia Labs has an office, runs on Central Standard Time year-round.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Offshore&lt;/strong&gt; engineering means the engineers work in a distant region, most often South or Southeast Asia or Eastern Europe, usually 7 to 14 hours ahead of US Central time.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;A forward deployed engineer (FDE)&lt;/strong&gt; is an engineer embedded in the customer&#39;s team who owns outcomes in production. A nearshore FDE combines that operating model with the nearshore time zone.&lt;/p&gt;
+&lt;h2 id=&quot;nearshore-vs-offshore-vs-onshore-the-comparison&quot;&gt;Nearshore vs offshore vs onshore: the comparison&lt;/h2&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Factor&lt;/th&gt;
+&lt;th&gt;Onshore (US)&lt;/th&gt;
+&lt;th&gt;Nearshore (Mexico / LatAm)&lt;/th&gt;
+&lt;th&gt;Offshore (Asia / Eastern Europe)&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Shared hours with a 9-to-5 US Central team&lt;/td&gt;
+&lt;td&gt;8&lt;/td&gt;
+&lt;td&gt;8 in winter, 7 in US summer (6–7 with US Eastern and Pacific)&lt;/td&gt;
+&lt;td&gt;0 (India) to about 1 (Eastern Europe)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;In-person meeting for a critical decision&lt;/td&gt;
+&lt;td&gt;Same day&lt;/td&gt;
+&lt;td&gt;Short flight; Monterrey is close to Austin&lt;/td&gt;
+&lt;td&gt;Long-haul travel&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Typical collaboration mode&lt;/td&gt;
+&lt;td&gt;Synchronous&lt;/td&gt;
+&lt;td&gt;Synchronous&lt;/td&gt;
+&lt;td&gt;Mostly asynchronous handoffs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fit for daily product decisions&lt;/td&gt;
+&lt;td&gt;Strong&lt;/td&gt;
+&lt;td&gt;Strong&lt;/td&gt;
+&lt;td&gt;Weak unless one side shifts hours&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fit for well-specified, async work&lt;/td&gt;
+&lt;td&gt;Strong&lt;/td&gt;
+&lt;td&gt;Strong&lt;/td&gt;
+&lt;td&gt;Strong&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Follow-the-sun coverage&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;No&lt;/td&gt;
+&lt;td&gt;Yes&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p class=&quot;post-figure&quot;&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/nearshore-vs-offshore-vs-onshore-table.jpg&quot; alt=&quot;Comparison table: shared hours with a 9-to-5 US Central team are 8 onshore, 8 in winter and 7 in summer nearshore, and 0 to about 1 offshore; nearshore and onshore are synchronous and strong for daily product decisions; offshore runs on async handoffs and offers follow-the-sun coverage.&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
+&lt;em&gt;Onshore, nearshore and offshore compared on the factors that change delivery. Shared hours: Icalia Labs calculation from standard UTC offsets.&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;The overlap numbers come from plain arithmetic. A 9-to-5 day in US Central time runs from 15:00 to 23:00 UTC. In Monterrey, which stays on UTC−6 all year, that is the same 9-to-5 in winter; when the US moves to daylight saving time, the overlap drops to 7 hours. In India (UTC+5:30), a local 9-to-5 ends at 11:30 UTC, more than three hours before the US Central day starts. In Warsaw (UTC+1), the local day overlaps with the US Central morning by about one hour.&lt;/p&gt;
+&lt;h2 id=&quot;why-time-zone-overlap-matters-more-with-ai-agents&quot;&gt;Why time-zone overlap matters more with AI agents&lt;/h2&gt;
+&lt;p&gt;AI coding tools are now standard. In the &lt;a href=&quot;https://cloud.google.com/blog/products/ai-machine-learning/announcing-the-2025-dora-report&quot;&gt;2025 DORA report&lt;/a&gt;, 90% of respondents reported using AI at work, and 84% of developers in &lt;a href=&quot;https://survey.stackoverflow.co/2025/ai&quot;&gt;Stack Overflow&#39;s 2025 Developer Survey&lt;/a&gt; said they use or plan to use AI tools in development.&lt;/p&gt;
+&lt;p&gt;That changes where the bottleneck sits. When agents write a first version in minutes, the slow parts are reviewing the output, catching what is almost right, and deciding what to build next. In the same Stack Overflow survey, 46% of developers said they distrust the accuracy of AI output and 66% named &amp;quot;AI solutions that are almost right, but not quite&amp;quot; as their biggest frustration. DORA summarizes the effect in one line: &amp;quot;AI doesn&#39;t fix a team; it amplifies what&#39;s already there.&amp;quot;&lt;/p&gt;
+&lt;p&gt;Both of those slow parts depend on fast conversations with the people who own the product. This is the clarity gap: the distance between what the business means and what gets built. An agent can widen it quickly. A senior engineer who can ask a product lead a question at 11 a.m. and get an answer at 11:05 closes it. With zero shared hours, the same question waits a full day, and so does every review loop that depends on it.&lt;/p&gt;
+&lt;p&gt;For teams running AI-assisted delivery, that is why overlap now matters more than it did when the main constraint was how fast humans could type code. Icalia Labs&#39; engineering teams ship first versions to production in under one week and run from 10 to hundreds of changes per week through CI/CD; that pace depends on review and decisions happening in the same working day.&lt;/p&gt;
+&lt;h2 id=&quot;where-offshore-still-wins&quot;&gt;Where offshore still wins&lt;/h2&gt;
+&lt;p&gt;Offshore teams are a real option, and a fair comparison says when. Offshore fits work that is well specified and changes slowly, such as maintenance of stable systems, test automation against clear acceptance criteria, or data processing with defined rules. It also fits follow-the-sun support, where a team on the other side of the world covers the hours a US team is offline.&lt;/p&gt;
+&lt;p&gt;The trade-off is the handoff. Every unclear requirement becomes a round trip that costs a day. Teams that succeed offshore invest heavily in written specifications, overlapping on-call windows, or a US-based lead who works early or late to bridge the gap.&lt;/p&gt;
+&lt;p&gt;The gap shows up most after launch. Icalia Labs has seen it with more than one client whose engineering team works in a different time zone from the rest of the business. With AI-assisted delivery, those teams ship quickly. Supporting the live operation is harder: when something breaks, someone has to fix it while customers are using the product, working alongside the operations team in the same room or at least the same hours. When that support waits for the next workday on the other side of the world, the cost can range from frustrated consumer customers to strained B2B relationships, and a single B2B account can matter a great deal to a smaller company.&lt;/p&gt;
+&lt;h2 id=&quot;where-onshore-still-wins&quot;&gt;Where onshore still wins&lt;/h2&gt;
+&lt;p&gt;Onshore engineers remain the right call for roles that require physical presence, such as hardware labs or on-site operations, for work that needs US-only access to data or systems, and for roles that require a security clearance. Onshore is also the default for engineering leadership roles that sit inside the US executive team.&lt;/p&gt;
+&lt;p&gt;The constraint is supply and cost. The &lt;a href=&quot;https://www.bls.gov/ooh/computer-and-information-technology/software-developers.htm&quot;&gt;U.S. Bureau of Labor Statistics&lt;/a&gt; reports a median annual wage of $135,980 for software developers in May 2025, before benefits, and projects employment of software developers to grow 10% from 2025 to 2035, much faster than the average for all occupations. Many teams use both: a US core for leadership and on-site needs, and a nearshore team for capacity that works the same hours.&lt;/p&gt;
+&lt;h2 id=&quot;the-nearshore-forward-deployed-engineer-model&quot;&gt;The nearshore forward deployed engineer model&lt;/h2&gt;
+&lt;p&gt;Nearshore forward deployed engineers are senior engineers in Latin America, time-zone aligned with US teams, embedded in the client&#39;s team and accountable for production outcomes. The difference from classic staff augmentation is ownership: an FDE is measured by what reaches production, not by hours logged or tickets closed.&lt;/p&gt;
+&lt;p&gt;In practice, that looks like this in Icalia Labs&#39; &lt;a href=&quot;https://icalialabs.com/case-studies.html&quot;&gt;case studies&lt;/a&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;EMR Bear&lt;/strong&gt;, a New Mexico healthcare company, worked with four specialized Rails engineers who put the first critical features in production within four weeks and kept shipping through the company&#39;s acquisition.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Everlance&lt;/strong&gt;, a San Francisco consumer startup, built with eight senior backend and native mobile engineers, and every engineer stayed through the acquisition.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Apply Digital&lt;/strong&gt;, a Canadian consultancy, stood up its first Latin American footprint, a 15-person team across Mexico and Colombia, through a Build/Operate/Transfer model in 6 to 12 months.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Vetting is part of the model. Fewer than 0.4% of applicants to Icalia Labs are accepted, at a senior+ bar, and the process is described in &lt;a href=&quot;https://icalialabs.com/blog/how-to-vet-nearshore-engineers.html&quot;&gt;how to vet nearshore engineers in the AI era&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The model fits regulated industries where the first weeks already touch sensitive systems, such as &lt;a href=&quot;https://icalialabs.com/industries/fintech.html&quot;&gt;fintech&lt;/a&gt;, &lt;a href=&quot;https://icalialabs.com/industries/healthtech.html&quot;&gt;healthtech&lt;/a&gt; and &lt;a href=&quot;https://icalialabs.com/industries/logistics.html&quot;&gt;logistics&lt;/a&gt;, as well as aviation, airspace and mobility.&lt;/p&gt;
+&lt;h2 id=&quot;how-to-decide-five-questions&quot;&gt;How to decide: five questions&lt;/h2&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;How often does the team need a product decision?&lt;/strong&gt; Daily or more points to onshore or nearshore. Weekly or less can work offshore.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How specified is the work?&lt;/strong&gt; Clear, stable specifications travel well across time zones. Discovery work does not.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Does anyone need to be in the room?&lt;/strong&gt; On-site or clearance requirements point to onshore. Occasional in-person sessions for critical moments fit nearshore.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Who is accountable for production?&lt;/strong&gt; If the answer is &amp;quot;our team, after handoff,&amp;quot; the vendor is selling capacity. If it is &amp;quot;the embedded engineers, with us,&amp;quot; that is the forward deployed model.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;How will AI change the work in the next 12 months?&lt;/strong&gt; If agents will write more of the first drafts, plan for more review and more decisions, and for the shared hours those need.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;For the US side of hiring in the region, see &lt;a href=&quot;https://icalialabs.com/blog/how-to-hire-software-engineers-in-mexico.html&quot;&gt;how to hire software engineers in Mexico&lt;/a&gt; and &lt;a href=&quot;https://icalialabs.com/blog/how-to-evaluate-an-engineers-ai-skills.html&quot;&gt;how to evaluate an engineer&#39;s AI skills before hiring&lt;/a&gt;. To see how embedded teams performed in production, read the &lt;a href=&quot;https://icalialabs.com/case-studies.html&quot;&gt;case studies&lt;/a&gt;, or &lt;a href=&quot;https://icalialabs.com/contact.html#book&quot;&gt;book a 30-minute call&lt;/a&gt; to compare models for your next hires.&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>How to Evaluate an Engineer&#39;s AI Skills Before Hiring</title>
     <link href="https://icalialabs.com/blog/how-to-evaluate-an-engineers-ai-skills.html" />
@@ -1186,63 +1292,6 @@
 &lt;/ul&gt;
 &lt;p&gt;Developing countries are places where social problems are plainly visible every single day: poverty, insecurity, impunity, hunger, and so on. We have the talent and courage to make a change now. Open data is raw information that can help individuals, organizations, companies, and governments make better decisions and see more transparent surroundings. This data is waiting to be exploited in different ways; one of the tech challenges, for instance, is making it available and interoperable among living technologies in order to help any person in need of valuable information about our cities and spaces, in real time and in a consumable way. We hope this can inspire others to get into these developing areas in technology.&lt;/p&gt;
 &lt;p&gt;Find out more about &lt;a href=&quot;https://web.archive.org/web/20141004030844/http://www.opendata500.com:80/mx/Icalia-Labs/&quot;&gt;Icalia Labs in Open Data 500&lt;/a&gt;, and let us know about any interesting product or initiative related to the open data field that you want to build. We will be glad to chat and talk about any type of technology.&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>How to proudly participate in (and probably win) a Hackathon</title>
-    <link href="https://icalialabs.com/blog/how-to-participate-and-win-a-hackathon.html" />
-    <updated>2014-12-29T00:00:00Z</updated>
-    <id>https://icalialabs.com/blog/how-to-participate-and-win-a-hackathon.html</id>
-    <summary>Icalia Labs&#39; 2014 playbook for hackathons: pick the idea early, run agile sprints, balance hackers and designers, sleep, study the judges, and nail the pitch.</summary>
-    <content type="html">&lt;p&gt;Our company was born during a hackathon 2+ years ago. It wasn’t a service provider like it is today, but it was something to believe in. We were a team of four with the bravery and courage to build something we wanted to show others. Our greatest reward: a product being used.&lt;/p&gt;
-&lt;p class=&quot;post-figure&quot;&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/how-to-participate-and-win-a-hackathon-1.webp&quot; alt=&quot;Icalia Labs&#39; founders working on laptops at a shared table in a crowded hackathon space&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
-&lt;em&gt;Our founders during a hackathon.&lt;/em&gt;&lt;/p&gt;
-&lt;p&gt;Since the beginning, we have embraced the hackathon culture to encourage team building, to learn new tools, and to find awesome team members to be part of our family.&lt;/p&gt;
-&lt;p&gt;Thanks to this culture, we have met many of the icaliers, enabling a work dynamic that recognizes the potential of each individual.&lt;/p&gt;
-&lt;p&gt;Before getting to the main point of this post, I need to share our experience in numbers. We have been part of at least 8 hackathons, and some of us have organized, judged, and mentored at least 20 more hackathons. Some of our victories have been:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://web.archive.org/web/20150126022742/http://monterrey.acm.org:80/hackathon.html&quot;&gt;Hackathon Mty III&lt;/a&gt;: 1st place.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://opendata.mx/&quot;&gt;Open Data MX Hackathon&lt;/a&gt;: 1st place.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://desarrollandoamerica.org/&quot;&gt;DAL 2012 Mexico City&lt;/a&gt;: 1st place and a &lt;a href=&quot;http://codeandomexico.org/&quot;&gt;company launched&lt;/a&gt;.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://web.archive.org/web/20141218062341/http://swmty.org/&quot;&gt;Startup Weekend MTY II&lt;/a&gt;: 2nd place (we transformed this event into a hackathon for us :] ).&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;https://web.archive.org/web/20150623125345/https://2014.battlehack.org/mexico_city&quot;&gt;PayPal’s Battlehack Mexico City&lt;/a&gt;: 3rd place out of 34.&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;http://www.angelhack.com/&quot;&gt;Angel Hack Monterrey&lt;/a&gt;: 4th place out of 30.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;After our participation in Battlehack in Mexico City, we thought it was important to share the process we followed to achieve all of these wins. In all of these hackathons, our team was made up of at least 70% icalier members, so the following practices were definitely involved.&lt;/p&gt;
-&lt;h2 id=&quot;1-define-your-idea-in-advance&quot;&gt;1. Define your idea in advance&lt;/h2&gt;
-&lt;p&gt;Many times we have seen teams discussing ideas at the beginning of hackathons. This is a waste of time. The hackathon is set up to hack, design, build, and code, not to chitchat about which idea would be the right one. Sometimes we have arranged &lt;a href=&quot;https://twitter.com/icalialabs/status/238742226539257856&quot;&gt;road trips to the cities&lt;/a&gt; hosting hackathons, and those have been very helpful. We have a minimum of 1 to 2 sessions before the hackathon in order to define the right idea. If many ideas are shared among the team, we suggest selecting the right one based on different criteria:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Feasibility of the technology to implement.&lt;/li&gt;
-&lt;li&gt;Communities and content generation vs. product ready to be used.&lt;/li&gt;
-&lt;li&gt;Idea following the rules.&lt;/li&gt;
-&lt;li&gt;Originality.&lt;/li&gt;
-&lt;li&gt;Team approves.&lt;/li&gt;
-&lt;li&gt;Something people are going to use.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;In the end, we choose the idea that fits all of the previous points, or at least the one that fits them best.&lt;/p&gt;
-&lt;h2 id=&quot;2-follow-an-agile-procedure&quot;&gt;2. Follow an agile procedure&lt;/h2&gt;
-&lt;p&gt;Management is an important element to scope efforts and to build something usable and useful at the end of the day. We have taken some agile practices, particularly from &lt;a href=&quot;http://en.wikipedia.org/wiki/Scrum_(software_development)&quot;&gt;Scrum&lt;/a&gt;, and translated them to the hackathon context in order to constantly prioritize. Time is the biggest asset we have, as human beings and during a hackathon, so prioritizing the features and functionality to include during the event is very important.&lt;/p&gt;
-&lt;p&gt;A block of time between 5 and 8 hours is called a sprint. There should be around 3 to 5 sprints, depending on the hours available for the hackathon. Each of those includes a set of features and tasks to be completed within its scope of time. For example, a 24-hour hackathon will have 3 sprints of 8 hours, with the most important tasks in the first sprint and the least important tasks in the last sprint. Tasks not finished at the end of a sprint should be moved to the next sprint, and the least important features start getting excluded from the scope of the hack.&lt;/p&gt;
-&lt;p&gt;Someone needs to own the &lt;a href=&quot;http://www.amazon.com/Agile-Coaching-Rachel-Davies/dp/1934356433&quot;&gt;agile coach role&lt;/a&gt; to track the time in every sprint. This person leads the sprint-closing sessions, where he/she asks for the status of the estimated tasks that need to be done. This person needs to prioritize features and demand discipline from the team members.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/how-to-participate-and-win-a-hackathon-2.webp&quot; alt=&quot;Pencil-sketched hackathon sprint plan on brown paper: tasks by time block, a sleep/break slot, and &amp;quot;Twilio&amp;quot; boxed as #1&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;&lt;/p&gt;
-&lt;h2 id=&quot;3-choose-your-team-wisely&quot;&gt;3. Choose your team wisely&lt;/h2&gt;
-&lt;p&gt;Technology teams need to be balanced. Depending on the hack you are building, you will need to choose the right team members. Nevertheless, there’s always a pattern that works for everything you are working on: Hackers + Designers.&lt;/p&gt;
-&lt;p&gt;When I say hackers, I’m talking about people with knowledge of back-end development and of all the features that are going to be built. When I say designers, I’m talking about design and front-end coders: people who are going to show the hack to the world in terms of presentation and emotion, and in a humanized way. Forget about the hustlers, marketers, or any other role. You are coding in a hackathon. Of course, you will need somebody who will pitch and talk to people, and who will probably be getting out of the building for this. This can be done by either of these two groups.&lt;/p&gt;
-&lt;p&gt;An A-team is balanced with hackers and designers.&lt;/p&gt;
-&lt;h2 id=&quot;4-sleep&quot;&gt;4. Sleep!&lt;/h2&gt;
-&lt;p&gt;Unless we are talking about a 24-hour hackathon, sleep is one of the key factors to keep building the product with energy, determination, and logical decisions. Every team member must take time to sleep properly in order to recharge and make every effort count at the end of the hackathon. Make no mistake: no sleep doesn&#39;t mean more features.&lt;/p&gt;
-&lt;p&gt;Here is a graph explaining what happens when a team doesn&#39;t sleep at all:&lt;/p&gt;
-&lt;p class=&quot;post-figure&quot;&gt;&lt;img src=&quot;https://icalialabs.com/assets/blog/how-to-participate-and-win-a-hackathon-3.webp&quot; alt=&quot;Line chart of features over time: the team that sleeps flattens from T5 to T9, then overtakes the team that doesn&#39;t sleep&quot; loading=&quot;lazy&quot; decoding=&quot;async&quot;&gt;
-&lt;em&gt;The blue line represents a team that sleeps from T(5) to T(9), which allowed them to develop more features than the red line, representing a non-sleeping team.&lt;/em&gt;&lt;/p&gt;
-&lt;h2 id=&quot;5-consider-the-rules-and-judges&quot;&gt;5. Consider the rules and judges&lt;/h2&gt;
-&lt;p&gt;There are always rules to follow and judges to convince. Understand the dynamics of the hackathon: What is the main technology to be used? What is the goal for the teams? Remember it and stick to it. Also, do some research on the judges’ profiles and find out what they would want to hear. Impress them with the right words. If they are mentoring, approach them and gauge their impressions. Let them know you are passionate about your project.&lt;/p&gt;
-&lt;h2 id=&quot;6-the-pitch-matters&quot;&gt;6. The pitch matters&lt;/h2&gt;
-&lt;p&gt;We all know this is a hard part. The hacker stereotype is changing over time; nevertheless, standing in front of an audience is hard for anyone. Not only is the presenter’s diction important, but so is assessing whether a mobile product would be more impressive than a web product. Sometimes we have decided to present a web project because a mobile application cannot be accepted in marketplaces fast enough to be used by the audience during the pitch. This really depends on the idea you are working on.&lt;/p&gt;
-&lt;p&gt;The pitch matters a lot, because it is how you explain to everyone what you did. Let the guy with the loudest voice present. The rest of the team can support the pitcher by performing a live demo, which is a must during the presentation. Be prepared for any bugs, crashes, or issues, so rehearse a couple of hours before the pitches start.&lt;/p&gt;
-&lt;h2 id=&quot;7-haters-gonna-hate-ignore-them&quot;&gt;7. Haters gonna hate; ignore them&lt;/h2&gt;
-&lt;p&gt;In all hackathons, you will find several trolls, ego hackers, and even misanthropes always complaining about other participants or the competition itself. &lt;strong&gt;IGNORE THEM.&lt;/strong&gt; Commit to your project, to your team, and to yourself. Hack for fun, make some friends, and ignore the apathetic.&lt;/p&gt;
-&lt;h2 id=&quot;conclusion&quot;&gt;Conclusion&lt;/h2&gt;
-&lt;p&gt;Prepare as a team, get mentally ready, hack, build, design, code, learn, share, and &lt;a href=&quot;https://www.hackerschool.com/manual&quot;&gt;don’t be a jerk&lt;/a&gt;.&lt;/p&gt;
 </content>
   </entry>
 </feed>

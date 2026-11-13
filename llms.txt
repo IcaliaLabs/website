@@ -100,6 +100,7 @@ High-traffic storefronts, order management and peak-ready infrastructure.
 
 - [Icalia Labs Blog](https://icalialabs.com/blog/): Practical guides on agentic engineering, AI-augmented teams, nearshore hiring, engineering costs and forward-deployed engineering.
 - [Atom feed](https://icalialabs.com/blog/feed.xml): Every published article, newest first.
+- [Nearshore vs Offshore vs Onshore: How to Choose](https://icalialabs.com/blog/nearshore-vs-offshore-vs-onshore.html): How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.
 - [How to Evaluate an Engineer's AI Skills Before Hiring](https://icalialabs.com/blog/how-to-evaluate-an-engineers-ai-skills.html): Place candidates on an AI skill ladder, ask where AI was wrong and what runs in production, then watch them build live with their own agents.
 - [How to Vet Nearshore Engineers in the AI Era](https://icalialabs.com/blog/how-to-vet-nearshore-engineers.html): How AI-amplified hiring fraud works, and the layered checks US engineering leaders can use to confirm a remote engineer is real, senior and a fit.
 - [AI Code Review Agents: Teaching AI to Finish Its Work](https://icalialabs.com/blog/ai-code-review-agents-teaching-ai-to-finish.html): Why AI coding agents ship code that only looks ready, and how a seven-step review loop led by senior engineers gets work to finished.

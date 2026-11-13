@@ -16,6 +16,18 @@ How US product teams find, vet, and embed senior engineers from Mexico and Latin
 
 [
 
+![](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg)
+
+November 12, 2026
+
+## Nearshore vs Offshore vs Onshore: How to Choose
+
+How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.
+
+Forward-Deployed Engineering (FDE)
+
+](/blog/nearshore-vs-offshore-vs-onshore.html)[
+
 ![](/assets/blog/bonding-1985863.webp)
 
 October 28, 2026

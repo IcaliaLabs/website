@@ -9,7 +9,7 @@ how we build.
 
 Engineers, founders, and operators at Icalia Labs writing about nearshore teams, AI-augmented and agentic engineering, and what it takes to ship. Every entry is dated, so you can tell what we learned before the AI era from what we know now.
 
-[Nearshore Hiring 7](/blog/topics/nearshore-hiring.html) [Software Development 11](/blog/topics/software-development.html) [Software Makers 6](/blog/topics/software-maker.html) [AI Engineering 5](/blog/topics/ai-engineering.html) [Agentic Engineering 3](/blog/topics/agentic-engineering.html) [Forward-Deployed Engineering (FDE) 4](/blog/topics/forward-deployed-engineer.html)
+[Nearshore Hiring 8](/blog/topics/nearshore-hiring.html) [Engineering Costs 1](/blog/topics/engineering-costs.html) [Software Development 11](/blog/topics/software-development.html) [Software Makers 6](/blog/topics/software-maker.html) [AI Engineering 5](/blog/topics/ai-engineering.html) [Agentic Engineering 3](/blog/topics/agentic-engineering.html) [Forward-Deployed Engineering (FDE) 5](/blog/topics/forward-deployed-engineer.html)
 
 Timeline AI era [2026](#y2026) Pre-AI era [2021](#y2021) [2020](#y2020) [2018](#y2018) [2017](#y2017) [2016](#y2016) [2015](#y2015) [2014](#y2014)
 
@@ -17,19 +17,31 @@ Timeline AI era [2026](#y2026) Pre-AI era [2021](#y2021) [2020](#y2020) [2018](#
 
 AI era
 
-6 articles
+7 articles
 
- [![](/assets/blog/bonding-1985863.webp) ![](/assets/blog/bonding-1985863.webp)
+ [![](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg) ![](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg)
 
-Latest · October 28, 2026
+Latest · November 12, 2026
+
+### Nearshore vs Offshore vs Onshore: How to Choose
+
+How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.
+
+Forward-Deployed Engineering (FDE) Read the article →](/blog/nearshore-vs-offshore-vs-onshore.html)
+
+[
+
+![](/assets/blog/bonding-1985863.webp)
+
+October 28, 2026
 
 ### How to Evaluate an Engineer's AI Skills Before Hiring
 
 Place candidates on an AI skill ladder, ask where AI was wrong and what runs in production, then watch them build live with their own agents.
 
-AI Engineering Read the article →](/blog/how-to-evaluate-an-engineers-ai-skills.html)
+AI Engineering
 
-[
+](/blog/how-to-evaluate-an-engineers-ai-skills.html)[
 
 ![](/assets/blog/computer-1185626.webp)
 
