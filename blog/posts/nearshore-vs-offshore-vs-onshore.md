@@ -1,38 +1,42 @@
 ---
-title: "Nearshore vs Offshore vs Onshore: How to Choose"
-description: "How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits."
+title: 'Nearshore vs Offshore vs Onshore: How to Choose'
+description: How US engineering leaders can compare onshore, nearshore and offshore teams on time-zone overlap, accountability and AI-era delivery, and when each fits.
 draft: false
 date: 2026-11-12
+updated: ''
 author: eduardo-lopez
 topics:
   - forward-deployed-engineer
   - nearshore-hiring
   - engineering-costs
-image: /assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg
-imageAlt: "Bar chart of shared workday hours with a 9-to-5 US Central team: onshore 8 hours, nearshore in Monterrey 8 hours, Eastern Europe about 1 hour, India 0 hours."
+image: /assets/blog/daylight_map-_nonscientific_-0900_utc.webp
+imageAlt: Map of the sunlight covering the world based on timezone alignment.
 takeaways:
-  - "Onshore, nearshore and offshore engineering differ less in talent than in how many working hours the team shares with the people who make product decisions."
-  - "A nearshore team in Mexico shares 6 to 8 hours of the workday with every continental US time zone, while a team in India shares none on a standard 9-to-5 schedule."
-  - "AI coding agents shift the bottleneck from writing code to reviewing it and deciding what to build, which raises the value of engineers who work the same hours as the product team."
-  - "Offshore still fits well-specified, asynchronous work and follow-the-sun support; onshore still fits roles that require on-site presence or US-only access."
-  - "Nearshore forward deployed engineers are senior engineers in Latin America, embedded in a US client's team and accountable for production outcomes, not only for tickets closed."
+  - Onshore, nearshore and offshore engineering differ less in talent than in how many working hours the team shares with the people who make product decisions.
+  - A nearshore team in Mexico shares 6 to 8 hours of the workday with every continental US time zone, while a team in India shares none on a standard 9-to-5 schedule.
+  - AI coding agents shift the bottleneck from writing code to reviewing it and deciding what to build, which raises the value of engineers who work the same hours as the product team.
+  - Offshore still fits well-specified, asynchronous work and follow-the-sun support; onshore still fits roles that require on-site presence or US-only access.
+  - Nearshore forward deployed engineers are senior engineers in Latin America, embedded in a US client's team and accountable for production outcomes, not only for tickets closed.
 faq:
-  - q: "What is the difference between nearshore, offshore and onshore software development?"
-    a: "Onshore means engineers in the same country as the client. Nearshore means engineers in a nearby country with a similar time zone, such as Mexico for US companies. Offshore means engineers in a distant region, usually 7 to 14 hours ahead of US time."
-  - q: "Is nearshore better than offshore for US companies?"
-    a: "Nearshore is the better fit when the work needs daily collaboration with US product and engineering leads, because a Mexico-based team shares the full workday with US Central time. Offshore can fit well-specified work that runs asynchronously or needs round-the-clock coverage."
-  - q: "How many working hours overlap between the US and Mexico?"
-    a: "Monterrey runs on Central Standard Time year-round, so a Monterrey team shares the full 8-hour workday with US Central in winter, 7 hours during US daylight saving time, and 6 to 7 hours with US Eastern and Pacific."
-  - q: "What is a nearshore forward deployed engineer?"
-    a: "A nearshore forward deployed engineer (FDE) is a senior engineer based in Latin America who works inside a US client's team, in its time zone and tools, and is accountable for outcomes in production rather than for a fixed scope of tickets."
-  - q: "Does AI-assisted development make offshore teams more attractive?"
-    a: "AI tools make code faster to produce, but 66% of developers in Stack Overflow's 2025 survey said their biggest frustration is AI output that is almost right. That moves the scarce work to review and decisions, which favors engineers who share working hours with the product team."
+  - q: What is the difference between nearshore, offshore and onshore software development?
+    a: Onshore means engineers in the same country as the client. Nearshore means engineers in a nearby country with a similar time zone, such as Mexico for US companies. Offshore means engineers in a distant region, usually 7 to 14 hours ahead of US time.
+  - q: Is nearshore better than offshore for US companies?
+    a: Nearshore is the better fit when the work needs daily collaboration with US product and engineering leads, because a Mexico-based team shares the full workday with US Central time. Offshore can fit well-specified work that runs asynchronously or needs round-the-clock coverage.
+  - q: How many working hours overlap between the US and Mexico?
+    a: Monterrey runs on Central Standard Time year-round, so a Monterrey team shares the full 8-hour workday with US Central in winter, 7 hours during US daylight saving time, and 6 to 7 hours with US Eastern and Pacific.
+  - q: What is a nearshore forward deployed engineer?
+    a: A nearshore forward deployed engineer (FDE) is a senior engineer based in Latin America who works inside a US client's team, in its time zone and tools, and is accountable for outcomes in production rather than for a fixed scope of tickets.
+  - q: Does AI-assisted development make offshore teams more attractive?
+    a: AI tools make code faster to produce, but 66% of developers in Stack Overflow's 2025 survey said their biggest frustration is AI output that is almost right. That moves the scarce work to review and decisions, which favors engineers who share working hours with the product team.
+originalUrl: ''
+originalLanguage: ''
 ---
 
 Nearshore, offshore and onshore engineering teams can all be senior and all use AI. The real difference is how many hours of the workday the team shares with the people who decide what gets built, and who is accountable when the software reaches production. For US product companies that need daily collaboration, nearshore engineers in Mexico and Latin America usually give the best balance of overlap, access and accountability. Offshore still fits work that is well specified and asynchronous, and onshore still fits roles that require on-site presence.
 
 ![Bar chart of shared workday hours with a 9-to-5 US Central team: onshore 8 hours, nearshore in Monterrey 8 hours, Eastern Europe about 1 hour, India 0 hours.](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg)
-*Shared hours of a 9-to-5 workday with a team on US Central Standard Time. Source: Icalia Labs calculation from standard UTC offsets (Monterrey UTC−6 year-round, Warsaw UTC+1, India UTC+5:30).*
+
+_Shared hours of a 9-to-5 workday with a team on US Central Standard Time. Source: Icalia Labs calculation from standard UTC offsets (Monterrey UTC−6 year-round, Warsaw UTC+1, India UTC+5:30)._
 
 ## The short answer
 
@@ -54,7 +58,7 @@ Nearshore, offshore and onshore engineering teams can all be senior and all use 
 ## Nearshore vs offshore vs onshore: the comparison
 
 | Factor | Onshore (US) | Nearshore (Mexico / LatAm) | Offshore (Asia / Eastern Europe) |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Shared hours with a 9-to-5 US Central team | 8 | 8 in winter, 7 in US summer (6–7 with US Eastern and Pacific) | 0 (India) to about 1 (Eastern Europe) |
 | In-person meeting for a critical decision | Same day | Short flight; Monterrey is close to Austin | Long-haul travel |
 | Typical collaboration mode | Synchronous | Synchronous | Mostly asynchronous handoffs |
@@ -63,7 +67,8 @@ Nearshore, offshore and onshore engineering teams can all be senior and all use 
 | Follow-the-sun coverage | No | No | Yes |
 
 ![Comparison table: shared hours with a 9-to-5 US Central team are 8 onshore, 8 in winter and 7 in summer nearshore, and 0 to about 1 offshore; nearshore and onshore are synchronous and strong for daily product decisions; offshore runs on async handoffs and offers follow-the-sun coverage.](/assets/blog/nearshore-vs-offshore-vs-onshore-table.jpg)
-*Onshore, nearshore and offshore compared on the factors that change delivery. Shared hours: Icalia Labs calculation from standard UTC offsets.*
+
+_Onshore, nearshore and offshore compared on the factors that change delivery. Shared hours: Icalia Labs calculation from standard UTC offsets._
 
 The overlap numbers come from plain arithmetic. A 9-to-5 day in US Central time runs from 15:00 to 23:00 UTC. In Monterrey, which stays on UTC−6 all year, that is the same 9-to-5 in winter; when the US moves to daylight saving time, the overlap drops to 7 hours. In India (UTC+5:30), a local 9-to-5 ends at 11:30 UTC, more than three hours before the US Central day starts. In Warsaw (UTC+1), the local day overlaps with the US Central morning by about one hour.
 
