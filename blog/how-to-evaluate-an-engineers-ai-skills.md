@@ -156,7 +156,7 @@ Nearshore Hiring
 
 ](/blog/how-to-vet-nearshore-engineers.html)[
 
-![](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg)
+![](/assets/blog/daylight_map-_nonscientific_-0900_utc.webp)
 
 November 12, 2026
 

@@ -20,7 +20,7 @@ Eduardo Lopez De Leon · Co-Founder & CEO
 
 November 12, 2026 · 7 min read
 
-![Bar chart of shared workday hours with a 9-to-5 US Central team: onshore 8 hours, nearshore in Monterrey 8 hours, Eastern Europe about 1 hour, India 0 hours.](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg)
+![Map of the sunlight covering the world based on timezone alignment.](/assets/blog/daylight_map-_nonscientific_-0900_utc.webp)
 
 ## Key takeaways
 
@@ -32,7 +32,9 @@ November 12, 2026 · 7 min read
 
 Nearshore, offshore and onshore engineering teams can all be senior and all use AI. The real difference is how many hours of the workday the team shares with the people who decide what gets built, and who is accountable when the software reaches production. For US product companies that need daily collaboration, nearshore engineers in Mexico and Latin America usually give the best balance of overlap, access and accountability. Offshore still fits work that is well specified and asynchronous, and onshore still fits roles that require on-site presence.
 
-![Bar chart of shared workday hours with a 9-to-5 US Central team: onshore 8 hours, nearshore in Monterrey 8 hours, Eastern Europe about 1 hour, India 0 hours.](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg) _Shared hours of a 9-to-5 workday with a team on US Central Standard Time. Source: Icalia Labs calculation from standard UTC offsets (Monterrey UTC−6 year-round, Warsaw UTC+1, India UTC+5:30)._
+![Bar chart of shared workday hours with a 9-to-5 US Central team: onshore 8 hours, nearshore in Monterrey 8 hours, Eastern Europe about 1 hour, India 0 hours.](/assets/blog/nearshore-vs-offshore-vs-onshore-cover.jpg)
+
+_Shared hours of a 9-to-5 workday with a team on US Central Standard Time. Source: Icalia Labs calculation from standard UTC offsets (Monterrey UTC−6 year-round, Warsaw UTC+1, India UTC+5:30)._
 
 ## The short answer
 
@@ -109,7 +111,9 @@ No
 
 Yes
 
-![Comparison table: shared hours with a 9-to-5 US Central team are 8 onshore, 8 in winter and 7 in summer nearshore, and 0 to about 1 offshore; nearshore and onshore are synchronous and strong for daily product decisions; offshore runs on async handoffs and offers follow-the-sun coverage.](/assets/blog/nearshore-vs-offshore-vs-onshore-table.jpg) _Onshore, nearshore and offshore compared on the factors that change delivery. Shared hours: Icalia Labs calculation from standard UTC offsets._
+![Comparison table: shared hours with a 9-to-5 US Central team are 8 onshore, 8 in winter and 7 in summer nearshore, and 0 to about 1 offshore; nearshore and onshore are synchronous and strong for daily product decisions; offshore runs on async handoffs and offers follow-the-sun coverage.](/assets/blog/nearshore-vs-offshore-vs-onshore-table.jpg)
+
+_Onshore, nearshore and offshore compared on the factors that change delivery. Shared hours: Icalia Labs calculation from standard UTC offsets._
 
 The overlap numbers come from plain arithmetic. A 9-to-5 day in US Central time runs from 15:00 to 23:00 UTC. In Monterrey, which stays on UTC−6 all year, that is the same 9-to-5 in winter; when the US moves to daylight saving time, the overlap drops to 7 hours. In India (UTC+5:30), a local 9-to-5 ends at 11:30 UTC, more than three hours before the US Central day starts. In Warsaw (UTC+1), the local day overlaps with the US Central morning by about one hour.
 
